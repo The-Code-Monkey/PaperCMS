@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aw-web-design/components": "4.1.182",
+    "@aw-web-design/components": "4.1.183",
     "next": "12.2.4",
     "next-auth": "4.10.3",
     "react": "18.2.0",
