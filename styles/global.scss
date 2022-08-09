@@ -35,16 +35,24 @@ aside {
 
     li {
       display: flex;
-      align-items: center;
-      height: 24px;
-      padding: 6px 0 6px 1em;
+      width: 100%;
       cursor: pointer;
       //background-color: lightgray;
       transition: background-color 200ms ease-in-out;
 
-      &:hover {
+      &.active, &:hover {
         background-color: darkgray;
         transition: background-color 200ms ease-in-out;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 24px;
+        padding: 6px 0 6px 1em;
+        width: 100%;
+        text-decoration: none;
+        color: unset;
       }
     }
   }

@@ -2,7 +2,7 @@ import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 
 export default NextAuth({
-    secret: process.env.SECRET,
+    secret: "dsjdashdkhasdhjiasdiysa74t",
     providers: [
         // OAuth authentication providers
 
@@ -45,7 +45,4 @@ export default NextAuth({
             }
         })
     ],
-    callbacks: {
-
-    }
 })

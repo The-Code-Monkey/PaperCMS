@@ -6,12 +6,11 @@ interface Props {
 }
 
 const Auth = ({ children }: Props) => {
-    const { data: session, status, ...rest } = useSession();
+    const { data: session, status } = useSession();
 
     useEffect(() => {
-        console.log(session, status, rest)
         if (status === "unauthenticated") signIn()
-    }, [session]);
+    }, [status]);
 
     if (status !== "authenticated") return null;
 
