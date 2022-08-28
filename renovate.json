@@ -11,7 +11,6 @@
   ],
   "automergeStrategy": "squash",
   "labels": ["dependencies"],
-  "automerge": true,
   "vulnerabilityAlerts": {
     "labels": ["security"]
   },
