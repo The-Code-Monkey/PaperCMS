@@ -16,7 +16,7 @@
   },
   "packageRules": [
     {
-      "matchPackagePatterns": ["@aw-web-design/*"],
+      "matchPackagePatterns": ["@techstack/*"],
       "groupName": "@aw-web-design mono repo"
     }
   ],
