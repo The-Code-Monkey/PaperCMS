@@ -1,7 +1,6 @@
 {
   "name": "paper-cms",
   "version": "0.1.0",
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@techstack/components": "0.2.1",
+    "@techstack/components": "0.4.0",
     "jsonwebtoken": "8.5.1",
     "next": "12.2.5",
     "next-auth": "4.10.3",
@@ -18,11 +17,91 @@
     "sass": "1.54.8"
   },
   "devDependencies": {
+    "@techstack/tcm-cli": "0.2.4",
     "@types/node": "18.6.1",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.23.0",
+    "@typescript-eslint/eslint-plugin": "5.36.2",
     "eslint-config-next": "12.2.5",
-    "typescript": "4.8.2"
+    "typescript": "4.8.2",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ],
+    "plugins": [
+      "import",
+      "prettier",
+      "@typescript-eslint"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest",
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/no-empty-function": "warn",
+      "import/no-unresolved": 2,
+      "import/order": [
+        "warn",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+            "object"
+            ],
+          "pathGroups": [
+            {
+              "pattern": "./*.scss",
+              "group": "unknown",
+              "position": "after"
+            }
+          ],
+          "newlines-between": "always"
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "vars": "all",
+          "args": "after-used"
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 80,
+          "trailingComma": "es5",
+          "semi": true,
+          "jsxSingleQuote": true,
+          "singleQuote": true,
+          "useTabs": false,
+          "react/no-typos": false,
+          "bracketSpacing": true,
+          "arrowParens": "avoid",
+          "endOfLine": "auto"
+        }
+      ]
+    }
   }
 }
