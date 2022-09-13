@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@techstack/components": "0.4.3",
+    "@techstack/components": "0.4.5",
     "jsonwebtoken": "8.5.1",
     "next": "12.2.5",
     "next-auth": "4.10.3",
@@ -17,7 +17,7 @@
     "sass": "1.54.9"
   },
   "devDependencies": {
-    "@techstack/tcm-cli": "0.2.7",
+    "@techstack/tcm-cli": "0.2.9",
     "@types/node": "18.6.1",
     "@types/react": "18.0.19",
     "@types/react-dom": "18.0.6",
