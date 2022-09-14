@@ -2,7 +2,7 @@
   "name": "paper-cms",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "orchard generate && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,6 +13,7 @@
     "@supabase/supabase-auth-helpers": "^1.4.2",
     "@supabase/supabase-js": "^1.35.6",
     "@techstack/components": "0.4.5",
+    "@techstack/theme": "0.2.12",
     "cookie-cutter": "^0.2.0",
     "cookie-light": "^0.0.1",
     "graphql": "^16.6.0",

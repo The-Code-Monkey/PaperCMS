@@ -1828,6 +1828,18 @@
     type-fest "2.19.0"
     typescript "4.8.3"
 
+"@techstack/theme@0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.12.tgz#f4c4b8aaa40814986c90bc358c98ee9372e1747e"
+  integrity sha512-FZwo1ZoTZ3IvFD+W/fKXhD58fQY+Q3Em3ctSxLyy13dkmysY8aO/3l/EHzPkBLjL842nmn3ylz2DKlLka4flyg==
+  dependencies:
+    fs-extra "10.1.0"
+    lodash "4.17.21"
+    lodash-es "4.17.21"
+    sade "1.8.1"
+    style-dictionary "3.7.1"
+    tinycolor2 "1.4.2"
+
 "@techstack/theme@0.2.9":
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.9.tgz#42842c236240b48e656ee82267789f28c94f0973"
