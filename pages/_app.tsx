@@ -3,8 +3,7 @@ import { ReactElement, ReactNode } from 'react';
 import { NextPage } from 'next';
 import { supabaseClient } from '@supabase/auth-helpers-nextjs';
 import { UserProvider } from '@supabase/auth-helpers-react';
-import {ThemeProvider} from "@techstack/components";
-import styled from 'styled-components';
+import { ThemeProvider } from '@techstack/components';
 
 import '../styles/global.scss';
 
@@ -18,19 +17,13 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-const StyledTest = styled.div`
-    ${p => console.log(p.theme)}
-`
-
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || (page => page);
 
   return (
     <UserProvider supabaseClient={supabaseClient}>
       <ThemeProvider theme={theme}>
-          <div>
-            {getLayout(<Component {...pageProps} />)}
-          </div>
+        <div>{getLayout(<Component {...pageProps} />)}</div>
       </ThemeProvider>
     </UserProvider>
   );
