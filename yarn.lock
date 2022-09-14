@@ -1645,14 +1645,14 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@supabase/auth-helpers-nextjs@^0.2.7":
+"@supabase/auth-helpers-nextjs@0.2.7":
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.2.7.tgz#27f89aed8eed365222edf66ab7372d1770fd846a"
   integrity sha512-3+UMfE+wXBKswnzVL/hg1IYt3+POay+/B/Fn2hV8MaiffRpDdOG8zDSOIwsiNUz4KVZYOVa8IPvyh2AJqXwfMQ==
   dependencies:
     "@supabase/auth-helpers-shared" "0.1.3"
 
-"@supabase/auth-helpers-react@^0.2.3":
+"@supabase/auth-helpers-react@0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-react/-/auth-helpers-react-0.2.3.tgz#909955ee63eb56bebfc11ee9c37ad63a602ceaf6"
   integrity sha512-r2XIajhZed4lvdoJ9sD/YNy/5b1Zturj2A9Ye2PcswBuuOkf1iAC+aAYPoSWllbgYpTC5hCHmcbG5yErcZyNmQ==
@@ -1702,7 +1702,7 @@
   dependencies:
     cross-fetch "^3.1.0"
 
-"@supabase/supabase-auth-helpers@^1.4.2":
+"@supabase/supabase-auth-helpers@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@supabase/supabase-auth-helpers/-/supabase-auth-helpers-1.4.2.tgz#c32d0973a943359dc640aeafddd9833e8e05c934"
   integrity sha512-XF1JM/W3dOTi26ohvXe0M8Y1Mkk0JIPvpHoXhLWnX0W7i1bbDSTGGuQCXdHVktFnw+GQKHj+X+xOB3oC7Zwd7w==
@@ -1711,7 +1711,7 @@
     jose "^4.8.1"
     tslib "^2.3.1"
 
-"@supabase/supabase-js@^1.35.3", "@supabase/supabase-js@^1.35.6":
+"@supabase/supabase-js@1.35.6", "@supabase/supabase-js@^1.35.3":
   version "1.35.6"
   resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-1.35.6.tgz#df5a2c132035ab9e5462ed474587902b3e767a66"
   integrity sha512-KDRXRr+kdGwruIUizZPALbe5YccMYFVyZJf1sFWKLncaLYSFiM6iKFnqCrNeQ4JFoZZiICkiTl1FUuai62jVpg==
@@ -2970,12 +2970,12 @@ convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
-cookie-cutter@^0.2.0:
+cookie-cutter@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/cookie-cutter/-/cookie-cutter-0.2.0.tgz#5988f598b68c060a00ec8524ad6e6aa193e72244"
   integrity sha512-eVyP5liHjDMCmGlp2OD+qoin5TJlwUBRjBKN8R2yJ3ePf8xqUtqmRP6e36ipe0nBm2lTiertH6iHPOptNQzAEw==
 
-cookie-light@^0.0.1:
+cookie-light@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/cookie-light/-/cookie-light-0.0.1.tgz#359308a2821b38b5758abb5ffb1fff2c5e3700db"
   integrity sha512-56X8DgtQLORzKqxSc2wiwOf2IlnjTHBHgvY3agIp47rzBh+guV5AMbgSlevJ+Mjpkhy/UlrSvLngOK2c1OPHFA==
@@ -4049,7 +4049,7 @@ grapheme-splitter@^1.0.4:
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
-graphql@^16.6.0:
+graphql@16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
   integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
@@ -6676,7 +6676,7 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-urql@^3.0.3:
+urql@3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/urql/-/urql-3.0.3.tgz#275631f487558354e090d9ffc4ea2030bd56c34a"
   integrity sha512-aVUAMRLdc5AOk239DxgXt6ZxTl/fEmjr7oyU5OGo8uvpqu42FkeJErzd2qBzhAQ3DyusoZIbqbBLPlnKo/yy2A==
