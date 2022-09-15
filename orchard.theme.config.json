@@ -2,5 +2,5 @@
   "outputDir": "/",
   "iconDir": "feather",
   "dblClickDelay": 500,
-  "srcDir": "node_modules/@techstack/components/"
+  "dbProvider": "supabase"
 }

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "orchard generate && next dev",
-    "build": "next build",
+    "build": "orchard generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,8 +12,8 @@
     "@supabase/auth-helpers-react": "0.2.3",
     "@supabase/supabase-auth-helpers": "1.4.2",
     "@supabase/supabase-js": "1.35.6",
-    "@techstack/theme": "0.2.12",
-    "@techstack/components": "0.4.9",
+    "@techstack/theme": "0.2.14",
+    "@techstack/components": "0.4.13",
     "jsonwebtoken": "8.5.1",
     "next": "12.3.0",
     "react": "18.2.0",

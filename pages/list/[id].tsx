@@ -1,10 +1,11 @@
 import { Box, Table } from '@techstack/components';
 import { useRouter } from 'next/router';
-import { ReactElement } from 'react';
+import {ReactElement} from 'react';
 import { GetServerSideProps } from 'next';
 
 import AdminLayout from '../../layouts/Admin';
-import supabase from '../../db/supabase';
+import DB from "../../db";
+import supabase from "../../db/supabase";
 
 interface Props {
   data: Array<any>;
@@ -15,17 +16,11 @@ const List = ({ data, error }: Props) => {
   const router = useRouter();
   const { id } = router.query;
 
-  console.log(Object.keys(data[0]), error);
-
   return (
-    <Box>
+    <Box w="full">
       This is a list for {id}
-      {/*// @ts-ignore*/}
       <Table
-        columns={Object.keys(data[0]).map(key => ({
-          Header: key,
-          accessor: key,
-        }))}
+        columns={Object.keys(data[0])}
         data={data}
       />
     </Box>
@@ -44,12 +39,12 @@ export const getServerSideProps: GetServerSideProps<
 > = async context => {
   const id = context.params?.id ?? 'null';
 
-  const { data, error } = await supabase.from(id).select('*');
+  const { data, error } = await DB().then(module => module.from(id).select("*"));
 
   return {
     props: {
       data,
       error,
-    }, // will be passed to the page component as props
+    }
   };
 };
