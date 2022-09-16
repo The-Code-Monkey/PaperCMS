@@ -36,7 +36,7 @@ export const getServerSideProps: GetServerSideProps<
 > = async context => {
   const id = context.params?.id ?? 'null';
 
-  const { data, error } = await DB().then(db => db.get(id))
+  const { data, error } = await DB().then(db => db.get(id));
 
   return {
     props: {
