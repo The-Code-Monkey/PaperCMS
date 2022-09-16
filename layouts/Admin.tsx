@@ -5,6 +5,8 @@ import {ReactNode, useEffect, useState} from "react";
 import { supabaseClient } from '@supabase/supabase-auth-helpers/nextjs'
 import supabase from "../db/supabase";
 import {PostgrestResponse} from "@supabase/postgrest-js/src/lib/types";
+import DB from "../db";
+import Db from "../db";
 
 interface Props {
     children: ReactNode
@@ -18,9 +20,9 @@ const AdminLayout = ({ children }: Props) => {
     const [routes, setRoutes] = useState<Array<string>>([]);
 
     const getData = async () => {
-        const {data, error}: PostgrestResponse<{ tablename: string }> = await supabase.rpc('get_all_table_name')
+        const {data, error} = await DB<{ tablename: string }>().then(db => db.dbFunction("get_all_table_name"));
 
-        if (error) throw new Error(error.code + error.message);
+        if (error) throw new Error(error);
 
         const tables: Array<string> = data?.map(table => table.tablename) ?? [];
         setRoutes(tables);
@@ -31,7 +33,6 @@ const AdminLayout = ({ children }: Props) => {
     }, [])
 
     const handleSignOut = async () => {
-        const { error } = await supabaseClient.auth.signOut();
     }
 
     console.log(router)

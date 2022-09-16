@@ -1,11 +1,11 @@
 import { Box, Table } from '@techstack/components';
 import { useRouter } from 'next/router';
-import {ReactElement} from 'react';
+import { ReactElement } from 'react';
 import { GetServerSideProps } from 'next';
 
 import AdminLayout from '../../layouts/Admin';
-import DB from "../../db";
-import supabase from "../../db/supabase";
+import DB from '../../db';
+import supabase from '../../db/supabase';
 
 interface Props {
   data: Array<any>;
@@ -17,12 +17,9 @@ const List = ({ data, error }: Props) => {
   const { id } = router.query;
 
   return (
-    <Box w="full">
+    <Box w='full'>
       This is a list for {id}
-      <Table
-        columns={Object.keys(data[0])}
-        data={data}
-      />
+      <Table columns={Object.keys(data[0])} data={data} />
     </Box>
   );
 };
@@ -39,12 +36,12 @@ export const getServerSideProps: GetServerSideProps<
 > = async context => {
   const id = context.params?.id ?? 'null';
 
-  const { data, error } = await DB().then(module => module.from(id).select("*"));
+  const { data, error } = await DB().then(db => db.get(id))
 
   return {
     props: {
       data,
       error,
-    }
+    },
   };
 };
