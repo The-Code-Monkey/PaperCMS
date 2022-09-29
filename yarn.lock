@@ -1645,10 +1645,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@supabase/auth-helpers-nextjs@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.2.8.tgz#60ad339ecd6179df8ed4481ce6d7ec2135e6b4f7"
-  integrity sha512-lGHHKkIHxEoTj6b2MJOdUGOU7rD+S/X+S0WtEnD4HD6d/Ku19UjUrR7AExE0Fa+tbTDfY1BY0o0ELn/yLNeAYQ==
+"@supabase/auth-helpers-nextjs@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.2.9.tgz#20b17d2046355d2bc808ba692e6a8bea63bb54b4"
+  integrity sha512-wDzQyYkaF6YKIfkiGo8PH56TaFs5WpwMqfSuGUFoN7LQLD6jaRaO2XMfGLtbcM2bQ/4RGWL0nRRbEB6nZ1dz7w==
   dependencies:
     "@supabase/auth-helpers-shared" "0.1.4"
 
