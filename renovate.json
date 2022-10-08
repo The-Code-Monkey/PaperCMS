@@ -9,6 +9,7 @@
     "group:recommended",
     "workarounds:all"
   ],
+  "automerge": true,
   "automergeStrategy": "squash",
   "labels": ["dependencies"],
   "vulnerabilityAlerts": {
