@@ -23,6 +23,7 @@
     {
       "matchPackagePatterns": ["@supabase/*"],
       "groupName": "supabase"
+    }
   ],
   "updateInternalDeps": true
 }
