@@ -21,7 +21,7 @@
       "groupName": "techstack mono repo"
     },
     {
-      "matchPackagePatterns": ["@supabase/*"],
+      "matchPackagePatterns": ["@supabase/*", "@supabase/supabase-*"],
       "groupName": "supabase"
     }
   ],
