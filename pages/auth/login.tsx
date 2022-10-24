@@ -1,9 +1,12 @@
-import { supabaseClient } from '@supabase/auth-helpers-nextjs';
-import { ChangeEvent, useState } from 'react';
+import {ChangeEvent, useState} from 'react';
 import { useRouter } from 'next/router';
+import {useSessionContext} from "@supabase/auth-helpers-react";
+import {Box, Input} from "@techstack/components";
 
 const Login = () => {
   const router = useRouter();
+  const { supabaseClient } = useSessionContext();
+
   const [form, setForm] = useState({ email: '', password: '' });
 
   const handleFieldUpdate = (e: ChangeEvent<HTMLInputElement>) => {
@@ -15,10 +18,12 @@ const Login = () => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
-    const { session, error } = await supabaseClient.auth.signIn({
+    const response = await supabaseClient.auth.signInWithPassword({
       email: form.email,
       password: form.password,
     });
+
+    const { data: { session }, error } = response
 
     if (!error && session?.access_token) {
       await router.push('/');
@@ -26,27 +31,25 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <Box<"form"> as="form" onSubmit={handleSubmit}>
       <label>
         Email address
-        <input
+        <Input
           type='email'
-          id='email'
           name='email'
           onChange={handleFieldUpdate}
         />
       </label>
       <label>
         Password
-        <input
+        <Input
           type='password'
-          id='password'
           name='password'
           onChange={handleFieldUpdate}
         />
       </label>
       <button>login</button>
-    </form>
+    </Box>
   );
 };
 
