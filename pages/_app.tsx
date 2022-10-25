@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
-import {ReactElement, ReactNode, useState} from 'react';
+import { ReactElement, ReactNode, useState } from 'react';
 import { NextPage } from 'next';
-import {createBrowserSupabaseClient} from '@supabase/auth-helpers-nextjs';
+import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 import { ConfigContext, ThemeProvider, Context } from '@techstack/components';
 
