@@ -1,7 +1,7 @@
 import {ChangeEvent, useState} from 'react';
 import { useRouter } from 'next/router';
 import {useSessionContext} from "@supabase/auth-helpers-react";
-import {Box, Input} from "@techstack/components";
+import {Box, Button, Input} from "@techstack/components";
 
 const Login = () => {
   const router = useRouter();
@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleFieldUpdate = (e: ChangeEvent<HTMLInputElement>) => {
     setForm(prevState => {
-      return { ...prevState, [e.target.name]: e.target.value };
+      return {...prevState, [e.target.name]: e.target.value};
     });
   };
 
@@ -31,7 +31,8 @@ const Login = () => {
   };
 
   return (
-    <Box<"form"> as="form" onSubmit={handleSubmit}>
+    <Box w={['3/4', '3/4', '1/2', '1/2']} d='flex' placeContent='center' mx='auto' flex='1' h='full'>
+    <Box<"form"> as="form" onSubmit={handleSubmit} flex='1' d='flex' gap='4' flexDirection='column'>
       <label>
         Email address
         <Input
@@ -48,7 +49,8 @@ const Login = () => {
           onChange={handleFieldUpdate}
         />
       </label>
-      <button>login</button>
+      <Button>login</Button>
+    </Box>
     </Box>
   );
 };
