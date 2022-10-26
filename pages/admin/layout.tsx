@@ -1,6 +1,7 @@
 import { Box } from '@techstack/components';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { ReactNode, useEffect, useState } from 'react';
 
 import useDB from '../../db';
@@ -16,7 +17,8 @@ const capitalizeFirstLetter = (
   first === undefined ? '' : first.toLocaleUpperCase(locale) + rest.join('');
 
 const AdminLayout = ({ children }: Props) => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
+  const { asPath: pathname } = useRouter();
   const [routes, setRoutes] = useState<Array<string>>([]);
   const DB = useDB<{ tablename: string }>();
 
