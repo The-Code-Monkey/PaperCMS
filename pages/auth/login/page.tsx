@@ -52,7 +52,7 @@ const Page = () => {
       >
         <label>
           Email address
-          <Input type='email' namme='email' onChange={handleFieldUpdate} />
+          <Input type='email' name='email' onChange={handleFieldUpdate} />
         </label>
         <label>
           Password
