@@ -5,7 +5,7 @@ import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 import { ConfigContext, ThemeProvider, Context } from '@techstack/components';
 
-import '../styles/global.scss';
+import './global.scss';
 import config from '../orchard.theme.config.json';
 import theme from '../theme';
 

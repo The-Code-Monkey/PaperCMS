@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useSessionContext } from '@supabase/auth-helpers-react';
 import { Box, Button, Input } from '@techstack/components';
 
-const Login = () => {
+const Page = () => {
   const router = useRouter();
   const { supabaseClient } = useSessionContext();
 
@@ -29,7 +29,7 @@ const Login = () => {
     } = response;
 
     if (!error && session?.access_token) {
-      await router.push('/');
+      await router.push('/admin');
     }
   };
 
@@ -64,4 +64,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Page;

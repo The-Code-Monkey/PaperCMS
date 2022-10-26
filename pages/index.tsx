@@ -1,18 +1,18 @@
-import { ReactElement } from 'react';
-import { withPageAuth } from '@supabase/auth-helpers-nextjs';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-import AdminLayout from '../layouts/Admin';
+const Index = () => {
+  const router = useRouter();
 
-import type { NextPageWithLayout } from './_app';
+  useEffect(() => {
+    const redirect = async () => {
+      await router.push('/admin');
+    };
 
-const Page: NextPageWithLayout = () => {
-  return <>Dashboard</>;
+    redirect();
+  }, [router]);
+
+  return null;
 };
 
-Page.getLayout = function getLayout(page: ReactElement) {
-  return <AdminLayout>{page}</AdminLayout>;
-};
-
-export const getServerSideProps = withPageAuth({ redirectTo: '/auth/login' });
-
-export default Page;
+export default Index;
