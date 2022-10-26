@@ -39,7 +39,6 @@ export const getServerSideProps: GetServerSideProps<
   // const { data, error } = await DB().then(db => db.get(id));
   const data = [];
 
-
   return {
     props: {
       data,
