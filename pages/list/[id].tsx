@@ -4,8 +4,8 @@ import { ReactElement } from 'react';
 import { GetServerSideProps } from 'next';
 
 import AdminLayout from '../../layouts/Admin';
-import DB from '../../db';
-import supabase from '../../db/supabase';
+// import DB from '../../db';
+// import supabase from '../../db/supabase';
 
 interface Props {
   data: Array<any>;
@@ -36,7 +36,9 @@ export const getServerSideProps: GetServerSideProps<
 > = async context => {
   const id = context.params?.id ?? 'null';
 
-  const { data, error } = await DB().then(db => db.get(id));
+  // const { data, error } = await DB().then(db => db.get(id));
+  const data = [];
+
 
   return {
     props: {
