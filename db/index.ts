@@ -3,8 +3,8 @@ import {useSessionContext} from "@supabase/auth-helpers-react";
 import {SignInWithPasswordCredentials, SignUpWithPasswordCredentials} from "@supabase/gotrue-js/src/lib/types";
 
 interface DbReturnType<T> {
-  signIn: (credentials: any, options: any) => any;
-  signUp: (credentials: any, options: any) => any;
+  signIn: (credentials: any, options?: any) => any;
+  signUp: (credentials: any, options?: any) => any;
   get: (table: string, columns?: string) => Promise<{ data: T[] | null; error: string | undefined }>;
   dbFunction: (funcName: string) => Promise<{ data: T[] | null, error: string | undefined }>;
 }
@@ -33,8 +33,6 @@ const DB = <T extends Record<string, unknown>>(): DbReturnType<T> => {
 
         const get: DbReturnType<T>['get'] = async (table, columns = "*") => {
           const { data, error } = await supabase.from(table).select(columns);
-
-          console.log(data);
 
           return new Promise(resolve => resolve({ data, error: error?.message }));
         }
