@@ -1,10 +1,16 @@
+'use client'
+
 import {Box} from "@techstack/components";
 import ListTable from "./ListTable";
 
-const List = () => {
+interface Props {
+  params: Record<string, string>
+}
+
+const List = ({ params }: Props) => {
   return (
-    <Box>
-      <ListTable />
+    <Box w="screenWidth">
+      <ListTable params={params} />
     </Box>
   );
 };

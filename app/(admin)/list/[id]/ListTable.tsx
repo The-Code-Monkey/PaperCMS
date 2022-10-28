@@ -1,33 +1,36 @@
 'use client'
 
 import {useSearchParams} from "next/navigation";
-import {useEffect, useState} from "react";
+import { use, useEffect, useState} from "react";
 import useDB from "../../../../db";
+import {Box, Table} from "@techstack/components";
 
-const ListTable = () => {
-  const params = useSearchParams()
-  const id = params.get('id')!;
+interface Props {
+  params: Record<string, string>
+}
 
-  const [data, setData] = useState<null | Array<any>>();
+const ListTable = ({ params }: Props) => {
+  console.log(params.id)
+
+  const id = params.id;
+
   const DB = useDB();
 
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await DB.get(id as string);
+  const getData = async (): Promise<Record<string, unknown>[] | null> => {
+    const { data } = await DB.get(id);
 
-      setData(data);
-    };
+    console.log(data)
 
-    if (id) {
-      getData();
-    }
-  }, [id, DB]);
+    return data;
+  };
+
+  const data = use(getData());
 
   return (
-    <div>
+    <Box>
       Table {id}
-      {data}
-    </div>
+      {data && <Table data={data} columns={Object.keys(data[0])} />}
+    </Box>
   )
 }
 
