@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/paper-cms.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/list/[id]/ListTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/list/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/[...supabase].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/auth/[...supabase].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.13" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2CTdW33KdSI8yedfQvdiAp7qhkH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/iv0706/code/paper-cms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/iv0706/code/paper-cms/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/app/auth/login" />
+      <recent name="$PROJECT_DIR$/app/admin" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="" />
+      <created>1658830536335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658830536335</updated>
+      <workItem from="1658830537773" duration="892000" />
+      <workItem from="1658841451436" duration="1256000" />
+      <workItem from="1658852608896" duration="834000" />
+      <workItem from="1658912890788" duration="1001000" />
+      <workItem from="1658915022891" duration="1694000" />
+      <workItem from="1659699605406" duration="3831000" />
+      <workItem from="1659968073134" duration="7256000" />
+      <workItem from="1662561805129" duration="347000" />
+      <workItem from="1662563025046" duration="491000" />
+      <workItem from="1662564525521" duration="396000" />
+      <workItem from="1662629221422" duration="23000" />
+      <workItem from="1662644154417" duration="289000" />
+      <workItem from="1662645035486" duration="3421000" />
+      <workItem from="1662719542106" duration="3315000" />
+      <workItem from="1662971656309" duration="8201000" />
+      <workItem from="1663146993349" duration="172000" />
+      <workItem from="1663163838880" duration="2136000" />
+      <workItem from="1663166803563" duration="1705000" />
+      <workItem from="1663168853807" duration="179000" />
+      <workItem from="1663230984422" duration="561000" />
+      <workItem from="1663246992631" duration="1002000" />
+      <workItem from="1663257477603" duration="3068000" />
+      <workItem from="1664537727878" duration="27000" />
+      <workItem from="1664538190820" duration="141000" />
+      <workItem from="1665139636992" duration="34000" />
+      <workItem from="1665143099732" duration="2229000" />
+      <workItem from="1666617656375" duration="1364000" />
+      <workItem from="1666623237751" duration="972000" />
+      <workItem from="1666626935668" duration="613000" />
+      <workItem from="1666693360705" duration="200000" />
+      <workItem from="1666694592629" duration="1136000" />
+      <workItem from="1666710416423" duration="71000" />
+      <workItem from="1666712164774" duration="13709000" />
+      <workItem from="1666862170652" duration="559000" />
+      <workItem from="1666870009765" duration="1592000" />
+      <workItem from="1666948818034" duration="3906000" />
+      <workItem from="1667225656332" duration="8728000" />
+      <workItem from="1667298902049" duration="4791000" />
+      <workItem from="1667317263980" duration="2688000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,60 +1,61 @@
-'use client';
+'use client'
 
-import { Box, Button, Input } from '@techstack/components';
-import { ChangeEvent, useState } from 'react';
-import { useRouter } from 'next/router';
+import {FormEvent} from 'react';
+import { useRouter } from 'next/navigation';
 
 import useDB from '../db';
 
+export interface AuthEvent extends FormEvent<HTMLFormElement> {
+  target: HTMLFormElement & {
+    elements: {
+      email: HTMLInputElement;
+      password: HTMLInputElement;
+    };
+  };
+}
+
 const Form = () => {
   const router = useRouter();
-  const [form, setForm] = useState({ email: '', password: '' });
+
   const DB = useDB();
 
-  const handleFieldUpdate = (e: ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    setForm(prevState => {
-      return { ...prevState, [e.target.name]: e.target.value };
-    });
-  };
+  const handleSubmit = async (event: AuthEvent) => {
+      event.preventDefault();
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+      const email = event.target.elements.email.value;
+      const password = event.target.elements.password.value;
 
-    const response = await DB.signIn({
-      email: form.email,
-      password: form.password,
-    });
+      const { data, error } = await DB.signIn({
+        email,
+        password,
+      });
 
-    const {
-      data: { session },
-      error,
-    } = response;
+      console.log(data, error)
 
-    if (!error && session?.access_token) {
-      await router.push('/');
+    if (error === null) {
+      await router.push('/admin');
     }
   };
 
   return (
-    <Box<'form'>
-      as='form'
+    <form
+      // as='form'
       onSubmit={handleSubmit}
-      flex='1'
-      d='flex'
-      gap='4'
-      flexDirection='column'
+      // flex='1'
+      // d='flex'
+      // gap='4'
+      // flexDirection='column'
     >
       <label>
         Email address
-        <Input type='email' name='email' onChange={handleFieldUpdate} />
+        <input type='email' name='email' />
       </label>
       <label>
         Password
-        <Input type='password' name='password' onChange={handleFieldUpdate} />
+        <input type='password' name='password' />
       </label>
-      <Button>login</Button>
-    </Box>
+      <button>login</button>
+    </form>
   );
 };
 
