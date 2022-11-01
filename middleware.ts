@@ -5,5 +5,5 @@ export const middleware = withMiddlewareAuth({
 });
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/admin/:path*", "/"],
 };
