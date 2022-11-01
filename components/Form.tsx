@@ -2,8 +2,8 @@
 
 import {Box, Button, Input} from "@techstack/components";
 import {ChangeEvent, useState} from "react";
-import useDB from '../../../db';
-import {useRouter} from "next/navigation";
+import useDB from '../db';
+import {useRouter} from "next/router";
 
 const Form =() => {
   const router = useRouter();
@@ -11,6 +11,7 @@ const Form =() => {
   const DB = useDB();
 
   const handleFieldUpdate = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault()
     setForm(prevState => {
       return { ...prevState, [e.target.name]: e.target.value };
     });
@@ -30,7 +31,7 @@ const Form =() => {
     } = response;
 
     if (!error && session?.access_token) {
-      await router.push('/admin');
+      await router.push('/');
     }
   };
 
