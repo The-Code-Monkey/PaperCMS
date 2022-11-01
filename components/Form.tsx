@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import {FormEvent} from 'react';
+import { FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 
 import useDB from '../db';
@@ -20,17 +20,17 @@ const Form = () => {
   const DB = useDB();
 
   const handleSubmit = async (event: AuthEvent) => {
-      event.preventDefault();
+    event.preventDefault();
 
-      const email = event.target.elements.email.value;
-      const password = event.target.elements.password.value;
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
 
-      const { data, error } = await DB.signIn({
-        email,
-        password,
-      });
+    const { data, error } = await DB.signIn({
+      email,
+      password,
+    });
 
-      console.log(data, error)
+    console.log(data, error);
 
     if (error === null) {
       await router.push('/admin');
