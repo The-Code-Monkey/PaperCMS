@@ -18,7 +18,7 @@
     "@techstack/components": "0.5.12",
     "@techstack/theme": "0.2.60",
     "jsonwebtoken": "8.5.1",
-    "next": "13.0.1-canary.0",
+    "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.55.0"
@@ -30,7 +30,7 @@
     "@types/react-dom": "18.0.8",
     "@typescript-eslint/eslint-plugin": "5.41.0",
     "encoding": "0.1.13",
-    "eslint-config-next": "13.0.1-canary.0",
+    "eslint-config-next": "13.0.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.2.1",
     "typescript": "4.8.4"

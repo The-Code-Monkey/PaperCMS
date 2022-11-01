@@ -1,12 +1,12 @@
 'use client'
 
-import {useSearchParams} from "next/navigation";
-import { use, useEffect, useState} from "react";
+import { use} from "react";
 import useDB from "../../../../db";
 import {Box, Table} from "@techstack/components";
+import {PageParams} from "../../../../utils/pageTypes";
 
 interface Props {
-  params: Record<string, string>
+  params: PageParams
 }
 
 const ListTable = ({ params }: Props) => {
@@ -17,9 +17,7 @@ const ListTable = ({ params }: Props) => {
   const DB = useDB();
 
   const getData = async (): Promise<Record<string, unknown>[] | null> => {
-    const { data } = await DB.get(id);
-
-    console.log(data)
+    const { data } = await DB.get(id as any);
 
     return data;
   };

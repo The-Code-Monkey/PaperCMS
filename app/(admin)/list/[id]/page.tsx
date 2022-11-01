@@ -2,15 +2,12 @@
 
 import {Box} from "@techstack/components";
 import ListTable from "./ListTable";
+import {PageProps} from "../../../../utils/pageTypes";
 
-interface Props {
-  params: Record<string, string>
-}
-
-const List = ({ params }: Props) => {
+const List = ({ params }: PageProps) => {
   return (
     <Box w="screenWidth">
-      <ListTable params={params} />
+      <ListTable params={params ?? {}} />
     </Box>
   );
 };

@@ -18,8 +18,7 @@ const Nav = () => {
   const getData = async (): Promise<Array<string>> => {
     const { data, error } = await DB.dbFunction('get_all_table_name');
 
-    return data?.map(table => table.tablename) ?? [];
-
+    return data?.map((table) => table.tablename) ?? [];
   };
 
   const routes = use(getData());

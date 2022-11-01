@@ -1,3 +1,5 @@
+'use client'
+
 import {Box} from "@techstack/components";
 import Form from './Form';
 
