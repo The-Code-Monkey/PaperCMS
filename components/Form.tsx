@@ -1,17 +1,18 @@
-'use client'
+'use client';
 
-import {Box, Button, Input} from "@techstack/components";
-import {ChangeEvent, useState} from "react";
+import { Box, Button, Input } from '@techstack/components';
+import { ChangeEvent, useState } from 'react';
+import { useRouter } from 'next/router';
+
 import useDB from '../db';
-import {useRouter} from "next/router";
 
-const Form =() => {
+const Form = () => {
   const router = useRouter();
   const [form, setForm] = useState({ email: '', password: '' });
   const DB = useDB();
 
   const handleFieldUpdate = (e: ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault()
+    e.preventDefault();
     setForm(prevState => {
       return { ...prevState, [e.target.name]: e.target.value };
     });
@@ -54,7 +55,7 @@ const Form =() => {
       </label>
       <Button>login</Button>
     </Box>
-  )
-}
+  );
+};
 
 export default Form;

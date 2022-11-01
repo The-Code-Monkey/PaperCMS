@@ -10,9 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/auth-helpers-nextjs": "0.4.2",
+    "@supabase/auth-helpers-nextjs": "0.4.4",
     "@supabase/auth-helpers-react": "0.3.1",
-    "@supabase/auth-ui-react": "0.2.2",
+    "@supabase/auth-ui-react": "0.2.3",
     "@supabase/supabase-auth-helpers": "1.4.2",
     "@supabase/supabase-js": "2.0.4",
     "@techstack/components": "0.5.12",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@techstack/tcm-cli": "0.2.59",
     "@types/js-cookie": "^3.0.2",
-    "@types/node": "18.11.7",
+    "@types/node": "18.11.9",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "@typescript-eslint/eslint-plugin": "5.41.0",

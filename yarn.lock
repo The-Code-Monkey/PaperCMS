@@ -1683,27 +1683,27 @@
   resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
   integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==
 
-"@supabase/auth-helpers-nextjs@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.4.2.tgz#75ec6386421db294cb9861301f9f882c9a7d61fe"
-  integrity sha512-66CVKuUem4HwD/Te0a0569+j/jE7M52c0fW5bBSsPIqD9u1m+h/cnVuQxw+Ij7gphh36tKkRfOc8Ivn42+k6bQ==
+"@supabase/auth-helpers-nextjs@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.4.4.tgz#5fd5a87ad27bdc5be3fbdc15a08fa84455409ba2"
+  integrity sha512-oLP383tf/rJabQPL9sb52g2EXpgVQvGsqce1rffnyayH4HL9niCESdVObl7t99/cbf2KrZI6hSstx9XrdRNOvA==
   dependencies:
-    "@supabase/auth-helpers-shared" "0.2.1"
+    "@supabase/auth-helpers-shared" "0.2.2"
 
 "@supabase/auth-helpers-react@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-react/-/auth-helpers-react-0.3.1.tgz#815493a294662c56b83c7dd51692dacd24329342"
   integrity sha512-g3SFv08Dz9FapNif/ZY1b7qKGlMJDyTLSayHBz3kb3FuYxg7aLWgQtydDhm5AGbc0XtvpIBuhGTIOVevwpdosA==
 
-"@supabase/auth-helpers-shared@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.2.1.tgz#920666e5dc2d8473a7e4e3500f9f6ddb1c322465"
-  integrity sha512-L54gCCD8xCV6mHta0vE7CLxJ7pisSlsd9KIWB1ENyfZ0baeU9H39AqNVyYcAoHBPrUaZYx877J4WYYoqwuyi+w==
-
-"@supabase/auth-ui-react@0.2.2":
+"@supabase/auth-helpers-shared@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-react/-/auth-ui-react-0.2.2.tgz#69c0e9a3847e07fc77400daf12559641655ce1c1"
-  integrity sha512-kuZ48iILdgdloUN0P3UV5c4zFoKGlzAfylJEazXuVzGPGTVddUjaZ6hWFIdYmT6XYO4unY04N255UtBjJvK/UA==
+  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.2.2.tgz#b004b3c95421da1971f7b5d6d5908b16aba164d3"
+  integrity sha512-p/8Suuw8IaKNDak0ZtO4jrKqEzRgTWevHcoL4WEoIKgGG4a2PPMhLsDTaZmfHMBJMIoyFIz4rZt9zkjMvpt7cw==
+
+"@supabase/auth-ui-react@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-react/-/auth-ui-react-0.2.3.tgz#2a7ef01e72bbf99b6f4192b3466299fdcf4bf2e9"
+  integrity sha512-qKeJVrzMpaufTY/oH5SglY6pJrLELi5UYkVZML3/INNo2fiQektEvNiHrbBc7ttaeuVnDejoZn5gsSJ559kNlw==
   dependencies:
     "@stitches/core" "^1.2.8"
     "@stitches/react" "^1.2.8"
@@ -2075,10 +2075,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.16.tgz#0eb3cce1e37c79619943d2fd903919fc30850601"
   integrity sha512-EQHhixfu+mkqHMZl1R2Ovuvn47PUw18azMJOTwSZr9/fhzHNGXAJ0ma0dayRVchprpCj0Kc1K1xKoWaATWF1qg==
 
-"@types/node@18.11.7":
-  version "18.11.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.7.tgz#8ccef136f240770c1379d50100796a6952f01f94"
-  integrity sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==
+"@types/node@18.11.9":
+  version "18.11.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.9.tgz#02d013de7058cea16d36168ef2fc653464cfbad4"
+  integrity sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
