@@ -1,7 +1,6 @@
-'use client'
+'use client';
 
 import { FormEvent } from 'react';
-
 import useDB from '../../../db';
 import {useRouter} from "next/router";
 import {Box, Input, Button} from "@techstack/components";
@@ -21,15 +20,15 @@ const Form = () => {
   const DB = useDB();
 
   const handleSubmit = async (event: AuthEvent) => {
-      event.preventDefault();
+    event.preventDefault();
 
-      const email = event.target.elements.email.value;
-      const password = event.target.elements.password.value;
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
 
-      const { data, error } = await DB.signIn({
-        email,
-        password,
-      });
+    const { data, error } = await DB.signIn({
+      email,
+      password,
+    });
 
     if (error === null) {
       await router.push('/')

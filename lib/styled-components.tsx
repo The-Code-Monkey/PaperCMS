@@ -3,7 +3,7 @@ import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
 export function useStyledComponentsRegistry() {
   const [styledComponentsStyleSheet] = React.useState(
-    () => new ServerStyleSheet(),
+    () => new ServerStyleSheet()
   );
 
   const styledComponentsFlushEffect = () => {
@@ -14,8 +14,8 @@ export function useStyledComponentsRegistry() {
   };
 
   const StyledComponentsRegistry = ({
-                                      children,
-                                    }: {
+    children,
+  }: {
     children: React.ReactNode;
   }) => (
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
