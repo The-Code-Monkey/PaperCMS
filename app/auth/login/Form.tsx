@@ -1,9 +1,10 @@
 'use client'
 
-import {FormEvent} from 'react';
-import { useRouter } from 'next/navigation';
+import { FormEvent } from 'react';
 
-import useDB from '../db';
+import useDB from '../../../db';
+import {useRouter} from "next/router";
+import {Box, Input, Button} from "@techstack/components";
 
 export interface AuthEvent extends FormEvent<HTMLFormElement> {
   target: HTMLFormElement & {
@@ -30,32 +31,30 @@ const Form = () => {
         password,
       });
 
-      console.log(data, error)
-
     if (error === null) {
-      await router.push('/admin');
+      await router.push('/')
     }
   };
 
   return (
-    <form
-      // as='form'
+    <Box<'form'>
+      as='form'
       onSubmit={handleSubmit}
-      // flex='1'
-      // d='flex'
-      // gap='4'
-      // flexDirection='column'
+      flex='1'
+      d='flex'
+      gap='4'
+      flexDirection='column'
     >
       <label>
         Email address
-        <input type='email' name='email' />
+        <Input type='email' name='email' />
       </label>
       <label>
         Password
-        <input type='password' name='password' />
+        <Input type='password' name='password' />
       </label>
-      <button>login</button>
-    </form>
+      <Button mt="3" variant="primary">login</Button>
+    </Box>
   );
 };
 

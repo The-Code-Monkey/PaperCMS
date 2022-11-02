@@ -1,0 +1,12 @@
+{
+  "color": {
+    "modes": {
+      "light": {
+        "primary": {
+          "value": "#90DBF4",
+          "makeShades": true
+        }
+      }
+    }
+  }
+}

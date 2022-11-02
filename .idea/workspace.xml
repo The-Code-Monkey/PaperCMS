@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/RootStyleRegistry.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/styled-components.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/src/colors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/src/defaultStyles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/list/[id]/ListTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/list/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orchard.theme.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/orchard.theme.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/variants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/theme/variants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +71,15 @@
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "yarn",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+    "ts.external.directory.path": "/Users/iv0706/code/paper-cms/node_modules/typescript/lib"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/auth/login" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/app/auth/login" />
       <recent name="$PROJECT_DIR$/app/admin" />
     </key>
   </component>
@@ -111,7 +129,7 @@
       <workItem from="1666948818034" duration="3906000" />
       <workItem from="1667225656332" duration="8728000" />
       <workItem from="1667298902049" duration="4791000" />
-      <workItem from="1667317263980" duration="2728000" />
+      <workItem from="1667317263980" duration="7640000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,9 @@
+{
+  "defaultStyles": {
+    "value": {
+      "button": {
+        "borderRadius": "2"
+      }
+    }
+  }
+}

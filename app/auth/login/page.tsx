@@ -1,17 +1,21 @@
-import Form from '../../../components/Form';
+'use client'
+
+import Form from './Form';
+import {Box} from "@techstack/components";
 
 const Page = () => {
   return (
-    <div
-      // w={['3/4', '3/4', '1/2', '1/2']}
-      // d='flex'
-      // placeContent='center'
-      // mx='auto'
-      // flex='1'
-      // h='full'
+    <Box
+      w={['3/4', '3/4', '1/2', '1/2']}
+      d='flex'
+      alignItems="center"
+      justifyContent="center"
+      mx='auto'
+      flex='1'
+      h='full'
     >
       <Form />
-    </div>
+    </Box>
   );
 };
 
