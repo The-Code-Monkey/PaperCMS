@@ -2,7 +2,7 @@
 
 import { FormEvent } from 'react';
 import useDB from '../../../db';
-import {useRouter} from "next/router";
+import {useRouter} from "next/navigation";
 import {Box, Input, Button} from "@techstack/components";
 
 export interface AuthEvent extends FormEvent<HTMLFormElement> {
