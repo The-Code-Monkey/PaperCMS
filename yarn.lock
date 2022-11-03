@@ -1538,10 +1538,10 @@
   resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
   integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==
 
-"@supabase/auth-helpers-nextjs@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.4.4.tgz#5fd5a87ad27bdc5be3fbdc15a08fa84455409ba2"
-  integrity sha512-oLP383tf/rJabQPL9sb52g2EXpgVQvGsqce1rffnyayH4HL9niCESdVObl7t99/cbf2KrZI6hSstx9XrdRNOvA==
+"@supabase/auth-helpers-nextjs@0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.4.5.tgz#1028eb10eb380467da9064c40c9e2414abd9473b"
+  integrity sha512-LNn7FX2/Bm/nBQVfRlG9zVoueikbxIz20yFfR391XPQVjL4xppPgMC+f8j0rm2CT4PCf9gfQanyqlStbMd+Tzw==
   dependencies:
     "@supabase/auth-helpers-shared" "0.2.2"
 
