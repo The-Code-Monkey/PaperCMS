@@ -1,4 +1,4 @@
-import {ITheme, IThemeColorsType, ModeThemeType} from "@techstack/components";
+import { ITheme, IThemeColorsType, ModeThemeType } from '@techstack/components';
 
 import colors from './colors';
 import borders from './dist/borders';
@@ -22,26 +22,26 @@ import time from './dist/time';
 import variants from './variants';
 
 const theme: ITheme<typeof variants> = {
-    colors: colors as IThemeColorsType & ModeThemeType,
-    variants,
-    fonts: fonts.fonts.family,
-    ...borders,
-    ...breakpoints,
-    ...breakpointSizes,
-    ...maxWidths,
-    ...lineHeights,
-    ...shadows,
-    ...elevation,
-    ...time,
-    ...sizes,
-    ...panelSizes,
-    ...fontSizes,
-    ...fontWeights,
-    ...radii,
-    ...opacity,
-    ...space,
-    ...spacing,
-    ...defaultStyles,
+  colors: colors as IThemeColorsType & ModeThemeType,
+  variants,
+  fonts: fonts.fonts.family,
+  ...borders,
+  ...breakpoints,
+  ...breakpointSizes,
+  ...maxWidths,
+  ...lineHeights,
+  ...shadows,
+  ...elevation,
+  ...time,
+  ...sizes,
+  ...panelSizes,
+  ...fontSizes,
+  ...fontWeights,
+  ...radii,
+  ...opacity,
+  ...space,
+  ...spacing,
+  ...defaultStyles,
 };
 
 export default theme;

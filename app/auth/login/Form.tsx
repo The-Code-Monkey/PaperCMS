@@ -1,9 +1,10 @@
 'use client';
 
 import { FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
+import { Box, Input, Button } from '@techstack/components';
+
 import useDB from '../../../db';
-import {useRouter} from "next/navigation";
-import {Box, Input, Button} from "@techstack/components";
 
 export interface AuthEvent extends FormEvent<HTMLFormElement> {
   target: HTMLFormElement & {
@@ -31,7 +32,7 @@ const Form = () => {
     });
 
     if (!error) {
-      router.push('/')
+      router.push('/');
     }
   };
 
@@ -52,7 +53,9 @@ const Form = () => {
         Password
         <Input type='password' name='password' />
       </label>
-      <Button mt="3" variant="primary">login</Button>
+      <Button mt='3' variant='primary'>
+        login
+      </Button>
     </Box>
   );
 };

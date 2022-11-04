@@ -1,3 +1,3 @@
 export const AuthPages = {
-    signIn: '/auth/signin',
-}
+  signIn: '/auth/signin',
+};

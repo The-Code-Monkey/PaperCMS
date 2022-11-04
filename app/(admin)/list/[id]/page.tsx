@@ -1,12 +1,14 @@
-'use client'
+'use client';
 
-import {Box} from "@techstack/components";
-import ListTable from "./ListTable";
-import {PageProps} from "../../../../utils/pageTypes";
+import { Box } from '@techstack/components';
+
+import { PageProps } from '../../../../utils/pageTypes';
+
+import ListTable from './ListTable';
 
 const List = ({ params }: PageProps) => {
   return (
-    <Box w="screenWidth">
+    <Box w='screenWidth'>
       <ListTable params={params ?? {}} />
     </Box>
   );

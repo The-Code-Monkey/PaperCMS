@@ -8,7 +8,7 @@ import { cookies, headers } from 'next/headers';
 import RootStyleRegistry from './RootStyleRegistry';
 import { Provider } from './provider';
 
-import './global.scss'
+import './global.scss';
 
 function createServerSupabaseClient<
   Database = any,

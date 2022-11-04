@@ -1,11 +1,12 @@
-'use client'
+'use client';
 
-import { useStyledComponentsRegistry } from '../lib/styled-components';
 import { useServerInsertedHTML } from 'next/navigation';
 
+import { useStyledComponentsRegistry } from '../lib/styled-components';
+
 export default function RootStyleRegistry({
-                                            children,
-                                          }: {
+  children,
+}: {
   children: React.ReactNode;
 }) {
   const [StyledComponentsRegistry, styledComponentsFlushEffect] =

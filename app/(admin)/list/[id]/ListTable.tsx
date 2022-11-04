@@ -1,16 +1,17 @@
-'use client'
+'use client';
 
-import { use} from "react";
-import useDB from "../../../../db";
-import {Box, Table} from "@techstack/components";
-import {PageParams} from "../../../../utils/pageTypes";
+import { use } from 'react';
+import { Box, Table } from '@techstack/components';
+
+import useDB from '../../../../db';
+import { PageParams } from '../../../../utils/pageTypes';
 
 interface Props {
-  params: PageParams
+  params: PageParams;
 }
 
 const ListTable = ({ params }: Props) => {
-  console.log(params.id)
+  console.log(params.id);
 
   const id = params.id;
 
@@ -29,7 +30,7 @@ const ListTable = ({ params }: Props) => {
       Table {id}
       {data && <Table data={data} columns={Object.keys(data[0])} />}
     </Box>
-  )
-}
+  );
+};
 
-export default ListTable
+export default ListTable;
