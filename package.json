@@ -19,7 +19,7 @@
     "@techstack/theme": "0.2.62",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "8.5.1",
-    "next": "13.0.1",
+    "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.56.0"
@@ -33,7 +33,7 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "encoding": "0.1.13",
-    "eslint-config-next": "13.0.1",
+    "eslint-config-next": "13.0.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.2.1",
