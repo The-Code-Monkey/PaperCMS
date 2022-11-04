@@ -14,11 +14,11 @@ const MyApp = async ({ children }: { children: ReactNode }) => {
         <link rel='icon' href='/favicon.ico' />
       </head>
       <body>
-      <Provider>
-        {/*<RootStyleRegistry>*/}
+        <Provider>
+          {/*<RootStyleRegistry>*/}
           {children}
-        {/*</RootStyleRegistry>*/}
-      </Provider>
+          {/*</RootStyleRegistry>*/}
+        </Provider>
       </body>
     </html>
   );
