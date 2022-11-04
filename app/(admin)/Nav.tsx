@@ -1,27 +1,33 @@
-'use client'
+'use client';
 
-import {Box} from "@techstack/components";
-import Link from "next/link";
-import {usePathname} from "next/navigation";
-import useDB from "../../db";
-import {use} from "react";
+import { Box } from '@techstack/components';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { use } from 'react';
 
-const capitalizeFirstLetter = (
-  [first, ...rest]: any
-) =>
+import useDB from '../../db';
+import { DbReturnType } from '../../db/types';
+
+const capitalizeFirstLetter = ([first, ...rest]: any) =>
   first === undefined ? '' : first.toUpperCase() + rest.join('');
+
+const getData = async (
+  DB: DbReturnType<'products', { tablename: string }, 'get_all_table_name'>
+): Promise<Array<string>> => {
+  const { data, error } = await DB.dbFunction('get_all_table_name');
+
+  if (error) {
+    throw new Error(`Fetch table names: ${error}`);
+  }
+
+  return data?.map(table => table.tablename) ?? [];
+};
 
 const Nav = () => {
   const pathname = usePathname();
   const DB = useDB<{ tablename: string }>();
 
-  const getData = async (): Promise<Array<string>> => {
-    const { data, error } = await DB.dbFunction('get_all_table_name');
-
-    return data?.map((table) => table.tablename) ?? [];
-  };
-
-  const routes = use(getData());
+  const routes = use(getData(DB));
 
   const handleSignOut = async () => {};
 
@@ -59,7 +65,7 @@ const Nav = () => {
         </Box>
       </Box>
     </aside>
-  )
-}
+  );
+};
 
 export default Nav;

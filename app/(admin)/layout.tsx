@@ -1,14 +1,14 @@
-'use client'
-
 import { ReactNode } from 'react';
+
 import Nav from './Nav';
+
+import '../global.scss';
 
 interface Props {
   children: ReactNode;
 }
 
-const AdminLayout = ({ children }: Props) => {
-
+const AdminLayout = async ({ children }: Props) => {
   return (
     <div className='wrapper'>
       <Nav />

@@ -1,5 +1,5 @@
-import { withMiddlewareAuth } from "@supabase/auth-helpers-nextjs";
-import {NextRequest, NextResponse} from "next/server";
+import { withMiddlewareAuth } from '@supabase/auth-helpers-nextjs';
+import { NextRequest, NextResponse } from 'next/server';
 
 export const middleware = (request: NextRequest) => {
   if (request.nextUrl.pathname.startsWith('/auth/')) {
@@ -7,10 +7,10 @@ export const middleware = (request: NextRequest) => {
   }
 
   withMiddlewareAuth({
-    redirectTo: "/auth/login",
+    redirectTo: '/auth/login',
   });
-}
+};
 
 export const config = {
-  matcher: ["/:path*"],
+  matcher: ['/:path*'],
 };

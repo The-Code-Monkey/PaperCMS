@@ -30,8 +30,8 @@ const Form = () => {
       password,
     });
 
-    if (error === null) {
-      await router.push('/')
+    if (!error) {
+      router.push('/')
     }
   };
 
