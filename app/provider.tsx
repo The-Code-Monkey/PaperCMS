@@ -8,11 +8,7 @@ import { useState } from 'react';
 import theme from '../theme';
 import config from '../orchard.theme.config.json';
 
-export const Provider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+export const Provider = ({ children }: { children: React.ReactNode }) => {
   const [supabaseClient] = useState(() => createBrowserSupabaseClient());
 
   return (

@@ -11,8 +11,6 @@ interface Props {
 }
 
 const ListTable = ({ params }: Props) => {
-  console.log(params.id);
-
   const id = params.id;
 
   const DB = useDB();

@@ -24,7 +24,7 @@ const getData = async (
 };
 
 const Nav = () => {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? '/';
   const DB = useDB<{ tablename: string }>();
 
   const routes = use(getData(DB));
