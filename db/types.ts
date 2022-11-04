@@ -37,4 +37,5 @@ export interface DbReturnType<
   dbFunction: (
     funcName: F
   ) => Promise<{ data: R[] | null; error: string | undefined }>;
+  type: string;
 }

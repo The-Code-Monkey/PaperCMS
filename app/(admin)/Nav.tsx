@@ -3,7 +3,7 @@
 import { Box } from '@techstack/components';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { use } from 'react';
+import {use, useEffect} from 'react';
 
 import useDB from '../../db';
 import { DbReturnType } from '../../db/types';
@@ -24,6 +24,7 @@ const getData = async (
 };
 
 const Nav = () => {
+  console.log("render")
   const pathname = usePathname() ?? '/';
   const DB = useDB<{ tablename: string }>();
 

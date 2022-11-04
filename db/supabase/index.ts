@@ -12,7 +12,7 @@ type Functions = keyof Database['public']['Functions'];
 
 type Tables = keyof Database['public']['Tables'];
 
-const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
+const useGetSupabase = <R extends Record<string, unknown>>(): DbReturnType<
   Tables,
   R,
   Functions
@@ -63,7 +63,7 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     };
   };
 
-  return { signIn, signUp, get, dbFunction };
+  return { signIn, signUp, get, dbFunction, type: 'supabase' };
 };
 
-export default getSupabase;
+export default useGetSupabase;

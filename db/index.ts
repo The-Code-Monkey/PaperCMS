@@ -1,22 +1,22 @@
 import config from '../orchard.theme.config.json';
 
-import getSupabase from './supabase';
+import useGetSupabase from './supabase';
 
-const DB = <
+const useDB = <
   R extends Record<string, unknown>,
   T extends string = '',
   F extends string = ''
 >() => {
-  const getDB = () => {
+  const useGetDB = () => {
     switch (config.dbProvider) {
       case 'supabase':
       default: {
-        return getSupabase<R>();
+        return useGetSupabase<R>();
       }
     }
   };
 
-  return getDB();
+  return useGetDB();
 };
 
-export default DB;
+export default useDB;

@@ -8,7 +8,7 @@ interface Props {
   children: ReactNode;
 }
 
-const AdminLayout = async ({ children }: Props) => {
+const AdminLayout = ({ children }: Props) => {
   return (
     <div className='wrapper'>
       <Nav />
