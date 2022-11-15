@@ -10,11 +10,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/auth-helpers-nextjs": "0.5.1",
+    "@supabase/auth-helpers-nextjs": "0.5.2",
     "@supabase/auth-helpers-react": "0.3.1",
     "@supabase/auth-ui-react": "0.2.6",
     "@supabase/supabase-auth-helpers": "1.4.2",
-    "@supabase/supabase-js": "2.0.6",
+    "@supabase/supabase-js": "2.1.0",
     "@techstack/components": "0.5.28",
     "@techstack/theme": "0.2.69",
     "js-cookie": "^3.0.1",
