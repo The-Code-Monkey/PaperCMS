@@ -1718,24 +1718,24 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tanstack/react-table@8.5.30":
-  version "8.5.30"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.5.30.tgz#5be6f8ead1f8c8076f497c253fe28d2f53d9dd9f"
-  integrity sha512-CyzVzd6T5qO2aznyHsjlKgY5Zy9YYd61EtnJjI8o9ibgiurCAUN6QMGsvKPpdu+MVbqEtzkd3sjbhN2BNbj8Og==
+"@tanstack/react-table@8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.6.0.tgz#c521621f52712c33aa8db3941cd5bcafd4de694b"
+  integrity sha512-n+8dFkfwmQgEiT+W5fmN5B7UaZNpFEAtbAxx2IJTUwPIMHAUKhlE+ENp7i9/e6XV0zBayGMBSe+CZXvymZyHSg==
   dependencies:
-    "@tanstack/table-core" "8.5.30"
+    "@tanstack/table-core" "8.6.0"
 
-"@tanstack/table-core@8.5.30":
-  version "8.5.30"
-  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.5.30.tgz#188d3974c282ae2dce90942eac251301d227f957"
-  integrity sha512-3IhJVOpX7EDiAa2BcXowEJHOflmGI/hHhVY8UpEmtNxvDWo2QK7ohSXPndz35GK36mNoMXX4a5UA9BbVU1A0aw==
+"@tanstack/table-core@8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.6.0.tgz#1b12c07bd3283ba98a4ca7c872b8ac91918001e5"
+  integrity sha512-MHqITGrrGnPNWWgnFuRqIzl+/pHjzv54JTpb0UFymFTH79/bLC33mO3dKs7lx55dI43dTzhWz+e88vnJgXF7+w==
 
-"@techstack/components@0.5.45":
-  version "0.5.45"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.45.tgz#7fedf6ebf8c9f080901b4ba9d7e1013eadcfb372"
-  integrity sha512-XsF33YxiT3sbw2OLX7VGoJPnDopWpA5cLaxIJ16ZpvOvQu3AmDIMp2PsFctYGPvmXN12BrxW+igwuLKlGH3zXQ==
+"@techstack/components@0.5.46":
+  version "0.5.46"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.46.tgz#550fd965628f03ab840a54884fa1ee22a81ede8e"
+  integrity sha512-/TAjPVKf7GKo+X7LlQqueOZian4c7o9K+6fvH8g3RRaeCSiNXV2Rvw5C+Uu75qkUHxJkXo56RLIh9CZOTpXfdg==
   dependencies:
-    "@tanstack/react-table" "8.5.30"
+    "@tanstack/react-table" "8.6.0"
     "@techstack/memoize" "0.2.80"
     "@techstack/react-feather" "0.2.80"
     "@techstack/react-lazy-named" "0.2.79"
