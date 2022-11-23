@@ -15,8 +15,8 @@
     "@supabase/auth-ui-react": "0.2.6",
     "@supabase/supabase-auth-helpers": "1.4.2",
     "@supabase/supabase-js": "2.1.1",
-    "@techstack/components": "0.5.46",
-    "@techstack/theme": "0.2.80",
+    "@techstack/components": "0.5.47",
+    "@techstack/theme": "0.2.81",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "8.5.1",
     "next": "13.0.2",
@@ -25,7 +25,7 @@
     "sass": "1.56.1"
   },
   "devDependencies": {
-    "@techstack/tcm-cli": "0.2.78",
+    "@techstack/tcm-cli": "0.2.79",
     "@types/js-cookie": "^3.0.2",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
