@@ -1730,17 +1730,17 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.6.0.tgz#1b12c07bd3283ba98a4ca7c872b8ac91918001e5"
   integrity sha512-MHqITGrrGnPNWWgnFuRqIzl+/pHjzv54JTpb0UFymFTH79/bLC33mO3dKs7lx55dI43dTzhWz+e88vnJgXF7+w==
 
-"@techstack/components@0.5.46":
-  version "0.5.46"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.46.tgz#550fd965628f03ab840a54884fa1ee22a81ede8e"
-  integrity sha512-/TAjPVKf7GKo+X7LlQqueOZian4c7o9K+6fvH8g3RRaeCSiNXV2Rvw5C+Uu75qkUHxJkXo56RLIh9CZOTpXfdg==
+"@techstack/components@0.5.47":
+  version "0.5.47"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.47.tgz#a7eb26a044b88e0e6f085e5ac22937345fb7d1f2"
+  integrity sha512-xNJu7Vm4IDDCAB7FhJPHe6lnqixv1oZ0+LphXkJJCXSx1LNw6dy+xCpj7rPWdMZ8zoiIlJgFn3lVKs5mLAdA3A==
   dependencies:
     "@tanstack/react-table" "8.6.0"
-    "@techstack/memoize" "0.2.80"
-    "@techstack/react-feather" "0.2.80"
-    "@techstack/react-lazy-named" "0.2.79"
-    "@techstack/styled-system" "0.2.83"
-    "@techstack/theme" "0.2.80"
+    "@techstack/memoize" "0.2.81"
+    "@techstack/react-feather" "0.2.81"
+    "@techstack/react-lazy-named" "0.2.80"
+    "@techstack/styled-system" "0.2.84"
+    "@techstack/theme" "0.2.81"
     "@types/react-table" "7.7.12"
     classnames "2.3.2"
     csstype "3.1.1"
@@ -1752,39 +1752,39 @@
     react-virtual "2.10.4"
     styled-components "5.3.6"
 
-"@techstack/memoize@0.2.80":
-  version "0.2.80"
-  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.80.tgz#afc5738c219acf902f0a2241dcd15039c1844a99"
-  integrity sha512-PBMyXzDaB2+8HE0VYfQ2SiZ/hSzqDy3BmO+K1YK/u4Yqi0wLFEU+8b+jb8wRi9mnaMccsn3600d84KENepulwA==
+"@techstack/memoize@0.2.81":
+  version "0.2.81"
+  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.81.tgz#50d740a5af1da3baf1d9df693658d7491772d1c7"
+  integrity sha512-3KCVMjjDloG1sz+Qdzk1uDvxHb+Eg2aTHOvbU8n69AnBpRqe7mXwS6FUsrp9EpXDVTzLZPDxV8l2qB8PzdIcBA==
 
-"@techstack/react-feather@0.2.80":
-  version "0.2.80"
-  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.2.80.tgz#8a96d0272092cbaa41902894a87c00751accdb61"
-  integrity sha512-OV6bVJclSmpzODyzqDNarFAhR6ZXkT+xjHhYsemAVwMltMw6pWCnAmWF4Sppg1SJS+5TX6Ps4+i47XagrK7Kiw==
+"@techstack/react-feather@0.2.81":
+  version "0.2.81"
+  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.2.81.tgz#fc2e9dd4f49bf8c2e87ab93ce506d458f325876d"
+  integrity sha512-yA0gOjQQHO6DEy+SBFFR5u2LN+Gi1pNlCHd9/FWl7dgcCjCZMKw7QB1se++Y1/F94v8bMzOrrrKkPeMdHUOB1w==
   dependencies:
-    "@techstack/react-lazy-named" "0.2.79"
+    "@techstack/react-lazy-named" "0.2.80"
 
-"@techstack/react-lazy-named@0.2.79":
-  version "0.2.79"
-  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.2.79.tgz#8f86e54593441202b3b44c6fecf116046c27fe54"
-  integrity sha512-e/tuoJfqc26MSyre4/qCw4TEXrdb0pK44j6QsdZJC4V9iKbhB669ElT5X1cgC/BkhIbPSqK7xmVKGi3MWl7jmA==
+"@techstack/react-lazy-named@0.2.80":
+  version "0.2.80"
+  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.2.80.tgz#b5264428b5a4cb7e810c53e2507a9dbe7fb2676c"
+  integrity sha512-uKR8pueIAJXUdvBrSrE1kINccRI39ksn0ybgxD+6X2ijx3nyebpCRZmOxRIRTATlZBEq7Ia1yA/OxJ5WK/HipQ==
   dependencies:
     lodash "4.17.21"
     lodash-es "4.17.21"
 
-"@techstack/styled-system@0.2.83":
-  version "0.2.83"
-  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.83.tgz#d9c0ef266ec4d79aa15c99b5b0b63e5e9b20820a"
-  integrity sha512-KnRgG5g+up+TR5WbIejFBmhUrd+9yGxTRdsfWFnEx7wp9oAx/T7VpA4oTwomPP52/wpFjzKFMfb8jR/aExj/6w==
+"@techstack/styled-system@0.2.84":
+  version "0.2.84"
+  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.84.tgz#a558c6d4126de23f904ab29478f486def134e414"
+  integrity sha512-nKStU69J1NMmXrI4gNM8dbc36dPHomWGWQyZptxRolsSsXj7sLHzX00FcqLyMKHYw+2V8B4CgAxetu5Cv4kS0Q==
   dependencies:
     "@emotion/is-prop-valid" "1.2.0"
-    "@techstack/memoize" "0.2.80"
+    "@techstack/memoize" "0.2.81"
     csstype "3.1.1"
 
-"@techstack/tcm-cli@0.2.78":
-  version "0.2.78"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.2.78.tgz#27524e595d9dc4566c7a43bb03006f2884a1dd03"
-  integrity sha512-jnVd7f6Lc1vws7adrPqf5EDS4V63ni57crePLfamP8oIXInVkPkLIFi4AsHhr1YvXLM4wnkspFaQ6f8GR62t+g==
+"@techstack/tcm-cli@0.2.79":
+  version "0.2.79"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.2.79.tgz#3b311c25748a099861a1324679c47f2bab80b1a8"
+  integrity sha512-p8Pm/e9PvvMYEfZ8FyyvzVTFpG3wP1BabIqYLky7BGPKcr/9k4CV2+IE2Y1HKNsfhp371Rb5tXgKxzBj7Q1QFw==
   dependencies:
     "@rollup/plugin-babel" "6.0.2"
     "@types/jest" "29.2.3"
@@ -1818,7 +1818,7 @@
     ora "6.1.2"
     pascal-case "3.1.2"
     postcss "8.4.19"
-    prettier "2.7.1"
+    prettier "2.8.0"
     progress-estimator "0.3.0"
     regenerator-runtime "0.13.11"
     sade "1.8.1"
@@ -1832,10 +1832,10 @@
     type-fest "3.2.0"
     typescript "4.9.3"
 
-"@techstack/theme@0.2.80":
-  version "0.2.80"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.80.tgz#7477759e19e4beb859f5108d5d7f13c2021a778c"
-  integrity sha512-D9cewgc4KCs32f8T9HfU3BN+ipTbpEuT1XVSpJoPJYUsweE2Q7ywn5gmFqOrrYiWDDxWX/7Z3nJ5QuBBaCorVA==
+"@techstack/theme@0.2.81":
+  version "0.2.81"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.81.tgz#8d520df1762a6f85504c9a5f65cf67ad7282e59e"
+  integrity sha512-YVE5bfkffTgzyHnQHdLOfpMZVgFJo/16oIgfCZYIh13aQuV+0bfyXVlyPn93e6+fmyhSZH2QoG73u8b8cWk5Tg==
   dependencies:
     fs-extra "10.1.0"
     lodash "4.17.21"
@@ -5747,10 +5747,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
-  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
+prettier@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.0.tgz#c7df58393c9ba77d6fba3921ae01faf994fb9dc9"
+  integrity sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==
 
 pretty-format@^29.0.0, pretty-format@^29.2.1:
   version "29.2.1"
