@@ -1718,24 +1718,24 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tanstack/react-table@8.6.0":
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.6.0.tgz#c521621f52712c33aa8db3941cd5bcafd4de694b"
-  integrity sha512-n+8dFkfwmQgEiT+W5fmN5B7UaZNpFEAtbAxx2IJTUwPIMHAUKhlE+ENp7i9/e6XV0zBayGMBSe+CZXvymZyHSg==
+"@tanstack/react-table@8.7.0":
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.7.0.tgz#853fae74db6bf49738d0f18e4d507b00262fc09c"
+  integrity sha512-VJ+9rsymDLaSU35rWOfX0bwNXnpW1i+T14wi+sHx8lxwAsfg6IY1Yw7FPfGADvUFP5eQn2t4nlohAJd+IoEj/Q==
   dependencies:
-    "@tanstack/table-core" "8.6.0"
+    "@tanstack/table-core" "8.7.0"
 
-"@tanstack/table-core@8.6.0":
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.6.0.tgz#1b12c07bd3283ba98a4ca7c872b8ac91918001e5"
-  integrity sha512-MHqITGrrGnPNWWgnFuRqIzl+/pHjzv54JTpb0UFymFTH79/bLC33mO3dKs7lx55dI43dTzhWz+e88vnJgXF7+w==
+"@tanstack/table-core@8.7.0":
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.0.tgz#046e376cd536cd53727a91a880345f92d3ec5859"
+  integrity sha512-DRiRbOAmDHapzUBd4/C4Yy+FTug4fdGp5sdZWWfCq4wxRoaXQraQgbzmK23a3QcbwLFtLeNezPkZrqbJWuX+VA==
 
-"@techstack/components@0.5.48":
-  version "0.5.48"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.48.tgz#1a0620e156c0b661311438bcd9e1df1c7b46a3cd"
-  integrity sha512-fwNDZlIFPnXSLeQ6PfykefooNOjY8fjt8wB+2ueVCspZHh32imPt6blcNvgrWY2td5o12XIa1MjMOa62uP+qXg==
+"@techstack/components@0.5.49":
+  version "0.5.49"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.49.tgz#a4fd10801b0d7caaf4147d2d9d235e0b90edbcf7"
+  integrity sha512-gz9wKRrkuxPD7MVCoSUUZQPxJLRGYBj9wGPbLeMA89rzBJfdup+Dn128tbV31svk9KQbqnHm2mS3m6sNc6MqWA==
   dependencies:
-    "@tanstack/react-table" "8.6.0"
+    "@tanstack/react-table" "8.7.0"
     "@techstack/memoize" "0.2.82"
     "@techstack/react-feather" "0.2.82"
     "@techstack/react-lazy-named" "0.2.81"
