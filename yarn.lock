@@ -1730,17 +1730,17 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.0.tgz#046e376cd536cd53727a91a880345f92d3ec5859"
   integrity sha512-DRiRbOAmDHapzUBd4/C4Yy+FTug4fdGp5sdZWWfCq4wxRoaXQraQgbzmK23a3QcbwLFtLeNezPkZrqbJWuX+VA==
 
-"@techstack/components@0.5.49":
-  version "0.5.49"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.49.tgz#a4fd10801b0d7caaf4147d2d9d235e0b90edbcf7"
-  integrity sha512-gz9wKRrkuxPD7MVCoSUUZQPxJLRGYBj9wGPbLeMA89rzBJfdup+Dn128tbV31svk9KQbqnHm2mS3m6sNc6MqWA==
+"@techstack/components@0.5.50":
+  version "0.5.50"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.50.tgz#8782892f42a0d6149d4fcf806ec159750da3e0d8"
+  integrity sha512-6fJspqaKFWHDKXYXfjVMX9KTDulrcVL3RjAIWBWAoZvtXv4RuMdL7eX+YIgHySfNGVyIzrjVs3p/9E/J7qE1Xw==
   dependencies:
     "@tanstack/react-table" "8.7.0"
-    "@techstack/memoize" "0.2.82"
-    "@techstack/react-feather" "0.2.82"
-    "@techstack/react-lazy-named" "0.2.81"
-    "@techstack/styled-system" "0.2.85"
-    "@techstack/theme" "0.2.82"
+    "@techstack/memoize" "0.2.83"
+    "@techstack/react-feather" "0.2.83"
+    "@techstack/react-lazy-named" "0.2.82"
+    "@techstack/styled-system" "0.2.86"
+    "@techstack/theme" "0.2.83"
     "@types/react-table" "7.7.12"
     classnames "2.3.2"
     csstype "3.1.1"
@@ -1752,39 +1752,39 @@
     react-virtual "2.10.4"
     styled-components "5.3.6"
 
-"@techstack/memoize@0.2.82":
-  version "0.2.82"
-  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.82.tgz#f642d3973e197268aa1c0ed0e564589572dd2e08"
-  integrity sha512-df6OKkPNLlW1jMMoEzJKJak9GRJkFxbptc5ohubzSzWIDmnvU1PMa5JrTclo09hhCWUDzYArFGcPt1uRPAxIqw==
+"@techstack/memoize@0.2.83":
+  version "0.2.83"
+  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.83.tgz#d726ab36d0b3c8f607d4080c7b9b1996322560d0"
+  integrity sha512-Joc7k1sX9x9MkXqzPBkYVzkH90jKT7ii0oBo5WyVPCl9eaZpC+LEpUkUnUEw2iC1ihIHjjSRGIuhUPKGAUJmVg==
 
-"@techstack/react-feather@0.2.82":
-  version "0.2.82"
-  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.2.82.tgz#bc9d95b1dd123b02fdab3e377c34b1c25c057ebf"
-  integrity sha512-6THPPtLUmE4g5wcW8iV8B5a8Jxe2q5pwxymuavlAmx84lImmFLOi0yKbSW9xsCDFBadEfEpy74bJ43EoKTRC0Q==
+"@techstack/react-feather@0.2.83":
+  version "0.2.83"
+  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.2.83.tgz#aa82e86cc84f9a6055a809a70613a2295e2138e4"
+  integrity sha512-E32QVr69htz5IbC0h0vJU+qWf6OHUHXAquHJ5DLGECyvs0fc/Ph0IaxUQhDYxTKKoJKbZTW3xdPATd3nmK9uBg==
   dependencies:
-    "@techstack/react-lazy-named" "0.2.81"
+    "@techstack/react-lazy-named" "0.2.82"
 
-"@techstack/react-lazy-named@0.2.81":
-  version "0.2.81"
-  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.2.81.tgz#6e2ab9bbd822e16f42a6da628ca1f8ce9f5358f4"
-  integrity sha512-V62l1mNLMmNWDD9QI/uYas7wrVF5w3HvDo/LZQZ3lGN6L+/QOLRMRaDa4Rge5CmCl1GKHz06RXGRTA22WJpsSw==
+"@techstack/react-lazy-named@0.2.82":
+  version "0.2.82"
+  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.2.82.tgz#4474543fd4cd59ee02d495e390c3156e908de3b7"
+  integrity sha512-PQy7YhlOYn4bylUtXTEl7ybWraaeM6lwXuraZDOGEhUflcCf1kgbLe0MaASx9MKTP2bSMAF4zO9Sj62nFjcAuA==
   dependencies:
     lodash "4.17.21"
     lodash-es "4.17.21"
 
-"@techstack/styled-system@0.2.85":
-  version "0.2.85"
-  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.85.tgz#09046d788200758641b5d29ccbff439b2faea0c6"
-  integrity sha512-r8sY6CGUbnIcvp7KHsmg9jpGZtI02HB0IDyS1LsrZX+LfKhwrjGeiHj79Lqfsl5a9+qkyQiVVmV28k+mMYvCkw==
+"@techstack/styled-system@0.2.86":
+  version "0.2.86"
+  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.86.tgz#ec51fecc908cff828f97f7b7717a14f865513e2d"
+  integrity sha512-79qkghPQ4ALwmlYu83/ZcXGeaSu0OWr9DwBA3F1u4K+sxvYcg9sbY6Kz+aUDnqP9HzyQvaHyPWoXiZQ779YPZA==
   dependencies:
     "@emotion/is-prop-valid" "1.2.0"
-    "@techstack/memoize" "0.2.82"
+    "@techstack/memoize" "0.2.83"
     csstype "3.1.1"
 
-"@techstack/tcm-cli@0.2.80":
-  version "0.2.80"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.2.80.tgz#a7cd08e8bd620e1d72b547bddacd9935ee9776d9"
-  integrity sha512-Ucy1qFqsQ7ZpmYNEa2Rx5CLahSzYlcG82o5Wr4I1f0ZNmjEWtY7EzdUsA6fqADFXDFp/ySzVYD9ngWUSeEMQIw==
+"@techstack/tcm-cli@0.2.81":
+  version "0.2.81"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.2.81.tgz#0a0b9fef1a0893a2d634c71603fa457027073a0a"
+  integrity sha512-VYT7g4LHDcp5tNriu8W67TumSRUx56SZCvahsSywVfBbu9Al4cvz5xgaK1pfLe3TVGn1Sb2A4TUrOHMmLJD1Pg==
   dependencies:
     "@rollup/plugin-babel" "6.0.2"
     "@types/jest" "29.2.3"
@@ -1800,7 +1800,7 @@
     eslint-config-react-app "7.0.1"
     eslint-plugin-flowtype "8.0.3"
     eslint-plugin-import "2.26.0"
-    eslint-plugin-jest "27.1.5"
+    eslint-plugin-jest "27.1.6"
     eslint-plugin-jsx-a11y "6.6.1"
     eslint-plugin-no-restricted-imports "0.0.0"
     eslint-plugin-prettier "4.2.1"
@@ -1832,10 +1832,10 @@
     type-fest "3.2.0"
     typescript "4.9.3"
 
-"@techstack/theme@0.2.82":
-  version "0.2.82"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.82.tgz#da9b752e7aa8d4b3a3ff3cb829833daebd00c819"
-  integrity sha512-41q+sMJIGmvoJLYJIgYq61cU5r6EJUh5/fc9wkzY9piT6MuY8TFeEkbP7KrO/Qzrs3SQTFPlKffDpYpHO2Z6LA==
+"@techstack/theme@0.2.83":
+  version "0.2.83"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.83.tgz#cb7f8b280708fffacc08f4a12e254925f40c939d"
+  integrity sha512-A5Q1gmck6ffqP7IhKGIbjkX1OTO1CtSmZPt5yXkOc/hTpQbmatg+3FaQPb4Y++yDrlRr3ZB4H5UsEEpSwrK0yA==
   dependencies:
     fs-extra "10.1.0"
     lodash "4.17.21"
@@ -3480,10 +3480,10 @@ eslint-plugin-import@2.26.0, eslint-plugin-import@^2.25.3, eslint-plugin-import@
     resolve "^1.22.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jest@27.1.5:
-  version "27.1.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.1.5.tgz#16fad619cfee6cdf73d56098fbed0761e1f653ce"
-  integrity sha512-CK2dekZ5VBdzsOSOH5Fc1rwC+cWXjkcyrmf1RV714nDUDKu+o73TTJiDxpbILG8PtPPpAAl3ywzh5QA7Ft0mjA==
+eslint-plugin-jest@27.1.6:
+  version "27.1.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.1.6.tgz#361d943f07d1978838e6b852c44a579f3879e332"
+  integrity sha512-XA7RFLSrlQF9IGtAmhddkUkBuICCTuryfOTfCSWcZHiHb69OilIH05oozH2XA6CEOtztnOd0vgXyvxZodkxGjg==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
