@@ -1737,61 +1737,61 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.0.tgz#046e376cd536cd53727a91a880345f92d3ec5859"
   integrity sha512-DRiRbOAmDHapzUBd4/C4Yy+FTug4fdGp5sdZWWfCq4wxRoaXQraQgbzmK23a3QcbwLFtLeNezPkZrqbJWuX+VA==
 
-"@techstack/components@0.5.59":
-  version "0.5.59"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.59.tgz#d58064ca8cdf8e8b70a0e3d648c487285ef722e9"
-  integrity sha512-sAo61p/aiC6pDTkUFq8eM9jR8tlrqPHZTdKeTWyKBSc/ouLXxFXqhSTxY4dX9Zm5hET8pT/Ml06xRQREstmdeg==
+"@techstack/components@0.5.62":
+  version "0.5.62"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.62.tgz#f8aabd990b2ed9e1a0984f9953686244561410fc"
+  integrity sha512-kLZcnkqUee1kjLIaQjGQu0DcvfNZQ7G4A6FLp3UdQtutb3jG3Pj8XKfcLnSW/O5USP7lNDZr6+Vm0WXOaNPFxA==
   dependencies:
     "@tanstack/react-table" "8.7.0"
-    "@techstack/memoize" "0.2.92"
-    "@techstack/react-feather" "0.2.92"
-    "@techstack/react-lazy-named" "0.2.91"
-    "@techstack/styled-system" "0.2.95"
-    "@techstack/theme" "0.2.92"
+    "@techstack/memoize" "0.2.93"
+    "@techstack/react-feather" "0.2.93"
+    "@techstack/react-lazy-named" "0.2.92"
+    "@techstack/styled-system" "0.2.96"
+    "@techstack/theme" "0.2.93"
     "@types/react-table" "7.7.12"
     classnames "2.3.2"
     csstype "3.1.1"
     deepmerge "4.2.2"
-    i18next "22.1.4"
+    i18next "22.1.5"
     react-i18next "12.1.1"
     react-lazy-named "1.2.2"
     react-table "7.8.0"
     react-virtual "2.10.4"
     styled-components "5.3.6"
 
-"@techstack/memoize@0.2.92":
-  version "0.2.92"
-  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.92.tgz#818a68e5f1fe495e792e3b91dff682be1e792ae1"
-  integrity sha512-0ey91/ecLvDdSUNg6prclRYjofAy6mGzR/GM3VTubSjcPtFy7eXj88keOdIsOJM7+h6GNa07Qcv/84gSnTTvsw==
+"@techstack/memoize@0.2.93":
+  version "0.2.93"
+  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.93.tgz#f931ab79bfb0ec567a8a8edd51b88637f1768510"
+  integrity sha512-G2jaLQ7z0YLmbaR/qTd8X3T/XKiBHDflhnPEpiXk1BDSPlKd00QIBb+WsIrPN/fq4p3GcNG3Tg6SdKYJxEZBtQ==
 
-"@techstack/react-feather@0.2.92":
-  version "0.2.92"
-  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.2.92.tgz#028466006be7776447872088f596763baf942fd1"
-  integrity sha512-PW0G5HDQ6IVOmHGLrXS+LrIzGn84tnjzALGbDpS2U8sgn93c/yG4gzNl3gu9kMVkRHoGclOD3a4Z+bG531EAQA==
+"@techstack/react-feather@0.2.93":
+  version "0.2.93"
+  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.2.93.tgz#08d15cf310954278c476f60bc74f50c991e286a0"
+  integrity sha512-u2goCYGGWc4jwDx/vmhJxK6ilyWEkIxPs3gpJuwBlwIjKXaOvpPos5X8VnFWyitbZ+TJhf00/uz43wIKYBNoXA==
   dependencies:
-    "@techstack/react-lazy-named" "0.2.91"
+    "@techstack/react-lazy-named" "0.2.92"
 
-"@techstack/react-lazy-named@0.2.91":
-  version "0.2.91"
-  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.2.91.tgz#05fdbe43e289459a97a33de9e127e72b5c3a2cb8"
-  integrity sha512-/BRL52/1UuI/kRTflSb33qAtM90n6DyfhvKsMca+wy5ovm/SHGTqxhU0RPn1Gbdb7XjoQ8fr9R1HCAJt0KV46Q==
+"@techstack/react-lazy-named@0.2.92":
+  version "0.2.92"
+  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.2.92.tgz#b3f2a8b5edea5fadacb74aebecc4ac140a88f879"
+  integrity sha512-iUOYHA3T4S4T1jxZ4OmMfQcnRqtBed3Q+yq3R9K6hMwbOWJM7Cc8ll9aZxRGdL8crM68AuYx9YxcUISTDGrxRQ==
   dependencies:
     lodash "4.17.21"
     lodash-es "4.17.21"
 
-"@techstack/styled-system@0.2.95":
-  version "0.2.95"
-  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.95.tgz#57b18f363be50275a83205c0f66fd896e96a46c8"
-  integrity sha512-fOWbMg5Q/z2WUSxeTPD5HHXb3BlD3RrPczfFVN9VEqbgg/8wvOFZ6KEBRdldWha0ihAN2idUILSJp89QzaR/cw==
+"@techstack/styled-system@0.2.96":
+  version "0.2.96"
+  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.96.tgz#619502cd85d51aae22d9c00508f0cf96802ee782"
+  integrity sha512-eBkKNMHCzcKWbaeP+Giut6rJzNFfxQMV2zid9uj5/qZUFqx07Gr7CxSZqw/SUIJTMfl25dTtb5btDtEmyM6VAQ==
   dependencies:
     "@emotion/is-prop-valid" "1.2.0"
-    "@techstack/memoize" "0.2.92"
+    "@techstack/memoize" "0.2.93"
     csstype "3.1.1"
 
-"@techstack/tcm-cli@0.2.90":
-  version "0.2.90"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.2.90.tgz#be217b1087babb02168b38b3716f2f492bac5e42"
-  integrity sha512-TJxEfQV16fj12/ZK4x8kWrNRYWfnXCPCl/30SDR5Z1FIJprvholR/p1W+ozg0kDDnIfdv2hhzw1GqWuA1whO3w==
+"@techstack/tcm-cli@0.2.91":
+  version "0.2.91"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.2.91.tgz#2136645a3488be7aacaf2c06bae4ea902a8d3b28"
+  integrity sha512-3EhF+8Ed4MMj3JDDnIwIH0DwXeMsWYmO81KucByzQu+GzDI7SWM2eWiz/nF+fjKJqRagmQUYe/bx3OaIyu2zXA==
   dependencies:
     "@rollup/plugin-babel" "6.0.3"
     "@types/jest" "29.2.4"
@@ -1839,10 +1839,10 @@
     type-fest "3.3.0"
     typescript "4.9.4"
 
-"@techstack/theme@0.2.92":
-  version "0.2.92"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.92.tgz#0c7d6c13cb182b18fe21c6eb408ce5fabb2ce4b6"
-  integrity sha512-kgFLzXD5yJA3Lh9MHO1430fzJu552J6RgdSR+dCyYVvRW07xKEQJoo6lHUjcl7Wrp8NimDtqAQLaEZynHUPHDA==
+"@techstack/theme@0.2.93":
+  version "0.2.93"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.93.tgz#4533298ad510ae671decd1114466f7512f37cfb9"
+  integrity sha512-KL1xKtFMkOHdziPYIAnfo5lAcB7u82uFUbTL7OlxeGiaCxxw0z3eTfkoqDMhItFz40ivJV7/MNVZlBSB+4cbBA==
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
@@ -4174,10 +4174,10 @@ humanize-duration@^3.15.3:
   resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.3.tgz#db654e72ebf5ccfe232c7f56bc58aa3a6fe4df88"
   integrity sha512-iimHkHPfIAQ8zCDQLgn08pRqSVioyWvnGfaQ8gond2wf7Jq2jJ+24ykmnRyiz3fIldcn4oUuQXpjqKLhSVR7lw==
 
-i18next@22.1.4:
-  version "22.1.4"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.1.4.tgz#907a4e710889ae23fb92f3510a0f7147823f92ff"
-  integrity sha512-MCDtNRyovLY22rgLoZdCzg2QIza1V1A/3Hxb99akJzTDjcqCRWEsglTpFUt0vUjOxSxz+WmxmFETLHORRS+n6Q==
+i18next@22.1.5:
+  version "22.1.5"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.1.5.tgz#5c395b807aa670ce82a7c4f6831b7fba8f1e2c6c"
+  integrity sha512-Mjj45PbpZByE+c6ddLEkkj0LUyzJP1cRGeC/+O6mvp1+GAwW7rIx6aOPW9+Zxe+JO3EcJCAkibwbZrgBRF/qRA==
   dependencies:
     "@babel/runtime" "^7.20.6"
 
