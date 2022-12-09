@@ -1737,10 +1737,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.0.tgz#046e376cd536cd53727a91a880345f92d3ec5859"
   integrity sha512-DRiRbOAmDHapzUBd4/C4Yy+FTug4fdGp5sdZWWfCq4wxRoaXQraQgbzmK23a3QcbwLFtLeNezPkZrqbJWuX+VA==
 
-"@techstack/components@0.5.62":
-  version "0.5.62"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.62.tgz#f8aabd990b2ed9e1a0984f9953686244561410fc"
-  integrity sha512-kLZcnkqUee1kjLIaQjGQu0DcvfNZQ7G4A6FLp3UdQtutb3jG3Pj8XKfcLnSW/O5USP7lNDZr6+Vm0WXOaNPFxA==
+"@techstack/components@0.5.63":
+  version "0.5.63"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.63.tgz#38ff3a836568732ff5c9ac7463cd02f49b9770f5"
+  integrity sha512-SYSh/+x5UsUQYzCvmz8mtoUGQQOM7RjZNTsG5Nqgp1toRS66xTN6yzcAURQQpAkZt7LoYvJCm9rge4ED7wxcGw==
   dependencies:
     "@tanstack/react-table" "8.7.0"
     "@techstack/memoize" "0.2.93"
