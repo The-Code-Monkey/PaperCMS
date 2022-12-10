@@ -1737,16 +1737,16 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.0.tgz#046e376cd536cd53727a91a880345f92d3ec5859"
   integrity sha512-DRiRbOAmDHapzUBd4/C4Yy+FTug4fdGp5sdZWWfCq4wxRoaXQraQgbzmK23a3QcbwLFtLeNezPkZrqbJWuX+VA==
 
-"@techstack/components@0.5.63":
-  version "0.5.63"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.63.tgz#38ff3a836568732ff5c9ac7463cd02f49b9770f5"
-  integrity sha512-SYSh/+x5UsUQYzCvmz8mtoUGQQOM7RjZNTsG5Nqgp1toRS66xTN6yzcAURQQpAkZt7LoYvJCm9rge4ED7wxcGw==
+"@techstack/components@0.5.64":
+  version "0.5.64"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.64.tgz#d804cdabb46363408f27a0fc0c76a4f215feec93"
+  integrity sha512-UlJ/UqOelBJLTULIGMMm+9ofkT6zBc69B+iVVnJrEHqH2frh/Tq0djpxv23UFNgrKIq00LiW0eTQc9K08E/QOA==
   dependencies:
     "@tanstack/react-table" "8.7.0"
-    "@techstack/memoize" "0.2.93"
+    "@techstack/memoize" "0.2.94"
     "@techstack/react-feather" "0.2.93"
     "@techstack/react-lazy-named" "0.2.92"
-    "@techstack/styled-system" "0.2.96"
+    "@techstack/styled-system" "0.2.97"
     "@techstack/theme" "0.2.93"
     "@types/react-table" "7.7.12"
     classnames "2.3.2"
@@ -1759,10 +1759,10 @@
     react-virtual "2.10.4"
     styled-components "5.3.6"
 
-"@techstack/memoize@0.2.93":
-  version "0.2.93"
-  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.93.tgz#f931ab79bfb0ec567a8a8edd51b88637f1768510"
-  integrity sha512-G2jaLQ7z0YLmbaR/qTd8X3T/XKiBHDflhnPEpiXk1BDSPlKd00QIBb+WsIrPN/fq4p3GcNG3Tg6SdKYJxEZBtQ==
+"@techstack/memoize@0.2.94":
+  version "0.2.94"
+  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.2.94.tgz#65b2b15f1fe828b6196de83c0940884e31a09050"
+  integrity sha512-7DG76jc+WgxQ/I4lzN5uGxwDxSzyxRBiz3lsEfBccOnGRhrfeWFgFsY+CjrITMiQbgvUxOS00ohSdefw+jIaXw==
 
 "@techstack/react-feather@0.2.93":
   version "0.2.93"
@@ -1779,13 +1779,13 @@
     lodash "4.17.21"
     lodash-es "4.17.21"
 
-"@techstack/styled-system@0.2.96":
-  version "0.2.96"
-  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.96.tgz#619502cd85d51aae22d9c00508f0cf96802ee782"
-  integrity sha512-eBkKNMHCzcKWbaeP+Giut6rJzNFfxQMV2zid9uj5/qZUFqx07Gr7CxSZqw/SUIJTMfl25dTtb5btDtEmyM6VAQ==
+"@techstack/styled-system@0.2.97":
+  version "0.2.97"
+  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.2.97.tgz#4af45f2ec0e29560ae98e60fb9c1b1009e771124"
+  integrity sha512-ziSPpa+GbSIbuQMEU4db8T+qjwJR/18Ch52eY173BSXXdt+YNZH9VhBX6Ec+e/f4mALw9kF1XQz58iSYvqKT4w==
   dependencies:
     "@emotion/is-prop-valid" "1.2.0"
-    "@techstack/memoize" "0.2.93"
+    "@techstack/memoize" "0.2.94"
     csstype "3.1.1"
 
 "@techstack/tcm-cli@0.2.91":
