@@ -1737,10 +1737,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.0.tgz#046e376cd536cd53727a91a880345f92d3ec5859"
   integrity sha512-DRiRbOAmDHapzUBd4/C4Yy+FTug4fdGp5sdZWWfCq4wxRoaXQraQgbzmK23a3QcbwLFtLeNezPkZrqbJWuX+VA==
 
-"@techstack/components@0.5.68":
-  version "0.5.68"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.68.tgz#870e0c34822a691984a5e62cf7d4ce0c994bf62c"
-  integrity sha512-QYJVk9tvxO52j14NxUkd8kxJFeOs8DQO0fJHouoXuwjvZuPUxnpoQ5onGewnfbzmKu4gIsuDhPzZmuhzzwdbww==
+"@techstack/components@0.5.69":
+  version "0.5.69"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.69.tgz#d71cd8b8e9e79b33a2008fc1db304362f6070cc8"
+  integrity sha512-VzPP+vyRlKPoNs8+StGiPvazlAN9XyoBYbCa93oaBRt/0rdmZXwtghuTv4GNop0HV3nCkbpSzmXTpe6GOIP0iw==
   dependencies:
     "@tanstack/react-table" "8.7.0"
     "@techstack/memoize" "0.2.96"
@@ -1752,7 +1752,7 @@
     classnames "2.3.2"
     csstype "3.1.1"
     deepmerge "4.2.2"
-    i18next "22.3.0"
+    i18next "22.4.1"
     react-i18next "12.1.1"
     react-lazy-named "1.2.2"
     react-table "7.8.0"
@@ -4174,10 +4174,10 @@ humanize-duration@^3.15.3:
   resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.3.tgz#db654e72ebf5ccfe232c7f56bc58aa3a6fe4df88"
   integrity sha512-iimHkHPfIAQ8zCDQLgn08pRqSVioyWvnGfaQ8gond2wf7Jq2jJ+24ykmnRyiz3fIldcn4oUuQXpjqKLhSVR7lw==
 
-i18next@22.3.0:
-  version "22.3.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.3.0.tgz#77578a4ef566e0e20e9d4f319d7fd0f4bebb26f7"
-  integrity sha512-V8ODNVavs8Sp6UvURwajQ/6CytW0GWkv384Rz16AaKNrU3L47lGz1Yv79hPNmM8IqV0eS8AOixy5Qaw1De7bcA==
+i18next@22.4.1:
+  version "22.4.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.1.tgz#90041c018ab93a59b6e09d6b20b35e5500f32827"
+  integrity sha512-BZWjrTX+OVaSxV5s94s2M+7wSlevdPgNtjeL/xXHl0CKkPGyjHNlkN6eN+0e0ex+EO8ec57OALRDUpiSSCo54g==
   dependencies:
     "@babel/runtime" "^7.20.6"
 
