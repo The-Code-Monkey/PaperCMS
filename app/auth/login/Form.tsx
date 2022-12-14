@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent } from 'react';
+import { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Box, Input, Button } from '@techstack/components';
 
@@ -16,12 +16,14 @@ export interface AuthEvent extends FormEvent<HTMLFormElement> {
 }
 
 const Form = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const DB = useDB();
 
   const handleSubmit = async (event: AuthEvent) => {
     event.preventDefault();
+    setIsLoading(true);
 
     const email = event.target.elements.email.value;
     const password = event.target.elements.password.value;
@@ -33,6 +35,8 @@ const Form = () => {
 
     if (!error && data.session) {
       router.push('/');
+    } else {
+      setIsLoading(false);
     }
   };
 
@@ -53,8 +57,8 @@ const Form = () => {
         Password
         <Input type='password' name='password' />
       </label>
-      <Button mt='3' variant='primary'>
-        login
+      <Button mt='3' variant='primary' disabled={isLoading}>
+        {isLoading ? 'logging in' : 'login'}
       </Button>
     </Box>
   );

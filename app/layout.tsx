@@ -3,8 +3,8 @@ import 'server-only';
 import { ReactNode } from 'react';
 
 import { createServerClient } from '../utils/supabase-server';
+import StyledComponentsRegistry from '../lib/registry';
 
-import RootStyleRegistry from './RootStyleRegistry';
 import { Provider } from './provider';
 
 export const revalidate = 0;
@@ -23,7 +23,7 @@ const MyApp = async ({ children }: { children: ReactNode }) => {
       <head />
       <body>
         <Provider session={session}>
-          <RootStyleRegistry>{children}</RootStyleRegistry>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </Provider>
       </body>
     </html>
