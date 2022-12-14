@@ -1,24 +1,28 @@
 'use client';
 
-import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
-import { SessionContextProvider } from '@supabase/auth-helpers-react';
 import { ConfigContext, ThemeProvider, Context } from '@techstack/components';
-import { useState } from 'react';
+import { Session } from '@supabase/supabase-js';
 
+import SupabaseListener from '../components/supabase-listener';
+import SupabaseProvider from '../components/supabase-provider';
 import theme from '../theme';
 import config from '../orchard.theme.config.json';
 
-export const Provider = ({ children }: { children: React.ReactNode }) => {
-  const [supabaseClient] = useState(() => createBrowserSupabaseClient());
+export const revalidate = 0;
 
+export const Provider = ({
+  children,
+  session,
+}: {
+  children: React.ReactNode;
+  session: Session | null;
+}) => {
   return (
     <ConfigContext.Provider value={config as unknown as Context}>
-      <SessionContextProvider
-        supabaseClient={supabaseClient}
-        initialSession={null}
-      >
+      <SupabaseProvider session={session}>
+        <SupabaseListener serverAccessToken={session?.access_token} />
         <ThemeProvider theme={theme}>{children}</ThemeProvider>
-      </SessionContextProvider>
+      </SupabaseProvider>
     </ConfigContext.Provider>
   );
 };

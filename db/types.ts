@@ -34,6 +34,7 @@ export interface DbReturnType<
     | { data: { user: User | null; session: Session | null }; error: null }
     | { data: { user: null; session: null }; error: AuthError }
   >;
+  signOut: () => Promise<{ error: AuthError | null }>;
   dbFunction: (
     funcName: F
   ) => Promise<{ data: R[] | null; error: string | undefined }>;

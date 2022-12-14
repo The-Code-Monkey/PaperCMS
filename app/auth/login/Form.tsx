@@ -31,7 +31,7 @@ const Form = () => {
       password,
     });
 
-    if (!error) {
+    if (!error && data.session) {
       router.push('/');
     }
   };

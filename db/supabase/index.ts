@@ -1,10 +1,10 @@
-import { useSessionContext } from '@supabase/auth-helpers-react';
 import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js/src/lib/types';
 
 import { DbReturnType, AuthOptions } from '../types';
+import { createBrowserClient } from '../../utils/supabase-browser';
 
 import { Database } from './database-types';
 
@@ -19,7 +19,8 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
 > => {
   type TableType = Database['public']['Tables'][Tables]['Row'];
 
-  const { supabaseClient: supabase } = useSessionContext();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const supabase = createBrowserClient();
 
   const signIn: DbReturnType<Tables, R, Functions>['signIn'] = async (
     credentials: SignInWithPasswordCredentials,
@@ -36,6 +37,10 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     options?: AuthOptions
   ) => {
     return await supabase.auth.signUp({ ...credentials, ...options });
+  };
+
+  const signOut: DbReturnType<Tables, R, Functions>['signOut'] = async () => {
+    return await supabase.auth.signOut();
   };
 
   const get: DbReturnType<Tables | string, R, Functions>['get'] = async (
@@ -63,7 +68,7 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     };
   };
 
-  return { signIn, signUp, get, dbFunction };
+  return { signIn, signUp, signOut, get, dbFunction };
 };
 
 export default getSupabase;

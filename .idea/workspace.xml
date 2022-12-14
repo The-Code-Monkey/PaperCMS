@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="" />
+    <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/auth/logout/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/supabase-listener.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/supabase-provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/hello.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/supabase-browser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/supabase-server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/supabase/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/supabase/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/auth/[...supabase].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +135,8 @@
       <workItem from="1667923202091" duration="22000" />
       <workItem from="1667923245971" duration="516000" />
       <workItem from="1667923799613" duration="112000" />
-      <workItem from="1667924236584" duration="847000" />
+      <workItem from="1667924236584" duration="1524000" />
+      <workItem from="1671019315850" duration="6290000" />
     </task>
     <servers />
   </component>
