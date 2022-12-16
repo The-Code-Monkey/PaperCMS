@@ -17,9 +17,9 @@ const AdminLayout = async ({ children }: Props) => {
   const routes = data?.map(table => table.tablename) ?? [];
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper' id='outer'>
       <Nav routes={routes} />
-      <main>{children}</main>
+      <main id='main'>{children}</main>
     </div>
   );
 };

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/theme-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/registry.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(admin)/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RootStyleRegistry.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/login/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/styled-components.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,8 @@
       <workItem from="1667924236584" duration="1524000" />
       <workItem from="1671019315850" duration="6290000" />
       <workItem from="1671030379721" duration="114000" />
-      <workItem from="1671031277298" duration="1508000" />
+      <workItem from="1671031277298" duration="1541000" />
+      <workItem from="1671092454625" duration="3135000" />
     </task>
     <servers />
   </component>

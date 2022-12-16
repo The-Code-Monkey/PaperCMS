@@ -1,16 +1,16 @@
-'use client';
-
-import { Box } from '@techstack/components';
-
 import { PageProps } from '../../../../utils/pageTypes';
+import useDB from '../../../../db';
 
 import ListTable from './ListTable';
 
-const List = ({ params }: PageProps) => {
+const List = async ({ params }: PageProps) => {
+  const DB = useDB();
+  const { data } = await DB.get(params?.id ?? ('' as any));
+
   return (
-    <Box w='screenWidth'>
-      <ListTable params={params ?? {}} />
-    </Box>
+    <div>
+      <ListTable data={data} id={params?.id ?? null} />
+    </div>
   );
 };
 

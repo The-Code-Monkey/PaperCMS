@@ -1,32 +1,22 @@
 'use client';
 
-import { use } from 'react';
 import { Box, Table } from '@techstack/components';
 
-import useDB from '../../../../db';
-import { PageParams } from '../../../../utils/pageTypes';
-
 interface Props {
-  params: PageParams;
+  data: Record<string, unknown>[] | null;
+  id: string | null;
 }
 
-const ListTable = ({ params }: Props) => {
-  const id = params.id;
+const ListTable = ({ data, id }: Props) => {
 
-  const DB = useDB();
+  const columns = Object.keys(data?.[0] ?? {});
 
-  const getData = async (): Promise<Record<string, unknown>[] | null> => {
-    const { data } = await DB.get(id as any);
-
-    return data;
-  };
-
-  const data = use(getData());
+  columns.push('edit');
 
   return (
     <Box>
       Table {id}
-      {data && <Table data={data} columns={Object.keys(data[0])} />}
+      {data && <Table data={data} columns={columns} />}
     </Box>
   );
 };
