@@ -45,11 +45,13 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
 
   const get: DbReturnType<Tables | string, R, Functions>['get'] = async (
     table: Tables | string,
+    where: [string, string] = ['', ''],
     columns = '*'
   ) => {
     const { data, error } = await supabase
       .from<Tables | string, TableType>(table)
-      .select(columns);
+      .select(columns)
+      .eq(...where);
 
     return { data, error: error?.message } as unknown as Promise<{
       data: R[] | null;

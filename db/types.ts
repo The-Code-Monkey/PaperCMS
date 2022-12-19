@@ -18,6 +18,7 @@ export interface DbReturnType<
 > {
   get: (
     table: T,
+    where?: [string, string],
     columns?: string
   ) => Promise<{ data: R[] | null; error: string | undefined }>;
   signIn: (

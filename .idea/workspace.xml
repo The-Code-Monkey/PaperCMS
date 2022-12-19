@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(admin)/styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/Form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/supabase/database-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/supabase/database-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/supabase/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/supabase/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +135,17 @@
       <workItem from="1671030379721" duration="114000" />
       <workItem from="1671031277298" duration="1541000" />
       <workItem from="1671092454625" duration="3135000" />
+      <workItem from="1671180191793" duration="558000" />
+      <workItem from="1671188656791" duration="4000" />
+      <workItem from="1671202761194" duration="96000" />
+      <workItem from="1671274683942" duration="1014000" />
+      <workItem from="1671277539262" duration="2751000" />
+      <workItem from="1671280708214" duration="416000" />
+      <workItem from="1671281266054" duration="133000" />
+      <workItem from="1671281676797" duration="74000" />
+      <workItem from="1671282595446" duration="72000" />
+      <workItem from="1671287518699" duration="319000" />
+      <workItem from="1671287926489" duration="352000" />
     </task>
     <servers />
   </component>

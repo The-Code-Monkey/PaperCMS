@@ -48,8 +48,12 @@ export const StyledAside = styled.aside`
   }
 
   &:hover {
-    width: ${p => p.theme.sizes[16]};
+    width: ${p => p.theme.sizes[15]};
     transition: width 400ms ease-in-out;
+
+    ul {
+      padding-right: 0.75em;
+    }
 
     span {
       visibility: visible;

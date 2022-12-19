@@ -29,6 +29,14 @@ export interface Database {
           description?: string | null;
         };
       };
+      blog: {
+        Row: {
+          id: number;
+          title: string;
+          content: string;
+          href: string;
+        };
+      };
     };
     Views: {
       [_ in never]: never;

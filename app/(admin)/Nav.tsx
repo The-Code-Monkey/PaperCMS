@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ReactNode } from 'react';
 
-import { StyledAside } from './styled';
+import { capitalizeFirstLetter } from '../utils';
 
-const capitalizeFirstLetter = ([first, ...rest]: any) =>
-  first === undefined ? '' : first.toUpperCase() + rest.join('');
+import { StyledAside } from './styled';
 
 const routeToIcon: Record<string, ReactNode> = {
   products: <Icon name='box' />,
+  blog: <Icon name='book' />,
 };
 
 interface Props {

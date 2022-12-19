@@ -46,8 +46,9 @@ const Form = () => {
       onSubmit={handleSubmit}
       flex='1'
       d='flex'
-      gap='4'
+      gap='6'
       flexDirection='column'
+      maxW='17'
     >
       <label>
         Email address
