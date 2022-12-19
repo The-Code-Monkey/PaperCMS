@@ -2,6 +2,7 @@
 
 import { Box, Input } from '@techstack/components';
 import { useEffect, useState } from 'react';
+import moment from 'moment';
 
 import { formatFieldNames } from '../../../../utils';
 
@@ -9,9 +10,24 @@ interface Props {
   data: Record<string, string>;
 }
 
-const getFieldType = (fieldType: string): 'text' | 'textarea' => {
-  switch (fieldType) {
-    case 'object': {
+const getFieldType = (
+  value: string | number | Record<string, unknown> | Array<unknown>
+): 'text' | 'textarea' | 'number' | 'object' | 'select' | 'date' => {
+  switch (true) {
+    case Array.isArray(value): {
+      return 'select';
+    }
+    case !Number.isNaN(parseInt(value as string, 10)) &&
+      !`${value}`.includes('+'): {
+      return 'number';
+    }
+    case typeof value === 'object': {
+      return 'object';
+    }
+    case moment(value as string).isValid(): {
+      return 'date';
+    }
+    case typeof value === 'string' && value.length >= 300: {
       return 'textarea';
     }
     default: {
@@ -21,7 +37,7 @@ const getFieldType = (fieldType: string): 'text' | 'textarea' => {
 };
 
 const EditForm = ({ data }: Props) => {
-  const [formData, setFormData] = useState<Record<string, string>>(null);
+  const [formData, setFormData] = useState<Record<string, string> | null>(null);
 
   const handleFieldUpdate = (e: any) => {
     console.log(e.target.name, e.target.value);
@@ -39,14 +55,6 @@ const EditForm = ({ data }: Props) => {
       setFormData(data);
     }
   }, [data, formData]);
-
-  useEffect(() => {
-    console.log('formData', formData);
-  }, [formData]);
-
-  useEffect(() => {
-    console.log('data', data);
-  }, [data]);
 
   return (
     <Box<'form'>
@@ -68,7 +76,8 @@ const EditForm = ({ data }: Props) => {
                 // @ts-ignore
                 defaultValue={formData[field]}
                 onChange={handleFieldUpdate}
-                type={getFieldType(typeof formData[field])}
+                type={getFieldType(formData[field]) as any}
+                disabled={field === 'id' || field === 'created_at'}
                 mt='2'
               />
             </Box>
