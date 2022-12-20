@@ -2,48 +2,32 @@
 
 import { Box, Input } from '@techstack/components';
 import { useEffect, useState } from 'react';
-import moment from 'moment';
 
-import { formatFieldNames } from '../../../../utils';
+import { getFieldType, RecordType } from '../../../../utils';
+import ContentBuilder from '../../../../../components/ContentBuilder';
 
 interface Props {
   data: Record<string, string>;
 }
 
-const getFieldType = (
-  value: string | number | Record<string, unknown> | Array<unknown>
-): 'text' | 'textarea' | 'number' | 'object' | 'select' | 'date' => {
-  switch (true) {
-    case Array.isArray(value): {
-      return 'select';
-    }
-    case !Number.isNaN(parseInt(value as string, 10)) &&
-      !`${value}`.includes('+'): {
-      return 'number';
-    }
-    case typeof value === 'object': {
-      return 'object';
-    }
-    case moment(value as string).isValid(): {
-      return 'date';
-    }
-    case typeof value === 'string' && value.length >= 300: {
-      return 'textarea';
-    }
-    default: {
-      return 'text';
-    }
-  }
-};
-
 const EditForm = ({ data }: Props) => {
-  const [formData, setFormData] = useState<Record<string, string> | null>(null);
+  const [formData, setFormData] = useState<Record<
+    string,
+    string | Array<RecordType>
+  > | null>(null);
 
   const handleFieldUpdate = (e: any) => {
-    console.log(e.target.name, e.target.value);
     setFormData(prevState => {
       const newState = { ...prevState };
       newState[e.target.name] = e.target.value;
+      return newState;
+    });
+  };
+
+  const handleContentUpdate = (value: Array<RecordType>) => {
+    setFormData(prevState => {
+      const newState = { ...prevState };
+      newState.content = value;
       console.log(newState);
       return newState;
     });
@@ -51,7 +35,6 @@ const EditForm = ({ data }: Props) => {
 
   useEffect(() => {
     if (formData === null) {
-      console.log('HERE');
       setFormData(data);
     }
   }, [data, formData]);
@@ -67,19 +50,25 @@ const EditForm = ({ data }: Props) => {
     >
       {formData &&
         Object.keys(data ?? {}).map(field => {
-          console.log(formData[field]);
+          const type = getFieldType(formData[field]);
+
           return (
             <Box<'label'> key={field} as='label'>
-              {formatFieldNames(field)}
-              <Input
-                name={field}
-                // @ts-ignore
-                defaultValue={formData[field]}
-                onChange={handleFieldUpdate}
-                type={getFieldType(formData[field]) as any}
-                disabled={field === 'id' || field === 'created_at'}
-                mt='2'
-              />
+              {type === 'object' ? (
+                <ContentBuilder
+                  content={formData[field] as Array<RecordType>}
+                  onChange={handleContentUpdate}
+                />
+              ) : (
+                <Input
+                  name={field}
+                  defaultValue={formData[field] as string}
+                  onChange={handleFieldUpdate}
+                  type={type}
+                  disabled={field === 'id' || field === 'created_at'}
+                  mt='2'
+                />
+              )}
             </Box>
           );
         })}

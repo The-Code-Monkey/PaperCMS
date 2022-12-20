@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -136,7 +140,14 @@
       <workItem from="1671282595446" duration="72000" />
       <workItem from="1671287518699" duration="319000" />
       <workItem from="1671287926489" duration="352000" />
-      <workItem from="1671442149373" duration="1071000" />
+      <workItem from="1671442149373" duration="1129000" />
+      <workItem from="1671447848449" duration="929000" />
+      <workItem from="1671458988863" duration="756000" />
+      <workItem from="1671460239713" duration="464000" />
+      <workItem from="1671467956504" duration="26000" />
+      <workItem from="1671468313154" duration="1248000" />
+      <workItem from="1671531407745" duration="3000" />
+      <workItem from="1671532240364" duration="8656000" />
     </task>
     <servers />
   </component>
