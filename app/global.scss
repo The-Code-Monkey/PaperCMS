@@ -28,11 +28,17 @@ html, body {
 main {
   display: flex;
   flex: 1;
-  padding: 1em;
+  padding: 0;
+  margin: 0;
   border: 1px solid orange;
   width: calc(100vw - 200px);
+  flex-direction: column;
 
   > div, > div > div, > div>div>div {
     width: 100%;
   }
+}
+
+form {
+  padding: 1em;
 }

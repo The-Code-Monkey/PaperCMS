@@ -11,10 +11,10 @@ const Edit = async ({ params }: PageProps) => {
   const { data } = await DB.get(tid as any, ['id', id]);
 
   return (
-    <div>
+    <>
       <Header tid={tid} id={id} />
-      <EditForm data={data?.[0] ?? {}} />
-    </div>
+      <EditForm tid={tid} id={id} data={data?.[0] ?? {}} />
+    </>
   );
 };
 

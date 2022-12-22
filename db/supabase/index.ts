@@ -59,6 +59,28 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     }>;
   };
 
+  const put: DbReturnType<Tables | string, R, Functions>['put'] = async (
+    table: Tables | string,
+    data: Record<string, unknown>,
+    row?: string
+  ) => {
+    let error;
+
+    if (row) {
+      delete data.id;
+      const res = await supabase
+        .from(table)
+        .update(data)
+        .eq('id', parseInt(row, 10));
+
+      error = res.error;
+    } else {
+      error = await supabase.from(table).insert(data);
+    }
+
+    return { error } as unknown as Promise<{ error: string }>;
+  };
+
   const dbFunction: DbReturnType<Tables, R, Functions>['dbFunction'] = async (
     funcName: Functions
   ) => {
@@ -70,7 +92,7 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     };
   };
 
-  return { signIn, signUp, signOut, get, dbFunction };
+  return { signIn, signUp, signOut, get, put, dbFunction };
 };
 
 export default getSupabase;

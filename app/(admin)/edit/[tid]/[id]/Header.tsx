@@ -11,7 +11,7 @@ interface Props {
 
 const Header = ({ tid, id }: Props) => {
   return (
-    <Box borderBottom='1' mb='3' pb='3'>
+    <Box borderBottom='1' p='1em' pb='3' bg='neutrals.5'>
       Editing: {capitalizeFirstLetter(tid)} - {id}
     </Box>
   );

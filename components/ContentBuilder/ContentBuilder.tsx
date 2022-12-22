@@ -22,7 +22,7 @@ interface Props {
   onChange: (value: Array<RecordType>) => void;
 }
 
-const ContentBuilder = ({ content }: Props) => {
+const ContentBuilder = ({ content, onChange }: Props) => {
   const [state, setState] = useState(content);
 
   const handleOnChange = (e: any, index: number) => {
@@ -94,6 +94,10 @@ const ContentBuilder = ({ content }: Props) => {
     });
   };
 
+  const handleOnBlur = () => {
+    onChange(state);
+  };
+
   const renderItem = (
     provided: DraggableProvided,
     snapshot: DraggableStateSnapshot,
@@ -114,6 +118,7 @@ const ContentBuilder = ({ content }: Props) => {
             handleOnChange={handleOnChange}
             blockTypes={blockTypes}
             index={index}
+            onBlur={handleOnBlur}
           />
           <Button
             iconName={'trash'}
@@ -159,6 +164,7 @@ const ContentBuilder = ({ content }: Props) => {
         onClick={handleContentAdd}
         // @ts-ignore
         type='button'
+        bg='neutrals.7'
       >
         Add new item
       </Button>

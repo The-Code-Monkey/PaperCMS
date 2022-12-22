@@ -14,6 +14,6 @@ export const StyledItem = styled.div<{ isDragging: boolean }>`
 export const StyledList = styled.div<{ isDraggingOver: boolean }>`
   background: ${p =>
     p.isDraggingOver ? p.theme.colors.neutrals[6] : p.theme.colors.neutrals[5]};
-  padding: ${p => p.theme.space[4]};
+  padding: ${p => p.theme.space[4]} 0;
   border-radius: ${p => p.theme.radii[2]};
 `;

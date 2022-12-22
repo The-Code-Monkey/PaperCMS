@@ -10,9 +10,16 @@ interface Props {
   handleOnChange: (e: any, index: number) => void;
   blockTypes: Array<string>;
   index: number;
+  onBlur: () => void;
 }
 
-const InputRenderer = ({ field, handleOnChange, blockTypes, index }: Props) => {
+const InputRenderer = ({
+  field,
+  handleOnChange,
+  blockTypes,
+  index,
+  onBlur,
+}: Props) => {
   const onChange = useCallback(
     (e: any) => {
       handleOnChange(e, index);
@@ -26,11 +33,17 @@ const InputRenderer = ({ field, handleOnChange, blockTypes, index }: Props) => {
         return (
           <Box d='flex' flexDir='column' w='full'>
             <Box d='flex' flex='50%' gap='5'>
-              <ImageUploader field={field} handleOnChange={onChange} />
+              <ImageUploader
+                field={field}
+                handleOnChange={onChange}
+                onBlur={onBlur}
+              />
               <Input
                 name={`${field.id}_text`}
                 defaultValue={field.value}
                 onChange={onChange}
+                // @ts-ignore
+                onBlur={onBlur}
                 type={'textarea'}
               />
             </Box>
@@ -39,6 +52,8 @@ const InputRenderer = ({ field, handleOnChange, blockTypes, index }: Props) => {
               <Input
                 name={`${field.id}_checkbox`}
                 onChange={onChange}
+                // @ts-ignore
+                onBlur={onBlur}
                 type='checkbox'
               />
             </Box>
@@ -46,7 +61,13 @@ const InputRenderer = ({ field, handleOnChange, blockTypes, index }: Props) => {
         );
       }
       case 'image': {
-        return <ImageUploader field={field} handleOnChange={onChange} />;
+        return (
+          <ImageUploader
+            field={field}
+            handleOnChange={onChange}
+            onBlur={onBlur}
+          />
+        );
       }
       default: {
         return (
@@ -55,6 +76,8 @@ const InputRenderer = ({ field, handleOnChange, blockTypes, index }: Props) => {
               name={`${field.id}`}
               defaultValue={field.value}
               onChange={onChange}
+              // @ts-ignore
+              onBlur={onBlur}
               type={field.type as any}
               // @ts-ignore
               placeholder={!field.type && 'Type / to select a block'}

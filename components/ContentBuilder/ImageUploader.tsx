@@ -5,14 +5,16 @@ import { RecordType } from '../../app/utils';
 interface Props {
   field: RecordType;
   handleOnChange: (e: any) => void;
+  onBlur: () => void;
 }
 
-const ImageUploader = ({ field, handleOnChange }: Props) => {
+const ImageUploader = ({ field, handleOnChange, onBlur }: Props) => {
   return (
     <Input
       name={`${field.id}`}
       defaultValue={field.value}
       onChange={handleOnChange}
+      onBlur={onBlur}
       // @ts-ignore
       type={'file'}
       accept='image/*'

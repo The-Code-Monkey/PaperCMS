@@ -8,11 +8,7 @@ const List = async ({ params }: PageProps) => {
   const DB = useDB();
   const { data } = await DB.get(id as any);
 
-  return (
-    <div>
-      <ListTable data={data} id={id} />
-    </div>
-  );
+  return <ListTable data={data} id={id} />;
 };
 
 export default List;

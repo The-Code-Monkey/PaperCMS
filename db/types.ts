@@ -21,6 +21,11 @@ export interface DbReturnType<
     where?: [string, string],
     columns?: string
   ) => Promise<{ data: R[] | null; error: string | undefined }>;
+  put: (
+    table: T,
+    data: Record<string, unknown>,
+    row?: string
+  ) => Promise<{ error: string }>;
   signIn: (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions

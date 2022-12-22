@@ -1,7 +1,7 @@
 'use client';
 
-import { Box, Button, Table } from '@techstack/components';
-import { useCallback } from 'react';
+import { Box, Table } from '@techstack/components';
+import { useCallback, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface Props {
@@ -11,8 +11,13 @@ interface Props {
 
 const ListTable = ({ data, id }: Props) => {
   const router = useRouter();
+  const [columns] = useState(() => {
+    const newState = [...Object.keys(data?.[0] ?? {}), 'edit'];
 
-  const columns = [...Object.keys(data?.[0] ?? {}), 'edit'];
+    const contentIndex = newState.findIndex(item => item === 'content');
+    if (contentIndex !== -1) newState.splice(contentIndex, 1);
+    return newState;
+  });
 
   const handleEditClick = useCallback(
     (rid: string) => {
@@ -22,8 +27,7 @@ const ListTable = ({ data, id }: Props) => {
   );
 
   return (
-    <Box>
-      Table {id}
+    <Box p='1em' bg='neutrals.5' flex='1'>
       {data && (
         <Table data={data} columns={columns} onEditClick={handleEditClick} />
       )}
