@@ -1,47 +1,62 @@
-import { Box, Button, Input } from '@techstack/components';
-import { useEffect, useState } from 'react';
+import { Box, Button } from '@techstack/components';
+import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import {
   DragDropContext,
   Droppable,
   Draggable,
   DropResult,
+  DraggableProvided,
+  DraggableStateSnapshot,
 } from '@hello-pangea/dnd';
 
 import { RecordType } from '../../app/utils';
 
 import { StyledList, StyledItem } from './styled';
+import InputRenderer from './InputRenderer';
+
+const blockTypes = ['/textarea', '/image', '/image-text'];
 
 interface Props {
   content: Array<RecordType>;
   onChange: (value: Array<RecordType>) => void;
 }
 
-const ContentBuilder = ({ content, onChange }: Props) => {
-  const [state, setState] = useState<Array<RecordType>>(content);
+const ContentBuilder = ({ content }: Props) => {
+  const [state, setState] = useState(content);
 
-  const handleOnChange = (index: number) => (e: any) => {
-    const newState = state;
-    newState[index].value = e.target.value;
-    onChange(newState);
+  const handleOnChange = (e: any, index: number) => {
+    setState(prevState => {
+      const newState = [...prevState];
+      if (blockTypes.includes(e.target.value)) {
+        newState[index].type = e.target.value.replace('/', '');
+        newState[index].value = '';
+      } else {
+        newState[index].value = e.target.value;
+      }
+      return newState;
+    });
   };
 
   const handleContentRemove = (index: number) => () => {
-    const newState = state;
-    newState.splice(index, 1);
-    onChange(newState);
+    setState(prevState => {
+      const newState = [...prevState];
+      newState.splice(index, 1);
+      return newState;
+    });
   };
 
   const handleContentAdd = () => {
     const id = uuid();
-    const newState = state;
-    newState.push({
-      id,
-      type: 'text',
-      value: id,
-      order: newState.length,
+
+    setState(prevState => {
+      const newState = [...prevState];
+      newState.push({
+        id,
+        order: newState.length,
+      });
+      return newState;
     });
-    onChange(newState);
   };
 
   const reorder = (
@@ -57,30 +72,69 @@ const ContentBuilder = ({ content, onChange }: Props) => {
   };
 
   const onDragEnd = (result: DropResult) => {
-    if (result.combine) {
-      const newState = [...state];
-      newState.splice(result.source.index, 1);
-      onChange(newState);
-      return;
-    }
+    setState(prevState => {
+      let newState = [...prevState];
+      if (result.combine) {
+        newState.splice(result.source.index, 1);
+        return newState;
+      }
+      if (
+        !result.destination ||
+        result.destination.index === result.source.index
+      )
+        return prevState;
 
-    if (!result.destination || result.destination.index === result.source.index)
-      return;
+      newState = reorder(
+        [...prevState],
+        result.source.index,
+        result.destination.index
+      );
 
-    console.log('here', result.source.index, result.destination.index);
-
-    const newState = reorder(
-      state,
-      result.source.index,
-      result.destination.index
-    );
-
-    onChange(newState);
+      return newState;
+    });
   };
 
-  useEffect(() => {
-    setState(content);
-  }, [content]);
+  const renderItem = (
+    provided: DraggableProvided,
+    snapshot: DraggableStateSnapshot,
+    index: number,
+    field: RecordType
+  ) => {
+    return (
+      <StyledItem
+        ref={provided.innerRef}
+        {...provided.draggableProps}
+        {...provided.dragHandleProps}
+        isDragging={snapshot.isDragging}
+        style={provided.draggableProps.style}
+      >
+        <Box d='flex' flexDirection='row' gap='5' mt='3'>
+          <InputRenderer
+            field={field}
+            handleOnChange={handleOnChange}
+            blockTypes={blockTypes}
+            index={index}
+          />
+          <Button
+            iconName={'trash'}
+            variant='error'
+            onClick={handleContentRemove(index)}
+            // @ts-ignore
+            type='button'
+          />
+        </Box>
+      </StyledItem>
+    );
+  };
+
+  const renderState = state.map((field, index) => {
+    return (
+      // eslint-disable-next-line react/jsx-key
+      <Draggable draggableId={field.id} index={index}>
+        {(provided, snapshot) => renderItem(provided, snapshot, index, field)}
+      </Draggable>
+    );
+  });
 
   return (
     <Box>
@@ -93,47 +147,7 @@ const ContentBuilder = ({ content, onChange }: Props) => {
               ref={provided.innerRef}
               isDraggingOver={snapshot.isDraggingOver}
             >
-              {state.map((field, index) => {
-                return (
-                  <Draggable
-                    key={field.id}
-                    draggableId={field.id}
-                    index={index}
-                  >
-                    {(provided, snapshot) => (
-                      <StyledItem
-                        ref={provided.innerRef}
-                        {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                        isDragging={snapshot.isDragging}
-                        style={provided.draggableProps.style}
-                      >
-                        <Box
-                          d='flex'
-                          flexDirection='row'
-                          gap='5'
-                          mt='3'
-                          key={`${field.type}_${field.id}`}
-                        >
-                          <Input
-                            name={`${field.id}`}
-                            defaultValue={field.value}
-                            onChange={handleOnChange(index)}
-                            type={field.type as any}
-                          />
-                          <Button
-                            iconName={'trash'}
-                            variant='error'
-                            onClick={handleContentRemove(index)}
-                            // @ts-ignore
-                            type='button'
-                          />
-                        </Box>
-                      </StyledItem>
-                    )}
-                  </Draggable>
-                );
-              })}
+              {renderState}
             </StyledList>
           )}
         </Droppable>

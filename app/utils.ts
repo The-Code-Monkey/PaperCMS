@@ -35,7 +35,7 @@ export const getFieldType = (
 
 export type RecordType = {
   id: string;
-  type: string;
-  value: string;
+  type?: string;
+  value?: string;
   order: number;
 };

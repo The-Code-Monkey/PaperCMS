@@ -28,7 +28,6 @@ const EditForm = ({ data }: Props) => {
     setFormData(prevState => {
       const newState = { ...prevState };
       newState.content = value;
-      console.log(newState);
       return newState;
     });
   };

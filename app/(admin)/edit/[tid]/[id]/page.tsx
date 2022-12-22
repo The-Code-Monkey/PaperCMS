@@ -10,8 +10,6 @@ const Edit = async ({ params }: PageProps) => {
   const DB = useDB<Record<string, string>>();
   const { data } = await DB.get(tid as any, ['id', id]);
 
-  console.log(data?.[0]);
-
   return (
     <div>
       <Header tid={tid} id={id} />

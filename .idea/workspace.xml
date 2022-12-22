@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "yarn",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+    "ts.external.directory.path": "/Users/iv0706/code/paper-cms/node_modules/typescript/lib"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -142,7 +146,8 @@
       <workItem from="1671467956504" duration="26000" />
       <workItem from="1671468313154" duration="1248000" />
       <workItem from="1671531407745" duration="3000" />
-      <workItem from="1671532240364" duration="8764000" />
+      <workItem from="1671532240364" duration="9125000" />
+      <workItem from="1671698414253" duration="5271000" />
     </task>
     <servers />
   </component>
