@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 
 import { createServerClient } from '../utils/supabase-server';
 import StyledComponentsRegistry from '../lib/registry';
@@ -19,12 +19,14 @@ const MyApp = async ({ children }: { children: ReactNode }) => {
   } = await supabase.auth.getSession();
 
   return (
-    <html lang='en'>
+    <html lang='en' id='html'>
       <head />
       <body>
-        <Provider session={session}>
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-        </Provider>
+        <Suspense>
+          <Provider session={session}>
+            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          </Provider>
+        </Suspense>
       </body>
     </html>
   );

@@ -2,7 +2,8 @@
   "defaultStyles": {
     "value": {
       "button": {
-        "borderRadius": "2"
+        "borderRadius": "2",
+        "bg": "primary.0"
       }
     }
   }

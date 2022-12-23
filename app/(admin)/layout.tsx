@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 
 import useDB from '../../db';
 
@@ -19,7 +19,7 @@ const AdminLayout = async ({ children }: Props) => {
   return (
     <div className='wrapper' id='outer'>
       <Nav routes={routes} />
-      <main id='main'>{children}</main>
+      <Suspense>{children}</Suspense>
     </div>
   );
 };

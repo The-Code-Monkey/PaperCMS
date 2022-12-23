@@ -1,5 +1,8 @@
+import { Suspense } from 'react';
+
 import { PageProps } from '../../../../../utils/pageTypes';
 import useDB from '../../../../../db';
+import { StyledMain } from '../../../styled';
 
 import EditForm from './EditForm';
 import Header from './Header';
@@ -11,10 +14,12 @@ const Edit = async ({ params }: PageProps) => {
   const { data } = await DB.get(tid as any, ['id', id]);
 
   return (
-    <>
-      <Header tid={tid} id={id} />
-      <EditForm tid={tid} id={id} data={data?.[0] ?? {}} />
-    </>
+    <Suspense>
+      <StyledMain>
+        <Header tid={tid} id={id} />
+        <EditForm tid={tid} id={id} data={data?.[0] ?? {}} />
+      </StyledMain>
+    </Suspense>
   );
 };
 

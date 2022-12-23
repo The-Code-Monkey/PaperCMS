@@ -1,24 +1,43 @@
+'use client';
+
 import styled from 'styled-components';
+import { Box, BoxProps } from '@techstack/components';
+import { ReactNode } from 'react';
+
+interface StyledMainProps extends BoxProps {
+  children: ReactNode;
+}
+
+export const StyledMain = ({ children, ...rest }: StyledMainProps) => (
+  <Box<'main'>
+    d='flex'
+    flex='1'
+    p='0'
+    m='0'
+    w='w-16'
+    flexDir='column'
+    bg='neutrals.0'
+    {...rest}
+  >
+    {children}
+  </Box>
+);
 
 export const StyledAside = styled.aside`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: ${p => p.theme.sizes[10]};
   overflow-x: hidden;
   transition: width 400ms ease-in-out;
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: ${p => p.theme.space[3]} 0;
-    height: 100%;
-    background-color: ${p => p.theme.colors.neutrals[8]};
   }
 
   li {
-    display: flex;
-    width: 100%;
-    cursor: pointer;
     transition: background-color 200ms ease-in-out;
-    margin-bottom: ${p => p.theme.space[2]};
+    white-space: nowrap;
 
     .active,
     &:hover {

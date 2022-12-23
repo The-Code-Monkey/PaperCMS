@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 
 import useDB from '../../../db';
+import { StyledMain } from '../../(admin)/styled';
 
 const Page = () => {
   const router = useRouter();
@@ -14,7 +15,7 @@ const Page = () => {
     }
   });
 
-  return <div className='wrapper'>Logging you out...</div>;
+  return <StyledMain>Logging you out...</StyledMain>;
 };
 
 export default Page;

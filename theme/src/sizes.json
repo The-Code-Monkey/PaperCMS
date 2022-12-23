@@ -1,0 +1,7 @@
+{
+  "sizes": {
+    "w-16": {
+      "value": "calc(100vw - {sizes.16.value})"
+    }
+  }
+}

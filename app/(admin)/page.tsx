@@ -1,5 +1,9 @@
+'use client';
+
+import { StyledMain } from './styled';
+
 const Page = () => {
-  return <>Dashboard</>;
+  return <StyledMain>Dashboard</StyledMain>;
 };
 
 export default Page;
