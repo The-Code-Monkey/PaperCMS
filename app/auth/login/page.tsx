@@ -1,22 +1,16 @@
-'use client';
-
-import { Box } from '@techstack/components';
+import { StyledMain } from '../../(admin)/styled';
 
 import Form from './Form';
 
 const Page = () => {
   return (
-    <Box
+    <StyledMain
       w={['3/4', '3/4', '1/2', '1/2']}
-      d='flex'
-      alignItems='center'
       justifyContent='center'
-      mx='auto'
-      flex='1'
-      h='full'
+      alignItems='center'
     >
       <Form />
-    </Box>
+    </StyledMain>
   );
 };
 
