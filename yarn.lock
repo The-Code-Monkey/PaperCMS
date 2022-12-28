@@ -1762,10 +1762,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.4.tgz#e6eb718db7fc45c95e8e64e1c66e08a78fa78bf7"
   integrity sha512-OPhzca7e83KGukxLpZ+4F9OBp9CZXi9b/OGJBH8dlC3wpffcSSDczYGUGJKG7wirXQ6cUVYL+9G6UrrdnblKNQ==
 
-"@techstack/components@0.5.103":
-  version "0.5.103"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.103.tgz#6da394cec4874f08ec49fc2768fcf4ea3ebb654b"
-  integrity sha512-1ohy638JYyK/lf/tnL4w0Y2vR7dd5HN1pcUwvMEhKPn07RTjJ3b6gjP1BKqWTGtcSbXolAMcAL0dNZ+cILY2AQ==
+"@techstack/components@0.5.104":
+  version "0.5.104"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.104.tgz#874546d9cee049430d7caef4b22e23b80fd7593c"
+  integrity sha512-4hYQIZ/fdA8XRWj86Qdng98xnXILf6PXwBFwt0Kjp/PEJuzrUn+5YcK/1IeVCWD8xzMHdHGgNiiP4Q/KN9w9pw==
   dependencies:
     "@tanstack/react-table" "8.7.4"
     "@techstack/memoize" "0.2.113"
@@ -1773,7 +1773,7 @@
     "@techstack/react-lazy-named" "0.2.111"
     "@techstack/styled-system" "0.2.116"
     "@techstack/theme" "0.2.112"
-    "@types/react-table" "7.7.12"
+    "@types/react-table" "7.7.13"
     classnames "2.3.2"
     csstype "3.1.1"
     deepmerge "4.2.2"
@@ -2058,10 +2058,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-table@7.7.12":
-  version "7.7.12"
-  resolved "https://registry.yarnpkg.com/@types/react-table/-/react-table-7.7.12.tgz#628011d3cb695b07c678704a61f2f1d5b8e567fd"
-  integrity sha512-bRUent+NR/WwtDGwI/BqhZ8XnHghwHw0HUKeohzB5xN3K2qKWYE5w19e7GCuOkL1CXD9Gi1HFy7TIm2AvgWUHg==
+"@types/react-table@7.7.13":
+  version "7.7.13"
+  resolved "https://registry.yarnpkg.com/@types/react-table/-/react-table-7.7.13.tgz#c049e4161d55c140d3abcd9bf2a1783d69004e22"
+  integrity sha512-mQk4FgGeniU0mFqjkO2TNCyoHPkUo3nPlNlnLBbPQGbycqRdxhWwGMKwLQN5lWoIPYvFOMZxvP6IBJbkJhd63g==
   dependencies:
     "@types/react" "*"
 
