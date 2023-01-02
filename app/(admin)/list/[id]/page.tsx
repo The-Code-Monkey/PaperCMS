@@ -9,7 +9,7 @@ import Header from './Header';
 
 const List = async ({ params }: PageProps) => {
   const { id } = params ?? {};
-  const DB = useDB();
+  const DB = useDB<any[]>();
   const { data } = await DB.get(id as any);
 
   return (
