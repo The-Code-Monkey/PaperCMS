@@ -1,7 +1,7 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Box, Input, Button } from '@techstack/components';
 
 import useDB from '../../../db';
@@ -17,6 +17,7 @@ export interface AuthEvent extends FormEvent<HTMLFormElement> {
 
 const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const params = useSearchParams();
   const router = useRouter();
 
   const DB = useDB();
@@ -34,7 +35,7 @@ const Form = () => {
     });
 
     if (!error && data.session) {
-      router.push('/');
+      router.push(params.get('redirectedFrom') ?? '/');
     } else {
       setIsLoading(false);
     }
@@ -44,11 +45,10 @@ const Form = () => {
     <Box<'form'>
       as='form'
       onSubmit={handleSubmit}
-      flex='1'
       d='flex'
       gap='6'
       flexDirection='column'
-      maxW='17'
+      w={['11/12', '11/12', '3/4', '1/2', '1/3']}
     >
       <label>
         Email address

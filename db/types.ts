@@ -11,6 +11,11 @@ export type AuthOptions = {
   queryParams?: { [key: string]: string };
 };
 
+export type GetOptions = {
+  where?: [string, string];
+  columns?: string;
+};
+
 export interface DbReturnType<
   T extends string,
   R extends Record<string, unknown>,
@@ -18,14 +23,14 @@ export interface DbReturnType<
 > {
   get: (
     table: T,
-    where?: [string, string],
-    columns?: string
+    options?: GetOptions
   ) => Promise<{ data: R[] | null; error: string | undefined }>;
   put: (
     table: T,
     data: Record<string, unknown>,
     row?: string
   ) => Promise<{ error: string }>;
+  remove: (table: T, id: string) => Promise<{ error: string }>;
   signIn: (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
@@ -42,6 +47,7 @@ export interface DbReturnType<
   >;
   signOut: () => Promise<{ error: AuthError | null }>;
   dbFunction: (
-    funcName: F
+    funcName: F,
+    args?: Record<string, unknown>
   ) => Promise<{ data: R[] | null; error: string | undefined }>;
 }

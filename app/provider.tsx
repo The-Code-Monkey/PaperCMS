@@ -24,7 +24,7 @@ export const Provider = ({
   session: Session | null;
 }) => {
   const { value: darkMode } = useDarkMode(
-    window.localStorage.getItem('darkMode') === 'true' ?? false,
+    localStorage.getItem('darkMode') === 'true' ?? false,
     {
       classNameDark: 'theme-dark',
       classNameLight: 'theme-light',

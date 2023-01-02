@@ -37,12 +37,23 @@ export interface Database {
           href: string;
         };
       };
+      'auth-code': {
+        Row: {
+          id: number;
+          code: string;
+          used: boolean;
+        };
+      };
     };
     Views: {
       [_ in never]: never;
     };
     Functions: {
       get_all_table_name: {
+        Args: Record<PropertyKey, never>;
+        Returns: Record<string, unknown>[];
+      };
+      get_table_fields: {
         Args: Record<PropertyKey, never>;
         Returns: Record<string, unknown>[];
       };

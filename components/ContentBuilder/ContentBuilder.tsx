@@ -1,5 +1,4 @@
 import { Box, Button } from '@techstack/components';
-import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import {
   DragDropContext,
@@ -23,40 +22,39 @@ interface Props {
 }
 
 const ContentBuilder = ({ content, onChange }: Props) => {
-  const [state, setState] = useState(content);
+  const handleOnChangeType = (e: any, index: number) => {
+    const newState = [...content];
+
+    if (blockTypes.includes(e.target.value)) {
+      newState[index].type = e.target.value.replace('/', '');
+      newState[index].value = 'testing value';
+    }
+
+    onChange(newState);
+  };
 
   const handleOnChange = (e: any, index: number) => {
-    setState(prevState => {
-      const newState = [...prevState];
-      if (blockTypes.includes(e.target.value)) {
-        newState[index].type = e.target.value.replace('/', '');
-        newState[index].value = '';
-      } else {
-        newState[index].value = e.target.value;
-      }
-      return newState;
-    });
+    const newState = [...content];
+    newState[index].value = e.target.value;
+    onChange(newState);
   };
 
   const handleContentRemove = (index: number) => () => {
-    setState(prevState => {
-      const newState = [...prevState];
-      newState.splice(index, 1);
-      return newState;
-    });
+    const newState = [...content];
+    newState.splice(index, 1);
+    onChange(newState);
   };
 
   const handleContentAdd = () => {
     const id = uuid();
 
-    setState(prevState => {
-      const newState = [...prevState];
-      newState.push({
+    onChange([
+      ...content,
+      {
         id,
-        order: newState.length,
-      });
-      return newState;
-    });
+        order: content.length + 1,
+      },
+    ]);
   };
 
   const reorder = (
@@ -72,30 +70,20 @@ const ContentBuilder = ({ content, onChange }: Props) => {
   };
 
   const onDragEnd = (result: DropResult) => {
-    setState(prevState => {
-      let newState = [...prevState];
-      if (result.combine) {
-        newState.splice(result.source.index, 1);
-        return newState;
-      }
-      if (
-        !result.destination ||
-        result.destination.index === result.source.index
-      )
-        return prevState;
+    const newState = [...content];
+    if (result.combine) {
+      newState.splice(result.source.index, 1);
+      onChange(newState);
+      return;
+    }
+    if (
+      !result.destination ||
+      result.destination.index === result.source.index
+    ) {
+      return;
+    }
 
-      newState = reorder(
-        [...prevState],
-        result.source.index,
-        result.destination.index
-      );
-
-      return newState;
-    });
-  };
-
-  const handleOnBlur = () => {
-    onChange(state);
+    onChange(reorder(newState, result.source.index, result.destination.index));
   };
 
   const renderItem = (
@@ -115,10 +103,10 @@ const ContentBuilder = ({ content, onChange }: Props) => {
         <Box d='flex' flexDirection='row' gap='5' mt='3'>
           <InputRenderer
             field={field}
+            handleOnChangeType={handleOnChangeType}
             handleOnChange={handleOnChange}
             blockTypes={blockTypes}
             index={index}
-            onBlur={handleOnBlur}
           />
           <Button
             iconName={'trash'}
@@ -132,7 +120,7 @@ const ContentBuilder = ({ content, onChange }: Props) => {
     );
   };
 
-  const renderState = state.map((field, index) => {
+  const renderState = content.map((field, index) => {
     return (
       // eslint-disable-next-line react/jsx-key
       <Draggable draggableId={field.id} index={index}>
@@ -142,21 +130,25 @@ const ContentBuilder = ({ content, onChange }: Props) => {
   });
 
   return (
-    <Box>
+    <div onClick={e => e.preventDefault()}>
       Content builder:
-      <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable droppableId='droppable'>
-          {(provided, snapshot) => (
-            <StyledList
-              {...provided.droppableProps}
-              ref={provided.innerRef}
-              isDraggingOver={snapshot.isDraggingOver}
-            >
-              {renderState}
-            </StyledList>
-          )}
-        </Droppable>
-      </DragDropContext>
+      {content.length === 0 ? (
+        <br />
+      ) : (
+        <DragDropContext onDragEnd={onDragEnd}>
+          <Droppable droppableId='droppable'>
+            {(provided, snapshot) => (
+              <StyledList
+                {...provided.droppableProps}
+                ref={provided.innerRef}
+                isDraggingOver={snapshot.isDraggingOver}
+              >
+                {renderState}
+              </StyledList>
+            )}
+          </Droppable>
+        </DragDropContext>
+      )}
       <Button
         mt='3'
         iconName={'plus'}
@@ -168,7 +160,7 @@ const ContentBuilder = ({ content, onChange }: Props) => {
       >
         Add new item
       </Button>
-    </Box>
+    </div>
   );
 };
 

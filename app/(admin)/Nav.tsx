@@ -1,9 +1,8 @@
 'use client';
 
-import { Box, Button, Icon } from '@techstack/components';
+import { Box, Icon } from '@techstack/components';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ReactNode } from 'react';
 import useDarkMode from 'use-dark-mode';
 import { IconTypes } from '@techstack/react-feather';
 
@@ -14,6 +13,7 @@ import { StyledAside } from './styled';
 const routeToIcon: Record<string, IconTypes> = {
   products: 'box',
   blog: 'book',
+  'auth-code': 'hash',
 };
 
 interface Props {
@@ -68,7 +68,7 @@ const Nav = ({ routes = [] }: Props) => {
             <span>Switch Theme</span>
           </a>
         </Box>
-        {renderListItem('/auth/logout', 'logout', 'Logout', { h: '10'})}
+        {renderListItem('/auth/logout', 'logout', 'Logout', { h: '10' })}
       </Box>
     </StyledAside>
   );

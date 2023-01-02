@@ -8,18 +8,25 @@ import ImageUploader from './ImageUploader';
 interface Props {
   field: RecordType;
   handleOnChange: (e: any, index: number) => void;
+  handleOnChangeType: (e: any, index: number) => void;
   blockTypes: Array<string>;
   index: number;
-  onBlur: () => void;
 }
 
 const InputRenderer = ({
   field,
   handleOnChange,
+  handleOnChangeType,
   blockTypes,
   index,
-  onBlur,
 }: Props) => {
+  const onChangeType = useCallback(
+    (e: any) => {
+      handleOnChangeType(e, index);
+    },
+    [handleOnChangeType, index]
+  );
+
   const onChange = useCallback(
     (e: any) => {
       handleOnChange(e, index);
@@ -33,17 +40,11 @@ const InputRenderer = ({
         return (
           <Box d='flex' flexDir='column' w='full'>
             <Box d='flex' flex='50%' gap='5'>
-              <ImageUploader
-                field={field}
-                handleOnChange={onChange}
-                onBlur={onBlur}
-              />
+              <ImageUploader field={field} handleOnChange={onChange} />
               <Input
                 name={`${field.id}_text`}
-                defaultValue={field.value}
+                value={field.value}
                 onChange={onChange}
-                // @ts-ignore
-                onBlur={onBlur}
                 type={'textarea'}
               />
             </Box>
@@ -52,8 +53,6 @@ const InputRenderer = ({
               <Input
                 name={`${field.id}_checkbox`}
                 onChange={onChange}
-                // @ts-ignore
-                onBlur={onBlur}
                 type='checkbox'
               />
             </Box>
@@ -61,27 +60,19 @@ const InputRenderer = ({
         );
       }
       case 'image': {
-        return (
-          <ImageUploader
-            field={field}
-            handleOnChange={onChange}
-            onBlur={onBlur}
-          />
-        );
+        return <ImageUploader field={field} handleOnChange={onChange} />;
       }
       default: {
         return (
           <>
             <Input
               name={`${field.id}`}
-              defaultValue={field.value}
-              onChange={onChange}
-              // @ts-ignore
-              onBlur={onBlur}
+              value={field.value}
+              onChange={!field.type ? onChangeType : onChange}
               type={field.type as any}
+              placeholder={!field.type ? 'Type / to select a block' : undefined}
               // @ts-ignore
-              placeholder={!field.type && 'Type / to select a block'}
-              list={!field.type && 'blocks'}
+              list={!field.type ? 'blocks' : undefined}
             />
             {!field.type && (
               <datalist id='blocks'>

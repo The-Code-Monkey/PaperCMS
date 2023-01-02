@@ -11,11 +11,12 @@ import useDB from '../../../../../db';
 
 interface Props {
   data: Record<string, string>;
+  fields: Array<Record<string, string>>;
   tid: string;
   id: string;
 }
 
-const EditForm = ({ data, tid, id }: Props) => {
+const EditForm = ({ data, tid, id, fields }: Props) => {
   const router = useRouter();
   const DB = useDB<Record<string, string>>();
 
@@ -46,7 +47,15 @@ const EditForm = ({ data, tid, id }: Props) => {
 
   const handleSave = async () => {
     if (formData) {
-      const { error } = await DB.put(tid as any, formData, id);
+      const data = { ...formData };
+      if (id === 'new') {
+        delete data.id;
+        if (data.created_at) {
+          data.created_at = new Date().toDateString();
+        }
+      }
+
+      const { error } = await DB.put(tid as any, data, id);
 
       if (!error) {
         router.push(`/list/${tid}`);
@@ -71,33 +80,66 @@ const EditForm = ({ data, tid, id }: Props) => {
         flexDirection='column'
         bg='neutrals.5'
       >
-        {formData &&
-          Object.keys(data ?? {}).map(field => {
-            const type = getFieldType(formData[field]);
+        {JSON.stringify(formData, null, 2)}
+        {JSON.stringify(fields, null, 2)}
+        {fields.map(field => {
+          const type = getFieldType(field.data_type);
+          const name = field.column_name;
 
-            return (
-              <Box<'label'> key={field} as='label'>
-                {type === 'object' ? (
-                  <ContentBuilder
-                    content={formData[field] as Array<RecordType>}
-                    onChange={handleContentUpdate}
+          return (
+            <Box<'label'> key={name} as='label'>
+              {type === 'object' ? (
+                <ContentBuilder
+                  content={formData?.[name] as Array<RecordType>}
+                  onChange={handleContentUpdate}
+                />
+              ) : (
+                <>
+                  {formatFieldNames(name)}
+                  <Input
+                    name={name}
+                    defaultValue={formData?.[name] as string}
+                    onChange={handleFieldUpdate}
+                    type={type}
+                    disabled={name === 'id' || name === 'created_at'}
+                    mt='2'
+                    // @ts-ignore
+                    required
                   />
-                ) : (
-                  <>
-                    {formatFieldNames(field)}
-                    <Input
-                      name={field}
-                      defaultValue={formData[field] as string}
-                      onChange={handleFieldUpdate}
-                      type={type}
-                      disabled={field === 'id' || field === 'created_at'}
-                      mt='2'
-                    />
-                  </>
-                )}
-              </Box>
-            );
-          })}
+                </>
+              )}
+            </Box>
+          );
+        })}
+        {/*{formData &&*/}
+        {/*  Object.keys(data ?? {}).map(field => {*/}
+        {/*    const type = getFieldType(formData[field]);*/}
+
+        {/*    return (*/}
+        {/*      <Box<'label'> key={field} as='label'>*/}
+        {/*        {type === 'object' ? (*/}
+        {/*          <ContentBuilder*/}
+        {/*            content={formData[field] as Array<RecordType>}*/}
+        {/*            onChange={handleContentUpdate}*/}
+        {/*          />*/}
+        {/*        ) : (*/}
+        {/*          <>*/}
+        {/*            {formatFieldNames(field)}*/}
+        {/*            <Input*/}
+        {/*              name={field}*/}
+        {/*              defaultValue={formData[field] as string}*/}
+        {/*              onChange={handleFieldUpdate}*/}
+        {/*              type={type}*/}
+        {/*              disabled={field === 'id' || field === 'created_at'}*/}
+        {/*              mt='2'*/}
+        {/*              // @ts-ignore*/}
+        {/*              required*/}
+        {/*            />*/}
+        {/*          </>*/}
+        {/*        )}*/}
+        {/*      </Box>*/}
+        {/*    );*/}
+        {/*  })}*/}
       </Box>
       <FormButtons onCancelClick={handleCancel} onSaveClick={handleSave} />
     </>

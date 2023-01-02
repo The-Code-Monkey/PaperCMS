@@ -43,15 +43,19 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     return await supabase.auth.signOut();
   };
 
-  const get: DbReturnType<Tables | string, R, Functions>['get'] = async (
-    table: Tables | string,
-    where: [string, string] = ['', ''],
-    columns = '*'
+  const get: DbReturnType<Tables, R, Functions>['get'] = async (
+    table: Tables,
+    options = {
+      where: ['', ''],
+      columns: '*',
+    }
   ) => {
+    const { columns, where } = options;
+
     const { data, error } = await supabase
-      .from<Tables | string, TableType>(table)
+      .from<Tables, TableType>(table)
       .select(columns)
-      .eq(...where);
+      .eq(...where!);
 
     return { data, error: error?.message } as unknown as Promise<{
       data: R[] | null;
@@ -59,8 +63,8 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     }>;
   };
 
-  const put: DbReturnType<Tables | string, R, Functions>['put'] = async (
-    table: Tables | string,
+  const put: DbReturnType<Tables, R, Functions>['put'] = async (
+    table: Tables,
     data: Record<string, unknown>,
     row?: string
   ) => {
@@ -81,10 +85,20 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     return { error } as unknown as Promise<{ error: string }>;
   };
 
-  const dbFunction: DbReturnType<Tables, R, Functions>['dbFunction'] = async (
-    funcName: Functions
+  const remove: DbReturnType<Tables, R, Functions>['remove'] = async (
+    table: Tables,
+    id: string
   ) => {
-    const { data, error } = await supabase.rpc(funcName);
+    const { error } = await supabase.from(table).delete().eq('id', id);
+
+    return { error } as unknown as Promise<{ error: string }>;
+  };
+
+  const dbFunction: DbReturnType<Tables, R, Functions>['dbFunction'] = async (
+    funcName: Functions,
+    args?: Record<string, unknown>
+  ) => {
+    const { data, error } = await supabase.rpc(funcName, args);
 
     return {
       data,
@@ -92,7 +106,7 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     };
   };
 
-  return { signIn, signUp, signOut, get, put, dbFunction };
+  return { signIn, signUp, signOut, get, put, remove, dbFunction };
 };
 
 export default getSupabase;

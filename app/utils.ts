@@ -1,5 +1,13 @@
 export const capitalizeFirstLetter = ([first, ...rest]: any) =>
-  first === undefined ? '' : first.toUpperCase() + rest.join('');
+  (first === undefined ? '' : first.toUpperCase()) +
+  rest
+    .join('')
+    .split('-')
+    .map((str: string, i: number) => {
+      if (i === 0) return str;
+      return capitalizeFirstLetter(str);
+    })
+    .join(' ');
 
 export const formatFieldNames = (value: string) => {
   if (value === 'id') return 'ID';
@@ -11,21 +19,27 @@ export const formatFieldNames = (value: string) => {
 };
 
 export const getFieldType = (
-  value: string | number | Record<string, unknown> | Array<unknown>
-): 'text' | 'textarea' | 'number' | 'object' | 'date' => {
-  switch (true) {
-    case !Number.isNaN(parseInt(value as string, 10)) &&
-      !`${value}`.includes('+'): {
+  value: string
+): 'text' | 'textarea' | 'number' | 'object' | 'date' | 'checkbox' => {
+  switch (value) {
+    case 'bigint': {
       return 'number';
     }
-    case typeof value === 'object': {
+    case 'json': {
+      // if (Array.isArray(value)) {
+      //   return 'array';
+      // }
       return 'object';
     }
-    // case Array.isArray(value): {
-    //   return 'select';
-    // }
-    case typeof value === 'string' && value.length >= 300: {
+    case 'varchar': {
       return 'textarea';
+    }
+    case 'timestamp with time zone':
+    case 'date': {
+      return 'date';
+    }
+    case 'bool': {
+      return 'checkbox';
     }
     default: {
       return 'text';
