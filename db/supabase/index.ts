@@ -12,11 +12,7 @@ type Functions = keyof Database['public']['Functions'];
 
 type Tables = keyof Database['public']['Tables'];
 
-const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
-  Tables,
-  R,
-  Functions
-> => {
+const getSupabase = <R extends any>(): DbReturnType<Tables, R, Functions> => {
   type TableType = Database['public']['Tables'][Tables]['Row'];
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -104,7 +100,7 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
     return {
       data,
       error: error?.message,
-    };
+    } as any;
   };
 
   return { signIn, signUp, signOut, get, put, remove, dbFunction };

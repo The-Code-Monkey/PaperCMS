@@ -18,7 +18,7 @@ export type GetOptions = {
 
 export interface DbReturnType<
   T extends string,
-  R extends Record<string, unknown>,
+  R extends any,
   F extends string
 > {
   get: (
