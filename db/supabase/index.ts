@@ -79,7 +79,8 @@ const getSupabase = <R extends Record<string, unknown>>(): DbReturnType<
 
       error = res.error;
     } else {
-      error = await supabase.from(table).insert(data);
+      const res = await supabase.from(table).insert(data);
+      error = res.error;
     }
 
     return { error } as unknown as Promise<{ error: string }>;

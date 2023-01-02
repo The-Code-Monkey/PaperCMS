@@ -17,11 +17,11 @@ import InputRenderer from './InputRenderer';
 const blockTypes = ['/textarea', '/image', '/image-text'];
 
 interface Props {
-  content: Array<RecordType>;
+  content?: Array<RecordType>;
   onChange: (value: Array<RecordType>) => void;
 }
 
-const ContentBuilder = ({ content, onChange }: Props) => {
+const ContentBuilder = ({ content = [], onChange }: Props) => {
   const handleOnChangeType = (e: any, index: number) => {
     const newState = [...content];
 

@@ -19,6 +19,7 @@ const Header = ({ id }: Props) => {
     <Box
       d='flex'
       borderBottom='1'
+      borderColor='neutrals.8'
       p='1em'
       py='3'
       bg='neutrals.5'

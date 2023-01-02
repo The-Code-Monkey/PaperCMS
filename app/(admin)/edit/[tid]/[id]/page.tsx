@@ -20,8 +20,6 @@ const Edit = async ({ params }: PageProps) => {
     where: ['id', id],
   });
 
-  console.log(fieldData);
-
   return (
     <Suspense>
       <StyledMain>
@@ -30,7 +28,7 @@ const Edit = async ({ params }: PageProps) => {
           tid={tid}
           id={id}
           data={id === 'new' ? {} : data?.[0] ?? {}}
-          fields={[fieldData] as any}
+          fields={fieldData ?? []}
         />
       </StyledMain>
     </Suspense>

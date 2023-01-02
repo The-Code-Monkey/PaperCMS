@@ -6,21 +6,25 @@ import {
   ThemeModeEnum,
   ThemeProvider,
 } from '@techstack/components';
+import dynamic from 'next/dynamic'
 import { Session } from '@supabase/supabase-js';
 import useDarkMode from 'use-dark-mode';
+import { ReactNode } from 'react';
 
 import SupabaseListener from '../components/supabase-listener';
 import SupabaseProvider from '../components/supabase-provider';
 import theme from '../theme';
 import config from '../orchard.theme.config.json';
 
+import GlobalStyle from './globalStyles';
+
 export const revalidate = 0;
 
-export const Provider = ({
+const Provider = ({
   children,
   session,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   session: Session | null;
 }) => {
   const { value: darkMode } = useDarkMode(
@@ -39,9 +43,12 @@ export const Provider = ({
           theme={theme}
           mode={darkMode ? ThemeModeEnum.DARK : ThemeModeEnum.LIGHT}
         >
+          <GlobalStyle />
           {children}
         </ThemeProvider>
       </SupabaseProvider>
     </ConfigContext.Provider>
   );
 };
+
+export default Provider;

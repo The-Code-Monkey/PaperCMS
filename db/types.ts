@@ -49,5 +49,5 @@ export interface DbReturnType<
   dbFunction: (
     funcName: F,
     args?: Record<string, unknown>
-  ) => Promise<{ data: R[] | null; error: string | undefined }>;
+  ) => Promise<{ data: R | null; error: string | undefined }>;
 }

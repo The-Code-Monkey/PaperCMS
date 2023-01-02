@@ -4,8 +4,6 @@ import useDB from '../../db';
 
 import Nav from './Nav';
 
-import '../global.scss';
-
 interface Props {
   children: ReactNode;
 }

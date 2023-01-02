@@ -57,6 +57,10 @@ export interface Database {
         Args: Record<PropertyKey, never>;
         Returns: Record<string, unknown>[];
       };
+      get_auth_code: {
+        Args: Record<PropertyKey, never>;
+        Returns: Record<string, unknown>[];
+      };
     };
     Enums: {
       [_ in never]: never;

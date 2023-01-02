@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from 'react';
 import { Box, Input, Button } from '@techstack/components';
+import { useRouter } from 'next/navigation';
 
 import useDB from '../../../db';
 
@@ -19,6 +20,9 @@ const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState<false | string>(false);
   const [incorrectLogin, setIncorrectLogin] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const router = useRouter();
 
   const DB = useDB<{
     id: string;
@@ -36,48 +40,41 @@ const Form = () => {
     const password = event.target.elements.password.value;
     const code = event.target.elements.code.value;
 
-    const { data: codeDataArray, error: codeError } = await DB.get(
-      'auth-code',
-      {
-        where: ['code', code],
-      }
+    const { data: codeData, error: codeError } = await DB.dbFunction(
+      'get_auth_code',
+      { email_data: email, code_data: parseInt(code, 10) }
     );
 
-    console.log(codeDataArray, codeError);
+    console.log(codeData, codeError);
 
-    const codeData = codeDataArray?.[0];
-
-    if (codeData === undefined) {
+    if (!codeData || codeError) {
       setMessage(
-        'The code you have attempted to use does not exist try again, or contact an admin'
+        'The code you have attempted to use does not exist or has been used please try again, or contact an admin'
       );
-    } else if (!codeError && !codeData.used && codeData.email === email) {
-      const { error: updateCodeError } = await DB.put(
+      setIsLoading(false);
+      return;
+    }
+
+    const { error } = await DB.signUp({
+      email,
+      password,
+    });
+
+    if (!error) {
+      setSuccess(true);
+      await DB.put(
         'auth-code',
         {
           used: true,
         },
         codeData.id
       );
-
-      const { data, error } = await DB.signUp({
-        email,
-        password,
-      });
-
-      if (!error) {
-        setMessage(
-          'Please check your email for an activation link, you can then login.'
-        );
-      } else {
-        setIncorrectLogin(true);
-      }
     } else {
-      if (codeData.used)
-        setMessage(
-          'Code has already been used please try again, or contact an admin'
-        );
+      setIncorrectLogin(true);
+      setIsLoading(false);
+      return;
     }
+
     setIsLoading(false);
   };
 
@@ -131,6 +128,16 @@ const Form = () => {
       </Button>
       {incorrectLogin && (
         <span>Your email or password was incorrect please try again.</span>
+      )}
+      {success && (
+        <>
+          <span>
+            Please check your email for an activation link, you can then login.
+          </span>
+          <Button mt='3' variant='primary' onClick={() => router.push('/')}>
+            Login
+          </Button>
+        </>
       )}
     </Box>
   );

@@ -22,6 +22,7 @@ export const getFieldType = (
   value: string
 ): 'text' | 'textarea' | 'number' | 'object' | 'date' | 'checkbox' => {
   switch (value) {
+    case 'int':
     case 'bigint': {
       return 'number';
     }
@@ -34,7 +35,9 @@ export const getFieldType = (
     case 'varchar': {
       return 'textarea';
     }
-    case 'timestamp with time zone':
+    // case 'timestamp with time zone': {
+    //   return 'time';
+    // }
     case 'date': {
       return 'date';
     }

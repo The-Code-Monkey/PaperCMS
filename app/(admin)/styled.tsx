@@ -16,7 +16,6 @@ export const StyledMain = ({ children, ...rest }: StyledMainProps) => (
     m='0'
     w='w-16'
     flexDir='column'
-    bg='neutrals.0'
     {...rest}
   >
     {children}
