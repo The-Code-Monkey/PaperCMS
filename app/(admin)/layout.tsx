@@ -9,8 +9,10 @@ interface Props {
 }
 
 const AdminLayout = async ({ children }: Props) => {
-  const DB = useDB<Record<string, string>[]>();
-  const { data } = await DB.dbFunction('get_all_table_name');
+  const DB = useDB();
+  const { data } = await DB.dbFunction<Record<string, string>[]>(
+    'get_all_table_name'
+  );
 
   const routes = data?.map(table => table.tablename) ?? [];
 

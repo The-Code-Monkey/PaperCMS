@@ -4,6 +4,10 @@ import {
 } from '@supabase/gotrue-js/src/lib/types';
 import { AuthError, Session, User } from '@supabase/supabase-js';
 
+export type RecordReturnType =
+  | Record<string, string>
+  | Record<string, string>[];
+
 export type AuthOptions = {
   redirectTo?: string;
   scopes?: string;
@@ -16,21 +20,17 @@ export type GetOptions = {
   columns?: string;
 };
 
-export interface DbReturnType<
-  T extends string,
-  R extends any,
-  F extends string
-> {
-  get: (
+export interface DbReturnType<T extends string, F extends string> {
+  get: <R extends RecordReturnType>(
     table: T,
     options?: GetOptions
-  ) => Promise<{ data: R[] | null; error: string | undefined }>;
+  ) => Promise<dbFunctionReturnType<R>>;
   put: (
     table: T,
     data: Record<string, unknown>,
     row?: string
   ) => Promise<{ error: string }>;
-  remove: (table: T, id: string) => Promise<{ error: string }>;
+  remove: (table: T, id: string) => Promise<{ error: string | undefined }>;
   signIn: (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
@@ -46,8 +46,13 @@ export interface DbReturnType<
     | { data: { user: null; session: null }; error: AuthError }
   >;
   signOut: () => Promise<{ error: AuthError | null }>;
-  dbFunction: (
+  dbFunction: <R extends RecordReturnType>(
     funcName: F,
     args?: Record<string, unknown>
-  ) => Promise<{ data: R | null; error: string | undefined }>;
+  ) => Promise<dbFunctionReturnType<R>>;
 }
+
+export type dbFunctionReturnType<R extends RecordReturnType> = {
+  data: R | null;
+  error: string | undefined;
+};

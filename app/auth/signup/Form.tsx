@@ -24,12 +24,7 @@ const Form = () => {
 
   const router = useRouter();
 
-  const DB = useDB<{
-    id: string;
-    code: string;
-    used: boolean;
-    email: string;
-  }>();
+  const DB = useDB();
 
   const handleSubmit = async (event: AuthEvent) => {
     event.preventDefault();
@@ -40,10 +35,9 @@ const Form = () => {
     const password = event.target.elements.password.value;
     const code = event.target.elements.code.value;
 
-    const { data: codeData, error: codeError } = await DB.dbFunction(
-      'get_auth_code',
-      { email_data: email, code_data: parseInt(code, 10) }
-    );
+    const { data: codeData, error: codeError } = await DB.dbFunction<
+      Record<string, string>
+    >('get_auth_code', { email_data: email, code_data: parseInt(code, 10) });
 
     console.log(codeData, codeError);
 

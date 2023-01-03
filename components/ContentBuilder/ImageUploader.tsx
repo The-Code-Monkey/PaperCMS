@@ -13,11 +13,9 @@ const ImageUploader = ({ field, handleOnChange }: Props) => {
       name={`${field.id}`}
       value={field.value}
       onChange={handleOnChange}
-      // @ts-ignore
       type={'file'}
       accept='image/*'
       placeholder={!field.type ? 'Type / to select a block' : undefined}
-      list={!field.type ? 'blocks' : undefined}
     />
   );
 };

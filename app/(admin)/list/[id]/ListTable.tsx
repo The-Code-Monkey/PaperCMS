@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import useDB from '../../../../db';
 
 interface Props {
-  data: Record<string, unknown>[] | null;
+  data: Record<string, string>[] | null;
   id: string | null;
 }
 

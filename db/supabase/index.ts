@@ -3,7 +3,13 @@ import {
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js/src/lib/types';
 
-import { DbReturnType, AuthOptions } from '../types';
+import {
+  DbReturnType,
+  AuthOptions,
+  dbFunctionReturnType,
+  RecordReturnType,
+  GetOptions,
+} from '../types';
 import { createBrowserClient } from '../../utils/supabase-browser';
 
 import { Database } from './database-types';
@@ -12,13 +18,13 @@ type Functions = keyof Database['public']['Functions'];
 
 type Tables = keyof Database['public']['Tables'];
 
-const getSupabase = <R extends any>(): DbReturnType<Tables, R, Functions> => {
+const getSupabase = (): DbReturnType<Tables, Functions> => {
   type TableType = Database['public']['Tables'][Tables]['Row'];
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const supabase = createBrowserClient();
 
-  const signIn: DbReturnType<Tables, R, Functions>['signIn'] = async (
+  const signIn: DbReturnType<Tables, Functions>['signIn'] = async (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
   ) => {
@@ -28,80 +34,86 @@ const getSupabase = <R extends any>(): DbReturnType<Tables, R, Functions> => {
     });
   };
 
-  const signUp: DbReturnType<Tables, R, Functions>['signUp'] = async (
+  const signUp: DbReturnType<Tables, Functions>['signUp'] = async (
     credentials: SignUpWithPasswordCredentials,
     options?: AuthOptions
   ) => {
     return await supabase.auth.signUp({ ...credentials, ...options });
   };
 
-  const signOut: DbReturnType<Tables, R, Functions>['signOut'] = async () => {
+  const signOut: DbReturnType<Tables, Functions>['signOut'] = async () => {
     return await supabase.auth.signOut();
   };
 
-  const get: DbReturnType<Tables, R, Functions>['get'] = async (
+  const get: DbReturnType<Tables, Functions>['get'] = <
+    R extends RecordReturnType
+  >(
     table: Tables,
-    options = {
-      where: ['', ''],
-      columns: '*',
-    }
-  ) => {
-    const { columns, where } = options;
+    options?: GetOptions
+  ): Promise<dbFunctionReturnType<R>> =>
+    new Promise(async resolve => {
+      const { columns, where } = options ?? {};
 
-    const { data, error } = await supabase
-      .from<Tables, TableType>(table)
-      .select(columns)
-      .eq(...where!);
+      const result = await supabase
+        .from<Tables, TableType>(table)
+        .select(columns ?? '*')
+        // @ts-ignore
+        .eq(...(where ?? ['', '']));
 
-    return { data, error: error?.message } as unknown as Promise<{
-      data: R[] | null;
-      error: string | undefined;
-    }>;
-  };
+      const data = result.data as R | null;
+      const error = result.error;
 
-  const put: DbReturnType<Tables, R, Functions>['put'] = async (
+      resolve({ data, error: error?.message });
+    });
+
+  const put: DbReturnType<Tables, Functions>['put'] = (
     table: Tables,
     data: Record<string, unknown>,
     row?: string
-  ) => {
-    let error;
+  ) =>
+    new Promise(async resolve => {
+      let error;
 
-    if (row) {
-      delete data.id;
-      const res = await supabase
-        .from(table)
-        .update(data)
-        .eq('id', parseInt(row, 10));
+      if (row) {
+        delete data.id;
+        const res = await supabase
+          .from(table)
+          .update(data)
+          .eq('id', parseInt(row, 10));
 
-      error = res.error;
-    } else {
-      const res = await supabase.from(table).insert(data);
-      error = res.error;
-    }
+        error = res.error;
+      } else {
+        const res = await supabase.from(table).insert(data);
+        error = res.error;
+      }
 
-    return { error } as unknown as Promise<{ error: string }>;
-  };
+      resolve({ error } as unknown as { error: string });
+    });
 
-  const remove: DbReturnType<Tables, R, Functions>['remove'] = async (
+  const remove: DbReturnType<Tables, Functions>['remove'] = (
     table: Tables,
     id: string
-  ) => {
-    const { error } = await supabase.from(table).delete().eq('id', id);
+  ) =>
+    new Promise(async resolve => {
+      const { error } = await supabase.from(table).delete().eq('id', id);
 
-    return { error } as unknown as Promise<{ error: string }>;
-  };
+      resolve({ error: error?.message });
+    });
 
-  const dbFunction: DbReturnType<Tables, R, Functions>['dbFunction'] = async (
+  const dbFunction: DbReturnType<Tables, Functions>['dbFunction'] = <
+    R extends RecordReturnType
+  >(
     funcName: Functions,
     args?: Record<string, unknown>
-  ) => {
-    const { data, error } = await supabase.rpc(funcName, args);
+  ): Promise<dbFunctionReturnType<R>> =>
+    new Promise(async resolve => {
+      const result = await supabase.rpc(funcName, args);
 
-    return {
-      data,
-      error: error?.message,
-    } as any;
-  };
+      const data = result.data as R | null;
+      const error = result.error;
+
+      resolve({ data, error: error?.message });
+    });
 
   return { signIn, signUp, signOut, get, put, remove, dbFunction };
 };

@@ -10,13 +10,16 @@ import Header from './Header';
 const Edit = async ({ params }: PageProps) => {
   const { tid, id } = params ?? {};
 
-  const DB = useDB<Array<Record<string, string>>>();
+  const DB = useDB();
 
-  const { data: fieldData } = await DB.dbFunction('get_table_fields', {
-    name: tid,
-  });
+  const { data: fieldData } = await DB.dbFunction<Record<string, string>[]>(
+    'get_table_fields',
+    {
+      name: tid,
+    }
+  );
 
-  const { data } = await DB.get(tid as any, {
+  const { data } = await DB.get<Record<string, string>[]>(tid as any, {
     where: ['id', id],
   });
 
@@ -27,7 +30,6 @@ const Edit = async ({ params }: PageProps) => {
         <EditForm
           tid={tid}
           id={id}
-          // @ts-ignore
           data={id === 'new' ? {} : data?.[0] ?? {}}
           fields={fieldData ?? []}
         />

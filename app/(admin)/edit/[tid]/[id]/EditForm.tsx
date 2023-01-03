@@ -18,9 +18,7 @@ interface Props {
 
 const EditForm = ({ data, tid, id, fields }: Props) => {
   const router = useRouter();
-  const DB = useDB<Record<string, string>>();
-
-  console.log(fields);
+  const DB = useDB();
 
   const [formData, setFormData] = useState<Record<
     string,
@@ -60,8 +58,6 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
         data,
         id === 'new' ? undefined : id
       );
-
-      console.log(error);
 
       if (!error) {
         router.push(`/list/${tid}`);
@@ -106,7 +102,6 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
                       type={type}
                       disabled={name === 'id' || name === 'created_at'}
                       mt='2'
-                      // @ts-ignore
                       required
                     />
                   </>

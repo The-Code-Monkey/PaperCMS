@@ -71,7 +71,6 @@ const InputRenderer = ({
               onChange={!field.type ? onChangeType : onChange}
               type={field.type as any}
               placeholder={!field.type ? 'Type / to select a block' : undefined}
-              // @ts-ignore
               list={!field.type ? 'blocks' : undefined}
             />
             {!field.type && (
