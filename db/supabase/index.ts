@@ -24,6 +24,7 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const supabase = createBrowserClient();
 
+  // Sign In
   const signIn: DbReturnType<Tables, Functions>['signIn'] = async (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
@@ -34,6 +35,7 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
     });
   };
 
+  // Sign Up
   const signUp: DbReturnType<Tables, Functions>['signUp'] = async (
     credentials: SignUpWithPasswordCredentials,
     options?: AuthOptions
@@ -41,10 +43,12 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
     return await supabase.auth.signUp({ ...credentials, ...options });
   };
 
+  // Sign Out
   const signOut: DbReturnType<Tables, Functions>['signOut'] = async () => {
     return await supabase.auth.signOut();
   };
 
+  // Get
   const get: DbReturnType<Tables, Functions>['get'] = <
     R extends RecordReturnType
   >(
@@ -65,6 +69,7 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
       resolve({ data, error: error?.message });
     });
 
+  // Put
   const put: DbReturnType<Tables, Functions>['put'] = (
     table: Tables,
     data: Record<string, unknown>,
@@ -89,6 +94,7 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
       resolve({ error } as unknown as { error: string });
     });
 
+  // Delete
   const remove: DbReturnType<Tables, Functions>['remove'] = (
     table: Tables,
     id: string
@@ -99,6 +105,7 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
       resolve({ error: error?.message });
     });
 
+  // Function
   const dbFunction: DbReturnType<Tables, Functions>['dbFunction'] = <
     R extends RecordReturnType
   >(
@@ -114,7 +121,25 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
       resolve({ data, error: error?.message });
     });
 
-  return { signIn, signUp, signOut, get, put, remove, dbFunction };
+  // Upload
+  const upload: DbReturnType<Tables, Functions>['upload'] = (
+    files,
+    filePath,
+    store = 'images'
+  ) =>
+    new Promise(resolve => {
+      resolve(
+        Array.from(files).map(async file => {
+          const { data, error } = await supabase.storage
+            .from(store)
+            .upload(`${filePath}/${file.name}`, file);
+
+          return { data, error };
+        })
+      );
+    });
+
+  return { signIn, signUp, signOut, get, put, remove, dbFunction, upload };
 };
 
 export default getSupabase;

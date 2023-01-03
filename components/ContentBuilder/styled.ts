@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledItem = styled.div<{ isDragging: boolean }>`
+export const StyledItem = styled.div<{ isDragging?: boolean }>`
   user-select: none;
   padding: ${p => p.theme.space[5]};
   margin: 0 0 ${p => p.theme.space[3]} 0;
@@ -11,7 +11,7 @@ export const StyledItem = styled.div<{ isDragging: boolean }>`
   cursor: grab;
 `;
 
-export const StyledList = styled.div<{ isDraggingOver: boolean }>`
+export const StyledList = styled.div<{ isDraggingOver?: boolean }>`
   background: ${p =>
     p.isDraggingOver ? p.theme.colors.neutrals[6] : p.theme.colors.neutrals[5]};
   padding: ${p => p.theme.space[4]} 0;

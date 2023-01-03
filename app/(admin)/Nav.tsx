@@ -32,6 +32,7 @@ const Nav = ({ routes = [] }: Props) => {
   ) => {
     return (
       <Box<'li'>
+        key={title}
         as='li'
         className={pathname == href ? 'active' : ''}
         d='flex'

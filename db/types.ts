@@ -3,6 +3,7 @@ import {
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js/src/lib/types';
 import { AuthError, Session, User } from '@supabase/supabase-js';
+import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 
 export type RecordReturnType =
   | Record<string, string>
@@ -50,6 +51,13 @@ export interface DbReturnType<T extends string, F extends string> {
     funcName: F,
     args?: Record<string, unknown>
   ) => Promise<dbFunctionReturnType<R>>;
+  upload: (
+    files: FileList,
+    filePath: string,
+    store?: string
+  ) => Promise<
+    Promise<{ data: { path: string } | null; error: StorageError | null }>[]
+  >;
 }
 
 export type dbFunctionReturnType<R extends RecordReturnType> = {

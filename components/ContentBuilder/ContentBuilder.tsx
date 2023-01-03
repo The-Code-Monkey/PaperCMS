@@ -27,13 +27,15 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
 
     if (blockTypes.includes(e.target.value)) {
       newState[index].type = e.target.value.replace('/', '');
-      newState[index].value = 'testing value';
+      delete newState[index].value;
     }
 
     onChange(newState);
   };
 
   const handleOnChange = (e: any, index: number) => {
+    console.log(e, index);
+
     const newState = [...content];
     newState[index].value = e.target.value;
     onChange(newState);
@@ -121,8 +123,11 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
 
   const renderState = content.map((field, index) => {
     return (
-      // eslint-disable-next-line react/jsx-key
-      <Draggable draggableId={field.id} index={index}>
+      <Draggable
+        key={`${field.id}-${field.type}`}
+        draggableId={field.id}
+        index={index}
+      >
         {(provided, snapshot) => renderItem(provided, snapshot, index, field)}
       </Draggable>
     );
@@ -134,19 +139,21 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
       {content.length === 0 ? (
         <br />
       ) : (
-        <DragDropContext onDragEnd={onDragEnd}>
-          <Droppable droppableId='droppable'>
-            {(provided, snapshot) => (
-              <StyledList
-                {...provided.droppableProps}
-                ref={provided.innerRef}
-                isDraggingOver={snapshot.isDraggingOver}
-              >
-                {renderState}
-              </StyledList>
-            )}
-          </Droppable>
-        </DragDropContext>
+        <>
+          <DragDropContext onDragEnd={onDragEnd}>
+            <Droppable droppableId='droppable'>
+              {(provided, snapshot) => (
+                <StyledList
+                  {...provided.droppableProps}
+                  ref={provided.innerRef}
+                  isDraggingOver={snapshot.isDraggingOver}
+                >
+                  {renderState}
+                </StyledList>
+              )}
+            </Droppable>
+          </DragDropContext>
+        </>
       )}
       <Button
         mt='3'
