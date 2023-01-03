@@ -104,17 +104,14 @@ const Form = () => {
     >
       <label>
         Email address
-        {/*// @ts-ignore*/}
         <Input type='email' name='email' required />
       </label>
       <label>
         Password
-        {/*// @ts-ignore*/}
         <Input type='password' name='password' required />
       </label>
       <label>
         Code
-        {/*// @ts-ignore*/}
         <Input type='password' name='code' required />
       </label>
       <Button mt='3' variant='primary' disabled={isLoading}>

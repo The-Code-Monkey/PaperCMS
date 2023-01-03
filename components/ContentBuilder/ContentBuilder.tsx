@@ -112,7 +112,6 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
             iconName={'trash'}
             variant='error'
             onClick={handleContentRemove(index)}
-            // @ts-ignore
             type='button'
           />
         </Box>
@@ -154,7 +153,6 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
         iconName={'plus'}
         variant={'primary'}
         onClick={handleContentAdd}
-        // @ts-ignore
         type='button'
         bg='neutrals.7'
       >

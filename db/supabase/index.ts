@@ -57,7 +57,6 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
       const result = await supabase
         .from<Tables, TableType>(table)
         .select(columns ?? '*')
-        // @ts-ignore
         .eq(...(where ?? ['', '']));
 
       const data = result.data as R | null;

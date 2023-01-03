@@ -9,12 +9,14 @@ import { createBrowserClient } from '../utils/supabase-browser';
 type MaybeSession = Session | null;
 
 type SupabaseContext = {
-  supabase: SupabaseClient;
+  supabase: Partial<SupabaseClient>;
   session: MaybeSession;
 };
 
-// @ts-ignore
-const Context = createContext<SupabaseContext>();
+const Context = createContext<SupabaseContext>({
+  supabase: {},
+  session: null,
+});
 
 export default function SupabaseProvider({
   children,
