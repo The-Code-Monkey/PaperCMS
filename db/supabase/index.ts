@@ -2,6 +2,8 @@ import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js/src/lib/types';
+import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
+import { v4 as uuid } from 'uuid';
 
 import {
   DbReturnType,
@@ -122,22 +124,32 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
     });
 
   // Upload
-  const upload: DbReturnType<Tables, Functions>['upload'] = (
+  const upload: DbReturnType<Tables, Functions>['upload'] = async (
     files,
     filePath,
     store = 'images'
   ) =>
-    new Promise(resolve => {
-      resolve(
-        Array.from(files).map(async file => {
-          const { data, error } = await supabase.storage
-            .from(store)
-            .upload(`${filePath}/${file.name}`, file);
+    Promise.all<{ url: string | null; error: StorageError | null }>(
+      Array.from(files).map(
+        file =>
+          new Promise(async resolve => {
+            const { data: uploadData, error: uploadError } =
+              await supabase.storage
+                .from(store)
+                .upload(`${filePath}/${uuid()}`, file);
 
-          return { data, error };
-        })
-      );
-    });
+            if (uploadData?.path) {
+              const { data } = supabase.storage
+                .from(store)
+                .getPublicUrl(uploadData.path);
+
+              resolve({ url: data?.publicUrl, error: null });
+            }
+
+            resolve({ error: uploadError as StorageError, url: null });
+          })
+      )
+    );
 
   return { signIn, signUp, signOut, get, put, remove, dbFunction, upload };
 };

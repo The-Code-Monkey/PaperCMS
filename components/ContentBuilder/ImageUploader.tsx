@@ -1,17 +1,26 @@
-import { Input } from '@techstack/components';
+import { Box, Input } from '@techstack/components';
+import Image from 'next/image';
 
-import { RecordType } from '../../app/utils';
+import { ImageRecordType } from '../../app/utils';
 
 interface Props {
-  field: RecordType;
+  field: ImageRecordType;
   handleOnChange: (e: any) => void;
 }
 
 const ImageUploader = ({ field, handleOnChange }: Props) => {
-  return (
+  return field.url ? (
+    <Box minH='15' position='relative' flex='1'>
+      <Image
+        src={field.url}
+        alt={'uploaded image'}
+        fill
+        style={{ objectFit: 'contain' }}
+      />
+    </Box>
+  ) : (
     <Input
       name={`${field.id}`}
-      value={field.value}
       onChange={handleOnChange}
       type={'file'}
       accept='image/*'

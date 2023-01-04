@@ -55,9 +55,7 @@ export interface DbReturnType<T extends string, F extends string> {
     files: FileList,
     filePath: string,
     store?: string
-  ) => Promise<
-    Promise<{ data: { path: string } | null; error: StorageError | null }>[]
-  >;
+  ) => Promise<{ url: string | null; error: StorageError | null }[]>;
 }
 
 export type dbFunctionReturnType<R extends RecordReturnType> = {

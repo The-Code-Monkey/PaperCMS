@@ -75,40 +75,41 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
         as='form'
         textAlign='left'
         flex='1'
-        d='flex'
-        gap='6'
-        flexDirection='column'
         bg='neutrals.5'
+        overflowY='auto'
       >
-        {formData &&
-          fields.map(field => {
-            const type = getFieldType(field.data_type);
-            const name = field.column_name;
+        <Box d='flex' flex='1' gap='6' flexDir='column'>
+          {formData &&
+            fields.map(field => {
+              const type = getFieldType(field.data_type);
+              const name = field.column_name;
 
-            return (
-              <Box<'label'> key={name} as='label'>
-                {type === 'object' ? (
-                  <ContentBuilder
-                    content={formData[name] as Array<RecordType>}
-                    onChange={handleContentUpdate}
-                  />
-                ) : (
-                  <>
-                    {formatFieldNames(name)}
-                    <Input
-                      name={name}
-                      defaultValue={formData[name] as string}
-                      onChange={handleFieldUpdate}
-                      type={type}
-                      disabled={name === 'id' || name === 'created_at'}
-                      mt='2'
-                      required
+              return (
+                <Box<'label'> key={name} as='label'>
+                  {type === 'object' ? (
+                    <ContentBuilder
+                      content={formData[name] as Array<RecordType>}
+                      onChange={handleContentUpdate}
+                      tid={tid}
                     />
-                  </>
-                )}
-              </Box>
-            );
-          })}
+                  ) : (
+                    <>
+                      {formatFieldNames(name)}
+                      <Input
+                        name={name}
+                        defaultValue={formData[name] as string}
+                        onChange={handleFieldUpdate}
+                        type={type}
+                        disabled={name === 'id' || name === 'created_at'}
+                        mt='2'
+                        required
+                      />
+                    </>
+                  )}
+                </Box>
+              );
+            })}
+        </Box>
       </Box>
       <FormButtons onCancelClick={handleCancel} onSaveClick={handleSave} />
     </>

@@ -1762,22 +1762,22 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.4.tgz#e6eb718db7fc45c95e8e64e1c66e08a78fa78bf7"
   integrity sha512-OPhzca7e83KGukxLpZ+4F9OBp9CZXi9b/OGJBH8dlC3wpffcSSDczYGUGJKG7wirXQ6cUVYL+9G6UrrdnblKNQ==
 
-"@techstack/components@0.5.113":
-  version "0.5.113"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.113.tgz#e73b2bf4d83e11200dd684616eb494509710c701"
-  integrity sha512-GRhUKAttRQekGYFrz74AcEMMny9XlGLAFbh+aadTfKt7qTq0tQIW9P9ZILg0xbzusGzaKGB4bBpBPPcJrHYdPQ==
+"@techstack/components@0.5.116":
+  version "0.5.116"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.116.tgz#a154189aaff226f2f17be8c9439b54ea9eba9eec"
+  integrity sha512-ez7KrT9WXTBx0nVf0hBIJGtRPTY6hz54GiI5pQ92FQT3suhdMEsqTCdUOT8BF9gcSDn8dTbuympSQVJ8mJLOHg==
   dependencies:
     "@tanstack/react-table" "8.7.4"
     "@techstack/memoize" "0.2.117"
     "@techstack/react-feather" "0.2.116"
     "@techstack/react-lazy-named" "0.2.115"
     "@techstack/styled-system" "0.2.120"
-    "@techstack/theme" "0.2.116"
+    "@techstack/theme" "0.2.118"
     "@types/react-table" "7.7.14"
     classnames "2.3.2"
     csstype "3.1.1"
     deepmerge "4.2.2"
-    i18next "22.4.7"
+    i18next "22.4.8"
     react-date-picker "^9.1.0"
     react-datetime-picker "^4.1.1"
     react-i18next "12.1.1"
@@ -1866,16 +1866,16 @@
     type-fest "3.5.0"
     typescript "4.9.4"
 
-"@techstack/theme@0.2.116":
-  version "0.2.116"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.116.tgz#a859f03c58c75f5850334781e6fdb34714abce2d"
-  integrity sha512-HdB51vuZHoptOafUlEApiI7Q4dDFd0Tnw9PkQ6mbCLr6CDPCHx3cNvJbGgLMHf+7RDz622UZ7+MYSRuBafgWOg==
+"@techstack/theme@0.2.118":
+  version "0.2.118"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.118.tgz#1cd5aede68880a9529ccc0c93a74f4b1c9f5b0af"
+  integrity sha512-nAGutXmswGEIS474TktrOxGYsp0UH7JhkDeVx8Tg/LD0hjdLzuPPcC4e/PfrhEXWaShZxgRJJhoGOo8VNJwSGw==
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
     lodash-es "4.17.21"
     sade "1.8.1"
-    style-dictionary "3.7.1"
+    style-dictionary "3.7.2"
     tinycolor2 "1.5.2"
 
 "@tootallnate/once@2":
@@ -4328,10 +4328,10 @@ humanize-duration@^3.15.3:
   resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.3.tgz#db654e72ebf5ccfe232c7f56bc58aa3a6fe4df88"
   integrity sha512-iimHkHPfIAQ8zCDQLgn08pRqSVioyWvnGfaQ8gond2wf7Jq2jJ+24ykmnRyiz3fIldcn4oUuQXpjqKLhSVR7lw==
 
-i18next@22.4.7:
-  version "22.4.7"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.7.tgz#48728a1c239af3092e3b8a3094477b13157ae42b"
-  integrity sha512-nWHK0wtxY64Lf3h7lIGcslY4bcO7fRZsgO3GrpzUCJCEZurwuLG4sNzIWYrAD5iza1l4/HMhge7eDf0GjdPErQ==
+i18next@22.4.8:
+  version "22.4.8"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.8.tgz#7a3c5d26a93e8e5f32eee07b58484e2f721fb45b"
+  integrity sha512-XSOy17ZWqflOiJRYE/dzv6vDle2Se32dnHREHb93UnZzZ1+UnvQ8yKtt1fpNL3zvXz5AwCqqixrtTVZmRetaiQ==
   dependencies:
     "@babel/runtime" "^7.20.6"
 
@@ -6638,10 +6638,10 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-style-dictionary@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.7.1.tgz#d61c980513d7bb0a1946a9fab31491a672d0f6a2"
-  integrity sha512-yYU9Z/J8Znj9T9oJVjo8VOYamrOxv0UbBKPjhSt+PharxrhyQCM4RWb71fgEfv2pK9KO8G83/0ChDNQZ1mn0wQ==
+style-dictionary@3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.7.2.tgz#bb4e70b2c2020dfa3ea81f22adda252aaf31e0a4"
+  integrity sha512-Nd/qrPj1ikYX+sL/8PofMgfaJLRvGgT96Ty3dJLGNqtZmecVr3Xs+OZivMQEYmSCTiap/UyeV5SqwmAgn3/KKA==
   dependencies:
     chalk "^4.0.0"
     change-case "^4.1.2"

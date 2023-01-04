@@ -1,15 +1,20 @@
+'use client';
+
 import { Box, Button } from '@techstack/components';
 import { v4 as uuid } from 'uuid';
 import {
   DragDropContext,
-  Droppable,
   Draggable,
+  Droppable,
   DropResult,
-  DraggableProvided,
-  DraggableStateSnapshot,
 } from '@hello-pangea/dnd';
 
-import { RecordType } from '../../app/utils';
+import {
+  ImageRecordType,
+  isImageRecordType,
+  RecordType,
+} from '../../app/utils';
+import useDB from '../../db';
 
 import { StyledList, StyledItem } from './styled';
 import InputRenderer from './InputRenderer';
@@ -19,9 +24,12 @@ const blockTypes = ['/textarea', '/image', '/image-text'];
 interface Props {
   content?: Array<RecordType>;
   onChange: (value: Array<RecordType>) => void;
+  tid: string;
 }
 
-const ContentBuilder = ({ content = [], onChange }: Props) => {
+const ContentBuilder = ({ content = [], onChange, tid }: Props) => {
+  const DB = useDB();
+
   const handleOnChangeType = (e: any, index: number) => {
     const newState = [...content];
 
@@ -33,11 +41,17 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
     onChange(newState);
   };
 
-  const handleOnChange = (e: any, index: number) => {
-    console.log(e, index);
-
+  const handleOnChange = async (e: any, index: number) => {
     const newState = [...content];
-    newState[index].value = e.target.value;
+
+    if (isImageRecordType(newState[index])) {
+      const images = await DB.upload(e.target.files, tid);
+      if (images[0].url) {
+        (newState[index] as ImageRecordType).url = images[0].url;
+      }
+    } else {
+      newState[index].value = e.target.value;
+    }
     onChange(newState);
   };
 
@@ -88,53 +102,9 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
     onChange(reorder(newState, result.source.index, result.destination.index));
   };
 
-  const renderItem = (
-    provided: DraggableProvided,
-    snapshot: DraggableStateSnapshot,
-    index: number,
-    field: RecordType
-  ) => {
-    return (
-      <StyledItem
-        ref={provided.innerRef}
-        {...provided.draggableProps}
-        {...provided.dragHandleProps}
-        isDragging={snapshot.isDragging}
-        style={provided.draggableProps.style}
-      >
-        <Box d='flex' flexDirection='row' gap='5' mt='3'>
-          <InputRenderer
-            field={field}
-            handleOnChangeType={handleOnChangeType}
-            handleOnChange={handleOnChange}
-            blockTypes={blockTypes}
-            index={index}
-          />
-          <Button
-            iconName={'trash'}
-            variant='error'
-            onClick={handleContentRemove(index)}
-            type='button'
-          />
-        </Box>
-      </StyledItem>
-    );
-  };
-
-  const renderState = content.map((field, index) => {
-    return (
-      <Draggable
-        key={`${field.id}-${field.type}`}
-        draggableId={field.id}
-        index={index}
-      >
-        {(provided, snapshot) => renderItem(provided, snapshot, index, field)}
-      </Draggable>
-    );
-  });
-
   return (
-    <div onClick={e => e.preventDefault()}>
+    <div>
+      <pre>{JSON.stringify(content, null, 4)}</pre>
       Content builder:
       {content.length === 0 ? (
         <br />
@@ -148,7 +118,48 @@ const ContentBuilder = ({ content = [], onChange }: Props) => {
                   ref={provided.innerRef}
                   isDraggingOver={snapshot.isDraggingOver}
                 >
-                  {renderState}
+                  {content.map((field, index) => (
+                    <Draggable
+                      key={`${field.id}-${field.type}`}
+                      draggableId={field.id}
+                      index={index}
+                    >
+                      {(provided, snapshot) => (
+                        <StyledItem
+                          key={`${field.id}-${field.type}`}
+                          ref={provided.innerRef}
+                          {...provided.draggableProps}
+                          {...provided.dragHandleProps}
+                          isDragging={snapshot.isDragging}
+                          style={provided.draggableProps.style}
+                        >
+                          <Box
+                            d='flex'
+                            flexDirection='row'
+                            gap='5'
+                            mt='3'
+                            alignItems='center'
+                          >
+                            <InputRenderer
+                              field={field}
+                              handleOnChangeType={handleOnChangeType}
+                              handleOnChange={handleOnChange}
+                              blockTypes={blockTypes}
+                              index={index}
+                            />
+
+                            <Button
+                              iconName={'trash'}
+                              intent='error'
+                              onClick={handleContentRemove(index)}
+                              type='button'
+                              size='10'
+                            />
+                          </Box>
+                        </StyledItem>
+                      )}
+                    </Draggable>
+                  ))}
                 </StyledList>
               )}
             </Droppable>

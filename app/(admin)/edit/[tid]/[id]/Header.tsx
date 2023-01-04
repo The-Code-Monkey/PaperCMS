@@ -17,6 +17,7 @@ const Header = ({ tid, id }: Props) => {
       p='1em'
       pb='3'
       bg='neutrals.5'
+      h='10'
     >
       Editing: {capitalizeFirstLetter(tid)} - {id}
     </Box>

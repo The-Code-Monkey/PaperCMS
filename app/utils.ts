@@ -50,9 +50,23 @@ export const getFieldType = (
   }
 };
 
-export type RecordType = {
+export type ImageRecordType = {
   id: string;
-  type?: string;
+  type: 'image';
   value?: string;
   order: number;
+  url?: string;
 };
+
+export const isImageRecordType = (
+  record: RecordType
+): record is ImageRecordType => (record as ImageRecordType).type === 'image';
+
+export type RecordType =
+  | {
+      id: string;
+      type?: string;
+      value?: string;
+      order: number;
+    }
+  | ImageRecordType;

@@ -14,9 +14,14 @@ const FormButtons = ({ onCancelClick, onSaveClick }: Props) => {
       px='1em'
       py='3'
       bg='neutrals.10'
+      h='10'
     >
-      <Button onClick={onSaveClick}>Save</Button>
-      <Button onClick={onCancelClick}>Cancel</Button>
+      <Button onClick={onSaveClick} intent='success'>
+        Save
+      </Button>
+      <Button onClick={onCancelClick} intent='error'>
+        Cancel
+      </Button>
     </Box>
   );
 };

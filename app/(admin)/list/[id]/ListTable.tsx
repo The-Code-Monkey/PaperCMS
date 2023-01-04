@@ -30,7 +30,7 @@ const ListTable = ({ data, id }: Props) => {
 
   const handleEditClick = useCallback(
     (rid: string) => {
-      router.push(`/edit/${id}/${parseInt(rid, 10) + 1}`);
+      router.push(`/edit/${id}/${parseInt(rid, 10)}`);
     },
     [router, id]
   );

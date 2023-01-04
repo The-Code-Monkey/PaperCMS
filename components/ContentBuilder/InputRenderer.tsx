@@ -1,7 +1,7 @@
 import { Box, Input } from '@techstack/components';
 import { memo, useCallback } from 'react';
 
-import { RecordType } from '../../app/utils';
+import { ImageRecordType, RecordType } from '../../app/utils';
 
 import ImageUploader from './ImageUploader';
 
@@ -40,7 +40,10 @@ const InputRenderer = ({
         return (
           <Box d='flex' flexDir='column' w='full'>
             <Box d='flex' flex='50%' gap='5'>
-              <ImageUploader field={field} handleOnChange={onChange} />
+              <ImageUploader
+                field={field as ImageRecordType}
+                handleOnChange={onChange}
+              />
               <Input
                 name={`${field.id}_text`}
                 value={field.value}
@@ -60,7 +63,12 @@ const InputRenderer = ({
         );
       }
       case 'image': {
-        return <ImageUploader field={field} handleOnChange={onChange} />;
+        return (
+          <ImageUploader
+            field={field as ImageRecordType}
+            handleOnChange={onChange}
+          />
+        );
       }
       default: {
         return (
