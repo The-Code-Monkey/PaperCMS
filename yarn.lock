@@ -1762,17 +1762,28 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.4.tgz#e6eb718db7fc45c95e8e64e1c66e08a78fa78bf7"
   integrity sha512-OPhzca7e83KGukxLpZ+4F9OBp9CZXi9b/OGJBH8dlC3wpffcSSDczYGUGJKG7wirXQ6cUVYL+9G6UrrdnblKNQ==
 
+<<<<<<< HEAD
 "@techstack/components@0.5.119":
   version "0.5.119"
   resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.119.tgz#1dee4123cc19c1c8b36ef6dda4b3357d2ca57036"
   integrity sha512-W18o3rHsrLeMV/1qMBqRMHHw21N6f9b/1BhTMZPwxmXB0czLldT8br3GcfbrP+hCoJHx2qf3E8cCwdhKZSHnTQ==
+=======
+"@techstack/components@0.5.117":
+  version "0.5.117"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.5.117.tgz#8b643fcace03411a6e37b17a0cd515ee0214f271"
+  integrity sha512-+RX2dDBIg84i8kR4JBNsOMEfPgfd+GQC0LYXcZTS0/a26fE6taIUQFqXw5t78B0I6fr/IlwoF9MJJZBDKxj1uQ==
+>>>>>>> 023e7a9e74ca6d5461e379f3a18d066d5e5baa93
   dependencies:
     "@tanstack/react-table" "8.7.4"
     "@techstack/memoize" "0.2.118"
     "@techstack/react-feather" "0.2.117"
     "@techstack/react-lazy-named" "0.2.116"
     "@techstack/styled-system" "0.2.121"
+<<<<<<< HEAD
     "@techstack/theme" "^0.2.121"
+=======
+    "@techstack/theme" "0.2.119"
+>>>>>>> 023e7a9e74ca6d5461e379f3a18d066d5e5baa93
     "@types/react-table" "7.7.14"
     classnames "2.3.2"
     csstype "3.1.1"
@@ -1866,10 +1877,17 @@
     type-fest "3.5.0"
     typescript "4.9.4"
 
+<<<<<<< HEAD
 "@techstack/theme@0.2.121", "@techstack/theme@^0.2.121":
   version "0.2.121"
   resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.121.tgz#f8c9f1ce8c889dceb366493b1030261c3ced2bf7"
   integrity sha512-CJ0BMWp5IdmjvmARAog5vlOkgnSRIIgyr+jsquREsLtmxOklGryrCRQh5aBjiMtkJ7MP426nEvXfcI7WeyCgVg==
+=======
+"@techstack/theme@0.2.119":
+  version "0.2.119"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.2.119.tgz#3fb63a6bbcbfa194d9a0a6824b9f903bbdb69476"
+  integrity sha512-GrjpMYHdQBnderTzDNUDrPUc9PgrKMN7jg8FbqMGilzoQGc8vdTP6/Q+IeKrPKVHV6N0rILuLxDIJMV91klStA==
+>>>>>>> 023e7a9e74ca6d5461e379f3a18d066d5e5baa93
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
