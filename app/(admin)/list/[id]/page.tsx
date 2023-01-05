@@ -12,6 +12,8 @@ const List = async ({ params }: PageProps) => {
   const DB = useDB();
   const { data } = await DB.get<Record<string, string>[]>(id as any);
 
+  console.log(id, data);
+
   return (
     <Suspense>
       <StyledMain>
