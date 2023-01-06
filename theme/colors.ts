@@ -1,8 +1,4 @@
-import {
-  IThemeColorsType,
-  ModeThemeType,
-  ThemeModeEnum,
-} from '@techstack/components';
+import { IThemeColorsType, ModeThemeType, ThemeModeEnum } from '../utils';
 
 import common from './dist/core';
 import darkMode from './dist/dark-mode';
