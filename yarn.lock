@@ -1012,7 +1012,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.10"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4":
   version "7.20.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.1.tgz#1148bb33ab252b165a06698fde7576092a78b4a9"
   integrity sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==
@@ -1762,63 +1762,63 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.4.tgz#e6eb718db7fc45c95e8e64e1c66e08a78fa78bf7"
   integrity sha512-OPhzca7e83KGukxLpZ+4F9OBp9CZXi9b/OGJBH8dlC3wpffcSSDczYGUGJKG7wirXQ6cUVYL+9G6UrrdnblKNQ==
 
-"@techstack/components@0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.2.tgz#8f72fb8a139a55409b44420f417677d2b5034310"
-  integrity sha512-/+GMmFrRtr5Dc4+kkdN9tNAPSe1AIxk6QfaoLx7X5tL/JOx6bfrFrntwqtCaXyvtoz1YM5WfETVi981jjZFV/g==
+"@techstack/components@0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.7.tgz#5b87673fdfaeb782f45bd1dfb176e44ef5785c87"
+  integrity sha512-xeR1nQVk7HRqOPENOqgIVtTDRYJLhpMhu21FTQgV2eP0eQulxOLTK3KrErc8vyMqzXmc7I3W4L0vJ6cYpf366g==
   dependencies:
     "@tanstack/react-table" "8.7.4"
-    "@techstack/memoize" "0.4.1"
-    "@techstack/react-feather" "0.4.1"
-    "@techstack/react-lazy-named" "0.4.1"
-    "@techstack/styled-system" "0.4.1"
-    "@techstack/theme" "0.4.1"
+    "@techstack/memoize" "0.4.4"
+    "@techstack/react-feather" "0.4.4"
+    "@techstack/react-lazy-named" "0.4.4"
+    "@techstack/styled-system" "0.4.4"
+    "@techstack/theme" "0.4.4"
     "@types/react-table" "7.7.14"
     classnames "2.3.2"
     csstype "3.1.1"
     deepmerge "4.2.2"
-    i18next "22.4.8"
+    i18next "22.4.9"
     react-date-picker "^9.1.0"
     react-datetime-picker "^4.1.1"
-    react-i18next "12.1.1"
+    react-i18next "12.1.4"
     react-lazy-named "1.2.2"
     react-table "7.8.0"
     react-virtual "2.10.4"
     styled-components "5.3.6"
 
-"@techstack/memoize@0.4.1", "@techstack/memoize@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.4.1.tgz#577ac9bf10ec7a9be716f8b98b4a4690841067f7"
-  integrity sha512-2YE++vcWJUSK6rhwvuAreroQ5rzD3kY+gakCaw27LpMWWW1IyTf5o2u1GbhEkQ+6EezNifRxSxFKRvtrkDSlGw==
+"@techstack/memoize@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@techstack/memoize/-/memoize-0.4.4.tgz#4cecd95b770357ce1008f973c715e5990714cc32"
+  integrity sha512-jFeT4mYOq+kidNr3+JRxd+GYk1qcoQQpRF7SsyxmFxoS28f2ILmPC7o3MUcRfwUZpnj5j8ibpzv+B9uo63P00w==
 
-"@techstack/react-feather@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.4.1.tgz#9689b72f99ed6a58c696b5e4725fbc18e657ddc5"
-  integrity sha512-5ovCkQ4R2SaA2OkgriJACQKZo+f9CbcPkmDGdd9hcz8eQUYpV//oFTBmLYCr9geooz0CdvI5lKXnsa7cysbnyw==
+"@techstack/react-feather@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@techstack/react-feather/-/react-feather-0.4.4.tgz#0e6ca36f595422cf30d6cc2de46305f3e4a446a7"
+  integrity sha512-6wPxuibMpacjsZ1jBycPFnQuZ7Rqd9qmVQWGPf4KXIY00bUSUCXwvP19lzXzLbdn5MskfrNxSgjDY1Yluf8OJA==
   dependencies:
-    "@techstack/react-lazy-named" "^0.4.1"
+    "@techstack/react-lazy-named" "0.4.4"
 
-"@techstack/react-lazy-named@0.4.1", "@techstack/react-lazy-named@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.4.1.tgz#f3f7747e20ad73219bef619af5073d9cd0f089be"
-  integrity sha512-jIw5jZtUdJW1iyotNxceecALIeXoNSj7IeHIoJJtLbbKrVQZyMmNCzTo8XlrGc2vKOMmMjgp+xEfurRKhEI6fQ==
+"@techstack/react-lazy-named@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@techstack/react-lazy-named/-/react-lazy-named-0.4.4.tgz#6828a76bae886c890d223fb898c285e74c9282fb"
+  integrity sha512-rWsLaaOisrnRHrSKZQaH41x6B570LqFYOhjl9oPMzM2oTs61FATQIGyMJetyzOL6pkANQYW3q76u2DqxRY6Isw==
   dependencies:
     lodash "4.17.21"
     lodash-es "4.17.21"
 
-"@techstack/styled-system@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.4.1.tgz#7205f6b561e2ecf5dfbd1da9c7069dab595d082d"
-  integrity sha512-dcfwL5zSURdxzxO6htvVR2jaOFFP/TtIdnKRVp5L5zjJ4Z9elx/LfB+onbZG2Dz8I08tPvqs+GDfYwu5fjWYGQ==
+"@techstack/styled-system@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.4.4.tgz#eae248279d16d61231e3e2ed7aff448ee2765da0"
+  integrity sha512-IXYl8PBnZtOSbweJxiqlBo1nmPsgmUjJ7KPQN8H7kiFqE3CyWfyb9Eak37O201QQbclhKI0y6/WVisSN7OfL5g==
   dependencies:
     "@emotion/is-prop-valid" "1.2.0"
-    "@techstack/memoize" "^0.4.1"
+    "@techstack/memoize" "0.4.4"
     csstype "3.1.1"
 
-"@techstack/tcm-cli@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.1.tgz#b0e99fb86b1c175b96b2b59cbbb74c1ce6e3dfb2"
-  integrity sha512-CEgWAan+SVfFvBBBZ8v24jTD27SvJ0TMyF2D1R3NxIyCpfEWg+i7eoQ2wSaVt+40Cfl6iwx30lGkq1ORfZ3hbA==
+"@techstack/tcm-cli@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.4.tgz#ca6b2065ef9f5a02ec4775e748c4d10e74378fc4"
+  integrity sha512-QWB43KylqoGyVvt3D1Wx/i8+skySRQyvgRl6A78FvQVZTeIDBXhEesGi4tw3+3l9lcmsPwSZzY/pxxSvK8j1QA==
   dependencies:
     "@rollup/plugin-babel" "6.0.3"
     "@types/jest" "29.2.5"
@@ -1834,7 +1834,7 @@
     eslint-config-react-app "7.0.1"
     eslint-plugin-flowtype "8.0.3"
     eslint-plugin-import "2.26.0"
-    eslint-plugin-jest "27.2.0"
+    eslint-plugin-jest "27.2.1"
     eslint-plugin-jsx-a11y "6.6.1"
     eslint-plugin-no-restricted-imports "0.0.0"
     eslint-plugin-prettier "4.2.1"
@@ -1851,8 +1851,8 @@
     lodash.merge "4.6.2"
     ora "6.1.2"
     pascal-case "3.1.2"
-    postcss "8.4.20"
-    prettier "2.8.1"
+    postcss "8.4.21"
+    prettier "2.8.2"
     progress-estimator "0.3.0"
     regenerator-runtime "0.13.11"
     sade "1.8.1"
@@ -1866,10 +1866,10 @@
     type-fest "3.5.1"
     typescript "4.9.4"
 
-"@techstack/theme@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.1.tgz#1cdb7a7446414d43c54306f0ecd83749b1d02716"
-  integrity sha512-JIKq6ANZ3+BWuBPFIqADuvXCYlIg/6/pM9Drs4bGuzNTigYut7hjGpVkiqPsTFXdX79Fm+mjZdw4y1Z3Dp0tQg==
+"@techstack/theme@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.4.tgz#a277e40b1731b2418b654d6f6e4de37ac48c7e34"
+  integrity sha512-PVUYUdya78vbIT/skhtE42+AZUP0JsXVwRos+B9HC4QiiAbq28c64m3GlUiXEA/+LCdjMkBX4Vv7XP/vMk5Vqg==
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
@@ -3634,10 +3634,10 @@ eslint-plugin-import@2.26.0, eslint-plugin-import@^2.25.3, eslint-plugin-import@
     resolve "^1.22.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jest@27.2.0:
-  version "27.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.2.0.tgz#8e9976705642bea1981596c0ba5e3f46d449f3fc"
-  integrity sha512-KGIYtelk4rIhKocxRKUEeX+kJ0ZCab/CiSgS8BMcKD7AY7YxXhlg/d51oF5jq2rOrtuJEDYWRwXD95l6l2vtrA==
+eslint-plugin-jest@27.2.1:
+  version "27.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.2.1.tgz#b85b4adf41c682ea29f1f01c8b11ccc39b5c672c"
+  integrity sha512-l067Uxx7ZT8cO9NJuf+eJHvt6bqJyz2Z29wykyEdz/OtmcELQl2MQGQLX8J94O1cSJWAwUSEvCjwjA7KEK3Hmg==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -4328,10 +4328,10 @@ humanize-duration@^3.15.3:
   resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.3.tgz#db654e72ebf5ccfe232c7f56bc58aa3a6fe4df88"
   integrity sha512-iimHkHPfIAQ8zCDQLgn08pRqSVioyWvnGfaQ8gond2wf7Jq2jJ+24ykmnRyiz3fIldcn4oUuQXpjqKLhSVR7lw==
 
-i18next@22.4.8:
-  version "22.4.8"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.8.tgz#7a3c5d26a93e8e5f32eee07b58484e2f721fb45b"
-  integrity sha512-XSOy17ZWqflOiJRYE/dzv6vDle2Se32dnHREHb93UnZzZ1+UnvQ8yKtt1fpNL3zvXz5AwCqqixrtTVZmRetaiQ==
+i18next@22.4.9:
+  version "22.4.9"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.9.tgz#98c8384c6bd41ff937da98b1e809ba03d3b41053"
+  integrity sha512-8gWMmUz460KJDQp/ob3MNUX84cVuDRY9PLFPnV8d+Qezz/6dkjxwOaH70xjrCNDO+JrUL25iXfAIN9wUkInNZw==
   dependencies:
     "@babel/runtime" "^7.20.6"
 
@@ -5885,10 +5885,10 @@ postcss@8.4.14:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@8.4.20:
-  version "8.4.20"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.20.tgz#64c52f509644cecad8567e949f4081d98349dc56"
-  integrity sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==
+postcss@8.4.21:
+  version "8.4.21"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.21.tgz#c639b719a57efc3187b13a1d765675485f4134f4"
+  integrity sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==
   dependencies:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
@@ -5911,10 +5911,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
-  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
+prettier@2.8.2:
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.2.tgz#c4ea1b5b454d7c4b59966db2e06ed7eec5dfd160"
+  integrity sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==
 
 pretty-format@^29.0.0, pretty-format@^29.2.1:
   version "29.2.1"
@@ -6054,12 +6054,12 @@ react-fit@^1.4.0:
     prop-types "^15.6.0"
     tiny-warning "^1.0.0"
 
-react-i18next@12.1.1:
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-12.1.1.tgz#2626cdbfe6bcb76ef833861c0184a5c4e5e3c089"
-  integrity sha512-mFdieOI0LDy84q3JuZU6Aou1DoWW2fhapcTGeBS8+vWSJuViuoCLQAMYSb0QoHhXS8B0WKUOPpx4cffAP7r/aA==
+react-i18next@12.1.4:
+  version "12.1.4"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-12.1.4.tgz#be0a60d3a45acc4321909f8a4b8cde16518a2926"
+  integrity sha512-XQND7jYtgM7ht5PH3yIZljCRpAMTlH/zmngM9ZjToqa+0BR6xuu8c7QF0WIIOEjcMTB2S3iOfpN/xG/ZrAnO6g==
   dependencies:
-    "@babel/runtime" "^7.14.5"
+    "@babel/runtime" "^7.20.6"
     html-parse-stringify "^3.0.1"
 
 react-is@^16.13.1, react-is@^16.7.0:
