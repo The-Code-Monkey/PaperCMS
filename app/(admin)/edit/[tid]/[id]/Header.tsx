@@ -13,10 +13,10 @@ const Header = ({ tid, id }: Props) => {
   return (
     <Box
       borderBottom='1'
-      borderColor='neutrals.8'
+      borderColor='neutrals.10'
       p='1em'
       pb='3'
-      bg='neutrals.5'
+      bg='neutrals.7'
       h='10'
     >
       Editing: {capitalizeFirstLetter(tid)} - {id}

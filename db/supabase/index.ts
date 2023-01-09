@@ -20,10 +20,9 @@ type Functions = keyof Database['public']['Functions'];
 
 type Tables = keyof Database['public']['Tables'];
 
-const getSupabase = (): DbReturnType<Tables, Functions> => {
+const useSupabase = (): DbReturnType<Tables, Functions> => {
   type TableType = Database['public']['Tables'][Tables]['Row'];
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const supabase = createBrowserClient();
 
   // Sign In
@@ -154,4 +153,4 @@ const getSupabase = (): DbReturnType<Tables, Functions> => {
   return { signIn, signUp, signOut, get, put, remove, dbFunction, upload };
 };
 
-export default getSupabase;
+export default useSupabase;

@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/theme/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/enum.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/logout/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/logout/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/globalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/supabase/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/supabase/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/theme/colors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/variants.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,10 +88,10 @@
       <recent name="$PROJECT_DIR$/app/(admin)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/admin" />
       <recent name="$PROJECT_DIR$/app/auth/login" />
-      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
@@ -178,6 +195,9 @@
       <workItem from="1672837551358" duration="945000" />
       <workItem from="1672920867359" duration="991000" />
       <workItem from="1672936024886" duration="104000" />
+      <workItem from="1673003587346" duration="152000" />
+      <workItem from="1673006932478" duration="3999000" />
+      <workItem from="1673019056104" duration="3392000" />
     </task>
     <servers />
   </component>

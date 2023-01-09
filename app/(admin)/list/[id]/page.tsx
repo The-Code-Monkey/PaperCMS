@@ -1,8 +1,6 @@
-import { Suspense } from 'react';
-
 import { PageProps } from '../../../../utils/pageTypes';
-import useDB from '../../../../db';
 import { StyledMain } from '../../styled';
+import useDB from '../../../../db';
 
 import ListTable from './ListTable';
 import Header from './Header';
@@ -12,15 +10,11 @@ const List = async ({ params }: PageProps) => {
   const DB = useDB();
   const { data } = await DB.get<Record<string, string>[]>(id as any);
 
-  console.log(id, data);
-
   return (
-    <Suspense>
-      <StyledMain>
-        <Header id={id} />
-        <ListTable data={data} id={id} />
-      </StyledMain>
-    </Suspense>
+    <StyledMain>
+      <Header id={id} />
+      <ListTable data={data} id={id} />
+    </StyledMain>
   );
 };
 

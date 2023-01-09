@@ -1,12 +1,6 @@
 'use client';
 
-import {
-  ConfigContext,
-  Context,
-  ThemeModeEnum,
-  ThemeProvider,
-} from '@techstack/components';
-import dynamic from 'next/dynamic'
+import { ConfigContext, Context, ThemeProvider } from '@techstack/components';
 import { Session } from '@supabase/supabase-js';
 import useDarkMode from 'use-dark-mode';
 import { ReactNode } from 'react';
@@ -15,6 +9,7 @@ import SupabaseListener from '../components/supabase-listener';
 import SupabaseProvider from '../components/supabase-provider';
 import theme from '../theme';
 import config from '../orchard.theme.config.json';
+import { ThemeModeEnum } from '../theme/enum';
 
 import GlobalStyle from './globalStyles';
 

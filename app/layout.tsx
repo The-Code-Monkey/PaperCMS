@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { ReactNode, Suspense } from 'react';
+import { ReactNode } from 'react';
 
 import { createServerClient } from '../utils/supabase-server';
 import StyledComponentsRegistry from '../lib/registry';
@@ -20,11 +20,9 @@ const MyApp = async ({ children }: { children: ReactNode }) => {
     <html lang='en' id='html'>
       <head />
       <body>
-        <Suspense>
-          <Provider session={session}>
-            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-          </Provider>
-        </Suspense>
+        <Provider session={session}>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        </Provider>
       </body>
     </html>
   );

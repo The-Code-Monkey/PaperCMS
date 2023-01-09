@@ -4,10 +4,7 @@ import Form from './Form';
 
 const Page = () => {
   return (
-    <StyledMain
-      justifyContent='center'
-      alignItems='center'
-    >
+    <StyledMain justifyContent='center' alignItems='center'>
       <Form />
     </StyledMain>
   );

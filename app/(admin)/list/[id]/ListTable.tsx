@@ -29,23 +29,23 @@ const ListTable = ({ data, id }: Props) => {
   });
 
   const handleEditClick = useCallback(
-    (rid: string) => {
-      router.push(`/edit/${id}/${parseInt(rid, 10)}`);
+    (row: Record<string, unknown>) => {
+      if (row.id) {
+        router.push(`/edit/${id}/${row.id}`);
+      }
     },
     [router, id]
   );
 
   const handleDeleteClick = useCallback(
-    async (rid: string) => {
-      const row = data?.[rid as unknown as number]!;
-
+    async (row: Record<string, unknown>) => {
       const { error } = await DB.remove(id as any, row.id as string);
 
       if (!error) {
         router.refresh();
       }
     },
-    [DB, data, id, router]
+    [DB, id, router]
   );
 
   if (!data) return null;

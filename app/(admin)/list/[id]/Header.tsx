@@ -19,13 +19,13 @@ const Header = ({ id }: Props) => {
     <Box
       d='flex'
       borderBottom='1'
-      borderColor='neutrals.8'
+      borderColor='neutrals.10'
       p='1em'
       py='3'
-      bg='neutrals.5'
+      bg='neutrals.7'
       justifyContent='flex-end'
     >
-      <Button iconName='plus' h='0' onClick={handleClick}>
+      <Button iconName='plus' h='0' variant='default' onClick={handleClick}>
         Add entry
       </Button>
     </Box>

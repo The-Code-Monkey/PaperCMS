@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-
 import { PageProps } from '../../../../../utils/pageTypes';
 import useDB from '../../../../../db';
 import { StyledMain } from '../../../styled';
@@ -24,17 +22,15 @@ const Edit = async ({ params }: PageProps) => {
   });
 
   return (
-    <Suspense>
-      <StyledMain>
-        <Header tid={tid} id={id} />
-        <EditForm
-          tid={tid}
-          id={id}
-          data={id === 'new' ? {} : data?.[0] ?? {}}
-          fields={fieldData ?? []}
-        />
-      </StyledMain>
-    </Suspense>
+    <StyledMain>
+      <Header tid={tid} id={id} />
+      <EditForm
+        tid={tid}
+        id={id}
+        data={id === 'new' ? {} : data?.[0] ?? {}}
+        fields={fieldData ?? []}
+      />
+    </StyledMain>
   );
 };
 
