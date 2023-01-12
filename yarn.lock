@@ -1769,17 +1769,17 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.6.tgz#5ad8a67ef6312c56c4a075326afcb2813c030a22"
   integrity sha512-sqiNTMzB6cpyL8DFH6/VqW48SwiflLqxQqYpo2wNock7rdVGvlm0BLNI8vZUJbr1+fmmWmHwBvi5OMgZw8n1DA==
 
-"@techstack/components@0.7.15":
-  version "0.7.15"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.15.tgz#afb02636e9cfa830e65689910b248cc677a30526"
-  integrity sha512-x2L3avk+YrzQm1rOzCOT5DD4Q+zHTPyslWPJN6BlvHqMC4iWHYoAY9V+1/SRfg7k3zXHGwS0X4DfsRapaeAi7Q==
+"@techstack/components@0.7.16":
+  version "0.7.16"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.16.tgz#1057befec62540130f1dd548b9c9121a79987c87"
+  integrity sha512-5j9GqzAoWoVtVcq3raJpoi8ynMm0Dv/lUQiqFBOYs4sC9hXDgna8jkng8Qk1rtNiSKWjZBHLYMGhD/blm91VjQ==
   dependencies:
     "@tanstack/react-table" "8.7.6"
     "@techstack/memoize" "0.4.10"
     "@techstack/react-feather" "0.4.10"
     "@techstack/react-lazy-named" "0.4.10"
-    "@techstack/styled-system" "0.4.11"
-    "@techstack/theme" "0.4.11"
+    "@techstack/styled-system" "0.4.12"
+    "@techstack/theme" "0.4.12"
     "@types/react-table" "7.7.14"
     classnames "2.3.2"
     csstype "3.1.1"
@@ -1813,10 +1813,10 @@
     lodash "4.17.21"
     lodash-es "4.17.21"
 
-"@techstack/styled-system@0.4.11":
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.4.11.tgz#83c04e5598999aeb3a7826d1b16ac3b146e36a3e"
-  integrity sha512-KHuz/vhW8XBSWaA3i5nA5ltPEamzF5JDC+x8ycEV2pGBfztIiuAH4A3NMSLquvdJKSj/Yfmy6yLcT1FwMtHprw==
+"@techstack/styled-system@0.4.12":
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/@techstack/styled-system/-/styled-system-0.4.12.tgz#7617c42b31dc0686a71360f824f575b9e69840bb"
+  integrity sha512-CH3plJluOUsdrzS0zKpCUZfxznUTbftyOD6PLqISrjPoRncPeBqO1i0z1HBs+rf23zAsmaqysr1HG33ZSgqCBA==
   dependencies:
     "@emotion/is-prop-valid" "1.2.0"
     "@techstack/memoize" "0.4.10"
@@ -1873,10 +1873,10 @@
     type-fest "3.5.1"
     typescript "4.9.4"
 
-"@techstack/theme@0.4.11":
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.11.tgz#c75933d111e13f73435170c416f5786be63aa35e"
-  integrity sha512-3pj0rHZNotTsgMPvdJTntbZq+Ad16gM2OkGBHKX8+0DT4qiXEydgsA+mucBZdKAVLLiVb241xjUkvl3emvGV2w==
+"@techstack/theme@0.4.12":
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.12.tgz#79a036969112da7ee4f53e0c2c8ec945ab37df74"
+  integrity sha512-WGGc2da1gVQKnzlG7T75WcUGQ7gxh2yneMEwlueiME6cyhiYzTTgWv5CQgYokwS+hWp+gwLpWVzW3jvDjthwhQ==
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
