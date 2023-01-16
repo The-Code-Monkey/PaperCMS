@@ -1769,17 +1769,17 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.6.tgz#5ad8a67ef6312c56c4a075326afcb2813c030a22"
   integrity sha512-sqiNTMzB6cpyL8DFH6/VqW48SwiflLqxQqYpo2wNock7rdVGvlm0BLNI8vZUJbr1+fmmWmHwBvi5OMgZw8n1DA==
 
-"@techstack/components@0.7.24":
-  version "0.7.24"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.24.tgz#81dcbe0b2a2f4dca24034c1bea6890fc3feee016"
-  integrity sha512-FsK9seGmq1EM1vNd0VoPMbYgmIN3KoptwAdXwjhrgIWTq5i8hHFVq5rPg1pulJYXtJ/6vryEpc4lTfYtNW7yiQ==
+"@techstack/components@0.7.25":
+  version "0.7.25"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.25.tgz#33c26ee6d4bdaf7ed88c3d39c1b44ff8a4e461b7"
+  integrity sha512-4kdoUkAJSTgb+chDjYvSczr4t9UyP5HRYQhcbElO+hPqwn8d8Rrw/nv8T7U/XCCCJ3tBfibnLnsmjTNhrTaxzw==
   dependencies:
     "@tanstack/react-table" "8.7.6"
     "@techstack/memoize" "0.4.18"
     "@techstack/react-feather" "0.4.18"
     "@techstack/react-lazy-named" "0.4.18"
     "@techstack/styled-system" "0.4.20"
-    "@techstack/theme" "0.4.20"
+    "@techstack/theme" "0.4.21"
     "@types/react-table" "7.7.14"
     classnames "2.3.2"
     csstype "3.1.1"
@@ -1873,10 +1873,10 @@
     type-fest "3.5.2"
     typescript "4.9.4"
 
-"@techstack/theme@0.4.20":
-  version "0.4.20"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.20.tgz#173ff8d0ba849cfb7cd818b9a69350a5be2b8f17"
-  integrity sha512-bQz3DFxqCZBYLObUkVtyKI1X29wimdPHAmsDS0O4HixFKVSjlt8CJPs3+xBxG8aBjeoQZmmXc5LNIaXrUdk+0Q==
+"@techstack/theme@0.4.21":
+  version "0.4.21"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.21.tgz#c0e1d3152906fe6e0bbcf7e7429b39d066fefcf3"
+  integrity sha512-fYyEGLAgPDRlQwV4JabhqjXb+VyCGSmzPhX9+7fdNqsQs7vgChjf4Tcew/oeSa0fTfpTGbEMWY2Bi25AOis6UA==
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
