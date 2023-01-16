@@ -3,5 +3,6 @@
   "outputDir": "/",
   "iconDir": "feather",
   "dblClickDelay": 500,
-  "dbProvider": "supabase"
+  "dbProvider": "supabase",
+  "hasUsers": false
 }
