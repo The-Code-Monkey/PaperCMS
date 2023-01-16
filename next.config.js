@@ -6,7 +6,7 @@ const nextConfig = {
   swcMinify: true,
   experimental: { appDir: true },
   images: {
-    domains: ['sorthugaogfbqewtykix.supabase.co'],
+    domains: ['secfdgdrcjidshyuawfs.supabase.co'],
   },
 };
 
