@@ -1,209 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+    <list default="true" id="143ce953-bdba-48d8-8a4a-d6954f7ade42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/ListTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/list/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.13" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="true" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectId" id="2CTdW33KdSI8yedfQvdiAp7qhkH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/iv0706/code/paper-cms/app/(admin)/edit/[tid]/[id]&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/iv0706/code/paper-cms/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ts.external.directory.path": "/Users/iv0706/code/paper-cms/node_modules/typescript/lib"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]" />
-      <recent name="$PROJECT_DIR$/app/(admin)/list/[id]" />
-      <recent name="$PROJECT_DIR$/app/auth/signup" />
-      <recent name="$PROJECT_DIR$/app/(admin)" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/admin" />
-      <recent name="$PROJECT_DIR$/app/auth/login" />
-      <recent name="$PROJECT_DIR$/components" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="" />
-      <created>1658830536335</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1658830536335</updated>
-      <workItem from="1658830537773" duration="892000" />
-      <workItem from="1658841451436" duration="1256000" />
-      <workItem from="1658852608896" duration="834000" />
-      <workItem from="1658912890788" duration="1001000" />
-      <workItem from="1658915022891" duration="1694000" />
-      <workItem from="1659699605406" duration="3831000" />
-      <workItem from="1659968073134" duration="7256000" />
-      <workItem from="1662561805129" duration="347000" />
-      <workItem from="1662563025046" duration="491000" />
-      <workItem from="1662564525521" duration="396000" />
-      <workItem from="1662629221422" duration="23000" />
-      <workItem from="1662644154417" duration="289000" />
-      <workItem from="1662645035486" duration="3421000" />
-      <workItem from="1662719542106" duration="3315000" />
-      <workItem from="1662971656309" duration="8201000" />
-      <workItem from="1663146993349" duration="172000" />
-      <workItem from="1663163838880" duration="2136000" />
-      <workItem from="1663166803563" duration="1705000" />
-      <workItem from="1663168853807" duration="179000" />
-      <workItem from="1663230984422" duration="561000" />
-      <workItem from="1663246992631" duration="1002000" />
-      <workItem from="1663257477603" duration="3068000" />
-      <workItem from="1664537727878" duration="27000" />
-      <workItem from="1664538190820" duration="141000" />
-      <workItem from="1665139636992" duration="34000" />
-      <workItem from="1665143099732" duration="2229000" />
-      <workItem from="1666617656375" duration="1364000" />
-      <workItem from="1666623237751" duration="972000" />
-      <workItem from="1666626935668" duration="613000" />
-      <workItem from="1666693360705" duration="200000" />
-      <workItem from="1666694592629" duration="1136000" />
-      <workItem from="1666710416423" duration="71000" />
-      <workItem from="1666712164774" duration="13709000" />
-      <workItem from="1666862170652" duration="559000" />
-      <workItem from="1666870009765" duration="1592000" />
-      <workItem from="1666948818034" duration="3906000" />
-      <workItem from="1667225656332" duration="8728000" />
-      <workItem from="1667298902049" duration="4791000" />
-      <workItem from="1667317263980" duration="11164000" />
-      <workItem from="1667551566048" duration="24000" />
-      <workItem from="1667551591971" duration="1872000" />
-      <workItem from="1667895640520" duration="4000" />
-      <workItem from="1667923202091" duration="22000" />
-      <workItem from="1667923245971" duration="516000" />
-      <workItem from="1667923799613" duration="112000" />
-      <workItem from="1667924236584" duration="1524000" />
-      <workItem from="1671019315850" duration="6290000" />
-      <workItem from="1671030379721" duration="114000" />
-      <workItem from="1671031277298" duration="1541000" />
-      <workItem from="1671092454625" duration="3135000" />
-      <workItem from="1671180191793" duration="558000" />
-      <workItem from="1671188656791" duration="4000" />
-      <workItem from="1671202761194" duration="96000" />
-      <workItem from="1671274683942" duration="1014000" />
-      <workItem from="1671277539262" duration="2751000" />
-      <workItem from="1671280708214" duration="416000" />
-      <workItem from="1671281266054" duration="133000" />
-      <workItem from="1671281676797" duration="74000" />
-      <workItem from="1671282595446" duration="72000" />
-      <workItem from="1671287518699" duration="319000" />
-      <workItem from="1671287926489" duration="352000" />
-      <workItem from="1671442149373" duration="1129000" />
-      <workItem from="1671447848449" duration="929000" />
-      <workItem from="1671458988863" duration="756000" />
-      <workItem from="1671460239713" duration="464000" />
-      <workItem from="1671467956504" duration="26000" />
-      <workItem from="1671468313154" duration="1248000" />
-      <workItem from="1671531407745" duration="3000" />
-      <workItem from="1671532240364" duration="9125000" />
-      <workItem from="1671698414253" duration="5915000" />
-      <workItem from="1671720048725" duration="3752000" />
-      <workItem from="1671728885446" duration="843000" />
-      <workItem from="1671737850874" duration="7061000" />
-      <workItem from="1672306144815" duration="13030000" />
-      <workItem from="1672390704739" duration="1539000" />
-      <workItem from="1672393249405" duration="3985000" />
-      <workItem from="1672662947994" duration="4087000" />
-      <workItem from="1672677469991" duration="333000" />
-      <workItem from="1672738744965" duration="4679000" />
-      <workItem from="1672744872267" duration="56000" />
-      <workItem from="1672745045407" duration="989000" />
-      <workItem from="1672748390714" duration="4339000" />
-      <workItem from="1672756488934" duration="227000" />
-      <workItem from="1672756834590" duration="875000" />
-      <workItem from="1672757927444" duration="242000" />
-      <workItem from="1672822199570" duration="5281000" />
-      <workItem from="1672831376934" duration="37000" />
-      <workItem from="1672831502311" duration="1003000" />
-      <workItem from="1672833462537" duration="263000" />
-      <workItem from="1672837551358" duration="945000" />
-      <workItem from="1672920867359" duration="991000" />
-      <workItem from="1672936024886" duration="104000" />
-      <workItem from="1673003587346" duration="152000" />
-      <workItem from="1673006932478" duration="3999000" />
-      <workItem from="1673019056104" duration="3392000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>false</integration-enabled>
-    <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

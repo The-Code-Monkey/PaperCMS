@@ -27,8 +27,6 @@ const Nav = ({ routes = [] }: Props) => {
   const { toggle, value } = useDarkMode();
   const { hasUsers } = useContext<Context>(ConfigContext);
 
-  console.log(routes);
-
   const renderListItem = (
     href: string,
     icon: IconTypes,
