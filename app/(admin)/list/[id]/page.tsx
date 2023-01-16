@@ -10,10 +10,17 @@ const List = async ({ params }: PageProps) => {
   const DB = useDB();
   const { data } = await DB.get<Record<string, string>[]>(id as any);
 
+  const { data: fieldData } = await DB.dbFunction<Record<string, string>[]>(
+    'get_table_fields',
+    {
+      name: id,
+    }
+  );
+
   return (
     <StyledMain>
       <Header id={id} />
-      <ListTable data={data} id={id} />
+      <ListTable data={data} id={id} fieldData={fieldData} />
     </StyledMain>
   );
 };

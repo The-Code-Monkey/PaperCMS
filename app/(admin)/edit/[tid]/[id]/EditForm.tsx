@@ -84,6 +84,8 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
               const type = getFieldType(field.data_type);
               const name = field.column_name;
 
+              console.log(name, type);
+
               return (
                 <Box<'label'> key={name} as='label'>
                   {type === 'object' ? (

@@ -14,7 +14,8 @@ import { StyledAside } from './styled';
 const routeToIcon: Record<string, IconTypes> = {
   products: 'box',
   blog: 'book',
-  'auth-code': 'hash',
+  authCode: 'hash',
+  pages: 'bookopen',
 };
 
 interface Props {
@@ -25,6 +26,8 @@ const Nav = ({ routes = [] }: Props) => {
   const pathname = usePathname() ?? '/';
   const { toggle, value } = useDarkMode();
   const { hasUsers } = useContext<Context>(ConfigContext);
+
+  console.log(routes);
 
   const renderListItem = (
     href: string,

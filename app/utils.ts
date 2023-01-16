@@ -1,10 +1,8 @@
-import { useState } from 'react';
-
 export const capitalizeFirstLetter = ([first, ...rest]: any) =>
   (first === undefined ? '' : first.toUpperCase()) +
   rest
     .join('')
-    .split('-')
+    .split(/(?=[A-Z])/g)
     .map((str: string, i: number) => {
       if (i === 0) return str;
       return capitalizeFirstLetter(str);
