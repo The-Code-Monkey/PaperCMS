@@ -39,8 +39,6 @@ const Form = () => {
       Record<string, string>
     >('get_auth_code', { email_data: email, code_data: parseInt(code, 10) });
 
-    console.log(codeData, codeError);
-
     if (!codeData || codeError) {
       setMessage(
         'The code you have attempted to use does not exist or has been used please try again, or contact an admin'
@@ -57,7 +55,7 @@ const Form = () => {
     if (!error) {
       setSuccess(true);
       await DB.put(
-        'auth-code',
+        'authCode',
         {
           used: true,
         },
@@ -92,6 +90,15 @@ const Form = () => {
         Try again
       </Button>
     </Box>
+  ) : success ? (
+    <>
+      <span>
+        Please check your email for an activation link, you can then login.
+      </span>
+      <Button mt='3' variant='primary' onClick={() => router.push('/')}>
+        Login
+      </Button>
+    </>
   ) : (
     <Box<'form'>
       as='form'
@@ -119,16 +126,6 @@ const Form = () => {
       </Button>
       {incorrectLogin && (
         <span>Your email or password was incorrect please try again.</span>
-      )}
-      {success && (
-        <>
-          <span>
-            Please check your email for an activation link, you can then login.
-          </span>
-          <Button mt='3' variant='primary' onClick={() => router.push('/')}>
-            Login
-          </Button>
-        </>
       )}
     </Box>
   );

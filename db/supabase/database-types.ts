@@ -37,7 +37,7 @@ export interface Database {
           href: string;
         };
       };
-      'auth-code': {
+      authCode: {
         Row: {
           id: number;
           code: string;

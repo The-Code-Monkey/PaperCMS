@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="" />
+    <list default="true" id="fd694a2e-d291-412e-8ace-c8cda6cbf6de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/signup/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/signup/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/globalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/supabase/database-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/supabase/database-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/supabase/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/supabase/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orchard.theme.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/orchard.theme.config.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -80,7 +80,9 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
       let error;
 
       if (row) {
-        delete data.id;
+        if (data.id) {
+          delete data.id;
+        }
         const res = await supabase
           .from(table)
           .update(data)

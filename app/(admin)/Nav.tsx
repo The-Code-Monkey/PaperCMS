@@ -1,10 +1,11 @@
 'use client';
 
-import { Box, Icon } from '@techstack/components';
+import { Box, ConfigContext, Context, Icon } from '@techstack/components';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import useDarkMode from 'use-dark-mode';
 import { IconTypes } from '@techstack/react-feather';
+import { useContext } from 'react';
 
 import { capitalizeFirstLetter } from '../utils';
 
@@ -23,6 +24,7 @@ interface Props {
 const Nav = ({ routes = [] }: Props) => {
   const pathname = usePathname() ?? '/';
   const { toggle, value } = useDarkMode();
+  const { hasUsers } = useContext<Context>(ConfigContext);
 
   const renderListItem = (
     href: string,
@@ -53,7 +55,7 @@ const Nav = ({ routes = [] }: Props) => {
     <StyledAside>
       <Box<'ul'> as='ul' m='0' py='3' px='0' bg='neutrals.8' flex='1'>
         {renderListItem('/', 'barchart2', 'Dashboard')}
-        {renderListItem('/users', 'users', 'Users')}
+        {hasUsers && renderListItem('/users', 'users', 'Users')}
         {routes.map(route =>
           renderListItem(
             `/list/${route}`,

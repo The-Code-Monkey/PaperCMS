@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Box, Input, Button } from '@techstack/components';
 
 import useDB from '../../../db';
+import Link from 'next/link';
 
 export interface AuthEvent extends FormEvent<HTMLFormElement> {
   target: HTMLFormElement & {
@@ -61,6 +62,9 @@ const Form = () => {
       <Button mt='3' variant='primary' disabled={isLoading}>
         {isLoading ? 'logging in' : 'login'}
       </Button>
+      <Link style={{ alignSelf: 'flex-start' }} href={'/auth/signup'}>
+        Sign up
+      </Link>
     </Box>
   );
 };
