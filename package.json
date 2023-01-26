@@ -16,7 +16,7 @@
     "@supabase/auth-ui-react": "0.2.6",
     "@supabase/supabase-auth-helpers": "1.4.2",
     "@supabase/supabase-js": "2.4.1",
-    "@techstack/components": "0.7.38",
+    "@techstack/components": "0.7.39",
     "@techstack/theme": "0.4.34",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "9.0.0",
