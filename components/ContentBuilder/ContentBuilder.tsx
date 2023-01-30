@@ -19,7 +19,7 @@ import useDB from '../../db';
 import { StyledList, StyledItem } from './styled';
 import InputRenderer from './InputRenderer';
 
-const blockTypes = ['/textarea', '/image', '/image-text'];
+const blockTypes = ['/textarea', '/image', '/image-text', '/carousel'];
 
 interface Props {
   content?: Array<RecordType>;
@@ -50,6 +50,7 @@ const ContentBuilder = ({ content = [], onChange, tid }: Props) => {
         (newState[index] as ImageRecordType).url = images[0].url;
       }
     } else {
+      console.log(newState, index);
       newState[index].value = e.target.value;
     }
     onChange(newState);
@@ -102,68 +103,63 @@ const ContentBuilder = ({ content = [], onChange, tid }: Props) => {
     onChange(reorder(newState, result.source.index, result.destination.index));
   };
 
+  console.log('HERE', content);
+
   return (
     <div>
-      <pre>{JSON.stringify(content, null, 4)}</pre>
       Content builder:
       {content.length === 0 ? (
         <br />
       ) : (
         <>
-          <DragDropContext onDragEnd={onDragEnd}>
-            <Droppable droppableId='droppable'>
-              {(provided, snapshot) => (
-                <StyledList
-                  {...provided.droppableProps}
-                  ref={provided.innerRef}
-                  isDraggingOver={snapshot.isDraggingOver}
+          {/*<DragDropContext onDragEnd={onDragEnd}>*/}
+          {/*<Droppable droppableId='droppable'>*/}
+          {/*  {(provided, snapshot) => (*/}
+          <StyledList // {...provided.droppableProps}*/}
+          // ref={provided.innerRef}
+          // isDraggingOver={snapshot.isDraggingOver}
+          >
+            {content.map((field, index) => (
+              // <Draggable
+              //   key={`${field.id}-${field.type}`}
+              //   draggableId={field.id}
+              //   index={index}
+              // >
+              //   {(provided, snapshot) => (
+              <StyledItem
+                key={`${field.id}-${field.type}`}
+                // ref={provided.innerRef}
+                // {...provided.draggableProps}*/}
+                // {...provided.dragHandleProps}*/}
+                // isDragging={snapshot.isDragging}
+                // style={provided.draggableProps.style}
+              >
+                <Box
+                  d='flex'
+                  flexDirection='row'
+                  gap='5'
+                  mt='3'
+                  alignItems='center'
                 >
-                  {content.map((field, index) => (
-                    <Draggable
-                      key={`${field.id}-${field.type}`}
-                      draggableId={field.id}
-                      index={index}
-                    >
-                      {(provided, snapshot) => (
-                        <StyledItem
-                          key={`${field.id}-${field.type}`}
-                          ref={provided.innerRef}
-                          {...provided.draggableProps}
-                          {...provided.dragHandleProps}
-                          isDragging={snapshot.isDragging}
-                          style={provided.draggableProps.style}
-                        >
-                          <Box
-                            d='flex'
-                            flexDirection='row'
-                            gap='5'
-                            mt='3'
-                            alignItems='center'
-                          >
-                            <InputRenderer
-                              field={field}
-                              handleOnChangeType={handleOnChangeType}
-                              handleOnChange={handleOnChange}
-                              blockTypes={blockTypes}
-                              index={index}
-                            />
+                  <InputRenderer
+                    field={field}
+                    handleOnChangeType={handleOnChangeType}
+                    handleOnChange={handleOnChange}
+                    blockTypes={blockTypes}
+                    index={index}
+                  />
 
-                            <Button
-                              iconName={'trash'}
-                              intent='error'
-                              onClick={handleContentRemove(index)}
-                              type='button'
-                              size='10'
-                            />
-                          </Box>
-                        </StyledItem>
-                      )}
-                    </Draggable>
-                  ))}
-                </StyledList>
-              )}
-            </Droppable>
-          </DragDropContext>
+                  <Button
+                    iconName={'trash'}
+                    intent='error'
+                    onClick={handleContentRemove(index)}
+                    type='button'
+                    size='10'
+                  />
+                </Box>
+              </StyledItem>
+            ))}
+          </StyledList>
         </>
       )}
       <Button

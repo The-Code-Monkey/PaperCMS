@@ -1,6 +1,6 @@
 import { Box, Input } from '@techstack/components';
 import Image from 'next/image';
-import { useCallback, useRef } from 'react';
+import { useCallback } from 'react';
 
 import { ImageRecordType } from '../../app/utils';
 

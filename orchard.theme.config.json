@@ -4,5 +4,5 @@
   "iconDir": "feather",
   "dblClickDelay": 500,
   "dbProvider": "supabase",
-  "hasUsers": true
+  "hasUsers": false
 }
