@@ -1781,10 +1781,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.8.tgz#20c9bad75981e431ddc666e0dd532eb813e1e451"
   integrity sha512-OvKx7v0qJTyPkMhqsWzVPZnARiqdGvDvEg8tZ/GSQs7t0Vb2sdtkGg7cdzUZ67sIg9o5/gSwvvT84ouSaP8euA==
 
-"@techstack/components@0.7.47":
-  version "0.7.47"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.47.tgz#2525506bdf04596b77d8fc8f4aba5cc4c1825ce4"
-  integrity sha512-KTUZPvtJz7FcJXYS0u60Fgu4HqDp2bX8sh8PgqehkBB3xbiUaFy/xpWeSEFgsfZiUorKWEK4xcJcpTCwcbgWvA==
+"@techstack/components@0.7.48":
+  version "0.7.48"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.48.tgz#31f6cb4c44504599340ef416580105a2bfdd8764"
+  integrity sha512-GLMr+se2vNvROywkT7X7qCSizkarX+3zxcyNx4n9MtxBWsFyADpZA6BnN5kLfSGVDIsBeJmjMXWFX7w/K31t9g==
   dependencies:
     "@tanstack/react-table" "8.7.8"
     "@techstack/memoize" "0.4.33"
@@ -1796,7 +1796,7 @@
     "@types/react-table" "7.7.14"
     classnames "2.3.2"
     csstype "3.1.1"
-    deepmerge "4.2.2"
+    deepmerge "4.3.0"
     i18next "22.4.9"
     react-date-picker "^9.1.0"
     react-datetime-picker "^4.1.1"
@@ -3359,7 +3359,12 @@ deep-is@^0.1.3, deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
 
-deepmerge@4.2.2, deepmerge@^4.2.2:
+deepmerge@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.0.tgz#65491893ec47756d44719ae520e0e2609233b59b"
+  integrity sha512-z2wJZXrmeHdvYJp/Ux55wIjqo81G5Bp4c+oELTW+7ar6SogWHajt5a9gO3s3IDaGSAXjDk0vlQKN3rms8ab3og==
+
+deepmerge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
   integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
