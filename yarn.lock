@@ -1966,10 +1966,10 @@
     "@techstack/memoize" "0.4.36"
     csstype "3.1.1"
 
-"@techstack/tcm-cli@0.4.33":
-  version "0.4.33"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.33.tgz#37a2df69f95386fbf69040d3ce0d9099e1c843cb"
-  integrity sha512-mwMMgzXBwq6DIHzSUpzcHg9R7gDD1WVx9fclH5GE61cH9yxoY8V+FQVJ74MmGtcmW8LIK+PL03z2/hie2V4/kg==
+"@techstack/tcm-cli@0.4.34":
+  version "0.4.34"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.34.tgz#ec52ef253d7c22fe77dd421c06632d81918ec6b0"
+  integrity sha512-37ZZ38nBvLK8MRN9gJmGEqLhwfCFIXw8ecZC8aG7aVhCFVbtrvzp32VILl6E+jL5nQMPFiXBEdud2Ik/CpsNKw==
   dependencies:
     "@rollup/plugin-babel" "6.0.3"
     "@types/jest" "29.4.0"
@@ -2014,13 +2014,13 @@
     ts-jest "29.0.5"
     ts-node "10.9.1"
     tslib "2.5.0"
-    type-fest "3.5.3"
+    type-fest "3.5.4"
     typescript "4.9.4"
 
-"@techstack/theme@0.4.38":
-  version "0.4.38"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.38.tgz#a04d3ccbe079242c5c2be71dfffe7500f857ae74"
-  integrity sha512-56+JZL3y1FvIGZtxjJpvXxwZcjPqAxb/SBA2Yymm7qJvrM+mKOkZ8263iFDWvLQpPLXYnukitX+YWFNhBoYI1g==
+"@techstack/theme@0.4.39":
+  version "0.4.39"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.39.tgz#1eb90070e965aa6c091bc5a391075052ff8ad04f"
+  integrity sha512-9/o/2lvRodymqhDqT7bZ0CQs5VADyaFcEAMtv1dT/E1NBB4J9WNmYZ9okcXXUuGx4mHXj0E8DuUHAjFq2G/7Fg==
   dependencies:
     fs-extra "11.1.0"
     lodash "4.17.21"
@@ -8413,10 +8413,10 @@ type-detect@4.0.8:
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
-type-fest@3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.5.3.tgz#9f8cc2725aa8978ca65a4e6853e74748b0f2d27b"
-  integrity sha512-V2+og4j/rWReWvaFrse3s9g2xvUv/K9Azm/xo6CjIuq7oeGqsoimC7+9/A3tfvNcbQf8RPSVj/HV81fB4DJrjA==
+type-fest@3.5.4:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.5.4.tgz#9ba7d0556ebec5d26d55bb1c56d2f3f1d25746d4"
+  integrity sha512-/Je22Er4LPoln256pcLzj73MUmPrTWg8u4WB1RlxaDl0idJOfD1r259VtKOinp4xLJqJ9zYVMuWOun6Ssp7boA==
 
 type-fest@^0.20.2:
   version "0.20.2"
@@ -8454,6 +8454,11 @@ typescript@4.9.4:
   version "4.9.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.4.tgz#a2a3d2756c079abda241d75f149df9d561091e78"
   integrity sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==
+
+typescript@4.9.5:
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
