@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Accordion, Box } from '@techstack/components';
 
 export const StyledItem = styled.div<{ isDragging?: boolean }>`
   user-select: none;
@@ -16,4 +17,16 @@ export const StyledList = styled.div<{ isDraggingOver?: boolean }>`
     p.isDraggingOver ? p.theme.colors.neutrals[6] : p.theme.colors.neutrals[5]};
   padding: ${p => p.theme.space[4]} 0;
   border-radius: ${p => p.theme.radii[2]};
+`;
+
+export const EditorWrapper = styled(Box)`
+  width: 100%;
+  
+  > div {
+    width: 100%;
+  }
+`;
+
+export const StyledAccordion = styled(Accordion)`
+  
 `;

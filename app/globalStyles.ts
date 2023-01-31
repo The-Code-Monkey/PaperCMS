@@ -60,6 +60,16 @@ form {
   padding: 1em;
 }
 
+.slider {
+  .slide {
+    z-index: 0 !important;
+    
+    > div, > div > img {
+      height: 100%;
+    }
+  }
+}
+
 `;
 
 export default GlobalStyle;

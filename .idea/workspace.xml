@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="143ce953-bdba-48d8-8a4a-d6954f7ade42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/globalStyles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orchard.theme.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/orchard.theme.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -73,7 +76,10 @@
       <workItem from="1674834438447" duration="95000" />
       <workItem from="1674834607068" duration="1375000" />
       <workItem from="1674910075584" duration="445000" />
-      <workItem from="1674911189408" duration="3330000" />
+      <workItem from="1674911189408" duration="6259000" />
+      <workItem from="1675163885104" duration="154000" />
+      <workItem from="1675164277504" duration="3997000" />
+      <workItem from="1675173523217" duration="3613000" />
     </task>
     <servers />
   </component>

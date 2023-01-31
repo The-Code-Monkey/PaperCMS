@@ -51,11 +51,11 @@ export const getFieldType = (
 };
 
 export type ImageRecordType = {
-  id: string;
-  type: 'image';
+  id?: string;
+  type?: 'image';
   value?: string;
-  order: number;
-  url?: string;
+  order?: number;
+  url?: string | Array<string>;
 };
 
 export type CarouselRecordType = {
@@ -63,12 +63,12 @@ export type CarouselRecordType = {
   order: number;
   type: 'carousel';
   value: {
-    images: Array<string>;
-    titles: Array<string>;
+    images?: Array<string>;
+    titles?: Array<string>;
     singleTitle: boolean;
     autoPlay: boolean;
-    blur: string;
-    shadow: string;
+    blur?: string;
+    shadow?: string;
     showArrows: boolean;
     showIndicators: boolean;
     showStatus: boolean;

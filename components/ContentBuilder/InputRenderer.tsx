@@ -2,13 +2,6 @@ import { Box, Input } from '@techstack/components';
 import { memo, useCallback } from 'react';
 import '@uiw/react-md-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
-import dynamic from 'next/dynamic';
-import * as commands from '@uiw/react-md-editor/lib/commands';
-
-const Editor = dynamic(
-  () => import('@uiw/react-md-editor').then(mod => mod.default),
-  { ssr: false }
-);
 
 import {
   CarouselRecordType,
@@ -19,6 +12,7 @@ import {
 
 import ImageUploader from './ImageUploader';
 import CarouselBuilder from './CarouselBuilder';
+import Editor from './Editor';
 
 interface Props {
   field: RecordType;
@@ -94,75 +88,7 @@ const InputRenderer = ({
         );
       }
       case 'textarea': {
-        return (
-          <Box>
-            <Editor
-              value={field.value}
-              onChange={(_, e) => onChange(e)}
-              extraCommands={[
-                commands.group(
-                  [
-                    {
-                      ...commands.title1,
-                      icon: (
-                        <div style={{ fontSize: 15, textAlign: 'left' }}>
-                          H1
-                        </div>
-                      ),
-                    },
-                    {
-                      ...commands.title2,
-                      icon: (
-                        <div style={{ fontSize: 15, textAlign: 'left' }}>
-                          H2
-                        </div>
-                      ),
-                    },
-                    {
-                      ...commands.title3,
-                      icon: (
-                        <div style={{ fontSize: 15, textAlign: 'left' }}>
-                          H3
-                        </div>
-                      ),
-                    },
-                    {
-                      ...commands.title4,
-                      icon: (
-                        <div style={{ fontSize: 15, textAlign: 'left' }}>
-                          H4
-                        </div>
-                      ),
-                    },
-                    {
-                      ...commands.title5,
-                      icon: (
-                        <div style={{ fontSize: 15, textAlign: 'left' }}>
-                          H5
-                        </div>
-                      ),
-                    },
-                    {
-                      ...commands.title6,
-                      icon: (
-                        <div style={{ fontSize: 15, textAlign: 'left' }}>
-                          H6
-                        </div>
-                      ),
-                    },
-                  ],
-                  {
-                    name: 'title',
-                    groupName: 'title',
-                    buttonProps: { 'aria-label': 'Insert title' },
-                  }
-                ),
-                commands.codeBlock,
-                commands.codeEdit,
-              ]}
-            />
-          </Box>
-        );
+        return <Editor field={field} onChange={onChange} />;
       }
       default: {
         field = field as DefaultRecordType;

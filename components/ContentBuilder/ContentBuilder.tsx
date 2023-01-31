@@ -103,67 +103,61 @@ const ContentBuilder = ({ content = [], onChange, tid }: Props) => {
     onChange(reorder(newState, result.source.index, result.destination.index));
   };
 
-  console.log('HERE', content);
-
   return (
-    <div>
+    <Box>
       Content builder:
       {content.length === 0 ? (
         <br />
       ) : (
-        <>
-          {/*<DragDropContext onDragEnd={onDragEnd}>*/}
-          {/*<Droppable droppableId='droppable'>*/}
-          {/*  {(provided, snapshot) => (*/}
-          <StyledList // {...provided.droppableProps}*/}
-          // ref={provided.innerRef}
-          // isDraggingOver={snapshot.isDraggingOver}
-          >
-            {content.map((field, index) => (
-              // <Draggable
-              //   key={`${field.id}-${field.type}`}
-              //   draggableId={field.id}
-              //   index={index}
-              // >
-              //   {(provided, snapshot) => (
-              <StyledItem
-                key={`${field.id}-${field.type}`}
-                // ref={provided.innerRef}
-                // {...provided.draggableProps}*/}
-                // {...provided.dragHandleProps}*/}
-                // isDragging={snapshot.isDragging}
-                // style={provided.draggableProps.style}
+        <DragDropContext onDragEnd={onDragEnd}>
+          <Droppable droppableId='droppable'>
+            {(provided, snapshot) => (
+              <StyledList
+                {...provided.droppableProps}
+                ref={provided.innerRef}
+                isDraggingOver={snapshot.isDraggingOver}
               >
-                <Box
-                  d='flex'
-                  flexDirection='row'
-                  gap='5'
-                  mt='3'
-                  alignItems='center'
-                >
-                  <InputRenderer
-                    field={field}
-                    handleOnChangeType={handleOnChangeType}
-                    handleOnChange={handleOnChange}
-                    blockTypes={blockTypes}
+                {content.map((field, index) => (
+                  <Draggable
+                    key={`${field.id}-${field.type}`}
+                    draggableId={`${field.id}`}
                     index={index}
-                  />
-
-                  <Button
-                    iconName={'trash'}
-                    intent='error'
-                    onClick={handleContentRemove(index)}
-                    type='button'
-                    size='10'
-                  />
-                </Box>
-              </StyledItem>
-            ))}
-          </StyledList>
-        </>
+                  >
+                    {(provided, snapshot) => (
+                      <StyledItem
+                        key={`${field.id}-${field.type}`}
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        isDragging={snapshot.isDragging}
+                        style={provided.draggableProps.style}
+                      >
+                        <Box
+                          d='flex'
+                          flexDirection='row'
+                          gap='5'
+                          mt='3'
+                          alignItems='center'
+                        >
+                          <InputRenderer
+                            field={field}
+                            handleOnChangeType={handleOnChangeType}
+                            handleOnChange={handleOnChange}
+                            blockTypes={blockTypes}
+                            index={index}
+                          />
+                        </Box>
+                      </StyledItem>
+                    )}
+                  </Draggable>
+                ))}
+              </StyledList>
+            )}
+          </Droppable>
+        </DragDropContext>
       )}
       <Button
-        mt='3'
+        mt='14'
         iconName={'plus'}
         variant={'primary'}
         onClick={handleContentAdd}
@@ -172,7 +166,7 @@ const ContentBuilder = ({ content = [], onChange, tid }: Props) => {
       >
         Add new item
       </Button>
-    </div>
+    </Box>
   );
 };
 
