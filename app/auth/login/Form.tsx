@@ -59,7 +59,7 @@ const Form = () => {
         Password
         <Input type='password' name='password' />
       </label>
-      <Button mt='3' variant='primary' disabled={isLoading}>
+      <Button mt='3' variant='primary' disabled={isLoading} type='submit'>
         {isLoading ? 'logging in' : 'login'}
       </Button>
       <Link style={{ alignSelf: 'flex-start' }} href={'/auth/signup'}>

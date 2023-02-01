@@ -84,30 +84,30 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
               const type = getFieldType(field.data_type);
               const name = field.column_name;
 
-              console.log(name, type);
+              if (type === 'object' && !Array.isArray(formData[name]))
+                return null;
 
-              return (
+              return type === 'object' ? (
+                <ContentBuilder
+                  content={formData[name] as Array<RecordType>}
+                  onChange={handleContentUpdate}
+                  tid={tid}
+                  title={
+                    tid === 'page' ? (formData['title'] as string) : undefined
+                  }
+                />
+              ) : (
                 <Box<'label'> key={name} as='label'>
-                  {type === 'object' ? (
-                    <ContentBuilder
-                      content={formData[name] as Array<RecordType>}
-                      onChange={handleContentUpdate}
-                      tid={tid}
-                    />
-                  ) : (
-                    <>
-                      {formatFieldNames(name)}
-                      <Input
-                        name={name}
-                        defaultValue={formData[name] as string}
-                        onChange={handleFieldUpdate}
-                        type={type}
-                        disabled={name === 'id' || name === 'created_at'}
-                        mt='2'
-                        required
-                      />
-                    </>
-                  )}
+                  {formatFieldNames(name)}
+                  <Input
+                    name={name}
+                    defaultValue={formData[name] as string}
+                    onChange={handleFieldUpdate}
+                    type={type}
+                    disabled={name === 'id' || name === 'created_at'}
+                    mt='2'
+                    required
+                  />
                 </Box>
               );
             })}

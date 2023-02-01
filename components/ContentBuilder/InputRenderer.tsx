@@ -1,9 +1,19 @@
-import { Box, Input } from '@techstack/components';
+import { Input } from '@techstack/components';
 import { memo, useCallback } from 'react';
+import '@uiw/react-md-editor/markdown-editor.css';
+import '@uiw/react-markdown-preview/markdown.css';
 
-import { ImageRecordType, RecordType } from '../../app/utils';
+import {
+  CarouselRecordType,
+  DefaultRecordType,
+  ImageRecordType,
+  RecordType,
+} from '../../app/utils';
 
 import ImageUploader from './ImageUploader';
+import CarouselBuilder from './CarouselBuilder';
+import Editor from './Editor';
+import ImageWithText from './ImageWithText';
 
 interface Props {
   field: RecordType;
@@ -36,30 +46,17 @@ const InputRenderer = ({
 
   const renderInput = () => {
     switch (field.type) {
+      case 'carousel': {
+        return (
+          <CarouselBuilder
+            field={field as CarouselRecordType}
+            onChange={onChange}
+          />
+        );
+      }
       case 'image-text': {
         return (
-          <Box d='flex' flexDir='column' w='full'>
-            <Box d='flex' flex='50%' gap='5'>
-              <ImageUploader
-                field={field as ImageRecordType}
-                handleOnChange={onChange}
-              />
-              <Input
-                name={`${field.id}_text`}
-                value={field.value}
-                onChange={onChange}
-                type={'textarea'}
-              />
-            </Box>
-            <Box<'label'>>
-              Image on left:
-              <Input
-                name={`${field.id}_checkbox`}
-                onChange={onChange}
-                type='checkbox'
-              />
-            </Box>
-          </Box>
+          <ImageWithText field={field as ImageRecordType} onChange={onChange} />
         );
       }
       case 'image': {
@@ -70,7 +67,12 @@ const InputRenderer = ({
           />
         );
       }
+      case 'textarea': {
+        return <Editor value={`${field.value}`} onChange={onChange} />;
+      }
       default: {
+        field = field as DefaultRecordType;
+
         return (
           <>
             <Input

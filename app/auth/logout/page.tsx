@@ -10,8 +10,6 @@ const Page = () => {
   const DB = useDB();
 
   DB.signOut().then(res => {
-    console.log(res);
-
     if (!res.error) {
       router.push('/auth/login');
     }

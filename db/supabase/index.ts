@@ -129,8 +129,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     files,
     filePath,
     store = 'images'
-  ) =>
-    Promise.all<{ url: string | null; error: StorageError | null }>(
+  ) => Promise.all<{ url: string | null; error: StorageError | null }>(
       Array.from(files).map(
         file =>
           new Promise(async resolve => {
