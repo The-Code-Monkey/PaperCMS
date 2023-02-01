@@ -92,6 +92,9 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
                   content={formData[name] as Array<RecordType>}
                   onChange={handleContentUpdate}
                   tid={tid}
+                  title={
+                    tid === 'page' ? (formData['title'] as string) : undefined
+                  }
                 />
               ) : (
                 <Box<'label'> key={name} as='label'>

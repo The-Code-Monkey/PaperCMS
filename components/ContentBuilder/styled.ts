@@ -21,12 +21,10 @@ export const StyledList = styled.div<{ isDraggingOver?: boolean }>`
 
 export const EditorWrapper = styled(Box)`
   width: 100%;
-  
+
   > div {
     width: 100%;
   }
 `;
 
-export const StyledAccordion = styled(Accordion)`
-  
-`;
+export const StyledAccordion = styled(Accordion)``;

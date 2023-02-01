@@ -1,4 +1,4 @@
-import { Box, Input } from '@techstack/components';
+import { Input } from '@techstack/components';
 import { memo, useCallback } from 'react';
 import '@uiw/react-md-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
@@ -13,6 +13,7 @@ import {
 import ImageUploader from './ImageUploader';
 import CarouselBuilder from './CarouselBuilder';
 import Editor from './Editor';
+import ImageWithText from './ImageWithText';
 
 interface Props {
   field: RecordType;
@@ -55,28 +56,7 @@ const InputRenderer = ({
       }
       case 'image-text': {
         return (
-          <Box d='flex' flexDir='column' w='full'>
-            <Box d='flex' flex='50%' gap='5'>
-              <ImageUploader
-                field={field as ImageRecordType}
-                handleOnChange={onChange}
-              />
-              <Input
-                name={`${field.id}_text`}
-                value={field.value}
-                onChange={onChange}
-                type={'textarea'}
-              />
-            </Box>
-            <Box<'label'>>
-              Image on left:
-              <Input
-                name={`${field.id}_checkbox`}
-                onChange={onChange}
-                type='checkbox'
-              />
-            </Box>
-          </Box>
+          <ImageWithText field={field as ImageRecordType} onChange={onChange} />
         );
       }
       case 'image': {
@@ -88,7 +68,7 @@ const InputRenderer = ({
         );
       }
       case 'textarea': {
-        return <Editor field={field} onChange={onChange} />;
+        return <Editor value={`${field.value}`} onChange={onChange} />;
       }
       default: {
         field = field as DefaultRecordType;

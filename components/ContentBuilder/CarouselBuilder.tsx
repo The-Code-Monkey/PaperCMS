@@ -62,9 +62,6 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
   return (
     <Box d='flex' flexDir='column' w='full'>
       <>
-        <Box d='flex' flex='50%' gap='5' mb='4'>
-          Carousel Builder:
-        </Box>
         <StyledAccordion title={'Settings'} maxHeight={500}>
           <Box d='flex' flexDir='row' flex='50%' gap='5' mt='3'>
             <Box d='flex' flexDir='row' gap='5'>

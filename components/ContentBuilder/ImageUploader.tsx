@@ -7,7 +7,7 @@ import { ImageRecordType } from '../../app/utils';
 interface Props {
   field: ImageRecordType;
   handleOnChange: (e: any) => void;
-  multiple: boolean;
+  multiple?: boolean;
 }
 
 const ImageUploader = ({ field, handleOnChange, multiple = false }: Props) => {
@@ -17,14 +17,14 @@ const ImageUploader = ({ field, handleOnChange, multiple = false }: Props) => {
 
   return (
     <>
-      <Box
-        minH='15'
-        position='relative'
-        flex='1'
-        d='flex'
-        justifyContent='space-around'
-      >
-        {typeof field.url === 'string' && (
+      {typeof field.url === 'string' && (
+        <Box
+          minH='15'
+          position='relative'
+          flex='1'
+          d='flex'
+          justifyContent='space-around'
+        >
           <Image
             src={field.url}
             alt={'uploaded image'}
@@ -32,15 +32,14 @@ const ImageUploader = ({ field, handleOnChange, multiple = false }: Props) => {
             style={{ objectFit: 'contain' }}
             onClick={handleOnClick}
           />
-        )}
-      </Box>
+        </Box>
+      )}
       <Input
         name={`${field.id}`}
         onChange={handleOnChange}
         type={'file'}
         multiple={multiple}
         accept='image/*'
-        placeholder={!field.type ? 'Type / to select a block' : undefined}
         hidden={!!field.url}
         id={`image-upload-${field.id}`}
       />
