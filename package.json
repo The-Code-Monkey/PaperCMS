@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@hello-pangea/dnd": "16.2.0",
-    "@supabase/auth-helpers-nextjs": "0.5.2",
+    "@supabase/auth-helpers-nextjs": "0.5.4",
     "@supabase/auth-helpers-react": "0.3.1",
     "@supabase/auth-ui-react": "0.2.6",
     "@supabase/supabase-auth-helpers": "1.4.2",
