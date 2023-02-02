@@ -29,11 +29,11 @@ interface Props {
 }
 
 const ContentBuilder = ({
-  content = [],
-  onChange,
-  tid,
-  title = 'unknown',
-}: Props) => {
+                          content = [],
+                          onChange,
+                          tid,
+                          title = 'unknown',
+                        }: Props) => {
   const DB = useDB();
 
   const handleOnChangeType = (e: any, index: number) => {
