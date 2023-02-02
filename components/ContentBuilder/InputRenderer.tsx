@@ -24,12 +24,12 @@ interface Props {
 }
 
 const InputRenderer = ({
-                         field,
-                         handleOnChange,
-                         handleOnChangeType,
-                         blockTypes,
-                         index,
-                       }: Props) => {
+  field,
+  handleOnChange,
+  handleOnChangeType,
+  blockTypes,
+  index,
+}: Props) => {
   const onChangeType = useCallback(
     (e: any) => {
       handleOnChangeType(e, index);
