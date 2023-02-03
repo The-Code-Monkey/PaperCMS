@@ -3,6 +3,7 @@ import * as commands from '@uiw/react-md-editor/lib/commands';
 import { ChangeEvent } from 'react';
 import { Box } from '@techstack/components';
 
+import { center, h1, h2, h3, h4, h5, h6 } from './customCommands';
 import { EditorWrapper, StyledAccordion } from './styled';
 
 const MDEditor = dynamic(
@@ -45,51 +46,11 @@ const Editor = ({ value, onChange, name }: Props) => {
               commands.italic,
               commands.strikethrough,
               commands.hr,
-              commands.group(
-                [
-                  {
-                    ...commands.title1,
-                    icon: (
-                      <div style={{ fontSize: 15, textAlign: 'left' }}>H1</div>
-                    ),
-                  },
-                  {
-                    ...commands.title2,
-                    icon: (
-                      <div style={{ fontSize: 15, textAlign: 'left' }}>H2</div>
-                    ),
-                  },
-                  {
-                    ...commands.title3,
-                    icon: (
-                      <div style={{ fontSize: 15, textAlign: 'left' }}>H3</div>
-                    ),
-                  },
-                  {
-                    ...commands.title4,
-                    icon: (
-                      <div style={{ fontSize: 15, textAlign: 'left' }}>H4</div>
-                    ),
-                  },
-                  {
-                    ...commands.title5,
-                    icon: (
-                      <div style={{ fontSize: 15, textAlign: 'left' }}>H5</div>
-                    ),
-                  },
-                  {
-                    ...commands.title6,
-                    icon: (
-                      <div style={{ fontSize: 15, textAlign: 'left' }}>H6</div>
-                    ),
-                  },
-                ],
-                {
-                  name: 'title',
-                  groupName: 'title',
-                  buttonProps: { 'aria-label': 'Insert title' },
-                }
-              ),
+              commands.group([h1, h2, h3, h4, h5, h6], {
+                name: 'title',
+                groupName: 'title',
+                buttonProps: { 'aria-label': 'Insert title' },
+              }),
               commands.divider,
               commands.link,
               commands.quote,
@@ -100,6 +61,7 @@ const Editor = ({ value, onChange, name }: Props) => {
               commands.orderedListCommand,
               commands.unorderedListCommand,
               commands.checkedListCommand,
+              center,
             ]}
             autoFocus={false}
           />

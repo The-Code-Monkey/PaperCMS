@@ -1,6 +1,8 @@
 import { PageProps } from '../../../../../utils/pageTypes';
 import useDB from '../../../../../db';
 import { StyledMain } from '../../../styled';
+import PreviewEditor from '../../../../../components/PreviewEditor';
+import { RecordType } from '../../../../utils';
 
 import EditForm from './EditForm';
 import Header from './Header';
@@ -17,19 +19,31 @@ const Edit = async ({ params }: PageProps) => {
     }
   );
 
-  const { data } = await DB.get<Record<string, string>[]>(tid as any, {
-    where: ['id', id],
-  });
+  const { data } = await DB.get<Record<string, Array<RecordType>>[]>(
+    tid as any,
+    {
+      where: ['id', id],
+    }
+  );
 
   return (
     <StyledMain>
       <Header tid={tid} id={id} />
-      <EditForm
-        tid={tid}
-        id={id}
-        data={id === 'new' ? {} : data?.[0] ?? {}}
-        fields={fieldData ?? []}
-      />
+      {tid === 'pages' ? (
+        <PreviewEditor
+          fields={fieldData ?? []}
+          tid={tid}
+          id={id}
+          data={id === 'new' ? {} : data?.[0] ?? {}}
+        />
+      ) : (
+        <EditForm
+          tid={tid}
+          id={id}
+          data={id === 'new' ? {} : data?.[0] ?? {}}
+          fields={fieldData ?? []}
+        />
+      )}
     </StyledMain>
   );
 };
