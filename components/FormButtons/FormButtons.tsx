@@ -1,11 +1,28 @@
-import { Box, Button } from '@techstack/components';
+import { Box, Button, BoxProps } from '@techstack/components';
 
-interface Props {
+interface Props extends BoxProps {
   onCancelClick: () => void;
   onSaveClick: () => void;
+
+  saveLabel?: string;
+  cancelLabel?: string;
+  disabledSave?: boolean;
+
+  disabledCancel?: boolean;
+
+  disabled?: boolean;
 }
 
-const FormButtons = ({ onCancelClick, onSaveClick }: Props) => {
+const FormButtons = ({
+  onCancelClick,
+  onSaveClick,
+  saveLabel = 'Save',
+  cancelLabel = 'Cancel',
+  disabledSave = false,
+  disabledCancel = false,
+  disabled = false,
+  ...rest
+}: Props) => {
   return (
     <Box
       d='flex'
@@ -15,12 +32,21 @@ const FormButtons = ({ onCancelClick, onSaveClick }: Props) => {
       py='3'
       bg='neutrals.10'
       h='10'
+      {...rest}
     >
-      <Button onClick={onSaveClick} intent='success'>
-        Save
+      <Button
+        disabled={disabled || disabledSave}
+        onClick={onSaveClick}
+        intent='success'
+      >
+        {saveLabel}
       </Button>
-      <Button onClick={onCancelClick} intent='error'>
-        Cancel
+      <Button
+        disabled={disabled || disabledCancel}
+        onClick={onCancelClick}
+        intent='error'
+      >
+        {cancelLabel}
       </Button>
     </Box>
   );

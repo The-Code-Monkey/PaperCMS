@@ -1,39 +1,35 @@
-import { useCallback, useState } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.core.css';
+import { DragEvent, useCallback, useState } from 'react';
+import { Icon, Interactable } from '@techstack/components';
 
-import { EditorWrapper } from '../styled';
-import { DefaultRecordType } from '../../../app/utils';
+import { InnerSectionType } from '../../../app/utils';
 
-interface Props {
-  item: DefaultRecordType;
-  styles: Record<string, string>;
-  onChange: (index: string, value: string) => void;
+import { StyledSection } from './styled';
+
+interface Props extends InnerSectionType {
+  onChange: (value: any) => void;
   onHoverChange: (hoveredElement: string, isTop: boolean) => void;
   hoveredElement: [string, boolean];
   onReorder: (thisId: string, thatId: string, top: boolean) => void;
 }
-const Editor = ({
-  item,
-  styles,
+
+const InnerSection = ({
   onChange,
+  value,
+  type,
+  id,
   onHoverChange,
   hoveredElement: [hoveredId, isTop],
   onReorder,
 }: Props) => {
   const [isDragging, setIsDragging] = useState(false);
 
-  const handleOnChange = (index: string) => (value: string) => {
-    onChange(index, value);
-  };
-
   const findCorrectTarget = useCallback(
     (parentTarget: any): any => {
-      return parentTarget.className.includes(item.id)
+      return parentTarget.className.includes(id)
         ? parentTarget
         : findCorrectTarget(parentTarget.parentElement);
     },
-    [item.id]
+    [id]
   );
 
   const handleOnDragOver = useCallback(
@@ -41,36 +37,38 @@ const Editor = ({
       if (!isDragging) {
         e.preventDefault();
         let target = e.target;
-        if (!target.className.includes(item.id)) {
+        if (!target.className.includes(id)) {
           target = findCorrectTarget(target.parentElement);
         }
 
         const box = target.getBoundingClientRect();
         const offsetTop = e.clientY - box.top - box.height / 2;
+        console.log(target.className);
 
-        const id = target.className
+        const targetId = target.className
           .split(' ')
           .find((str: string) => str.startsWith('#'))
           .split('_')[1];
 
-        onHoverChange(id, offsetTop < 0);
+        onHoverChange(targetId, offsetTop < 0);
       }
     },
-    [findCorrectTarget, isDragging, item.id, onHoverChange]
+    [findCorrectTarget, id, isDragging, onHoverChange]
   );
 
   const handleOnDragEnd = () => {
     setIsDragging(false);
-    onReorder(item.id, hoveredId, isTop);
+    onReorder(id, hoveredId, isTop);
   };
 
-  const className = `innerSection_${item.id}`;
+  console.log(id);
 
-  const isHovered = hoveredId === item.id;
+  const className = `innerSection_${id}`;
+
+  const isHovered = hoveredId === id;
 
   return (
-    <EditorWrapper
-      {...(styles ?? {})}
+    <StyledSection
       draggable
       onDragOver={handleOnDragOver}
       onDragStart={() => setIsDragging(true)}
@@ -79,14 +77,18 @@ const Editor = ({
       isTop={isTop}
       isHovered={isHovered}
     >
-      <ReactQuill
-        // @ts-ignore
-        theme={false}
-        value={item.value}
-        onChange={handleOnChange(item.id)}
-      />
-    </EditorWrapper>
+      <Interactable
+        w={'full'}
+        h={'15'}
+        d='flex'
+        alignItems={'center'}
+        justifyContent={'center'}
+      >
+        {id}
+        <Icon name={'plussquare'} />
+      </Interactable>
+    </StyledSection>
   );
 };
 
-export default Editor;
+export default InnerSection;

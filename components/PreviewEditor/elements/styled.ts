@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
-import { Interactable, StyledBoxProps } from '@techstack/components';
 
-export const EditorWrapper = styled(Interactable)<{
+export const StyledSection = styled.section<{
   isTop: boolean;
   isHovered: boolean;
 }>`
@@ -11,7 +10,6 @@ export const EditorWrapper = styled(Interactable)<{
   border-color: ${p => p.theme.colors.highlights[0]};
   border-width: 0;
   border-style: solid;
-
   ${p =>
     p.isHovered &&
     css`
@@ -24,7 +22,7 @@ export const EditorWrapper = styled(Interactable)<{
           `};
     `};
 
-  .wmde-markdown {
-    ${StyledBoxProps as any}
+  &:hover {
+    border: ${p => p.theme.borders[1]} ${p => p.theme.colors.highlights[0]};
   }
 `;

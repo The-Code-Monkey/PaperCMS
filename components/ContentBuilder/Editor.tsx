@@ -1,15 +1,9 @@
-import dynamic from 'next/dynamic';
-import * as commands from '@uiw/react-md-editor/lib/commands';
-import { ChangeEvent } from 'react';
 import { Box } from '@techstack/components';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.core.css';
+import 'react-quill/dist/quill.snow.css';
 
-import { center, h1, h2, h3, h4, h5, h6 } from './customCommands';
 import { EditorWrapper, StyledAccordion } from './styled';
-
-const MDEditor = dynamic(
-  () => import('@uiw/react-md-editor').then(mod => mod.default),
-  { ssr: false }
-);
 
 interface Props {
   value: string;
@@ -18,14 +12,11 @@ interface Props {
 }
 
 const Editor = ({ value, onChange, name }: Props) => {
-  const handleOnChange = (
-    value?: string,
-    e?: ChangeEvent<HTMLTextAreaElement>
-  ) => {
+  const handleOnChange = (value?: string) => {
     onChange({
       target: {
         name,
-        value: e?.target.value,
+        value,
       },
     });
   };
@@ -33,38 +24,16 @@ const Editor = ({ value, onChange, name }: Props) => {
   return (
     <Box d='flex' flexDir='column' w='full'>
       <StyledAccordion
-        title={value?.split('\n')[0].replace(/#/g, '') ?? 'Editor Collapsed'}
+        title={
+          value
+            ?.split('</h1>')[0]
+            .replace(/(<h1>|<\/h1>)/g, '')
+            .replace('&amp;', '&') ?? 'Content'
+        }
         maxHeight={7000}
       >
         <EditorWrapper>
-          <MDEditor
-            height={500}
-            value={value}
-            onChange={handleOnChange}
-            commands={[
-              commands.bold,
-              commands.italic,
-              commands.strikethrough,
-              commands.hr,
-              commands.group([h1, h2, h3, h4, h5, h6], {
-                name: 'title',
-                groupName: 'title',
-                buttonProps: { 'aria-label': 'Insert title' },
-              }),
-              commands.divider,
-              commands.link,
-              commands.quote,
-              commands.code,
-              commands.codeBlock,
-              commands.image,
-              commands.divider,
-              commands.orderedListCommand,
-              commands.unorderedListCommand,
-              commands.checkedListCommand,
-              center,
-            ]}
-            autoFocus={false}
-          />
+          <ReactQuill theme={'snow'} value={value} onChange={handleOnChange} />
         </EditorWrapper>
       </StyledAccordion>
     </Box>

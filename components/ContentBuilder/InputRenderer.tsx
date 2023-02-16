@@ -1,12 +1,14 @@
-import { Input } from '@techstack/components';
+import { Box, Icon, Input, Interactable } from '@techstack/components';
 import { memo, useCallback } from 'react';
 import '@uiw/react-md-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
+import { v4 as uuid } from 'uuid';
 
 import {
   CarouselRecordType,
   DefaultRecordType,
   ImageRecordType,
+  InnerSectionType,
   RecordType,
 } from '../../app/utils';
 
@@ -44,6 +46,56 @@ const InputRenderer = ({
     [handleOnChange, index]
   );
 
+  const handleOnClick = useCallback(
+    (e: any) => {
+      handleOnChange(
+        {
+          target: {
+            value: [
+              {
+                id: uuid(),
+                order: 0,
+              },
+            ],
+          },
+        },
+        index
+      );
+    },
+    [handleOnChange, index]
+  );
+
+  const handleOnChangeInnerSection = useCallback(
+    (e: any, innerIndex: number) => {
+      const newValue = [...(field as InnerSectionType).value];
+
+      newValue[innerIndex].value = e.target.value;
+
+      onChange({
+        target: {
+          value: newValue,
+        },
+      });
+    },
+    [field, onChange]
+  );
+
+  const handleOnChangeInnerType = useCallback(
+    (e: any, innerIndex: number) => {
+      const newValue = [...(field as InnerSectionType).value];
+
+      newValue[innerIndex].type = e.target.value.replace('/', '');
+      newValue[innerIndex].value = undefined;
+
+      onChange({
+        target: {
+          value: newValue,
+        },
+      });
+    },
+    [field, onChange]
+  );
+
   const renderInput = () => {
     switch (field.type) {
       case 'carousel': {
@@ -68,7 +120,36 @@ const InputRenderer = ({
         );
       }
       case 'textarea': {
-        return <Editor value={`${field.value}`} onChange={onChange} />;
+        return <Editor value={field.value as string} onChange={onChange} />;
+      }
+      case 'innerSection': {
+        field = field as InnerSectionType;
+
+        return field.value.length > 0 ? (
+          <>
+            {field.value.map((innerField, innerIndex) => (
+              <InputRenderer
+                key={innerField.id}
+                field={innerField}
+                handleOnChange={handleOnChangeInnerSection}
+                blockTypes={blockTypes}
+                handleOnChangeType={handleOnChangeInnerType}
+                index={innerIndex}
+              />
+            ))}
+          </>
+        ) : (
+          <Interactable
+            w={'full'}
+            h={'15'}
+            d='flex'
+            alignItems={'center'}
+            justifyContent={'center'}
+            onClick={handleOnClick}
+          >
+            <Icon name={'plussquare'} />
+          </Interactable>
+        );
       }
       default: {
         field = field as DefaultRecordType;

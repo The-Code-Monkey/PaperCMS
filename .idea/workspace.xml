@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="143ce953-bdba-48d8-8a4a-d6954f7ade42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ContentBuilder/customCommands.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/components/Nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/useOnClickOutside.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(editor)/editor/[tid]/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/EditForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FormButtons/FormButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormButtons/FormButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +67,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(editor)" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,7 +95,11 @@
       <workItem from="1675345381888" duration="1574000" />
       <workItem from="1675347666929" duration="324000" />
       <workItem from="1675418775549" duration="234000" />
-      <workItem from="1675419161470" duration="4341000" />
+      <workItem from="1675419161470" duration="4471000" />
+      <workItem from="1675696738425" duration="10397000" />
+      <workItem from="1676295399743" duration="1877000" />
+      <workItem from="1676370075140" duration="4211000" />
+      <workItem from="1676376105885" duration="184000" />
     </task>
     <servers />
   </component>
