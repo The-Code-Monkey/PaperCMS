@@ -1,12 +1,10 @@
+import PreviewEditor from '../../../../../components/PreviewEditor';
 import { PageProps } from '../../../../../utils/pageTypes';
 import useDB from '../../../../../db';
-import { StyledMain } from '../../../styled';
 import { RecordType } from '../../../../utils';
+import { StyledMain } from '../../../../(admin)/styled';
 
-import EditForm from './EditForm';
-import Header from './Header';
-
-const Edit = async ({ params }: PageProps) => {
+const Page = async ({ params }: PageProps) => {
   const { tid, id } = params ?? {};
 
   const DB = useDB();
@@ -24,18 +22,16 @@ const Edit = async ({ params }: PageProps) => {
       where: ['id', id],
     }
   );
-
   return (
     <StyledMain>
-      <Header tid={tid} id={id} />
-      <EditForm
+      <PreviewEditor
+        fields={fieldData ?? []}
         tid={tid}
         id={id}
         data={id === 'new' ? {} : data?.[0] ?? {}}
-        fields={fieldData ?? []}
       />
     </StyledMain>
   );
 };
 
-export default Edit;
+export default Page;

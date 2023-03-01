@@ -5,9 +5,12 @@ import {
 import { AuthError, Session, User } from '@supabase/supabase-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 
+import { RecordType } from '../app/utils';
+
 export type RecordReturnType =
   | Record<string, string>
-  | Record<string, string>[];
+  | Record<string, string>[]
+  | Record<string, Array<RecordType>>[];
 
 export type AuthOptions = {
   redirectTo?: string;

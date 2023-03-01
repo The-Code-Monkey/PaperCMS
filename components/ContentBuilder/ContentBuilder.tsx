@@ -11,6 +11,7 @@ import {
 
 import {
   ImageRecordType,
+  InnerSectionType,
   isImageRecordType,
   RecordType,
 } from '../../app/utils';
@@ -19,7 +20,13 @@ import useDB from '../../db';
 import { StyledList, StyledItem } from './styled';
 import InputRenderer from './InputRenderer';
 
-const blockTypes = ['/textarea', '/image', '/image-text', '/carousel'];
+const blockTypes = [
+  '/textarea',
+  '/image',
+  '/image-text',
+  '/carousel',
+  '/inner-section',
+];
 
 interface Props {
   content?: Array<RecordType>;
@@ -157,13 +164,17 @@ const ContentBuilder = ({
                             blockTypes={blockTypes}
                             index={index}
                           />
-                          <Button
-                            iconName='trash'
-                            intent='error'
-                            size='8'
-                            alignSelf='start'
-                            onClick={handleContentRemove(index)}
-                          />
+                          {field.type === 'inner-section' &&
+                          ((field as InnerSectionType).value?.length ?? 0) >
+                            0 ? null : (
+                            <Button
+                              iconName='trash'
+                              intent='error'
+                              size='8'
+                              alignSelf='start'
+                              onClick={handleContentRemove(index)}
+                            />
+                          )}
                         </Box>
                       </StyledItem>
                     )}

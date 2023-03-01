@@ -8,11 +8,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageWithText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageWithText.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/ElementRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementRenderer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/useOnClickOutside.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/useOnClickOutside.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,9 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2KujxmcH3GHRJHZ4ylerqBLDiFG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,20 +52,39 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iv0706/code/paper-cms/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/iv0706/code/paper-cms/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/(editor)" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +103,22 @@
       <workItem from="1675173523217" duration="3800000" />
       <workItem from="1675241008589" duration="138000" />
       <workItem from="1675247440449" duration="3246000" />
-      <workItem from="1675336278089" duration="242000" />
+      <workItem from="1675336278089" duration="616000" />
+      <workItem from="1675338352747" duration="5141000" />
+      <workItem from="1675345381888" duration="1574000" />
+      <workItem from="1675347666929" duration="324000" />
+      <workItem from="1675418775549" duration="234000" />
+      <workItem from="1675419161470" duration="4471000" />
+      <workItem from="1675696738425" duration="10397000" />
+      <workItem from="1676295399743" duration="1877000" />
+      <workItem from="1676370075140" duration="4211000" />
+      <workItem from="1676376105885" duration="184000" />
+      <workItem from="1676554383004" duration="205000" />
+      <workItem from="1676554688176" duration="3765000" />
+      <workItem from="1677665817599" duration="943000" />
+      <workItem from="1677673169407" duration="4409000" />
+      <workItem from="1677678714913" duration="11000" />
+      <workItem from="1677678785226" duration="1123000" />
     </task>
     <servers />
   </component>
@@ -86,5 +128,9 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

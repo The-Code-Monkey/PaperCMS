@@ -10,6 +10,7 @@ import SupabaseProvider from '../components/supabase-provider';
 import theme from '../theme';
 import config from '../orchard.theme.config.json';
 import { ThemeModeEnum } from '../theme/enum';
+import SiteThemeProvider from '../components/PreviewEditor/context';
 
 import GlobalStyle from './globalStyles';
 
@@ -39,7 +40,7 @@ const Provider = ({
           mode={darkMode ? ThemeModeEnum.DARK : ThemeModeEnum.LIGHT}
         >
           <GlobalStyle />
-          {children}
+          <SiteThemeProvider>{children}</SiteThemeProvider>
         </ThemeProvider>
       </SupabaseProvider>
     </ConfigContext.Provider>

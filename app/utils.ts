@@ -84,6 +84,13 @@ export type DefaultRecordType = {
   order: number;
 };
 
+export type InnerSectionType = {
+  id: string;
+  order: number;
+  type: 'inner-section';
+  value?: Array<RecordType>;
+};
+
 export const isImageRecordType = (
   record: RecordType
 ): record is ImageRecordType =>
@@ -93,4 +100,5 @@ export const isImageRecordType = (
 export type RecordType =
   | DefaultRecordType
   | ImageRecordType
-  | CarouselRecordType;
+  | CarouselRecordType
+  | InnerSectionType;

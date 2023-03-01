@@ -1,6 +1,8 @@
 'use client';
 
-import { Box } from '@techstack/components';
+import { Box, Button } from '@techstack/components';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 import { capitalizeFirstLetter } from '../../../../utils';
 
@@ -10,6 +12,12 @@ interface Props {
 }
 
 const Header = ({ tid, id }: Props) => {
+  const router = useRouter();
+
+  const navigateToEditor = () => {
+    router.push(`/editor/${tid}/${id}`);
+  };
+
   return (
     <Box
       borderBottom='1'
@@ -20,6 +28,17 @@ const Header = ({ tid, id }: Props) => {
       h='10'
     >
       Editing: {capitalizeFirstLetter(tid)} - {id}
+      {tid === 'pages' && (
+        <Button
+          ml='auto'
+          pos='absolute'
+          right='3'
+          top='8px'
+          onClick={navigateToEditor}
+        >
+          Preview Editor
+        </Button>
+      )}
     </Box>
   );
 };

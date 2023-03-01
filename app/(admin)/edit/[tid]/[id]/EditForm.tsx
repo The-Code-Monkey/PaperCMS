@@ -10,7 +10,7 @@ import FormButtons from '../../../../../components/FormButtons';
 import useDB from '../../../../../db';
 
 interface Props {
-  data: Record<string, string>;
+  data: Record<string, Array<RecordType>>;
   fields: Array<Record<string, string>>;
   tid: string;
   id: string;
