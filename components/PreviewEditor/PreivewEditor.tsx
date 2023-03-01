@@ -95,10 +95,7 @@ const PreviewEditor = ({ fields, data, tid, id }: Props) => {
               menu={SiteConfig?.menu ?? []}
               style={SiteConfig?.styles.nav ?? {}}
             />
-            <ElementRenderer
-              content={content}
-              setContent={setContent}
-            />
+            <ElementRenderer content={content} setContent={setContent} />
           </Box>
         </Box>
       </Box>
