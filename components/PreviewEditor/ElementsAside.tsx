@@ -1,14 +1,14 @@
 import { Accordion, Box, Button } from '@techstack/components';
 import { v4 as uuid } from 'uuid';
 
-import { RecordType } from '../../test/utils';
+import { RecordType } from '../../app/utils';
 
 interface Props {
   onAddElement: (element: RecordType, index: number) => void;
 }
 
 const ElementsAside = ({ onAddElement }: Props) => {
-  const handleOnAddElement = (name: string) => (e: MouseEvent) => {
+  const handleOnAddElement = (name: string) => () => {
     const id = uuid();
 
     switch (name) {
@@ -16,7 +16,7 @@ const ElementsAside = ({ onAddElement }: Props) => {
         onAddElement(
           {
             id,
-            type: 'innerSection',
+            type: 'inner-section',
             value: [],
             order: 0,
           },

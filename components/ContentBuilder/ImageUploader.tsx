@@ -2,7 +2,7 @@ import { Box, Input } from '@techstack/components';
 import Image from 'next/image';
 import { useCallback } from 'react';
 
-import { ImageRecordType } from '../../test/utils';
+import { ImageRecordType } from '../../app/utils';
 
 interface Props {
   field: ImageRecordType;

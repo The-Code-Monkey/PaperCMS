@@ -10,7 +10,7 @@ import {
   ImageRecordType,
   InnerSectionType,
   RecordType,
-} from '../../test/utils';
+} from '../../app/utils';
 
 import ImageUploader from './ImageUploader';
 import CarouselBuilder from './CarouselBuilder';
@@ -46,24 +46,21 @@ const InputRenderer = ({
     [handleOnChange, index]
   );
 
-  const handleOnClick = useCallback(
-    (e: any) => {
-      handleOnChange(
-        {
-          target: {
-            value: [
-              {
-                id: uuid(),
-                order: 0,
-              },
-            ],
-          },
+  const handleOnClick = useCallback(() => {
+    handleOnChange(
+      {
+        target: {
+          value: [
+            {
+              id: uuid(),
+              order: 0,
+            },
+          ],
         },
-        index
-      );
-    },
-    [handleOnChange, index]
-  );
+      },
+      index
+    );
+  }, [handleOnChange, index]);
 
   const handleOnChangeInnerSection = useCallback(
     (e: any, innerIndex: number) => {
@@ -96,7 +93,7 @@ const InputRenderer = ({
     [field, onChange]
   );
 
-  const handleContentAdd = (e: any) => {
+  const handleContentAdd = () => {
     const newField = { ...(field as InnerSectionType) };
     if (newField.value) {
       newField.value.push({

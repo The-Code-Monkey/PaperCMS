@@ -4,7 +4,7 @@ import { Box } from '@techstack/components';
 import { useContext, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-import { RecordType } from '../../test/utils';
+import { RecordType } from '../../app/utils';
 import FormButtons from '../FormButtons';
 import useDB from '../../db';
 
@@ -95,10 +95,7 @@ const PreviewEditor = ({ fields, data, tid, id }: Props) => {
               menu={SiteConfig?.menu ?? []}
               style={SiteConfig?.styles.nav ?? {}}
             />
-            <ElementRenderer
-              content={content}
-              setContent={setContent}
-            />
+            <ElementRenderer content={content} setContent={setContent} />
           </Box>
         </Box>
       </Box>

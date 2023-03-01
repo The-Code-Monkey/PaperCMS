@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="143ce953-bdba-48d8-8a4a-d6954f7ade42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/auth/login/head.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/login/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementRenderer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageWithText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageWithText.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/ElementRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementRenderer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/context.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/useOnClickOutside.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/useOnClickOutside.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,9 @@
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2KujxmcH3GHRJHZ4ylerqBLDiFG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -121,7 +118,7 @@
       <workItem from="1677665817599" duration="943000" />
       <workItem from="1677673169407" duration="4409000" />
       <workItem from="1677678714913" duration="11000" />
-      <workItem from="1677678785226" duration="42000" />
+      <workItem from="1677678785226" duration="1123000" />
     </task>
     <servers />
   </component>

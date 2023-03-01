@@ -1,7 +1,7 @@
 import { Carousel, CarouselProps } from '@techstack/components';
 import { Dispatch, SetStateAction, useContext, useState } from 'react';
 
-import { InnerSectionType, RecordType } from '../../test/utils';
+import { InnerSectionType, RecordType } from '../../app/utils';
 
 import Editor from './fields/Editor';
 import InnerSection from './elements/InnerSection';

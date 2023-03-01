@@ -5,7 +5,7 @@ import {
 import { AuthError, Session, User } from '@supabase/supabase-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 
-import { RecordType } from '../test/utils';
+import { RecordType } from '../app/utils';
 
 export type RecordReturnType =
   | Record<string, string>

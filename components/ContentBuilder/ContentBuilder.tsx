@@ -14,7 +14,7 @@ import {
   InnerSectionType,
   isImageRecordType,
   RecordType,
-} from '../../test/utils';
+} from '../../app/utils';
 import useDB from '../../db';
 
 import { StyledList, StyledItem } from './styled';

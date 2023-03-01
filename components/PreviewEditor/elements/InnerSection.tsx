@@ -1,13 +1,7 @@
-import {
-  Dispatch,
-  DragEvent,
-  SetStateAction,
-  useCallback,
-  useState,
-} from 'react';
+import { Dispatch, SetStateAction, useCallback, useState } from 'react';
 import { Icon, Interactable } from '@techstack/components';
 
-import { InnerSectionType, RecordType } from '../../../test/utils';
+import { InnerSectionType, RecordType } from '../../../app/utils';
 import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';
@@ -22,7 +16,6 @@ interface Props extends InnerSectionType {
 const InnerSection = ({
   onChange,
   value,
-  type,
   id,
   onHoverChange,
   hoveredElement: [hoveredId, isTop],
@@ -78,13 +71,13 @@ const InnerSection = ({
     SetStateAction<RecordType[]>
   > = fn => {
     if (typeof fn === 'function') {
-      onChange(fn(value));
+      onChange(fn(value ?? []));
     }
   };
 
-  return value.length > 0 ? (
+  return (value ?? []).length > 0 ? (
     <ElementRenderer
-      content={value}
+      content={value as RecordType[]}
       setContent={handleInnerRendererSetContent}
     />
   ) : (
