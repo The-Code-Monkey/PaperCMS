@@ -27,8 +27,8 @@ const Editor = ({ value, onChange, name }: Props) => {
         title={
           value
             ?.split('</h1>')[0]
-            .replace(/(<h1>|<\/h1>)/g, '')
-            .replace('&amp;', '&') ?? 'Content'
+            .replace(/(<[a-zA-Z0-9]>|<\/[a-zA-Z0-9]>)/g, '')
+            .replace('&amp;', '&') ?? 'No Content'
         }
         maxHeight={7000}
       >

@@ -1,7 +1,14 @@
-import { DragEvent, useCallback, useState } from 'react';
+import {
+  Dispatch,
+  DragEvent,
+  SetStateAction,
+  useCallback,
+  useState,
+} from 'react';
 import { Icon, Interactable } from '@techstack/components';
 
-import { InnerSectionType } from '../../../app/utils';
+import { InnerSectionType, RecordType } from '../../../test/utils';
+import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';
 
@@ -67,7 +74,20 @@ const InnerSection = ({
 
   const isHovered = hoveredId === id;
 
-  return (
+  const handleInnerRendererSetContent: Dispatch<
+    SetStateAction<RecordType[]>
+  > = fn => {
+    if (typeof fn === 'function') {
+      onChange(fn(value));
+    }
+  };
+
+  return value.length > 0 ? (
+    <ElementRenderer
+      content={value}
+      setContent={handleInnerRendererSetContent}
+    />
+  ) : (
     <StyledSection
       draggable
       onDragOver={handleOnDragOver}

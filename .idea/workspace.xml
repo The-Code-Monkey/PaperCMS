@@ -5,21 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="143ce953-bdba-48d8-8a4a-d6954f7ade42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(editor)/editor/[tid]/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/login/head.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/login/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementRenderer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(admin)/edit/[tid]/[id]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/CarouselBuilder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ContentBuilder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/Editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageUploader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/ImageWithText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/ImageWithText.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/InputRenderer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContentBuilder/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormButtons/FormButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormButtons/FormButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/ElementsAside.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/PreivewEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/elements/InnerSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/fields/Editor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PreviewEditor/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/PreviewEditor/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -53,22 +55,36 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iv0706/code/paper-cms/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/iv0706/code/paper-cms/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/(editor)" />
     </key>
   </component>
@@ -100,6 +116,12 @@
       <workItem from="1676295399743" duration="1877000" />
       <workItem from="1676370075140" duration="4211000" />
       <workItem from="1676376105885" duration="184000" />
+      <workItem from="1676554383004" duration="205000" />
+      <workItem from="1676554688176" duration="3765000" />
+      <workItem from="1677665817599" duration="943000" />
+      <workItem from="1677673169407" duration="4409000" />
+      <workItem from="1677678714913" duration="11000" />
+      <workItem from="1677678785226" duration="42000" />
     </task>
     <servers />
   </component>
@@ -109,5 +131,9 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

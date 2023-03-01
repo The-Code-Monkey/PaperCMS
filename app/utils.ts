@@ -87,8 +87,8 @@ export type DefaultRecordType = {
 export type InnerSectionType = {
   id: string;
   order: number;
-  type: 'innerSection';
-  value: Array<RecordType>;
+  type: 'inner-section';
+  value?: Array<RecordType>;
 };
 
 export const isImageRecordType = (

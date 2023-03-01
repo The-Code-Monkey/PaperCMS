@@ -1,6 +1,6 @@
 import { createContext, ReactNode } from 'react';
 
-type SiteThemeConfig = {
+export type SiteThemeConfig = {
   menu: Array<[string, string]>;
   styles: {
     nav: Record<string, string>;

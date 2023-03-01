@@ -1,7 +1,7 @@
 import { Box, Input, Carousel, Button, Divider } from '@techstack/components';
 import { ChangeEvent } from 'react';
 
-import { CarouselRecordType } from '../../app/utils';
+import { CarouselRecordType } from '../../test/utils';
 import useDB from '../../db';
 
 import { StyledAccordion } from './styled';

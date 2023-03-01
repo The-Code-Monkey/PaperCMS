@@ -1,6 +1,6 @@
 import { Box, Input } from '@techstack/components';
 
-import { ImageRecordType } from '../../app/utils';
+import { ImageRecordType } from '../../test/utils';
 
 import ImageUploader from './ImageUploader';
 import Editor from './Editor';

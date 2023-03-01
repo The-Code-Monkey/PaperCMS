@@ -1,4 +1,4 @@
-import { Box, Icon, Input, Interactable } from '@techstack/components';
+import { Box, Button, Icon, Input, Interactable } from '@techstack/components';
 import { memo, useCallback } from 'react';
 import '@uiw/react-md-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
@@ -10,7 +10,7 @@ import {
   ImageRecordType,
   InnerSectionType,
   RecordType,
-} from '../../app/utils';
+} from '../../test/utils';
 
 import ImageUploader from './ImageUploader';
 import CarouselBuilder from './CarouselBuilder';
@@ -67,7 +67,7 @@ const InputRenderer = ({
 
   const handleOnChangeInnerSection = useCallback(
     (e: any, innerIndex: number) => {
-      const newValue = [...(field as InnerSectionType).value];
+      const newValue = [...((field as InnerSectionType).value ?? [])];
 
       newValue[innerIndex].value = e.target.value;
 
@@ -82,7 +82,7 @@ const InputRenderer = ({
 
   const handleOnChangeInnerType = useCallback(
     (e: any, innerIndex: number) => {
-      const newValue = [...(field as InnerSectionType).value];
+      const newValue = [...((field as InnerSectionType).value ?? [])];
 
       newValue[innerIndex].type = e.target.value.replace('/', '');
       newValue[innerIndex].value = undefined;
@@ -95,6 +95,33 @@ const InputRenderer = ({
     },
     [field, onChange]
   );
+
+  const handleContentAdd = (e: any) => {
+    const newField = { ...(field as InnerSectionType) };
+    if (newField.value) {
+      newField.value.push({
+        id: uuid(),
+        order: newField.value.length + 1,
+      });
+    }
+
+    onChange({
+      target: {
+        value: newField.value,
+      },
+    });
+  };
+
+  const handleContentRemove = (index: number) => () => {
+    console.log(index, field);
+    const newState = [...((field as InnerSectionType).value ?? [])];
+    newState.splice(index, 1);
+    onChange({
+      target: {
+        value: newState,
+      },
+    });
+  };
 
   const renderInput = () => {
     switch (field.type) {
@@ -122,22 +149,51 @@ const InputRenderer = ({
       case 'textarea': {
         return <Editor value={field.value as string} onChange={onChange} />;
       }
-      case 'innerSection': {
+      case 'inner-section': {
         field = field as InnerSectionType;
 
-        return field.value.length > 0 ? (
-          <>
-            {field.value.map((innerField, innerIndex) => (
-              <InputRenderer
+        return (field.value?.length ?? 0) > 0 ? (
+          <Box d='flex' flexDir='column' flex='1' gap='6'>
+            {field.value?.map((innerField, innerIndex) => (
+              <Box
+                d='flex'
+                flexDirection='row'
+                gap='5'
+                mt='3'
+                alignItems='center'
                 key={innerField.id}
-                field={innerField}
-                handleOnChange={handleOnChangeInnerSection}
-                blockTypes={blockTypes}
-                handleOnChangeType={handleOnChangeInnerType}
-                index={innerIndex}
-              />
+              >
+                <InputRenderer
+                  field={innerField}
+                  handleOnChange={handleOnChangeInnerSection}
+                  blockTypes={blockTypes}
+                  handleOnChangeType={handleOnChangeInnerType}
+                  index={innerIndex}
+                />
+                {innerField.type === 'inner-section' &&
+                ((innerField as InnerSectionType).value?.length ?? 0) >
+                  0 ? null : (
+                  <Button
+                    iconName='trash'
+                    intent='error'
+                    size='8'
+                    alignSelf='start'
+                    onClick={handleContentRemove(innerIndex)}
+                  />
+                )}
+              </Box>
             ))}
-          </>
+            <Button
+              iconName={'plus'}
+              variant={'primary'}
+              onClick={handleContentAdd}
+              type='button'
+              bg='neutrals.5'
+              alignSelf='flex-start'
+            >
+              Add new item
+            </Button>
+          </Box>
         ) : (
           <Interactable
             w={'full'}
