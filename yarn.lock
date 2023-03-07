@@ -1777,21 +1777,21 @@
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.3.0.tgz#765e023801572658ba64503b3625fe9e135b10a3"
   integrity sha512-6lKhVMBZnGdFelpZyvQDBQSOY+pglS6a5U4ieAqfKQ/rx3rSjRASR3UGh7V+el1re3xYe3ddVBWXw16rdVAzrQ==
 
-"@supabase/auth-ui-react@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-react/-/auth-ui-react-0.3.3.tgz#33ca5f2d8bd851b9fe569de2945f997c0c2afc70"
-  integrity sha512-vrXQLwaW8DdKp4WAKRvgFM/DqXoCxBmYNQaUXLXvwdZJ0q/8c/vjSPnUMdjzpJDny2ljzoS3C8QaLimErik/Kg==
+"@supabase/auth-ui-react@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-react/-/auth-ui-react-0.3.4.tgz#6eec57b1caa57007943b4ceb1015a83086996273"
+  integrity sha512-0iwylnqHPVywDsLD0cfxUfOcEMZqNNl2E4g961jz1xIMI1ny3oaLZwia+XlRZTlnMB8WZKugjTlQVW3jW/O71Q==
   dependencies:
     "@stitches/core" "^1.2.8"
-    "@supabase/auth-ui-shared" "0.1.2"
+    "@supabase/auth-ui-shared" "0.1.3"
     prop-types "^15.7.2"
     react "^18.2.0"
     react-dom "^18.2.0"
 
-"@supabase/auth-ui-shared@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-shared/-/auth-ui-shared-0.1.2.tgz#a63f41e7ab92fefc367a29926cbc3fe95e8f5c61"
-  integrity sha512-RbshJ6YWp2d25mJJeG0iAaJq4q5yaH+eviz9B1JuNG4aVv9y6IFByPmsLa5ab93CAjn8hrkExlOd9N34sSI5IQ==
+"@supabase/auth-ui-shared@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-shared/-/auth-ui-shared-0.1.3.tgz#0d903e21fc3012b216e0dc1b64bf92cb5d0b76d2"
+  integrity sha512-GoyW+3EiDcy+sQdmdkezx9fpsRSogHJwTdzxgf79PjyLbpyAKCnTVhOB02tiMHZ0uIZ+afAQ8CmNEwwxwHVnJw==
 
 "@supabase/functions-js@^1.3.4":
   version "1.3.4"
