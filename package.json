@@ -43,7 +43,7 @@
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "^5.1.26",
     "@types/uuid": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/eslint-plugin": "5.56.0",
     "babel-loader": "9.1.2",
     "babel-plugin-transform-remove-imports": "^1.7.0",
     "encoding": "0.1.13",
