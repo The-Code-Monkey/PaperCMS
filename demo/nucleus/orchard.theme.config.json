@@ -1,0 +1,8 @@
+{
+  "srcDir": "/",
+  "outputDir": "/",
+  "iconDir": "feather",
+  "dblClickDelay": 500,
+  "dbProvider": "supabase",
+  "hasUsers": false
+}

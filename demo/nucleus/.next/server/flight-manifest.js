@@ -1,0 +1,662 @@
+self.__RSC_MANIFEST={
+  "__ssr_module_mapping__": {
+    "(app-client)/./app/provider.tsx": {
+      "": {
+        "id": "(sc_client)/./app/provider.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/provider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/provider.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "revalidate": {
+        "id": "(sc_client)/./app/provider.tsx",
+        "name": "revalidate",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./lib/registry.tsx": {
+      "": {
+        "id": "(sc_client)/./lib/registry.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./lib/registry.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./lib/registry.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(admin)/styled.tsx": {
+      "": {
+        "id": "(sc_client)/./app/(admin)/styled.tsx",
+        "name": "",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/(admin)/styled.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      },
+      "StyledAside": {
+        "id": "(sc_client)/./app/(admin)/styled.tsx",
+        "name": "StyledAside",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      },
+      "StyledMain": {
+        "id": "(sc_client)/./app/(admin)/styled.tsx",
+        "name": "StyledMain",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/styled.ts": {
+      "": {
+        "id": "(sc_client)/./app/styled.ts",
+        "name": "",
+        "chunks": [
+          "app/loading:app/loading"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/styled.ts",
+        "name": "*",
+        "chunks": [
+          "app/loading:app/loading"
+        ],
+        "async": false
+      },
+      "StyledLoader": {
+        "id": "(sc_client)/./app/styled.ts",
+        "name": "StyledLoader",
+        "chunks": [
+          "app/loading:app/loading"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(admin)/page.tsx": {
+      "": {
+        "id": "(sc_client)/./app/(admin)/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/(admin)/page:app/(admin)/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/(admin)/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(admin)/page:app/(admin)/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/(admin)/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/(admin)/page:app/(admin)/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(admin)/Nav.tsx": {
+      "": {
+        "id": "(sc_client)/./app/(admin)/Nav.tsx",
+        "name": "",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/(admin)/Nav.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/(admin)/Nav.tsx",
+        "name": "default",
+        "chunks": [
+          "app/(admin)/layout:app/(admin)/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/../../node_modules/next/dist/client/components/app-router.js": {
+      "": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/app-router.js",
+        "name": "",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/app-router.js",
+        "name": "*",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/app-router.js",
+        "name": "default",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js": {
+      "": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/error-boundary.js",
+        "name": "",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/error-boundary.js",
+        "name": "*",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/error-boundary.js",
+        "name": "default",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/../../node_modules/next/dist/client/components/layout-router.js": {
+      "": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/layout-router.js",
+        "name": "",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/layout-router.js",
+        "name": "*",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/layout-router.js",
+        "name": "default",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js": {
+      "": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+        "name": "",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+        "name": "*",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+        "name": "default",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "async": false
+      }
+    }
+  },
+  "__edge_ssr_module_mapping__": {},
+  "__entry_css_files__": {},
+  "/Users/iv0706/code/nucleus/demo/nucleus/app/provider.tsx": {
+    "": {
+      "id": "(app-client)/./app/provider.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/provider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./app/provider.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "revalidate": {
+      "id": "(app-client)/./app/provider.tsx",
+      "name": "revalidate",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/demo/nucleus/lib/registry.tsx": {
+    "": {
+      "id": "(app-client)/./lib/registry.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./lib/registry.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./lib/registry.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/demo/nucleus/app/(admin)/styled.tsx": {
+    "": {
+      "id": "(app-client)/./app/(admin)/styled.tsx",
+      "name": "",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/(admin)/styled.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    },
+    "StyledAside": {
+      "id": "(app-client)/./app/(admin)/styled.tsx",
+      "name": "StyledAside",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    },
+    "StyledMain": {
+      "id": "(app-client)/./app/(admin)/styled.tsx",
+      "name": "StyledMain",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/demo/nucleus/app/styled.ts": {
+    "": {
+      "id": "(app-client)/./app/styled.ts",
+      "name": "",
+      "chunks": [
+        "app/loading:app/loading"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/styled.ts",
+      "name": "*",
+      "chunks": [
+        "app/loading:app/loading"
+      ],
+      "async": false
+    },
+    "StyledLoader": {
+      "id": "(app-client)/./app/styled.ts",
+      "name": "StyledLoader",
+      "chunks": [
+        "app/loading:app/loading"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/demo/nucleus/app/(admin)/page.tsx": {
+    "": {
+      "id": "(app-client)/./app/(admin)/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/(admin)/page:app/(admin)/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/(admin)/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(admin)/page:app/(admin)/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./app/(admin)/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(admin)/page:app/(admin)/page"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/demo/nucleus/app/(admin)/Nav.tsx": {
+    "": {
+      "id": "(app-client)/./app/(admin)/Nav.tsx",
+      "name": "",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/(admin)/Nav.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./app/(admin)/Nav.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(admin)/layout:app/(admin)/layout"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/client/components/app-router.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/app-router.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/app-router.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/esm/client/components/app-router.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/app-router.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/app-router.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/client/components/error-boundary.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/esm/client/components/error-boundary.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/error-boundary.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/client/components/layout-router.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/layout-router.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/layout-router.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/esm/client/components/layout-router.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/layout-router.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/layout-router.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/client/components/render-from-template-context.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  },
+  "/Users/iv0706/code/nucleus/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+    "": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/../../node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "default",
+      "chunks": [
+        "app-client-internals:app-client-internals"
+      ],
+      "async": false
+    }
+  }
+}
