@@ -170,7 +170,8 @@ const ContentBuilder = ({
                             <Button
                               iconName='trash'
                               intent='error'
-                              size='8'
+                              w='8'
+                              h='8'
                               alignSelf='start'
                               onClick={handleContentRemove(index)}
                             />
