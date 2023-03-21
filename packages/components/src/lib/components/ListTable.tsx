@@ -28,8 +28,8 @@ const ListTable = ({ data, id, fieldData }: Props) => {
 
   const handleEditClick = useCallback(
     (row: Record<string, unknown>) => {
-      if (row.id) {
-        router.push(`/edit/${id}/${row.id}`);
+      if (row['id']) {
+        router.push(`/edit/${id}/${row['id']}`);
       }
     },
     [router, id]
@@ -37,7 +37,7 @@ const ListTable = ({ data, id, fieldData }: Props) => {
 
   const handleDeleteClick = useCallback(
     async (row: Record<string, unknown>) => {
-      const { error } = await DB.remove(id as any, row.id as string);
+      const { error } = await DB.remove(id as any, row['id'] as string);
 
       if (!error) {
         router.refresh();
@@ -47,7 +47,7 @@ const ListTable = ({ data, id, fieldData }: Props) => {
   );
 
   const columns: Array<string> = useMemo(() => {
-    const result = (fieldData ?? []).map(field => field.column_name);
+    const result = (fieldData ?? []).map(field => field['column_name']);
 
     if ((data?.length ?? 0) > 0) {
       if (id === 'code') {

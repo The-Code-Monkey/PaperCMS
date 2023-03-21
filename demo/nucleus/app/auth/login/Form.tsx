@@ -4,7 +4,7 @@ import { FormEvent, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Box, Input, Button } from '@techstack/components';
 
-import useDB from '../../../db';
+import { useDB } from '@nucleus-cms/components'
 import Link from 'next/link';
 
 export interface AuthEvent extends FormEvent<HTMLFormElement> {

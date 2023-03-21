@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "nx run-many --target=lint",
     "test": "nx run-many --target=test",
+    "build": "nx run-many --target=build",
     "dev": "cd demo/nucleus && orchard generate && next dev"
   },
   "private": true,
@@ -39,6 +40,7 @@
     "webpack": "^5.75.0"
   },
   "devDependencies": {
+    "@types/uuid": "9.0.1",
     "@nrwl/eslint-plugin-nx": "15.8.7",
     "@nrwl/jest": "15.8.7",
     "@nrwl/js": "15.8.7",

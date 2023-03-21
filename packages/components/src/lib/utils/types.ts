@@ -2,7 +2,7 @@ import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js/src/lib/types';
-import { AuthError, Session, User } from '@supabase/supabase-js';
+import { Session, User } from '@supabase/supabase-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 
 import { RecordType } from '../types';
@@ -38,18 +38,14 @@ export interface DbReturnType<T extends string, F extends string> {
   signIn: (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
-  ) => Promise<
-    | { data: { user: User | null; session: Session | null }; error: null }
-    | { data: { user: null; session: null }; error: AuthError }
-  >;
+  ) => Promise<{ data: { user: User | null; session: Session | null }; error: null }
+    | { data: { user: null; session: null }; error: Record<string, unknown> }>;
   signUp: (
     credentials: SignUpWithPasswordCredentials,
     options?: AuthOptions
-  ) => Promise<
-    | { data: { user: User | null; session: Session | null }; error: null }
-    | { data: { user: null; session: null }; error: AuthError }
-  >;
-  signOut: () => Promise<{ error: AuthError | null }>;
+  ) => Promise<{ data: { user: User | null; session: Session | null }; error: null }
+    | { data: { user: null; session: null }; error: Record<string, unknown> }>;
+  signOut: () => Promise<{ error: Record<string, unknown> | null }>;
   dbFunction: <R extends RecordReturnType>(
     funcName: F,
     args?: Record<string, unknown>

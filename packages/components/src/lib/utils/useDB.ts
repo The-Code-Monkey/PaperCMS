@@ -1,9 +1,11 @@
+import getSupabase from './supabase/getSupabase';
+
 const useDB = () => {
-  const getDB = async () => {
-    switch (process.env.dbProvider) {
+  const getDB = () => {
+    switch (process.env['dbProvider']) {
       case 'supabase':
       default: {
-        return await import('./supabase/getSupabase');
+        return getSupabase();
       }
     }
   };
