@@ -10,6 +10,7 @@ const nextConfig = {
   images: {
     domains: ['sorthugaogfbqewtykix.supabase.co'],
   },
+  transpilePackages: ['@nucleus-cms/components']
 };
 
 export default removeImports()(nextConfig);

@@ -9,16 +9,10 @@ import {
   DropResult,
 } from '@hello-pangea/dnd';
 
-import {
-  ImageRecordType,
-  InnerSectionType,
-  isImageRecordType,
-  RecordType,
-} from '../../app/utils';
-import useDB from '../../db';
-
 import { StyledList, StyledItem } from './styled';
 import InputRenderer from './InputRenderer';
+import {ImageRecordType, InnerSectionType, isImageRecordType, RecordType} from "../../types";
+import useDB from "../../utils/useDB";
 
 const blockTypes = [
   '/textarea',

@@ -5,15 +5,12 @@ import { Session } from '@supabase/supabase-js';
 import useDarkMode from 'use-dark-mode';
 import { ReactNode } from 'react';
 
-import SupabaseListener from '../components/supabase-listener';
-import SupabaseProvider from '../components/supabase-provider';
 import theme from '../theme';
 import config from '../orchard.theme.config.json';
 import { ThemeModeEnum } from '../theme/enum';
-import SiteThemeProvider from '../components/PreviewEditor/context';
+import { SiteThemeProvider, SupabaseListener, SupabaseProvider } from '@nucleus-cms/components';
 
 import GlobalStyle from './globalStyles';
-
 export const revalidate = 0;
 
 const Provider = ({

@@ -1,13 +1,12 @@
 import { Box, Input, Carousel, Button, Divider } from '@techstack/components';
 import { ChangeEvent } from 'react';
 
-import { CarouselRecordType } from '../../app/utils';
-import useDB from '../../db';
-
 import { StyledAccordion } from './styled';
 import ImageUploader from './ImageUploader';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {CarouselRecordType} from "../../types";
+import useDB from "../../utils/useDB";
 
 interface Props {
   field: CarouselRecordType;

@@ -2,7 +2,7 @@ import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js/src/lib/types';
-import { Session, User } from '@supabase/supabase-js';
+import {RealtimeChannel, Session, User} from '@supabase/supabase-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 
 import { RecordType } from '../types';
@@ -25,6 +25,13 @@ export type GetOptions = {
 };
 
 export interface DbReturnType<T extends string, F extends string> {
+  unsubscribe: (
+    channel: RealtimeChannel
+  ) => Promise<"error" | "ok" | "timed out">
+  subscribe: <R extends RecordReturnType>(
+    table: T,
+    onChange: (payload) => void
+  ) => RealtimeChannel;
   get: <R extends RecordReturnType>(
     table: T,
     options?: GetOptions

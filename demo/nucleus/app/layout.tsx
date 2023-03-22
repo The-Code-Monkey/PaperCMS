@@ -7,8 +7,6 @@ import StyledComponentsRegistry from '../lib/registry';
 
 import Provider from './provider';
 
-export const revalidate = 0;
-
 const MyApp = async ({ children }: { children: ReactNode }) => {
   const supabase = createServerClient();
 

@@ -1,9 +1,6 @@
 import { PageProps } from '../../../../utils/pageTypes';
-import { StyledMain } from '../../styled';
-import useDB from '../../../../db';
-
-import ListTable from './ListTable';
-import Header from './Header';
+import Container from "./Container";
+import {useDB} from '@nucleus-cms/utils';
 
 const List = async ({ params }: PageProps) => {
   const { id } = params ?? {};
@@ -17,12 +14,7 @@ const List = async ({ params }: PageProps) => {
     }
   );
 
-  return (
-    <StyledMain>
-      <Header id={id} />
-      <ListTable data={data} id={id} fieldData={fieldData} />
-    </StyledMain>
-  );
+  return <Container id={id} data={data} fieldData={fieldData} />
 };
 
 export default List;

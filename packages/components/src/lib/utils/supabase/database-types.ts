@@ -9,40 +9,10 @@ export type Json =
 export interface Database {
   public: {
     Tables: {
-      products: {
-        Row: {
-          id: number;
-          created_at: string | null;
-          name: string | null;
-          description: string | null;
-        };
-        Insert: {
-          id?: number;
-          created_at?: string | null;
-          name?: string | null;
-          description?: string | null;
-        };
-        Update: {
-          id?: number;
-          created_at?: string | null;
-          name?: string | null;
-          description?: string | null;
-        };
-      };
-      blog: {
-        Row: {
-          id: number;
-          title: string;
-          content: string;
-          href: string;
-        };
-      };
-      authCode: {
-        Row: {
-          id: number;
-          code: string;
-          used: boolean;
-        };
+      [x: string]: {
+        Row: Record<string, string | number | null>;
+        Insert: Record<string, string | number | null>;
+        Update: Record<string, string | number | null>;
       };
     };
     Views: {

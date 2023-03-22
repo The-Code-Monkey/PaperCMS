@@ -4,14 +4,14 @@ import { Box } from '@techstack/components';
 import { useContext, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-import { RecordType } from '../../app/utils';
 import FormButtons from '../FormButtons';
-import useDB from '../../db';
 
 import { SiteThemeContext } from './context';
 import Nav from './components/Nav';
 import ElementsAside from './ElementsAside';
 import ElementRenderer from './ElementRenderer';
+import {RecordType} from "../../types";
+import useDB from "../../utils/useDB";
 
 interface Props {
   fields: Array<Record<string, string>>;

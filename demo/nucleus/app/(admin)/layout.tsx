@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import useDB from '../../db';
+import {useDB} from '@nucleus-cms/utils';
 
 import Nav from './Nav';
 

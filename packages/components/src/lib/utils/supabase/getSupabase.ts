@@ -15,11 +15,11 @@ import {
 
 import { Database } from './database-types';
 import { createBrowserClient } from './supabase-browser';
-import { Session, User } from '@supabase/supabase-js';
+import {RealtimeChannel, Session, User} from '@supabase/supabase-js';
 
 type Functions = keyof Database['public']['Functions'];
 
-type Tables = keyof Database['public']['Tables'];
+type Tables = string;
 
 const useSupabase = (): DbReturnType<Tables, Functions> => {
   type TableType = Database['public']['Tables'][Tables]['Row'];
@@ -51,6 +51,25 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
   const signOut: DbReturnType<Tables, Functions>['signOut'] = async () => {
     return await supabase.auth.signOut() as unknown as Promise<{ error: Record<string, unknown> | null }>;
   };
+
+  // Remove Subscription
+  const unsubscribe: DbReturnType<Tables, Functions>['unsubscribe'] = (channel: RealtimeChannel): Promise<"error" | "ok" | "timed out"> => {
+    return supabase.removeChannel(channel);
+  }
+
+  // Subscribe
+  const subscribe: DbReturnType<Tables, Functions>['subscribe'] = <
+    R extends RecordReturnType
+  >(
+    table: Tables,
+    onChange: (payload) => void
+  ): RealtimeChannel => {
+    return supabase.channel('any').on('postgres_changes', {
+      event: 'INSERT',
+      schema: 'public',
+      table
+    }, onChange).subscribe();
+  }
 
   // Get
   const get: DbReturnType<Tables, Functions>['get'] = async <
@@ -150,7 +169,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
       )
     );
 
-  return { signIn, signUp, signOut, get, put, remove, dbFunction, upload };
+  return { signIn, signUp, signOut, get, put, remove, dbFunction, upload, subscribe, unsubscribe };
 };
 
 export default useSupabase;

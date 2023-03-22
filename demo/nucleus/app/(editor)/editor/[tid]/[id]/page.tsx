@@ -1,8 +1,7 @@
-import PreviewEditor from '../../../../../components/PreviewEditor';
 import { PageProps } from '../../../../../utils/pageTypes';
-import useDB from '../../../../../db';
 import { RecordType } from '../../../../utils';
-import { StyledMain } from '../../../../(admin)/styled';
+import {useDB} from "@nucleus-cms/utils";
+import Container from "./Container";
 
 const Page = async ({ params }: PageProps) => {
   const { tid, id } = params ?? {};
@@ -22,16 +21,7 @@ const Page = async ({ params }: PageProps) => {
       where: ['id', id],
     }
   );
-  return (
-    <StyledMain>
-      <PreviewEditor
-        fields={fieldData ?? []}
-        tid={tid}
-        id={id}
-        data={id === 'new' ? {} : data?.[0] ?? {}}
-      />
-    </StyledMain>
-  );
+  return <Container data={data} fieldData={fieldData} id={id} tid={tid} />;
 };
 
 export default Page;

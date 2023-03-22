@@ -1,5 +1,4 @@
 import { Box } from '@techstack/components';
-
 interface Props {
   menu: Array<[string, string]>;
   style: Record<string, string>;

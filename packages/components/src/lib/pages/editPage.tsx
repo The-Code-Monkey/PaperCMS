@@ -1,13 +1,11 @@
-'use client';
-
 import { Box, Input } from '@techstack/components';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-
-import { formatFieldNames, getFieldType, RecordType } from '../../../../utils';
-import ContentBuilder from '../../../../../components/ContentBuilder';
-import FormButtons from '../../../../../components/FormButtons';
-import useDB from '../../../../../db';
+import {RecordType} from "../types";
+import useDB from "../utils/useDB";
+import {formatFieldNames, getFieldType} from "./pageUtils";
+import {ContentBuilder, FormButtons, Header} from "../components";
+import {StyledMain} from "./styled";
 
 interface Props {
   data: Record<string, Array<RecordType>>;
@@ -51,6 +49,12 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
       if (id === 'new') {
         delete data.id;
         data.created_at = new Date().toDateString();
+
+        await DB.put('menu', {
+          title: data.title,
+          link: data.link as string,
+          created_at: data.created_at
+        })
       }
 
       const { error } = await DB.put(
@@ -69,8 +73,11 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
     setFormData(data);
   }, [data]);
 
+  console.log(fields, data, formData)
+
   return (
-    <>
+    <StyledMain>
+      <Header tid={tid} id={id} />
       <Box<'form'>
         as='form'
         textAlign='left'
@@ -83,6 +90,8 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
             fields.map(field => {
               const type = getFieldType(field.data_type);
               const name = field.column_name;
+
+              console.log(type, formData[name]);
 
               if (type === 'object' && !Array.isArray(formData[name]))
                 return null;
@@ -114,7 +123,7 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
         </Box>
       </Box>
       <FormButtons onCancelClick={handleCancel} onSaveClick={handleSave} />
-    </>
+    </StyledMain>
   );
 };
 
