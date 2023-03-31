@@ -1,3 +1,12 @@
+export type NavItemType = {
+  id: number,
+  parent: number,
+  droppable: boolean,
+  text: string
+
+  link: string;
+};
+
 export type CarouselRecordType = {
   id: string;
   order: number;

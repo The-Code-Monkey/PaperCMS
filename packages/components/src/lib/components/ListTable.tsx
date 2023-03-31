@@ -5,11 +5,11 @@ import { useDB } from '../utils';
 
 interface Props {
   data: Record<string, string>[] | null;
-  id: string | null;
+  tid: string | null;
   fieldData: Record<string, string>[] | null;
 }
 
-const ListTable = ({ data, id, fieldData }: Props) => {
+const ListTable = ({ data, tid, fieldData }: Props) => {
   const router = useRouter();
   const DB = useDB();
   // const [columns] = useState(() => {
@@ -29,28 +29,28 @@ const ListTable = ({ data, id, fieldData }: Props) => {
   const handleEditClick = useCallback(
     (row: Record<string, unknown>) => {
       if (row['id']) {
-        router.push(`/edit/${id}/${row['id']}`);
+        router.push(`/edit/${tid}/${row['id']}`);
       }
     },
-    [router, id]
+    [router, tid]
   );
 
   const handleDeleteClick = useCallback(
     async (row: Record<string, unknown>) => {
-      const { error } = await DB.remove(id as any, row['id'] as string);
+      const { error } = await DB.remove(tid as any, row['id'] as string);
 
       if (!error) {
         router.refresh();
       }
     },
-    [DB, id, router]
+    [DB, tid, router]
   );
 
   const columns: Array<string> = useMemo(() => {
     const result = (fieldData ?? []).map(field => field['column_name']);
 
     if ((data?.length ?? 0) > 0) {
-      if (id === 'code') {
+      if (tid === 'code') {
         result.push('delete');
       } else {
         result.push('edit-delete');
@@ -63,7 +63,7 @@ const ListTable = ({ data, id, fieldData }: Props) => {
     if (metaIndex !== -1) result.splice(metaIndex, 1);
 
     return result;
-  }, [data?.length, fieldData, id]);
+  }, [data?.length, fieldData, tid]);
 
   const dataFallback = useMemo(
     () => [

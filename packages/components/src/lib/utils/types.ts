@@ -10,7 +10,8 @@ import { RecordType } from '../types';
 export type RecordReturnType =
   | Record<string, string>
   | Record<string, string>[]
-  | Record<string, Array<RecordType>>[];
+  | Record<string, Array<RecordType>>[]
+  | Record<string, any>;
 
 export type AuthOptions = {
   redirectTo?: string;

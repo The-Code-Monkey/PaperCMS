@@ -1,8 +1,9 @@
 import {createContext, ReactNode, useEffect, useState} from 'react';
 import useDB from "../../utils/useDB";
+import {NavItemType} from "../../types";
 
 export type SiteThemeConfig = {
-  menu: Array<[string, string]>;
+  menu: Array<NavItemType>;
   styles: {
     nav: Record<string, string>;
     body: Record<string, string>;
@@ -19,28 +20,24 @@ interface Props {
 
 const SiteThemeProvider = ({children}: Props) => {
   const DB = useDB();
-  const [menu, setMenu] = useState<Array<[string, string]>>([['Homepage', '/'], ['test', '/test']]);
-
-  const updateMenu = (newMenuItem) => {
-    setMenu(prevState => {
-      const newState = [...prevState];
-      newState.push([newMenuItem.title, newMenuItem.link]);
-      return newState;
-    })
-  }
-
-  const menuSub = DB.subscribe('menu', (payload) => updateMenu(payload.new))
+  const [menu, setMenu] = useState<Array<NavItemType>>([
+    {
+      "id": 0,
+      "parent": 0,
+      "droppable": false,
+      "text": "Homepage",
+      "link": "/"
+    }
+  ]);
 
   useEffect(() => {
     const getInitialMenu = async () => {
-      const { data } = await DB.get<Array<Record<string, string>>>('menu');
+      const { data } = await DB.get<Array<NavItemType>>('menu');
 
-      setMenu(data.map(entry => [entry.title, entry.link]))
+      setMenu(data)
     }
 
     getInitialMenu();
-
-    () => DB.unsubscribe(menuSub);
   }, [])
 
   const config: SiteThemeConfig = {

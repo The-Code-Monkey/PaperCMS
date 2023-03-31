@@ -4,11 +4,13 @@ import { Box, Button } from '@techstack/components';
 import {capitalizeFirstLetter} from "../pages/pageUtils";
 
 interface Props {
-  id: string;
-  tid?: string;
+  id?: string;
+  tid: string;
+
+  noEntry?: boolean
 }
 
-const Header = ({ id, tid }: Props) => {
+const Header = ({ id, tid, noEntry = false }: Props) => {
   const router = useRouter();
 
   const handleClick = useCallback(() => {
@@ -31,7 +33,7 @@ const Header = ({ id, tid }: Props) => {
       justifyContent={!!tid ? undefined : 'flex-end'}
       alignItems={'center'}
     >
-      {!!tid && <>Editing: {capitalizeFirstLetter(tid)} - {id}</>}
+      {!!id ? <>Editing: {capitalizeFirstLetter(tid)} - {id}</> : capitalizeFirstLetter(tid)}
       {tid === 'pages' && (
         <Button
           ml='auto'
@@ -43,7 +45,7 @@ const Header = ({ id, tid }: Props) => {
           Preview Editor
         </Button>
       )}
-      {!tid && <Button iconName='plus' h='0' variant='default' onClick={handleClick}>
+      {!tid && !noEntry && <Button iconName='plus' h='0' variant='default' onClick={handleClick}>
         Add entry
       </Button>}
     </Box>

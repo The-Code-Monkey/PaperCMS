@@ -3,16 +3,16 @@ import { Header, ListTable } from '../components';
 import { StyledMain } from './styled';
 
 interface Props {
-  id: string;
+  tid: string;
   fieldData: Record<string, string>[];
   data: Record<string, string>[];
 }
 
-const ListPage = ({ id, data, fieldData }: Props) => {
+const ListPage = ({ tid, data, fieldData }: Props) => {
   return (
     <StyledMain>
-      <Header id={id} />
-      <ListTable data={data} id={id} fieldData={fieldData} />
+      <Header tid={tid} />
+      <ListTable data={data} tid={tid} fieldData={fieldData} />
     </StyledMain>
   );
 };
