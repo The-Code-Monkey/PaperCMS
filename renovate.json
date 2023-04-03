@@ -1,0 +1,53 @@
+{
+
+  "extends": [
+
+    ":dependencyDashboard",
+
+    ":semanticPrefixFixDepsChoreOthers",
+
+    ":ignoreModulesAndTests",
+
+    ":autodetectPinVersions",
+
+    ":prConcurrentLimit20",
+
+    "group:monorepos",
+
+    "group:recommended",
+
+    "workarounds:all"
+
+  ],
+
+  "automergeStrategy": "squash",
+
+  "automerge": true,
+
+  "labels": ["dependencies"],
+
+  "vulnerabilityAlerts": {
+
+    "labels": ["security"],
+
+    "enabled": true
+
+  },
+
+  "packageRules": [
+
+    {
+
+      "matchPackagePatterns": ["@techstack/*"],
+
+      "groupName": "@techstack mono repo",
+
+      "enabled": false
+
+    }
+
+  ],
+
+  "updateInternalDeps": true
+
+}
