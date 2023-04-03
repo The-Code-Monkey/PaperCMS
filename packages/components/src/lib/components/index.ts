@@ -4,6 +4,6 @@ import ContentBuilder from "./ContentBuilder";
 import FormButtons from "./FormButtons";
 import PreviewEditor from "./PreviewEditor";
 import SiteThemeProvider from "./PreviewEditor/context";
-import NavItemsSettings from './navItemsSettings'
+import NavItemsSettings from './NavItemsSettings'
 
 export { Header, ListTable, ContentBuilder, FormButtons, PreviewEditor, SiteThemeProvider, NavItemsSettings };
