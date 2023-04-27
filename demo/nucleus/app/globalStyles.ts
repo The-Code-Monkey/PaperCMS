@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     }};
   }
 
+  ul {
+    list-style-type: none;
+  }
+
   a {
     color: ${p => {
       // @ts-ignore
@@ -63,7 +67,7 @@ form {
 .slider {
   .slide {
     z-index: 0 !important;
-    
+
     > div, > div > img {
       height: 100%;
     }
