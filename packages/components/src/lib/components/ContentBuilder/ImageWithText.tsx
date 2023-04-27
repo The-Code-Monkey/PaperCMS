@@ -1,10 +1,9 @@
 import { Box, Input } from '@techstack/components';
 
-import { ImageRecordType } from '../../app/utils';
-
 import ImageUploader from './ImageUploader';
 import Editor from './Editor';
 import { StyledAccordion } from './styled';
+import {ImageRecordType} from "../../types";
 
 interface Props {
   field: ImageRecordType;
