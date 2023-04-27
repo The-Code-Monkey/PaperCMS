@@ -1,6 +1,9 @@
+import {Box, Icon, Interactable} from "@techstack/components";
+
 const CustomNode = ({ testIdPrefix = "", ...props }) => {
-  const { id, droppable, data } = props.node;
-  const indent = props.depth * 24;
+  const { id } = props.node;
+  const { isOpen } = props;
+  const indent = (props.depth - 1) * 24;
 
   const handleClick = (e) => {
     props.onClick(e, props.node);
@@ -23,23 +26,38 @@ const CustomNode = ({ testIdPrefix = "", ...props }) => {
     // props.containerRef.current?.classList.remove(styles.dragging);
   }
 
+  console.log(props);
+
   return (
-    <div
-      style={{ paddingInlineStart: indent }}
+    <Interactable
+      alignItems='center'
+      d='flex'
+      h='8'
+      paddingInlineStart={indent}
       data-testid={`${testIdPrefix}custom-node-${id}`}
       onClick={handleClick}
     >
-      <div>
+      <Box
+        alignItems='center'
+        cursor='pointer'
+        d='flex'
+        h='7'
+        justifyContent='center'
+        w='7'
+        // @ts-ignore
+        transition='transform linear 0.1s'
+        transform={isOpen ? 'rotate(90deg)' : 'rotate(0deg)'}
+      >
         {props.node.droppable && (
-          <div onClick={handleToggle}>
-            has children:
-          </div>
+          <Interactable alignItems='center' d='flex' onClick={handleToggle}>
+            <Icon name={isOpen ? 'arrowdown' : 'arrowright'} />
+          </Interactable>
         )}
-      </div>
+      </Box>
       <div>
         {props.node.text}
       </div>
-    </div>
+    </Interactable>
   );
 };
 
