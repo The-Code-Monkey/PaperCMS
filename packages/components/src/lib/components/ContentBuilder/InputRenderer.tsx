@@ -10,7 +10,7 @@ import {
   ImageRecordType,
   InnerSectionType,
   RecordType,
-} from '../../app/utils';
+} from '../../types';
 
 import ImageUploader from './ImageUploader';
 import CarouselBuilder from './CarouselBuilder';
@@ -173,7 +173,8 @@ const InputRenderer = ({
                   <Button
                     iconName='trash'
                     intent='error'
-                    size='8'
+                    w='8'
+                    h='8'
                     alignSelf='start'
                     onClick={handleContentRemove(innerIndex)}
                   />

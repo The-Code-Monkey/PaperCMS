@@ -1,10 +1,10 @@
 import { Dispatch, SetStateAction, useCallback, useState } from 'react';
 import { Icon, Interactable } from '@techstack/components';
 
-import { InnerSectionType, RecordType } from '../../../app/utils';
 import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';
+import {InnerSectionType, RecordType} from "../../../types";
 
 interface Props extends InnerSectionType {
   onChange: (value: any) => void;

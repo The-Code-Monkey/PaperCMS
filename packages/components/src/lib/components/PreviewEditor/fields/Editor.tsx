@@ -3,7 +3,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.core.css';
 
 import { EditorWrapper } from '../styled';
-import { DefaultRecordType } from '../../../app/utils';
+import {DefaultRecordType} from "../../../types";
 
 interface Props {
   item: DefaultRecordType;

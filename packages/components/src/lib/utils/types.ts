@@ -1,7 +1,7 @@
 import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
-} from '@supabase/gotrue-js/src/lib/types';
+} from '@supabase/gotrue-js';
 import {RealtimeChannel, Session, User} from '@supabase/supabase-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 
