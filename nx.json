@@ -11,6 +11,9 @@
     }
   },
   "targetDefaults": {
+    "build:cli": {
+      "inputs": ["production", "^production"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]

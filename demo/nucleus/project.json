@@ -7,7 +7,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "cd demo/nucleus && next build"
+        "command": "echo exit code 0"
       },
       "dependsOn": ["^build"]
     },

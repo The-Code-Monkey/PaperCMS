@@ -1,5 +1,8 @@
 {
   "name": "@nucleus-cms/create-nucleus-app",
   "version": "0.0.1",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "enquirer": "2.3.6"
+  }
 }
