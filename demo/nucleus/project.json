@@ -1,0 +1,24 @@
+{
+  "name": "nucleus-demo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "demo/nucleus",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd demo/nucleus && next build"
+      },
+      "dependsOn": ["^build"]
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "command": "next lint",
+        "lintFilePatterns": ["demo/nucleus/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -7,7 +7,8 @@
     "lint": "nx run-many --target=lint",
     "test": "nx run-many --target=test",
     "build": "nx run-many --target=build",
-    "dev": "cd demo/nucleus && orchard generate && next dev"
+    "dev": "cd demo/nucleus && orchard generate && next dev",
+    "build:demo": "cd demo/nucleus && orchard generate && next build"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +54,7 @@
     "@typescript-eslint/parser": "^5.36.1",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-react": "^7.32.2",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "nx": "15.8.9",
