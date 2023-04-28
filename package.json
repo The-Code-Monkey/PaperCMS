@@ -17,7 +17,7 @@
     "@supabase/auth-helpers-react": "0.3.1",
     "@supabase/auth-ui-react": "0.3.5",
     "@supabase/supabase-auth-helpers": "1.4.2",
-    "@supabase/supabase-js": "2.12.0",
+    "@supabase/supabase-js": "2.21.0",
     "@techstack/components": "0.7.125",
     "@techstack/tcm-cli": "^0.4.87",
     "@techstack/theme": "0.4.93",
