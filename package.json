@@ -33,7 +33,7 @@
     "react-dnd": "^16.0.1",
     "react-dom": "18.2.0",
     "react-quill": "^2.0.0",
-    "sass": "1.59.3",
+    "sass": "1.62.1",
     "server-only": "^0.0.1",
     "tslib": "^2.3.0",
     "use-dark-mode": "2.3.1",
