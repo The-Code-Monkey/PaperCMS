@@ -36,7 +36,7 @@ const Form = () => {
     });
 
     if (!error && data.session) {
-      router.push(params.get('redirectedFrom') ?? '/');
+      router.push(params!.get('redirectedFrom') ?? '/');
     } else {
       setIsLoading(false);
     }

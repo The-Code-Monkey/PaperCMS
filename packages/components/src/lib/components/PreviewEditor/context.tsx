@@ -34,7 +34,9 @@ const SiteThemeProvider = ({children}: Props) => {
     const getInitialMenu = async () => {
       const { data } = await DB.get<Array<NavItemType>>('menu');
 
-      setMenu(data)
+      if (data) {
+        setMenu(data)
+      }
     }
 
     getInitialMenu();

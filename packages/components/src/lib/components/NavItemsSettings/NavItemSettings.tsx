@@ -4,7 +4,7 @@ import {
   MultiBackend,
   getBackendOptions,
   DndProvider,
-  isAncestor
+  isAncestor, NodeModel
 } from "@minoru/react-dnd-treeview";
 import CustomNode from "./CustomNode";
 import MultipleDragPreview from "./MultipleDragPreview";
@@ -21,7 +21,7 @@ interface Props {
 
 const NavItemsSettings = ({ navItems, onChange }: Props) => {
 
-  const [selectedNodes, setSelectedNodes] = useState([]);
+  const [selectedNodes, setSelectedNodes] = useState<Array<NodeModel>>([]);
   const [tree, setTree] = useState(navItems.content);
   const [isDragging, setIsDragging] = useState(false);
   const [isCtrlPressing, setIsCtrlPressing] = useState(false);
@@ -50,11 +50,11 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
     };
   }, []);
 
-  const handleSingleSelect = (node) => {
+  const handleSingleSelect = (node: NodeModel) => {
     setSelectedNodes([node]);
   };
 
-  const handleMultiSelect = (clickedNode) => {
+  const handleMultiSelect = (clickedNode: NodeModel) => {
     const selectedIds = selectedNodes.map((n) => n.id);
 
     // ignore if the clicked node is already selected
@@ -82,7 +82,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
     setSelectedNodes(updateNodes);
   };
 
-  const handleClick = (e, node) => {
+  const handleClick = (e, node: NodeModel) => {
     if (e.ctrlKey || e.metaKey) {
       handleMultiSelect(node);
     } else {
