@@ -21,7 +21,7 @@
     "@techstack/components": "0.7.125",
     "@techstack/tcm-cli": "^0.4.87",
     "@techstack/theme": "0.4.93",
-    "@uiw/react-md-editor": "3.20.9",
+    "@uiw/react-md-editor": "3.20.10",
     "babel-loader": "^9.1.2",
     "babel-plugin-transform-remove-imports": "^1.7.0",
     "fs-extra": "^11.1.1",
