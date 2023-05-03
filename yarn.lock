@@ -2064,21 +2064,21 @@
   dependencies:
     jose "^4.14.0"
 
-"@supabase/auth-ui-react@0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-react/-/auth-ui-react-0.3.5.tgz#cef9b671d15e917bcc22c52827d03acc9d73b502"
-  integrity sha512-3X9rlLwQliRZ386qFjsCdHvMYQIzAByXT4uWcHssFIX4s0ymwkIH49UJDb6vtpswDV4z9ZOxF0igPZyEyZT32w==
+"@supabase/auth-ui-react@0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-react/-/auth-ui-react-0.3.6.tgz#687e61b93a02477b9ee0c333383abb81bd0824c4"
+  integrity sha512-xQjLV5VmuZdy0bTLmO2i7vvDzKV5q66W1ZKhgSl867AMuMK47uEiyBCOynce5wjCatwUwk4n6IL+z67dhc+kpw==
   dependencies:
     "@stitches/core" "^1.2.8"
-    "@supabase/auth-ui-shared" "0.1.3"
+    "@supabase/auth-ui-shared" "0.1.4"
     prop-types "^15.7.2"
     react "^18.2.0"
     react-dom "^18.2.0"
 
-"@supabase/auth-ui-shared@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-shared/-/auth-ui-shared-0.1.3.tgz#0d903e21fc3012b216e0dc1b64bf92cb5d0b76d2"
-  integrity sha512-GoyW+3EiDcy+sQdmdkezx9fpsRSogHJwTdzxgf79PjyLbpyAKCnTVhOB02tiMHZ0uIZ+afAQ8CmNEwwxwHVnJw==
+"@supabase/auth-ui-shared@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-ui-shared/-/auth-ui-shared-0.1.4.tgz#050d8d3d9d20fd819fafcc6a276acbea5fdbbfe1"
+  integrity sha512-1kSo4JNLyVsTdHhuHSG0WQ7VotKbeMmoQjzIwbE/heALm9xlDu+0AgTPCx1uae1umOALa1CCQuEdfvz6P02RLA==
 
 "@supabase/functions-js@^1.3.4":
   version "1.3.4"
