@@ -1,5 +1,33 @@
 {
   "name": "@nucleus-cms/components",
   "version": "0.0.1",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "build": "tcm build --format esm && cd ../.. && mkdir -p ./dist/packages/components/src && cp -r ./packages/components/dist ./dist/packages/components/src && cp ./package.json ./dist/packages/components",
+    "prepare": "install-peers"
+  },
+  "devDependencies": {
+    "@techstack/tcm-cli": "^0.4.122",
+    "install-peers-cli": "^2.2.0",
+    "react-quill": "2.0.0"
+  },
+  "dependencies": {
+    "@hello-pangea/dnd": "16.2.0",
+    "@minoru/react-dnd-treeview": "^3.4.4",
+    "@techstack/components": "^0.7.175",
+    "@uiw/react-md-editor": "^3.20.10",
+    "react-dnd": "16.0.1",
+    "styled-components": "^5.3.10",
+    "uuid": "9.0.0"
+  },
+  "peerDependencies": {
+    "next": "13.3.4",
+    "react": "^18.2.0"
+  },
+  "optionalDependencies": {
+    "@supabase/auth-helpers-nextjs": "0.6.1",
+    "@supabase/gotrue-js": "2.24.0",
+    "@supabase/storage-js": "2.5.1",
+    "@supabase/supabase-js": "2.21.0"
+  }
 }

@@ -1,5 +1,26 @@
 {
   "name": "nucleus-demo",
   "version": "1.0.0",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "build": "orchard generate && next build",
+    "dev": "orchard generate && next dev"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "0.6.1",
+    "@supabase/supabase-js": "2.21.0",
+    "@techstack/components": "0.7.175",
+    "@techstack/theme": "^0.4.123",
+    "next": "13.3.4",
+    "next-remove-imports": "1.0.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
+    "styled-components": "5.3.10",
+    "use-dark-mode": "2.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.5",
+    "typescript": "5.0.4"
+  }
 }

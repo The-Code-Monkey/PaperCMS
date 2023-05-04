@@ -7,7 +7,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "echo exit code 0"
+        "command": "yarn build"
       },
       "dependsOn": ["^build"]
     },

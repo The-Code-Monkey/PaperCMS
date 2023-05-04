@@ -9,7 +9,7 @@
     "src/**/story.tsx"
   ],
   "compilerOptions": {
-    "rootDir": "src",
+    "rootDir": "./src",
     "outDir": "./dist/esm",
     "declarationDir": "dist/types",
     "jsx": "react-jsx",

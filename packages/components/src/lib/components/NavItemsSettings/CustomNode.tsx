@@ -46,6 +46,7 @@ const CustomNode = ({ testIdPrefix = "", ...props }) => {
         w='7'
         // @ts-ignore
         transition='transform linear 0.1s'
+        // @ts-ignore
         transform={isOpen ? 'rotate(90deg)' : 'rotate(0deg)'}
       >
         {props.node.droppable && (

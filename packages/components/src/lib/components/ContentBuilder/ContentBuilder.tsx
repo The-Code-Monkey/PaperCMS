@@ -1,5 +1,3 @@
-'use client';
-
 import { Box, Button } from '@techstack/components';
 import { v4 as uuid } from 'uuid';
 import {

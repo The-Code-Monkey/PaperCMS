@@ -2,7 +2,18 @@
   "name": "@nucleus-cms/create-nucleus-app",
   "version": "0.0.1",
   "type": "module",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json && cd ../.. && mkdir -p ./dist/packages/create-nucleus-app/src && cp -r ./packages/create-nucleus-app/dist/. ./dist/packages/create-nucleus-app && cp ./packages/create-nucleus-app/package.json ./dist/packages/create-nucleus-app"
+  },
   "dependencies": {
-    "enquirer": "2.3.6"
+    "chalk": "^5.2.0",
+    "enquirer": "2.3.6",
+    "fs-extra": "^11.1.1",
+    "ora": "^6.3.0",
+    "sade": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "typescript": "5.0.4"
   }
 }

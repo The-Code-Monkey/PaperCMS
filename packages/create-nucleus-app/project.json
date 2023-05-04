@@ -7,7 +7,7 @@
     "build:cli": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "cd packages/create-nucleus-app && tsc -p ./tsconfig.json && cd ../.. && mkdir -p ./dist/packages/create-nucleus-app/src && cp -r ./packages/create-nucleus-app/dist/. ./dist/packages/create-nucleus-app && cp ./packages/create-nucleus-app/package.json ./dist/packages/create-nucleus-app"
+        "command": "cd packages/create-nucleus-app && yarn build"
       }
     },
     "publish": {

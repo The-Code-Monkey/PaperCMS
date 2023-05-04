@@ -3,8 +3,7 @@ import {
   TextAreaTextApi,
   TextRange,
   TextState,
-} from '@uiw/react-md-editor/src/commands';
-import React from 'react';
+} from '@uiw/react-md-editor';
 import { Icon } from '@techstack/components';
 
 function getSurroundingWord(text: string, position: number) {

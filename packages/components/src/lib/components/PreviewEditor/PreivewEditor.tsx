@@ -1,5 +1,3 @@
-'use client';
-
 import { Box } from '@techstack/components';
 import { useContext, useState } from 'react';
 import { useRouter } from 'next/navigation';

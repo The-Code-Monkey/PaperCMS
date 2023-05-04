@@ -8,7 +8,7 @@
       "executor": "nx:run-commands",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "command": "cd packages/components && tcm build --format esm && cd ../.. && mkdir -p ./dist/packages/components/src && cp -r ./packages/components/dist/esm ./dist/packages/components/src && cp ./package.json ./dist/packages/components",
+        "command": "cd packages/components && yarn build",
         "outputPath": "dist/packages/components",
         "main": "packages/components/src/index.ts",
         "tsConfig": "packages/components/tsconfig.lib.json",
