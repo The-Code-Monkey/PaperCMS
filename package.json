@@ -10,12 +10,12 @@
   },
   "private": true,
   "devDependencies": {
-    "@nrwl/eslint-plugin-nx": "16.0.3",
-    "@nrwl/jest": "16.0.3",
-    "@nrwl/js": "16.0.3",
-    "@nrwl/linter": "16.0.3",
+    "@nrwl/eslint-plugin-nx": "16.1.0",
+    "@nrwl/jest": "16.1.0",
+    "@nrwl/js": "16.1.0",
+    "@nrwl/linter": "16.1.0",
     "@nrwl/nx-cloud": "16.0.5",
-    "@nrwl/workspace": "16.0.3",
-    "nx": "16.0.3"
+    "@nrwl/workspace": "16.1.0",
+    "nx": "16.1.0"
   }
 }
