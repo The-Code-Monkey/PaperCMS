@@ -1,7 +1,6 @@
 import { Carousel, CarouselProps } from '@techstack/components';
 import { Dispatch, SetStateAction, useContext, useState } from 'react';
-
-import { InnerSectionType, RecordType } from '../../types';
+import { InnerSectionType, RecordType } from '@nucleus-cms/utils';
 
 import { SiteThemeContext } from './context';
 import InnerSection from './elements/InnerSection';

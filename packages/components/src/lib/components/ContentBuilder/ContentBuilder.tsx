@@ -7,14 +7,11 @@ import {
 import { Box, Button } from '@techstack/components';
 import { ChangeEvent } from 'react';
 import { v4 as uuid } from 'uuid';
+import { useDB, RecordType, ImageRecordType, InnerSectionType } from '@nucleus-cms/utils';
 
 import {
-  ImageRecordType,
-  InnerSectionType,
   isImageRecordType,
-  RecordType,
 } from '../../types';
-import useDB from '../../utils/useDB';
 
 import InputRenderer from './InputRenderer';
 import { StyledList, StyledItem } from './styled';

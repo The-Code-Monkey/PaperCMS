@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
+import { useDB } from '@nucleus-cms/utils';
 
 import { NavItemType } from '../../types';
-import useDB from '../../utils/useDB';
 
 export type SiteThemeConfig = {
   menu: Array<NavItemType>;

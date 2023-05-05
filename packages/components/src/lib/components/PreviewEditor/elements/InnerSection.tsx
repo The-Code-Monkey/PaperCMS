@@ -7,7 +7,7 @@ import {
   DragEvent,
 } from 'react';
 
-import { InnerSectionType, RecordType } from '../../../types';
+import { InnerSectionType, RecordType } from '@nucleus-cms/utils';
 import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';

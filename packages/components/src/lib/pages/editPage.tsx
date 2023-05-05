@@ -1,10 +1,9 @@
 import { Box, Input } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { ChangeEvent, useEffect, useState } from 'react';
+import { useDB, RecordType } from '@nucleus-cms/utils';
 
 import { ContentBuilder, FormButtons, Header } from '../components';
-import { RecordType } from '../types';
-import useDB from '../utils/useDB';
 
 import { formatFieldNames, getFieldType } from './pageUtils';
 import { StyledMain } from './styled';

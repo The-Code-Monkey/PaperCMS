@@ -1,9 +1,8 @@
 import { Box } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { useContext, useState } from 'react';
+import { useDB, RecordType } from "@nucleus-cms/utils";
 
-import { RecordType } from '../../types';
-import useDB from '../../utils/useDB';
 import FormButtons from '../FormButtons';
 
 import Nav from './components/Nav';

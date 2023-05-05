@@ -4,18 +4,12 @@ import '@uiw/react-md-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import { v4 as uuid } from 'uuid';
 
-import {
-  CarouselRecordType,
-  DefaultRecordType,
-  ImageRecordType,
-  InnerSectionType,
-  RecordType,
-} from '../../types';
 
 import CarouselBuilder from './CarouselBuilder';
 import Editor from './Editor';
 import ImageUploader from './ImageUploader';
 import ImageWithText from './ImageWithText';
+import {CarouselRecordType, ImageRecordType, InnerSectionType, RecordType, DefaultRecordType} from "@nucleus-cms/utils";
 
 type onChangeType =
   | {
