@@ -1,0 +1,39 @@
+{
+  "name": "@nucleus-cms/utils",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "tcm build",
+    "lint": "tcm lint",
+    "postinstall": "install-peers"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/utils.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/utils.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "@techstack/tcm-cli": "^0.4.122",
+    "install-peers-cli": "^2.2.0"
+  },
+  "dependencies": {
+    "uuid": "9.0.0"
+  },
+  "optionalDependencies": {
+    "@supabase/auth-helpers-nextjs": "0.6.1",
+    "@supabase/gotrue-js": "2.24.0",
+    "@supabase/storage-js": "2.5.1",
+    "@supabase/supabase-js": "2.21.0"
+  }
+}
