@@ -7,6 +7,9 @@
     "lint": "tcm lint",
     "postinstall": "install-peers"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@techstack/tcm-cli": "^0.4.122",
     "install-peers-cli": "^2.2.0"

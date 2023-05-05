@@ -10,7 +10,10 @@
     "lint:fix": "lerna run lint --stream -- --fix",
     "build": "lerna run build --stream",
     "dev": "lerna run dev --stream",
-    "postinstall": "lerna run postinstall --stream"
+    "postinstall": "lerna run postinstall --stream",
+    "lerna:changed": "lerna changed",
+    "lerna:version": "lerna version --conventional-commits --exact --yes",
+    "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-git --no-verify-access --yes"
   },
   "devDependencies": {
     "lerna": "^6.6.2"
@@ -19,6 +22,12 @@
   "workspaces": [
     "packages/*"
   ],
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "eslintConfig": {
     "extends": [
       "plugin:import/errors",

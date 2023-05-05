@@ -33,10 +33,10 @@ const SiteThemeProvider = ({ children }: Props) => {
 
   useEffect(() => {
     const getInitialMenu = async () => {
-      const { data } = await DB.get<Array<NavItemType>>('menu');
+      const { data } = await DB.get('menu');
 
       if (data) {
-        setMenu(data);
+        setMenu(data as unknown as Array<NavItemType>);
       }
     };
 

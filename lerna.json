@@ -9,7 +9,7 @@
       "message": "chore(release): version",
       "allowBranch": [
         "release",
-        "dev",
+        "main",
         "feature/*"
       ],
       "conventionalCommits": true

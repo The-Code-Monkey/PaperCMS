@@ -7,6 +7,9 @@
     "lint": "tcm lint",
     "prepare": "install-peers"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "chalk": "^5.2.0",
     "enquirer": "2.3.6",
