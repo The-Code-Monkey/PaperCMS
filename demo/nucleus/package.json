@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "orchard generate && next build",
+    "build:demo": "orchard generate && next build",
     "dev": "orchard generate && next dev"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "@techstack/components": "0.7.175",
     "@techstack/theme": "^0.4.123",
     "@nucleus-cms/components": "0.1.0",
+    "@nucleus-cms/utils": "0.0.1",
     "next": "13.3.4",
     "next-remove-imports": "1.0.11",
     "react": "18.2.0",
