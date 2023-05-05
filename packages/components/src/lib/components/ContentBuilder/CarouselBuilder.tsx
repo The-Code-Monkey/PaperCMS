@@ -53,12 +53,14 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
     };
 
   const handleOnChangeImage = async (e: ChangeEvent<HTMLInputElement>) => {
-    const images = await DB.upload(e.target.files, `pages/carousel`);
+    if (e.target.files) {
+      const images = await DB.upload(e.target.files, `pages/carousel`);
 
-    handleOnChange(
-      images.map(img => img.url),
-      'images'
-    );
+      handleOnChange(
+        images.filter(img => img.url !== null).map(img => img.url as string),
+        'images'
+      );
+    }
   };
 
   const handleAddTitle = () => {

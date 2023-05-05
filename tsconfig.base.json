@@ -14,14 +14,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "declarationDir": "dist/types",
-    "baseUrl": ".",
-    "paths": {
-      "@nucleus-cms/components": ["packages/components/src/index.ts"],
-      "@nucleus-cms/utils": ["packages/components/src/lib/utils"],
-      "@nucleus-cms/create-nucleus-app": [
-        "packages/create-nucleus-app/src/index.ts"
-      ]
-    }
+    "baseUrl": "."
   },
   "exclude": ["node_modules", "tmp", "node_modules/**/*.*"]
 }
