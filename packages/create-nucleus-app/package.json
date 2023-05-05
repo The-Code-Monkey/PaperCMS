@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/create-nucleus-app",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
@@ -18,8 +18,8 @@
     "sade": "^1.8.1"
   },
   "devDependencies": {
+    "@techstack/tcm-cli": "0.4.127",
     "@types/node": "^18.16.3",
-    "typescript": "5.0.4",
-    "@techstack/tcm-cli": "0.4.127"
+    "typescript": "5.0.4"
   }
 }
