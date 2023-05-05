@@ -1,6 +1,7 @@
 import { Accordion, Box, Button } from '@techstack/components';
 import { v4 as uuid } from 'uuid';
-import {RecordType} from "../../types";
+
+import { RecordType } from '../../types';
 
 interface Props {
   onAddElement: (element: RecordType, index: number) => void;

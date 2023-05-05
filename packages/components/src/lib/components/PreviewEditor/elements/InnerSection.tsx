@@ -1,13 +1,19 @@
-import { Dispatch, SetStateAction, useCallback, useState } from 'react';
 import { Icon, Interactable } from '@techstack/components';
+import {
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useState,
+  DragEvent,
+} from 'react';
 
+import { InnerSectionType, RecordType } from '../../../types';
 import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';
-import {InnerSectionType, RecordType} from "../../../types";
 
 interface Props extends InnerSectionType {
-  onChange: (value: any) => void;
+  onChange: (value) => void;
   onHoverChange: (hoveredElement: string, isTop: boolean) => void;
   hoveredElement: [string, boolean];
   onReorder: (thisId: string, thatId: string, top: boolean) => void;
@@ -24,7 +30,7 @@ const InnerSection = ({
   const [isDragging, setIsDragging] = useState(false);
 
   const findCorrectTarget = useCallback(
-    (parentTarget: any): any => {
+    (parentTarget: HTMLElement): HTMLElement => {
       return parentTarget.className.includes(id)
         ? parentTarget
         : findCorrectTarget(parentTarget.parentElement);
@@ -33,10 +39,10 @@ const InnerSection = ({
   );
 
   const handleOnDragOver = useCallback(
-    (e: any) => {
+    (e: DragEvent<HTMLElement>) => {
       if (!isDragging) {
         e.preventDefault();
-        let target = e.target;
+        let target = e.target as HTMLElement;
         if (!target.className.includes(id)) {
           target = findCorrectTarget(target.parentElement);
         }

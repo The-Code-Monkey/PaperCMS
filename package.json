@@ -3,19 +3,63 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "nx run-many --target=lint",
-    "test": "nx run-many --target=test",
-    "build": "nx run-many --target=build",
-    "dev": "cd demo/nucleus && orchard generate && next dev"
+    "clean": "git clean -xdf",
+    "test": "lerna run test --stream",
+    "test:fix": "lerna run test --stream -- -u",
+    "lint": "lerna run lint --stream",
+    "lint:fix": "lerna run lint --stream -- --fix",
+    "build": "lerna run build --stream",
+    "dev": "lerna run dev --stream",
+    "postinstall": "lerna run postinstall --stream"
+  },
+  "devDependencies": {
+    "lerna": "^6.6.2"
   },
   "private": true,
-  "devDependencies": {
-    "@nrwl/eslint-plugin-nx": "16.0.3",
-    "@nrwl/jest": "16.0.3",
-    "@nrwl/js": "16.0.3",
-    "@nrwl/linter": "16.0.3",
-    "@nrwl/nx-cloud": "16.0.5",
-    "@nrwl/workspace": "16.0.3",
-    "nx": "16.0.3"
+  "workspaces": [
+    "packages/*"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ],
+    "plugins": [
+      "import"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest",
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+      }
+    },
+    "rules": {
+      "import/no-unresolved": "off",
+      "import/no-named-as-default": "off",
+      "import/no-anonymous-default-export": "off",
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "parent",
+            "sibling",
+            "index"
+          ],
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "install-peers": "^1.0.4"
   }
 }

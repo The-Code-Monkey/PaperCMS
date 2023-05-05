@@ -1,12 +1,12 @@
 import { Box, Input } from '@techstack/components';
 import Image from 'next/image';
-import { useCallback } from 'react';
+import { ChangeEvent, useCallback } from 'react';
 
-import {ImageRecordType} from "../../types";
+import { ImageRecordType } from '../../types';
 
 interface Props {
   field: ImageRecordType;
-  handleOnChange: (e: any) => void;
+  handleOnChange: (e: ChangeEvent<HTMLInputElement>) => void;
   multiple?: boolean;
 }
 

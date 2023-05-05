@@ -18,7 +18,7 @@ export default function SupabaseListener({
   useEffect(() => {
     const {
       data: { subscription },
-    } = supabase.auth!.onAuthStateChange((event, session) => {
+    } = supabase.auth.onAuthStateChange((event, session) => {
       if (session?.access_token !== serverAccessToken) {
         // server and client are out of sync
         // reload the page to fetch fresh server data

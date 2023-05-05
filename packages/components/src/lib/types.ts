@@ -1,8 +1,8 @@
 export type NavItemType = {
-  id: number,
-  parent: number,
-  droppable: boolean,
-  text: string
+  id: number;
+  parent: number;
+  droppable: boolean;
+  text: string;
 
   link: string;
 };

@@ -1,13 +1,14 @@
+import { Box, Button } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
-import { Box, Button } from '@techstack/components';
-import {capitalizeFirstLetter} from "../pages/pageUtils";
+
+import { capitalizeFirstLetter } from '../pages/pageUtils';
 
 interface Props {
   id?: string;
   tid: string;
 
-  noEntry?: boolean
+  noEntry?: boolean;
 }
 
 const Header = ({ id, tid, noEntry = false }: Props) => {
@@ -33,7 +34,13 @@ const Header = ({ id, tid, noEntry = false }: Props) => {
       justifyContent={!!tid ? undefined : 'flex-end'}
       alignItems={'center'}
     >
-      {!!id ? <>Editing: {capitalizeFirstLetter(tid)} - {id}</> : capitalizeFirstLetter(tid)}
+      {!!id ? (
+        <>
+          Editing: {capitalizeFirstLetter(tid)} - {id}
+        </>
+      ) : (
+        capitalizeFirstLetter(tid)
+      )}
       {tid === 'pages' && (
         <Button
           ml='auto'
@@ -45,9 +52,11 @@ const Header = ({ id, tid, noEntry = false }: Props) => {
           Preview Editor
         </Button>
       )}
-      {!tid && !noEntry && <Button iconName='plus' h='0' variant='default' onClick={handleClick}>
-        Add entry
-      </Button>}
+      {!tid && !noEntry && (
+        <Button iconName='plus' h='0' variant='default' onClick={handleClick}>
+          Add entry
+        </Button>
+      )}
     </Box>
   );
 };

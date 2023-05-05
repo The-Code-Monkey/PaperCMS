@@ -1,11 +1,13 @@
 import { Box, Input } from '@techstack/components';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import {RecordType} from "../types";
-import useDB from "../utils/useDB";
-import {formatFieldNames, getFieldType} from "./pageUtils";
-import {ContentBuilder, FormButtons, Header} from "../components";
-import {StyledMain} from "./styled";
+import { ChangeEvent, useEffect, useState } from 'react';
+
+import { ContentBuilder, FormButtons, Header } from '../components';
+import { RecordType } from '../types';
+import useDB from '../utils/useDB';
+
+import { formatFieldNames, getFieldType } from './pageUtils';
+import { StyledMain } from './styled';
 
 interface Props {
   data: Record<string, Array<RecordType>>;
@@ -23,12 +25,15 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
     string | Array<RecordType>
   > | null>(null);
 
-  const handleFieldUpdate = (e: any) => {
-    setFormData(prevState => {
-      const newState = { ...prevState };
-      newState[e.target.name] = e.target.value;
-      return newState;
-    });
+  const handleFieldUpdate = (e: ChangeEvent<HTMLInputElement> | boolean) => {
+    if (typeof e === 'boolean') {
+    } else {
+      setFormData(prevState => {
+        const newState = { ...prevState };
+        newState[e.target.name] = e.target.value;
+        return newState;
+      });
+    }
   };
 
   const handleContentUpdate = (value: Array<RecordType>) => {
@@ -53,15 +58,11 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
         await DB.put('menu', {
           title: data.title,
           link: data.link as string,
-          created_at: data.created_at
-        })
+          created_at: data.created_at,
+        });
       }
 
-      const { error } = await DB.put(
-        tid as any,
-        data,
-        id === 'new' ? undefined : id
-      );
+      const { error } = await DB.put(tid, data, id === 'new' ? undefined : id);
 
       if (!error) {
         router.push(`/list/${tid}`);
@@ -73,7 +74,7 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
     setFormData(data);
   }, [data]);
 
-  console.log(fields, data, formData)
+  console.log(fields, data, formData);
 
   return (
     <StyledMain>

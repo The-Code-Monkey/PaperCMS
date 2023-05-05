@@ -1,6 +1,7 @@
+import { Box, Table } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { useCallback, useMemo } from 'react';
-import { Box, Table } from '@techstack/components';
+
 import { useDB } from '../utils';
 
 interface Props {
@@ -37,7 +38,7 @@ const ListTable = ({ data, tid, fieldData }: Props) => {
 
   const handleDeleteClick = useCallback(
     async (row: Record<string, unknown>) => {
-      const { error } = await DB.remove(tid as any, row['id'] as string);
+      const { error } = await DB.remove(tid, row['id'] as string);
 
       if (!error) {
         router.refresh();
@@ -71,7 +72,9 @@ const ListTable = ({ data, tid, fieldData }: Props) => {
         .filter(column => column !== 'edit' && column !== 'edit-delete')
         .map(column => ({ key: column }))
         .reduce(
-          (obj: Record<string, any>, item) => ((obj[item.key] = 'empty'), obj),
+          (obj: Record<string, unknown>, item) => (
+            (obj[item.key] = 'empty'), obj
+          ),
           {}
         ),
     ],

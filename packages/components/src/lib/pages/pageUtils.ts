@@ -30,7 +30,7 @@ export const getFieldType = (
   }
 };
 
-export const capitalizeFirstLetter = ([first, ...rest]: any) =>
+export const capitalizeFirstLetter = ([first, ...rest]: string) =>
   (first === undefined ? '' : first.toUpperCase()) +
   rest
     .join('')

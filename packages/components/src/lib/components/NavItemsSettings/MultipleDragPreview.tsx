@@ -1,18 +1,21 @@
-import {Box} from "@techstack/components";
+import { NodeModel } from '@minoru/react-dnd-treeview';
+import { Box } from '@techstack/components';
 
-const MultipleDragPreview = (props) => {
+interface Props {
+  dragSources: NodeModel[];
+}
+
+const MultipleDragPreview = (props: Props) => {
   return (
     <Box
-      color="error"
+      color='error'
       // badgeContent={props.dragSources.length}
       // anchorOrigin={{ vertical: "top", horizontal: "right" }}
     >
-      <div data-testid="custom-drag-preview">
-        {props.dragSources.map((node) => (
-          <div >
-            <div>
-              something
-            </div>
+      <div data-testid='custom-drag-preview'>
+        {props.dragSources.map(node => (
+          <div key={node.id}>
+            <div>something</div>
             <div>{node.text}</div>
           </div>
         ))}
@@ -21,5 +24,4 @@ const MultipleDragPreview = (props) => {
   );
 };
 
-
-export default MultipleDragPreview
+export default MultipleDragPreview;

@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "tsc -p ./tsconfig.json && cd ../.. && mkdir -p ./dist/packages/create-nucleus-app/src && cp -r ./packages/create-nucleus-app/dist/. ./dist/packages/create-nucleus-app && cp ./packages/create-nucleus-app/package.json ./dist/packages/create-nucleus-app"
+    "build": "tsc -p ./tsconfig.json",
+    "lint": "tcm lint",
+    "prepare": "install-peers"
   },
   "dependencies": {
     "chalk": "^5.2.0",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.3",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "@techstack/tcm-cli": "0.4.127"
   }
 }

@@ -1,5 +1,6 @@
-import {StyledMain} from "./styled";
-import {PreviewEditor} from "../components";
+import { PreviewEditor } from '../components';
+
+import { StyledMain } from './styled';
 
 const editorPage = ({ fieldData, tid, id, data }) => {
   return (
@@ -11,7 +12,7 @@ const editorPage = ({ fieldData, tid, id, data }) => {
         data={id === 'new' ? {} : data?.[0] ?? {}}
       />
     </StyledMain>
-  )
-}
+  );
+};
 
 export default editorPage;

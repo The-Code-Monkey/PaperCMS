@@ -1,52 +1,54 @@
-import {useEffect, useState} from "react";
 import {
   Tree,
   MultiBackend,
   getBackendOptions,
   DndProvider,
-  isAncestor, NodeModel
-} from "@minoru/react-dnd-treeview";
-import CustomNode from "./CustomNode";
-import MultipleDragPreview from "./MultipleDragPreview";
-import CustomDragPreview from "./CustomDragPreview";
-import {NavItemType} from "../../types";
+  isAncestor,
+  NodeModel,
+} from '@minoru/react-dnd-treeview';
+import { useEffect, useState } from 'react';
+
+import { NavItemType } from '../../types';
+
+import CustomDragPreview from './CustomDragPreview';
+import CustomNode from './CustomNode';
+import MultipleDragPreview from './MultipleDragPreview';
 
 interface Props {
   navItems: {
     content: Array<NavItemType>;
     setting: string;
-  }
-  onChange: (setting: string, value: any) => void;
+  };
+  onChange: (setting: string, value: Array<NavItemType>) => void;
 }
 
 const NavItemsSettings = ({ navItems, onChange }: Props) => {
-
   const [selectedNodes, setSelectedNodes] = useState<Array<NodeModel>>([]);
   const [tree, setTree] = useState(navItems.content);
   const [isDragging, setIsDragging] = useState(false);
   const [isCtrlPressing, setIsCtrlPressing] = useState(false);
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key.toLowerCase() === "escape") {
+    const handleKeyDown = e => {
+      if (e.key.toLowerCase() === 'escape') {
         setSelectedNodes([]);
       } else if (e.ctrlKey || e.metaKey) {
         setIsCtrlPressing(true);
       }
     };
 
-    const handleKeyUp = (e) => {
-      if (e.key.toLowerCase() === "control" || e.key.toLowerCase() === "meta") {
+    const handleKeyUp = e => {
+      if (e.key.toLowerCase() === 'control' || e.key.toLowerCase() === 'meta') {
         setIsCtrlPressing(false);
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keyup', handleKeyUp);
     };
   }, []);
 
@@ -55,7 +57,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
   };
 
   const handleMultiSelect = (clickedNode: NodeModel) => {
-    const selectedIds = selectedNodes.map((n) => n.id);
+    const selectedIds = selectedNodes.map(n => n.id);
 
     // ignore if the clicked node is already selected
     if (selectedIds.includes(clickedNode.id)) {
@@ -64,7 +66,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
 
     // ignore if ancestor node already selected
     if (
-      selectedIds.some((selectedId) =>
+      selectedIds.some(selectedId =>
         isAncestor(tree, selectedId, clickedNode.id)
       )
     ) {
@@ -74,7 +76,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
     let updateNodes = [...selectedNodes];
 
     // if descendant nodes already selected, remove them
-    updateNodes = updateNodes.filter((selectedNode) => {
+    updateNodes = updateNodes.filter(selectedNode => {
       return !isAncestor(tree, clickedNode.id, selectedNode.id);
     });
 
@@ -90,8 +92,8 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
     }
   };
 
-  const handleDragStart = (node) => {
-    const isSelectedNode = selectedNodes.some((n) => n.id === node.id);
+  const handleDragStart = node => {
+    const isSelectedNode = selectedNodes.some(n => n.id === node.id);
     setIsDragging(true);
 
     if (!isCtrlPressing && isSelectedNode) {
@@ -103,7 +105,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
       return;
     }
 
-    if (!selectedNodes.some((n) => n.id === node.id)) {
+    if (!selectedNodes.some(n => n.id === node.id)) {
       setSelectedNodes([...selectedNodes, node]);
     }
   };
@@ -118,11 +120,11 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
     const { dropTargetId } = options;
 
     setTree(
-      newTree.map((node) => {
-        if (selectedNodes.some((selectedNode) => selectedNode.id === node.id)) {
+      newTree.map(node => {
+        if (selectedNodes.some(selectedNode => selectedNode.id === node.id)) {
           return {
             ...node,
-            parent: dropTargetId
+            parent: dropTargetId,
           };
         }
 
@@ -145,7 +147,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
           canDrop={(tree, options) => {
             if (
               selectedNodes.some(
-                (selectedNode) => selectedNode.id === options.dropTargetId
+                selectedNode => selectedNode.id === options.dropTargetId
               )
             ) {
               return false;
@@ -153,7 +155,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
           }}
           render={(node, options) => {
             const selected = selectedNodes.some(
-              (selectedNode) => selectedNode.id === node.id
+              selectedNode => selectedNode.id === node.id
             );
 
             return (
@@ -166,7 +168,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
               />
             );
           }}
-          dragPreviewRender={(monitorProps) => {
+          dragPreviewRender={monitorProps => {
             if (selectedNodes.length > 1) {
               return <MultipleDragPreview dragSources={selectedNodes} />;
             }
@@ -176,7 +178,7 @@ const NavItemsSettings = ({ navItems, onChange }: Props) => {
         />
       </div>
     </DndProvider>
-  )
-}
+  );
+};
 
 export default NavItemsSettings;

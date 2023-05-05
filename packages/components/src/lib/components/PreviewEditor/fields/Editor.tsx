@@ -1,9 +1,9 @@
-import { useCallback, useState } from 'react';
+import { DragEvent, useCallback, useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.core.css';
 
+import { DefaultRecordType } from '../../../types';
 import { EditorWrapper } from '../styled';
-import {DefaultRecordType} from "../../../types";
 
 interface Props {
   item: DefaultRecordType;
@@ -28,7 +28,7 @@ const Editor = ({
   };
 
   const findCorrectTarget = useCallback(
-    (parentTarget: any): any => {
+    (parentTarget: HTMLElement): HTMLElement => {
       return parentTarget.className.includes(item.id)
         ? parentTarget
         : findCorrectTarget(parentTarget.parentElement);
@@ -37,10 +37,10 @@ const Editor = ({
   );
 
   const handleOnDragOver = useCallback(
-    (e: any) => {
+    (e: DragEvent<HTMLElement>) => {
       if (!isDragging) {
         e.preventDefault();
-        let target = e.target;
+        let target = e.target as HTMLElement;
         if (!target.className.includes(item.id)) {
           target = findCorrectTarget(target.parentElement);
         }
@@ -79,12 +79,7 @@ const Editor = ({
       isTop={isTop}
       isHovered={isHovered}
     >
-      <ReactQuill
-        // @ts-ignore
-        theme={false}
-        value={item.value}
-        onChange={handleOnChange(item.id)}
-      />
+      <ReactQuill value={item.value} onChange={handleOnChange(item.id)} />
     </EditorWrapper>
   );
 };

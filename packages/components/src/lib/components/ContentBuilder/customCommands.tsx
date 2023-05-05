@@ -1,10 +1,10 @@
+import { Icon } from '@techstack/components';
 import {
   ICommand,
   TextAreaTextApi,
   TextRange,
   TextState,
 } from '@uiw/react-md-editor';
-import { Icon } from '@techstack/components';
 
 function getSurroundingWord(text: string, position: number) {
   if (!text) throw Error("Argument 'text' should be truthy");

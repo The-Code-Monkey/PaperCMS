@@ -1,3 +1,3 @@
-import NavItemSettings from "./NavItemSettings";
+import NavItemSettings from './NavItemSettings';
 
 export default NavItemSettings;

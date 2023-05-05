@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "tcm build --format esm && cd ../.. && mkdir -p ./dist/packages/components/src && cp -r ./packages/components/dist ./dist/packages/components/src && cp ./package.json ./dist/packages/components",
-    "prepare": "install-peers"
+    "build": "tcm build",
+    "lint": "tcm lint",
+    "postinstall": "install-peers"
   },
   "devDependencies": {
     "@techstack/tcm-cli": "^0.4.122",
-    "install-peers-cli": "^2.2.0",
-    "react-quill": "2.0.0"
+    "install-peers-cli": "^2.2.0"
   },
   "dependencies": {
     "@hello-pangea/dnd": "16.2.0",
@@ -17,6 +17,7 @@
     "@techstack/components": "^0.7.175",
     "@uiw/react-md-editor": "^3.20.10",
     "react-dnd": "16.0.1",
+    "react-quill": "2.0.0",
     "styled-components": "^5.3.10",
     "uuid": "9.0.0"
   },

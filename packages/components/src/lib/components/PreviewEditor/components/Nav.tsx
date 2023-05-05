@@ -1,5 +1,6 @@
 import { Box } from '@techstack/components';
-import {NavItemType} from "../../../types";
+
+import { NavItemType } from '../../../types';
 interface Props {
   menu: Array<NavItemType>;
   style: Record<string, string>;

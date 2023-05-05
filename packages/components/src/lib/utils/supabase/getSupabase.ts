@@ -3,6 +3,7 @@ import {
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
+import { RealtimeChannel, Session, User } from '@supabase/supabase-js';
 import { v4 as uuid } from 'uuid';
 
 import {
@@ -15,7 +16,6 @@ import {
 
 import { Database } from './database-types';
 import { createBrowserClient } from './supabase-browser';
-import {RealtimeChannel, Session, User} from '@supabase/supabase-js';
 
 type Functions = keyof Database['public']['Functions'];
 
@@ -31,11 +31,13 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
   ) => {
-    return await supabase.auth.signInWithPassword({
+    return (await supabase.auth.signInWithPassword({
       ...credentials,
       ...options,
-    })as unknown as Promise<{ data: { user: User | null; session: Session | null }; error: null }
-      | { data: { user: null; session: null }; error: Record<string, unknown> }>;
+    })) as unknown as Promise<
+      | { data: { user: User | null; session: Session | null }; error: null }
+      | { data: { user: null; session: null }; error: Record<string, unknown> }
+    >;
   };
 
   // Sign Up
@@ -43,33 +45,47 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     credentials: SignUpWithPasswordCredentials,
     options?: AuthOptions
   ) => {
-    return await supabase.auth.signUp({ ...credentials, ...options }) as unknown as Promise<{ data: { user: User | null; session: Session | null }; error: null }
-      | { data: { user: null; session: null }; error: Record<string, unknown> }>;
+    return (await supabase.auth.signUp({
+      ...credentials,
+      ...options,
+    })) as unknown as Promise<
+      | { data: { user: User | null; session: Session | null }; error: null }
+      | { data: { user: null; session: null }; error: Record<string, unknown> }
+    >;
   };
 
   // Sign Out
   const signOut: DbReturnType<Tables, Functions>['signOut'] = async () => {
-    return await supabase.auth.signOut() as unknown as Promise<{ error: Record<string, unknown> | null }>;
+    return (await supabase.auth.signOut()) as unknown as Promise<{
+      error: Record<string, unknown> | null;
+    }>;
   };
 
   // Remove Subscription
-  const unsubscribe: DbReturnType<Tables, Functions>['unsubscribe'] = (channel: RealtimeChannel): Promise<"error" | "ok" | "timed out"> => {
+  const unsubscribe: DbReturnType<Tables, Functions>['unsubscribe'] = (
+    channel: RealtimeChannel
+  ): Promise<'error' | 'ok' | 'timed out'> => {
     return supabase.removeChannel(channel);
-  }
+  };
 
   // Subscribe
-  const subscribe: DbReturnType<Tables, Functions>['subscribe'] = <
-    R extends RecordReturnType
-  >(
+  const subscribe: DbReturnType<Tables, Functions>['subscribe'] = (
     table: Tables,
     onChange: (payload) => void
   ): RealtimeChannel => {
-    return supabase.channel('any').on('postgres_changes', {
-      event: 'INSERT',
-      schema: 'public',
-      table
-    }, onChange).subscribe();
-  }
+    return supabase
+      .channel('any')
+      .on(
+        'postgres_changes',
+        {
+          event: 'INSERT',
+          schema: 'public',
+          table,
+        },
+        onChange
+      )
+      .subscribe();
+  };
 
   // Get
   const get: DbReturnType<Tables, Functions>['get'] = async <
@@ -78,18 +94,18 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     table: Tables,
     options?: GetOptions
   ): Promise<dbFunctionReturnType<R>> => {
-      const { columns, where } = options ?? {};
+    const { columns, where } = options ?? {};
 
-      const result = await supabase
-        .from<Tables, TableType>(table)
-        .select(columns ?? '*')
-        .eq(...(where ?? ['', '']));
+    const result = await supabase
+      .from<Tables, TableType>(table)
+      .select(columns ?? '*')
+      .eq(...(where ?? ['', '']));
 
-      const data = result.data as unknown as R | null;
-      const error = result.error;
+    const data = result.data as unknown as R | null;
+    const error = result.error;
 
-      return { data, error: error?.message };
-    };
+    return { data, error: error?.message };
+  };
 
   // Put
   const put: DbReturnType<Tables, Functions>['put'] = async (
@@ -97,35 +113,35 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     data: Record<string, unknown>,
     row?: string
   ) => {
-      let error;
+    let error;
 
-      if (row) {
-        if (data['id']) {
-          delete data['id'];
-        }
-        const res = await supabase
-          .from(table)
-          .update(data)
-          .eq('id', parseInt(row, 10));
-
-        error = res.error;
-      } else {
-        const res = await supabase.from(table).insert(data);
-        error = res.error;
+    if (row) {
+      if (data['id']) {
+        delete data['id'];
       }
+      const res = await supabase
+        .from(table)
+        .update(data)
+        .eq('id', parseInt(row, 10));
 
-      return { error } as unknown as { error: string };
-    };
+      error = res.error;
+    } else {
+      const res = await supabase.from(table).insert(data);
+      error = res.error;
+    }
+
+    return { error } as unknown as { error: string };
+  };
 
   // Delete
   const remove: DbReturnType<Tables, Functions>['remove'] = async (
     table: Tables,
     id: string
   ) => {
-      const { error } = await supabase.from(table).delete().eq('id', id);
+    const { error } = await supabase.from(table).delete().eq('id', id);
 
-      return { error: error?.message };
-    };
+    return { error: error?.message };
+  };
 
   // Function
   const dbFunction: DbReturnType<Tables, Functions>['dbFunction'] = async <
@@ -134,13 +150,13 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     funcName: Functions,
     args?: Record<string, unknown>
   ): Promise<dbFunctionReturnType<R>> => {
-      const result = await supabase.rpc(funcName, args);
+    const result = await supabase.rpc(funcName, args);
 
-      const data = result.data as R | null;
-      const error = result.error;
+    const data = result.data as R | null;
+    const error = result.error;
 
-      return { data, error: error?.message };
-    };
+    return { data, error: error?.message };
+  };
 
   // Upload
   const upload: DbReturnType<Tables, Functions>['upload'] = async (
@@ -149,27 +165,35 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     store = 'images'
   ) =>
     Promise.all<{ url: string | null; error: StorageError | null }>(
-      Array.from(files).map(
-        async file => {
-          const { data: uploadData, error: uploadError } =
-            await supabase.storage
-              .from(store)
-              .upload(`${filePath}/${uuid()}`, file);
+      Array.from(files).map(async file => {
+        const { data: uploadData, error: uploadError } = await supabase.storage
+          .from(store)
+          .upload(`${filePath}/${uuid()}`, file);
 
-          if (uploadData?.path) {
-            const { data } = supabase.storage
-              .from(store)
-              .getPublicUrl(uploadData.path);
+        if (uploadData?.path) {
+          const { data } = supabase.storage
+            .from(store)
+            .getPublicUrl(uploadData.path);
 
-            return { url: data?.publicUrl, error: null };
-          }
-
-          return { error: uploadError as StorageError, url: null };
+          return { url: data?.publicUrl, error: null };
         }
-      )
+
+        return { error: uploadError as StorageError, url: null };
+      })
     );
 
-  return { signIn, signUp, signOut, get, put, remove, dbFunction, upload, subscribe, unsubscribe };
+  return {
+    signIn,
+    signUp,
+    signOut,
+    get,
+    put,
+    remove,
+    dbFunction,
+    upload,
+    subscribe,
+    unsubscribe,
+  };
 };
 
 export default useSupabase;

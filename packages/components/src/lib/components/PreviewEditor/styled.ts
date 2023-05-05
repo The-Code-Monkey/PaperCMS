@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
 import { Interactable, StyledBoxProps } from '@techstack/components';
+import styled, { css } from 'styled-components';
 
 export const EditorWrapper = styled(Interactable)<{
   isTop: boolean;
@@ -25,6 +25,6 @@ export const EditorWrapper = styled(Interactable)<{
     `};
 
   .wmde-markdown {
-    ${StyledBoxProps as any}
+    ${StyledBoxProps}
   }
 `;

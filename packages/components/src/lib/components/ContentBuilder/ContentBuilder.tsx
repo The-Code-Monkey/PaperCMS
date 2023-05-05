@@ -1,16 +1,23 @@
-import { Box, Button } from '@techstack/components';
-import { v4 as uuid } from 'uuid';
 import {
   DragDropContext,
   Draggable,
   Droppable,
   DropResult,
 } from '@hello-pangea/dnd';
+import { Box, Button } from '@techstack/components';
+import { ChangeEvent } from 'react';
+import { v4 as uuid } from 'uuid';
 
-import { StyledList, StyledItem } from './styled';
+import {
+  ImageRecordType,
+  InnerSectionType,
+  isImageRecordType,
+  RecordType,
+} from '../../types';
+import useDB from '../../utils/useDB';
+
 import InputRenderer from './InputRenderer';
-import {ImageRecordType, InnerSectionType, isImageRecordType, RecordType} from "../../types";
-import useDB from "../../utils/useDB";
+import { StyledList, StyledItem } from './styled';
 
 const blockTypes = [
   '/textarea',
@@ -35,7 +42,10 @@ const ContentBuilder = ({
 }: Props) => {
   const DB = useDB();
 
-  const handleOnChangeType = (e: any, index: number) => {
+  const handleOnChangeType = (
+    e: ChangeEvent<HTMLInputElement>,
+    index: number
+  ) => {
     const newState = [...content];
 
     if (blockTypes.includes(e.target.value)) {
@@ -46,17 +56,14 @@ const ContentBuilder = ({
     onChange(newState);
   };
 
-  const handleOnChange = async (e: any, index: number) => {
+  const handleOnChange = async (
+    e: ChangeEvent<HTMLInputElement>,
+    index: number
+  ) => {
     const newState = [...content];
 
-    if (
-      isImageRecordType(newState[index]) &&
-      (e.target.files || e.target.value.images)
-    ) {
-      const images = await DB.upload(
-        e.target.files ?? e.target.value.images,
-        `${tid}/${title}`
-      );
+    if (isImageRecordType(newState[index]) && e.target.files) {
+      const images = await DB.upload(e.target.files, `${tid}/${title}`);
       if (images[0].url) {
         (newState[index] as ImageRecordType).url = images[0].url;
       }

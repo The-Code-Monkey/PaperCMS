@@ -1,5 +1,5 @@
 import { Box, Button, Icon, Input, Interactable } from '@techstack/components';
-import { memo, useCallback } from 'react';
+import { ChangeEvent, memo, useCallback } from 'react';
 import '@uiw/react-md-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import { v4 as uuid } from 'uuid';
@@ -12,15 +12,46 @@ import {
   RecordType,
 } from '../../types';
 
-import ImageUploader from './ImageUploader';
 import CarouselBuilder from './CarouselBuilder';
 import Editor from './Editor';
+import ImageUploader from './ImageUploader';
 import ImageWithText from './ImageWithText';
+
+type onChangeType =
+  | {
+      target: {
+        value:
+          | string
+          | RecordType
+          | RecordType[]
+          | Array<{
+              id: string;
+              order: number;
+            }>;
+      };
+    }
+  | {
+      target: {
+        value: {
+          images?: string[];
+          titles?: string[];
+          singleTitle: boolean;
+          autoPlay: boolean;
+          blur?: string;
+          shadow?: string;
+          showArrows: boolean;
+          showIndicators: boolean;
+          showStatus: boolean;
+          showThumbs: boolean;
+          height: string | number;
+        };
+      };
+    };
 
 interface Props {
   field: RecordType;
-  handleOnChange: (e: any, index: number) => void;
-  handleOnChangeType: (e: any, index: number) => void;
+  handleOnChange: (e: onChangeType, index: number) => void;
+  handleOnChangeType: (e: ChangeEvent<HTMLInputElement>, index: number) => void;
   blockTypes: Array<string>;
   index: number;
 }
@@ -33,14 +64,14 @@ const InputRenderer = ({
   index,
 }: Props) => {
   const onChangeType = useCallback(
-    (e: any) => {
+    (e: ChangeEvent<HTMLInputElement>) => {
       handleOnChangeType(e, index);
     },
     [handleOnChangeType, index]
   );
 
   const onChange = useCallback(
-    (e: any) => {
+    (e: onChangeType) => {
       handleOnChange(e, index);
     },
     [handleOnChange, index]
@@ -63,7 +94,7 @@ const InputRenderer = ({
   }, [handleOnChange, index]);
 
   const handleOnChangeInnerSection = useCallback(
-    (e: any, innerIndex: number) => {
+    (e: ChangeEvent<HTMLInputElement>, innerIndex: number) => {
       const newValue = [...((field as InnerSectionType).value ?? [])];
 
       newValue[innerIndex].value = e.target.value;
@@ -78,7 +109,7 @@ const InputRenderer = ({
   );
 
   const handleOnChangeInnerType = useCallback(
-    (e: any, innerIndex: number) => {
+    (e: ChangeEvent<HTMLInputElement>, innerIndex: number) => {
       const newValue = [...((field as InnerSectionType).value ?? [])];
 
       newValue[innerIndex].type = e.target.value.replace('/', '');
@@ -214,7 +245,7 @@ const InputRenderer = ({
               name={`${field.id}`}
               value={field.value}
               onChange={!field.type ? onChangeType : onChange}
-              type={field.type as any}
+              type={field.type as 'text'}
               placeholder={!field.type ? 'Type / to select a block' : undefined}
               list={!field.type ? 'blocks' : undefined}
             />

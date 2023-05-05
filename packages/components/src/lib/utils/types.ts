@@ -2,16 +2,15 @@ import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js';
-import {RealtimeChannel, Session, User} from '@supabase/supabase-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
+import { RealtimeChannel, Session, User } from '@supabase/supabase-js';
 
 import { RecordType } from '../types';
 
 export type RecordReturnType =
   | Record<string, string>
   | Record<string, string>[]
-  | Record<string, Array<RecordType>>[]
-  | Record<string, any>;
+  | Record<string, Array<RecordType>>[];
 
 export type AuthOptions = {
   redirectTo?: string;
@@ -28,11 +27,8 @@ export type GetOptions = {
 export interface DbReturnType<T extends string, F extends string> {
   unsubscribe: (
     channel: RealtimeChannel
-  ) => Promise<"error" | "ok" | "timed out">
-  subscribe: <R extends RecordReturnType>(
-    table: T,
-    onChange: (payload) => void
-  ) => RealtimeChannel;
+  ) => Promise<'error' | 'ok' | 'timed out'>;
+  subscribe: (table: T, onChange: (payload) => void) => RealtimeChannel;
   get: <R extends RecordReturnType>(
     table: T,
     options?: GetOptions
@@ -46,13 +42,17 @@ export interface DbReturnType<T extends string, F extends string> {
   signIn: (
     credentials: SignInWithPasswordCredentials,
     options?: AuthOptions
-  ) => Promise<{ data: { user: User | null; session: Session | null }; error: null }
-    | { data: { user: null; session: null }; error: Record<string, unknown> }>;
+  ) => Promise<
+    | { data: { user: User | null; session: Session | null }; error: null }
+    | { data: { user: null; session: null }; error: Record<string, unknown> }
+  >;
   signUp: (
     credentials: SignUpWithPasswordCredentials,
     options?: AuthOptions
-  ) => Promise<{ data: { user: User | null; session: Session | null }; error: null }
-    | { data: { user: null; session: null }; error: Record<string, unknown> }>;
+  ) => Promise<
+    | { data: { user: User | null; session: Session | null }; error: null }
+    | { data: { user: null; session: null }; error: Record<string, unknown> }
+  >;
   signOut: () => Promise<{ error: Record<string, unknown> | null }>;
   dbFunction: <R extends RecordReturnType>(
     funcName: F,

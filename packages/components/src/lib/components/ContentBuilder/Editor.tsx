@@ -7,7 +7,12 @@ import { EditorWrapper, StyledAccordion } from './styled';
 
 interface Props {
   value: string;
-  onChange: (e: any) => void;
+  onChange: (e: {
+    target: {
+      name: string;
+      value: string;
+    };
+  }) => void;
   name?: string;
 }
 

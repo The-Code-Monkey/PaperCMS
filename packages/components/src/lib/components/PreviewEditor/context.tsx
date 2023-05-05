@@ -1,6 +1,7 @@
-import {createContext, ReactNode, useEffect, useState} from 'react';
-import useDB from "../../utils/useDB";
-import {NavItemType} from "../../types";
+import { createContext, ReactNode, useEffect, useState } from 'react';
+
+import { NavItemType } from '../../types';
+import useDB from '../../utils/useDB';
 
 export type SiteThemeConfig = {
   menu: Array<NavItemType>;
@@ -18,16 +19,16 @@ interface Props {
   menu?: Array<[string, string]>;
 }
 
-const SiteThemeProvider = ({children}: Props) => {
+const SiteThemeProvider = ({ children }: Props) => {
   const DB = useDB();
   const [menu, setMenu] = useState<Array<NavItemType>>([
     {
-      "id": 0,
-      "parent": 0,
-      "droppable": false,
-      "text": "Homepage",
-      "link": "/"
-    }
+      id: 0,
+      parent: 0,
+      droppable: false,
+      text: 'Homepage',
+      link: '/',
+    },
   ]);
 
   useEffect(() => {
@@ -35,12 +36,12 @@ const SiteThemeProvider = ({children}: Props) => {
       const { data } = await DB.get<Array<NavItemType>>('menu');
 
       if (data) {
-        setMenu(data)
+        setMenu(data);
       }
-    }
+    };
 
     getInitialMenu();
-  }, [])
+  }, []);
 
   const config: SiteThemeConfig = {
     menu,

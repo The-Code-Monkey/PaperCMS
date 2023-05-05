@@ -1,19 +1,17 @@
-import ora from "ora";
-import chalk from "chalk";
-import fs from "fs-extra";
+import chalk from 'chalk';
 import pkg from 'enquirer';
+import fs from 'fs-extra';
+import ora from 'ora';
 const { prompt: Prompt } = pkg;
 
-
-import logError from "../utils/logError.js";
+import logError from '../utils/logError.js';
 
 const databases = {
-  "supabase": "supabase"
-}
+  supabase: 'supabase',
+};
 
-const create =  async (pkg: string, opts: { database: string }) => {
-
-  console.log(opts)
+const create = async (pkg: string, opts: { database: string }) => {
+  console.log(opts);
 
   const bootSpinner = ora(`Creating ${chalk.bold.green(pkg)}...`);
   let db;
@@ -32,10 +30,10 @@ const create =  async (pkg: string, opts: { database: string }) => {
         pkg
       )} already exists! ${chalk.bold('Choose a different name')}`,
       initial: pkg + '-1',
-      result: (v: string) => v.trim()
+      result: (v: string) => v.trim(),
     });
 
-    pkg = prompt["pkg-name"];
+    pkg = prompt['pkg-name'];
 
     projectPath = (await fs.realpath(process.cwd())) + '/' + pkg;
     bootSpinner.start(`Creating ${chalk.bold.green(pkg)}...`);
@@ -54,7 +52,7 @@ const create =  async (pkg: string, opts: { database: string }) => {
         choices: Object.keys(databases),
       });
       db = dbPrompt.database;
-    }
+    };
 
     if (opts.database) {
       db = opts.database.trim();
@@ -72,12 +70,11 @@ const create =  async (pkg: string, opts: { database: string }) => {
     await fs.mkdir(projectPath);
 
     bootSpinner.succeed(`Created ${chalk.bold.green(pkg)}`);
-
   } catch (error) {
     bootSpinner.fail(`Failed to create ${chalk.bold.red(pkg)}`);
     logError(error);
     process.exit(1);
   }
-}
+};
 
 export default create;

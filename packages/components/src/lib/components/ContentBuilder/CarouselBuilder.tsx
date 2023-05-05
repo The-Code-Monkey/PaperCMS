@@ -1,16 +1,32 @@
 import { Box, Input, Carousel, Button, Divider } from '@techstack/components';
 import { ChangeEvent } from 'react';
-
-import { StyledAccordion } from './styled';
-import ImageUploader from './ImageUploader';
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import {CarouselRecordType} from "../../types";
-import useDB from "../../utils/useDB";
+
+import { CarouselRecordType } from '../../types';
+import useDB from '../../utils/useDB';
+
+import ImageUploader from './ImageUploader';
+import { StyledAccordion } from './styled';
 
 interface Props {
   field: CarouselRecordType;
-  onChange: (e: any) => void;
+  onChange: (e: {
+    target: {
+      value: {
+        images?: string[];
+        titles?: string[];
+        singleTitle: boolean;
+        autoPlay: boolean;
+        blur?: string;
+        shadow?: string;
+        showArrows: boolean;
+        showIndicators: boolean;
+        showStatus: boolean;
+        showThumbs: boolean;
+        height: string | number;
+      };
+    };
+  }) => void;
 }
 const CarouselBuilder = ({ field, onChange }: Props) => {
   const DB = useDB();
@@ -36,18 +52,20 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
       handleOnChange(titles, 'titles');
     };
 
-  const handleOnChangeImage = async (e: any) => {
+  const handleOnChangeImage = async (e: ChangeEvent<HTMLInputElement>) => {
     const images = await DB.upload(e.target.files, `pages/carousel`);
 
     handleOnChange(
-      images.map(img => img.url!),
+      images.map(img => img.url),
       'images'
     );
   };
 
   const handleAddTitle = () => {
     const length = field?.value?.titles?.length ?? 0;
-    handleOnChangeTitle(length)({ target: { value: '' } } as any);
+    handleOnChangeTitle(length)({
+      target: { value: '' },
+    } as ChangeEvent<HTMLInputElement>);
   };
 
   const handleCheckboxOnChange = (name: string) => (e: boolean) => {
@@ -69,7 +87,7 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
                 value={field?.value?.singleTitle ? 'checked' : 'unchecked'}
                 type='checkbox'
                 name='singleTitle'
-                onChange={handleCheckboxOnChange('singleTitle') as any}
+                onChange={handleCheckboxOnChange('singleTitle')}
               />
             </Box>
             <Box d='flex' flexDir='row' gap='5'>
@@ -78,7 +96,7 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
                 value={field?.value?.autoPlay ? 'checked' : 'unchecked'}
                 type='checkbox'
                 name='autoPlay'
-                onChange={handleCheckboxOnChange('autoPlay') as any}
+                onChange={handleCheckboxOnChange('autoPlay')}
               />
             </Box>
             <Box d='flex' flexDir='row' gap='5'>
@@ -87,7 +105,7 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
                 value={field?.value?.showArrows ? 'checked' : 'unchecked'}
                 type='checkbox'
                 name='showArrows'
-                onChange={handleCheckboxOnChange('showArrows') as any}
+                onChange={handleCheckboxOnChange('showArrows')}
               />
             </Box>
             <Box d='flex' flexDir='row' gap='5'>
@@ -96,7 +114,7 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
                 value={field?.value?.showIndicators ? 'checked' : 'unchecked'}
                 type='checkbox'
                 name='showIndicators'
-                onChange={handleCheckboxOnChange('showIndicators') as any}
+                onChange={handleCheckboxOnChange('showIndicators')}
               />
             </Box>
             <Box d='flex' flexDir='row' gap='5'>
@@ -105,7 +123,7 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
                 value={field?.value?.showStatus ? 'checked' : 'unchecked'}
                 type='checkbox'
                 name='showStatus'
-                onChange={handleCheckboxOnChange('showStatus') as any}
+                onChange={handleCheckboxOnChange('showStatus')}
               />
             </Box>
             <Box d='flex' flexDir='row' gap='5'>
@@ -114,7 +132,7 @@ const CarouselBuilder = ({ field, onChange }: Props) => {
                 value={field?.value?.showThumbs ? 'checked' : 'unchecked'}
                 type='checkbox'
                 name='showThumbs'
-                onChange={handleCheckboxOnChange('showThumbs') as any}
+                onChange={handleCheckboxOnChange('showThumbs')}
               />
             </Box>
           </Box>

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Accordion, Box } from '@techstack/components';
+import styled from 'styled-components';
 
 export const StyledItem = styled.div<{ isDragging?: boolean }>`
   user-select: none;

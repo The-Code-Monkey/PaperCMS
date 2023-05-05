@@ -1,15 +1,27 @@
-import {Box, Icon, Interactable} from "@techstack/components";
+import { NodeModel } from '@minoru/react-dnd-treeview';
+import { Box, Icon, Interactable } from '@techstack/components';
 
-const CustomNode = ({ testIdPrefix = "", ...props }) => {
+interface Props {
+  node: NodeModel;
+  isSelected: boolean;
+  isDragging: boolean;
+  onClick: (e, node: NodeModel) => void;
+  onToggle: () => void;
+  isOpen: boolean;
+  depth: number;
+  testIdPrefix?: string;
+}
+
+const CustomNode = ({ testIdPrefix = '', ...props }: Props) => {
   const { id } = props.node;
   const { isOpen } = props;
   const indent = (props.depth - 1) * 24;
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     props.onClick(e, props.node);
   };
 
-  const handleToggle = (e) => {
+  const handleToggle = e => {
     e.stopPropagation();
     props.onToggle();
   };
@@ -44,9 +56,7 @@ const CustomNode = ({ testIdPrefix = "", ...props }) => {
         h='7'
         justifyContent='center'
         w='7'
-        // @ts-ignore
         transition='transform linear 0.1s'
-        // @ts-ignore
         transform={isOpen ? 'rotate(90deg)' : 'rotate(0deg)'}
       >
         {props.node.droppable && (
@@ -55,9 +65,7 @@ const CustomNode = ({ testIdPrefix = "", ...props }) => {
           </Interactable>
         )}
       </Box>
-      <div>
-        {props.node.text}
-      </div>
+      <div>{props.node.text}</div>
     </Interactable>
   );
 };

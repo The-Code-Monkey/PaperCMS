@@ -1,15 +1,15 @@
 import { Box } from '@techstack/components';
-import { useContext, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useContext, useState } from 'react';
 
+import { RecordType } from '../../types';
+import useDB from '../../utils/useDB';
 import FormButtons from '../FormButtons';
 
-import { SiteThemeContext } from './context';
 import Nav from './components/Nav';
-import ElementsAside from './ElementsAside';
+import { SiteThemeContext } from './context';
 import ElementRenderer from './ElementRenderer';
-import {RecordType} from "../../types";
-import useDB from "../../utils/useDB";
+import ElementsAside from './ElementsAside';
 
 interface Props {
   fields: Array<Record<string, string>>;
@@ -46,7 +46,7 @@ const PreviewEditor = ({ fields, data, tid, id }: Props) => {
       }
 
       const { error } = await DB.put(
-        tid as any,
+        tid,
         newData,
         id === 'new' ? undefined : id
       );

@@ -1,10 +1,11 @@
 import { Carousel, CarouselProps } from '@techstack/components';
 import { Dispatch, SetStateAction, useContext, useState } from 'react';
 
-import Editor from './fields/Editor';
-import InnerSection from './elements/InnerSection';
+import { InnerSectionType, RecordType } from '../../types';
+
 import { SiteThemeContext } from './context';
-import {InnerSectionType, RecordType} from "../../types";
+import InnerSection from './elements/InnerSection';
+import Editor from './fields/Editor';
 
 interface Props {
   content: Array<RecordType>;
@@ -67,7 +68,7 @@ const ElementRenderer = ({ content, setContent }: Props) => {
     }
   };
 
-  const handleOnChange = (index: string) => (value: any) => {
+  const handleOnChange = (index: string) => (value: RecordType['value']) => {
     const contentIndex = content.findIndex(item => item.id === index);
     if (contentIndex !== -1) {
       setContent(prevState => {

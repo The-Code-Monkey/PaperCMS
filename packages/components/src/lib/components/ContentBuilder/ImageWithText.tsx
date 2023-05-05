@@ -1,18 +1,24 @@
 import { Box, Input } from '@techstack/components';
+import { ChangeEvent } from 'react';
 
-import ImageUploader from './ImageUploader';
+import { ImageRecordType, RecordType } from '../../types';
+
 import Editor from './Editor';
+import ImageUploader from './ImageUploader';
 import { StyledAccordion } from './styled';
-import {ImageRecordType} from "../../types";
 
 interface Props {
   field: ImageRecordType;
-  onChange: (e: any) => void;
+  onChange: (e: {
+    target: {
+      value: RecordType;
+    };
+  }) => void;
 }
 
 const ImageWithText = ({ field, onChange }: Props) => {
   const handleOnChange = (
-    value: string | boolean | Array<string>,
+    value: string | boolean | Array<string> | FileList,
     name: string
   ) => {
     const e = {
@@ -24,19 +30,17 @@ const ImageWithText = ({ field, onChange }: Props) => {
       },
     };
 
-    console.log(e);
-
     onChange(e);
   };
 
   const handleCheckboxOnChange = (name: string) => (e: boolean) => {
-    console.log(name, e);
-
     handleOnChange(e, name);
   };
 
-  const handleOnChangeImage = async (e: any) => {
-    handleOnChange(e.target.files, 'images');
+  const handleOnChangeImage = async (e: ChangeEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement;
+
+    handleOnChange(target.files, 'images');
   };
 
   return (
