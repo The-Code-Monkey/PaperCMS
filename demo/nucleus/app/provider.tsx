@@ -1,14 +1,15 @@
 'use client';
 
-import { ConfigContext, Context, ThemeProvider } from '@techstack/components';
-import { Session } from '@supabase/supabase-js';
-import useDarkMode from 'use-dark-mode';
-import { ReactNode } from 'react';
-
-import theme from '../theme';
-import config from '../orchard.theme.config.json';
-import { ThemeModeEnum } from '../theme/enum';
 import { SiteThemeProvider, SupabaseListener, SupabaseProvider } from '@nucleus-cms/components';
+import { Session } from '@supabase/supabase-js';
+import { ConfigContext, Context, ThemeProvider } from '@techstack/components';
+import { ReactNode } from 'react';
+import useDarkMode from 'use-dark-mode';
+
+import config from '../orchard.theme.config.json';
+import theme from '../theme';
+import { ThemeModeEnum } from '../theme/enum';
+
 
 import GlobalStyle from './globalStyles';
 export const revalidate = 0;

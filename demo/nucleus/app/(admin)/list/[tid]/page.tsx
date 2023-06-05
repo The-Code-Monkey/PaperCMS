@@ -1,6 +1,8 @@
-import { PageProps } from '../../../../utils/pageTypes';
-import Container from "./Container";
 import {useDB} from '@nucleus-cms/utils';
+
+import { PageProps } from '../../../../utils/pageTypes';
+
+import Container from "./Container";
 
 const List = async ({ params }: PageProps) => {
   const { tid } = params ?? {};

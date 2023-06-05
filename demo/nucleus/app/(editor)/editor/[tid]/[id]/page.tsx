@@ -1,6 +1,8 @@
+import {useDB} from "@nucleus-cms/utils";
+
 import { PageProps } from '../../../../../utils/pageTypes';
 import { RecordType } from '../../../../utils';
-import {useDB} from "@nucleus-cms/utils";
+
 import Container from "./Container";
 
 const Page = async ({ params }: PageProps) => {

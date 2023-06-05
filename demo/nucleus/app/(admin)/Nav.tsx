@@ -1,14 +1,14 @@
 'use client';
 
+import {capitalizeFirstLetter} from "@nucleus-cms/components";
 import { Box, ConfigContext, Context, Icon } from '@techstack/components';
+import { IconTypes } from '@techstack/react-feather';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import useDarkMode from 'use-dark-mode';
-import { IconTypes } from '@techstack/react-feather';
 import { useContext } from 'react';
+import useDarkMode from 'use-dark-mode';
 
 import { StyledAside } from './styled';
-import {capitalizeFirstLetter} from "@nucleus-cms/components";
 
 const routeToIcon: Record<string, IconTypes> = {
   products: 'box',

@@ -1,8 +1,9 @@
+import {useDB} from "@nucleus-cms/utils";
+
 import { PageProps } from '../../../../../utils/pageTypes';
 import { RecordType } from '../../../../utils';
 
 import Container from "./Container";
-import {useDB} from "@nucleus-cms/utils";
 
 const Edit = async ({ params }: PageProps) => {
   const { tid, id } = params ?? {};

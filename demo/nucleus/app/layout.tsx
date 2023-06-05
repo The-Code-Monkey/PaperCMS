@@ -2,8 +2,8 @@ import 'server-only';
 
 import { ReactNode } from 'react';
 
-import { createServerClient } from '../utils/supabase-server';
 import StyledComponentsRegistry from '../lib/registry';
+import { createServerClient } from '../utils/supabase-server';
 
 import Provider from './provider';
 

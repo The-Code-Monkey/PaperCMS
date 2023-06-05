@@ -1,5 +1,6 @@
-import Container from './container';
 import {useDB} from "@nucleus-cms/utils";
+
+import Container from './container';
 
 const Page = async () => {
   const DB = useDB();

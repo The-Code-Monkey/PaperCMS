@@ -1,11 +1,10 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { Box, Input, Button } from '@techstack/components';
-
 import { useDB } from '@nucleus-cms/components'
+import { Box, Input, Button } from '@techstack/components';
 import Link from 'next/link';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { FormEvent, useState } from 'react';
 
 export interface AuthEvent extends FormEvent<HTMLFormElement> {
   target: HTMLFormElement & {

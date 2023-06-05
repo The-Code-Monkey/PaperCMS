@@ -1,8 +1,8 @@
 'use client';
 
-import styled from 'styled-components';
 import { Box, BoxProps } from '@techstack/components';
 import { ReactNode } from 'react';
+import styled from 'styled-components';
 
 interface StyledMainProps extends BoxProps {
   children: ReactNode;

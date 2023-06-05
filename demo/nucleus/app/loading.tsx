@@ -1,5 +1,5 @@
-import { StyledLoader } from './styled';
 import { StyledMain } from './(admin)/styled';
+import { StyledLoader } from './styled';
 
 const Loading = () => {
   return (

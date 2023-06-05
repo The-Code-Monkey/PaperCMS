@@ -1,9 +1,9 @@
 'use client';
 
+import {useDB} from "@nucleus-cms/utils";
 import { useRouter } from 'next/navigation';
 
 import { StyledMain } from '../../(admin)/styled';
-import {useDB} from "@nucleus-cms/utils";
 
 const Page = () => {
   const router = useRouter();
