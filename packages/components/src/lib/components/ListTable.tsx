@@ -1,7 +1,7 @@
+import { useDB } from '@nucleus-cms/utils';
 import { Box, Table } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { useCallback, useMemo } from 'react';
-import { useDB } from '@nucleus-cms/utils';
 
 interface Props {
   data: Record<string, string>[] | null;

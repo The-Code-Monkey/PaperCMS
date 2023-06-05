@@ -38,8 +38,6 @@ const CustomNode = ({ testIdPrefix = '', ...props }: Props) => {
     // props.containerRef.current?.classList.remove(styles.dragging);
   }
 
-  console.log(props);
-
   return (
     <Interactable
       alignItems='center'
@@ -57,8 +55,7 @@ const CustomNode = ({ testIdPrefix = '', ...props }: Props) => {
         justifyContent='center'
         w='7'
         transition='transform linear 0.1s'
-        // @ts-ignore
-        transform={isOpen ? 'rotate(90deg)' : 'rotate(0deg)'}
+        // transform={isOpen ? 'rotate(90deg)' : 'rotate(0deg)'}
       >
         {props.node.droppable && (
           <Interactable alignItems='center' d='flex' onClick={handleToggle}>

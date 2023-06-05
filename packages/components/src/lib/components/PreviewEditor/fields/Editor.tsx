@@ -1,8 +1,8 @@
+import { DefaultRecordType } from '@nucleus-cms/utils';
 import { DragEvent, useCallback, useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.core.css';
 
-import { DefaultRecordType } from '@nucleus-cms/utils';
 import { EditorWrapper } from '../styled';
 
 interface Props {

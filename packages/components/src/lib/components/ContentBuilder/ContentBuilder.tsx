@@ -4,14 +4,17 @@ import {
   Droppable,
   DropResult,
 } from '@hello-pangea/dnd';
+import {
+  useDB,
+  RecordType,
+  ImageRecordType,
+  InnerSectionType,
+} from '@nucleus-cms/utils';
 import { Box, Button } from '@techstack/components';
 import { ChangeEvent } from 'react';
 import { v4 as uuid } from 'uuid';
-import { useDB, RecordType, ImageRecordType, InnerSectionType } from '@nucleus-cms/utils';
 
-import {
-  isImageRecordType,
-} from '../../types';
+import { isImageRecordType } from '../../types';
 
 import InputRenderer from './InputRenderer';
 import { StyledList, StyledItem } from './styled';

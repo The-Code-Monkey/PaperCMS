@@ -1,7 +1,7 @@
+import { useDB, RecordType } from '@nucleus-cms/utils';
 import { Box } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { useContext, useState } from 'react';
-import { useDB, RecordType } from "@nucleus-cms/utils";
 
 import FormButtons from '../FormButtons';
 

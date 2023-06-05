@@ -1,6 +1,6 @@
+import { ImageRecordType, RecordType } from '@nucleus-cms/utils';
 import { Box, Input } from '@techstack/components';
 import { ChangeEvent } from 'react';
-import { ImageRecordType, RecordType } from "@nucleus-cms/utils";
 
 import Editor from './Editor';
 import ImageUploader from './ImageUploader';

@@ -1,10 +1,10 @@
+import { CarouselRecordType, useDB } from '@nucleus-cms/utils';
 import { Box, Input, Carousel, Button, Divider } from '@techstack/components';
 import { ChangeEvent } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import ImageUploader from './ImageUploader';
 import { StyledAccordion } from './styled';
-import {CarouselRecordType, useDB} from "@nucleus-cms/utils";
 
 interface Props {
   field: CarouselRecordType;

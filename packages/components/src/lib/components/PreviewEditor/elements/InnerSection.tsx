@@ -1,3 +1,4 @@
+import { InnerSectionType, RecordType } from '@nucleus-cms/utils';
 import { Icon, Interactable } from '@techstack/components';
 import {
   Dispatch,
@@ -7,7 +8,6 @@ import {
   DragEvent,
 } from 'react';
 
-import { InnerSectionType, RecordType } from '@nucleus-cms/utils';
 import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';

@@ -1,4 +1,4 @@
-import { RecordType, ImageRecordType } from "@nucleus-cms/utils";
+import { RecordType, ImageRecordType } from '@nucleus-cms/utils';
 
 export type NavItemType = {
   id: number;
@@ -14,4 +14,3 @@ export const isImageRecordType = (
 ): record is ImageRecordType =>
   (record as ImageRecordType).type === 'image' ||
   (record as ImageRecordType).type === 'image-text';
-

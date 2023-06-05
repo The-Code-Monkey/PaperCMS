@@ -1,7 +1,7 @@
+import { ImageRecordType } from '@nucleus-cms/utils';
 import { Box, Input } from '@techstack/components';
 import Image from 'next/image';
 import { ChangeEvent, useCallback } from 'react';
-import { ImageRecordType } from "@nucleus-cms/utils";
 
 interface Props {
   field: ImageRecordType;
