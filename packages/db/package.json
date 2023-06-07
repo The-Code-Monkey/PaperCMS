@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nucleus-cms/types": "0.0.2",
-    "@nucleus-cms/utils": "0.0.3",
+    "@nucleus-cms/utils": "0.0.2",
     "uuid": "9.0.0"
   },
   "optionalDependencies": {
