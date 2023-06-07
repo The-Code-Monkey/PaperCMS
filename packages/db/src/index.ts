@@ -1,5 +1,3 @@
 import useDB from './useDB';
 
-export {
-  useDB
-};
+export { useDB };
