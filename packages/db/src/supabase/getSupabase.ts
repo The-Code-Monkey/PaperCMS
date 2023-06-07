@@ -1,3 +1,10 @@
+import type {
+  DbReturnType,
+  AuthOptions,
+  RecordReturnType,
+  dbFunctionReturnType,
+  GetOptions,
+} from '@nucleus-cms/types';
 import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import {
   SignInWithPasswordCredentials,
@@ -8,14 +15,6 @@ import { RealtimeChannel, Session, User } from '@supabase/supabase-js';
 import { v4 as uuid } from 'uuid';
 
 export const createBrowserClient = () => createBrowserSupabaseClient();
-
-import type {
-  DbReturnType,
-  AuthOptions,
-  RecordReturnType,
-  dbFunctionReturnType,
-  GetOptions,
-} from '@nucleus-cms/types';
 
 import { Database } from './database-types';
 

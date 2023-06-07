@@ -33,15 +33,19 @@ export const getFieldType = (
 export const capitalizeFirstLetter = ([first, ...r]: string) => {
   const rest = r as unknown as string;
 
-  return (first === undefined ? '' : first.toUpperCase()) +
-    (rest.length === 0 ? '' : (rest
-    .split(/(?=[A-Z])/g)
-    .map((str: string, i: number) => {
-      if (i === 0) return str;
-      return capitalizeFirstLetter(str);
-    })
-    .join(' ')));
-}
+  return (
+    (first === undefined ? '' : first.toUpperCase()) +
+    (rest.length === 0
+      ? ''
+      : rest
+          .split(/(?=[A-Z])/g)
+          .map((str: string, i: number) => {
+            if (i === 0) return str;
+            return capitalizeFirstLetter(str);
+          })
+          .join(' '))
+  );
+};
 
 export const formatFieldNames = (value: string) => {
   if (value === 'id') return 'ID';
