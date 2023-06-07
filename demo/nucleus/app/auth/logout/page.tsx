@@ -1,6 +1,6 @@
 'use client';
 
-import {useDB} from "@nucleus-cms/utils";
+import {useDB} from "@nucleus-cms/db";
 import { useRouter } from 'next/navigation';
 
 import { StyledMain } from '../../(admin)/styled';

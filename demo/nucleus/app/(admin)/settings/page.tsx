@@ -1,4 +1,4 @@
-import {useDB} from "@nucleus-cms/utils";
+import {useDB} from "@nucleus-cms/db";
 
 import Container from './container';
 

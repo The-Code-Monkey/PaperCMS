@@ -1,6 +1,6 @@
 {
-  "name": "@nucleus-cms/components",
-  "version": "0.1.1",
+  "name": "@nucleus-cms/types",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -11,10 +11,10 @@
     "access": "public"
   },
   "main": "./dist/index.js",
-  "module": "./dist/components.esm.js",
+  "module": "./dist/types.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/components.esm.js",
+      "import": "./dist/types.esm.js",
       "require": "./dist/index.js"
     }
   },
@@ -28,20 +28,8 @@
     "install-peers-cli": "^2.2.0"
   },
   "dependencies": {
-    "@hello-pangea/dnd": "16.2.0",
-    "@minoru/react-dnd-treeview": "^3.4.4",
-    "@nucleus-cms/db": "0.0.1",
-    "@nucleus-cms/utils": "0.0.2",
-    "@techstack/components": "^0.7.175",
-    "@uiw/react-md-editor": "^3.20.10",
-    "react-dnd": "16.0.1",
-    "react-quill": "2.0.0",
-    "styled-components": "^5.3.10",
-    "uuid": "9.0.0"
-  },
-  "peerDependencies": {
-    "next": "13.4.1",
-    "react": "^18.2.0"
+    "uuid": "9.0.0",
+    "@nucleus-cms/utils": "0.0.2"
   },
   "optionalDependencies": {
     "@supabase/auth-helpers-nextjs": "0.6.1",

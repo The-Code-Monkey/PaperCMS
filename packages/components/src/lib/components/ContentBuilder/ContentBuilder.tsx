@@ -5,11 +5,11 @@ import {
   DropResult,
 } from '@hello-pangea/dnd';
 import {
-  useDB,
   RecordType,
   ImageRecordType,
   InnerSectionType,
 } from '@nucleus-cms/utils';
+import { useDB } from '@nucleus-cms/db'
 import { Box, Button } from '@techstack/components';
 import { ChangeEvent } from 'react';
 import { v4 as uuid } from 'uuid';

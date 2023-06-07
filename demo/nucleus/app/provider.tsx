@@ -1,6 +1,7 @@
 'use client';
 
-import { SiteThemeProvider, SupabaseListener, SupabaseProvider } from '@nucleus-cms/components';
+import { SiteThemeProvider } from '@nucleus-cms/components';
+import { SupabaseListener, SupabaseProvider } from "@nucleus-cms/utils"
 import { Session } from '@supabase/supabase-js';
 import { ConfigContext, Context, ThemeProvider } from '@techstack/components';
 import { ReactNode } from 'react';

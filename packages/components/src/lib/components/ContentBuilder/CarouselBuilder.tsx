@@ -1,4 +1,5 @@
-import { CarouselRecordType, useDB } from '@nucleus-cms/utils';
+import { CarouselRecordType } from '@nucleus-cms/utils';
+import { useDB } from '@nucleus-cms/db';
 import { Box, Input, Carousel, Button, Divider } from '@techstack/components';
 import { ChangeEvent } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';

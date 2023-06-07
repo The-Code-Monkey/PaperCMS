@@ -1,6 +1,6 @@
 'use client';
 
-import { useDB } from '@nucleus-cms/components';
+import { useDB } from '@nucleus-cms/db';
 import { Box, Input, Button } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';

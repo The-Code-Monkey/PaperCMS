@@ -4,18 +4,14 @@ import {
 } from '@supabase/gotrue-js';
 import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 import { RealtimeChannel, Session, User } from '@supabase/supabase-js';
+import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { v4 as uuid } from 'uuid';
 
-import {
-  DbReturnType,
-  AuthOptions,
-  dbFunctionReturnType,
-  RecordReturnType,
-  GetOptions,
-} from '../types';
+export const createBrowserClient = () => createBrowserSupabaseClient();
+
+import type { DbReturnType, AuthOptions, RecordReturnType, dbFunctionReturnType, GetOptions } from "@nucleus-cms/types";
 
 import { Database } from './database-types';
-import { createBrowserClient } from './supabase-browser';
 
 type Functions = keyof Database['public']['Functions'];
 

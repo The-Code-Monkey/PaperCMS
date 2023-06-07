@@ -1,4 +1,5 @@
-import { useDB, RecordType } from '@nucleus-cms/utils';
+import { RecordType } from '@nucleus-cms/utils';
+import { useDB } from '@nucleus-cms/db';
 import { Box, Input } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { ChangeEvent, useEffect, useState } from 'react';

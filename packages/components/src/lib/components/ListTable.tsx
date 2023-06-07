@@ -1,4 +1,4 @@
-import { useDB } from '@nucleus-cms/utils';
+import { useDB } from '@nucleus-cms/db';
 import { Box, Table } from '@techstack/components';
 import { useRouter } from 'next/navigation';
 import { useCallback, useMemo } from 'react';
