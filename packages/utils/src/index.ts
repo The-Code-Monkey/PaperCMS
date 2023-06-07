@@ -11,7 +11,7 @@ import {
   InnerSectionType,
   DefaultRecordType,
   GetOptions,
-  dbFunctionReturnType
+  dbFunctionReturnType,
 } from './types';
 
 export {
@@ -27,5 +27,5 @@ export {
   SupabaseListener,
   createBrowserClient,
   GetOptions,
-  dbFunctionReturnType
+  dbFunctionReturnType,
 };
