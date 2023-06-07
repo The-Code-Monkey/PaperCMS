@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/utils@0.0.2...@nucleus-cms/utils@0.0.3) (2023-06-07)
+
+
+### Bug Fixes
+
+* linting ([2c64b51](https://github.com/The-Code-Monkey/PaperCMS/commit/2c64b51ba241c4e5cfb6ebd0fb5d1752ea965919))
+* some changes ([16e3172](https://github.com/The-Code-Monkey/PaperCMS/commit/16e317268b80619f9039096df0473e28a5204ada))
+* stop crashing on build ([2b46432](https://github.com/The-Code-Monkey/PaperCMS/commit/2b464322e69565d32a54ff4ea41fb08fd5347d85))
+* update linting ([997dd88](https://github.com/The-Code-Monkey/PaperCMS/commit/997dd884cf4f243811182aca05ad44927ec3fd1e))
+
+
+
+
+
 ## 0.0.2 (2023-05-05)
 
 

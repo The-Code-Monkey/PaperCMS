@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.0...nucleus-demo@1.1.1) (2023-06-07)
+
+
+### Bug Fixes
+
+* **deps:** roll back dependency @nucleus-cms/components to 0.1.0 ([#384](https://github.com/The-Code-Monkey/PaperCMS/issues/384)) ([4852491](https://github.com/The-Code-Monkey/PaperCMS/commit/4852491399142d424c247df9a67c2db5b08f4838))
+* **deps:** update dependency @nucleus-cms/components to v0.1.1 ([#385](https://github.com/The-Code-Monkey/PaperCMS/issues/385)) ([02cc332](https://github.com/The-Code-Monkey/PaperCMS/commit/02cc332218b9c9f66494de584b2a2dd450b65627))
+* linting demo app ([89ff9e4](https://github.com/The-Code-Monkey/PaperCMS/commit/89ff9e41fe557043ca7cfcc2b9de698143f7637a))
+* stop crashing on build ([2b46432](https://github.com/The-Code-Monkey/PaperCMS/commit/2b464322e69565d32a54ff4ea41fb08fd5347d85))
+* update linting ([997dd88](https://github.com/The-Code-Monkey/PaperCMS/commit/997dd884cf4f243811182aca05ad44927ec3fd1e))
+
+
+
+
+
 # 1.1.0 (2023-05-05)
 
 
