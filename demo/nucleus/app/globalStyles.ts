@@ -8,13 +8,15 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     display: flex;
     flex: 1;
-    background-color: white;
-    color: black;
 
-    @media (prefers-color-scheme: dark) {
-      background-color: black;
-      color: white;
-    }
+    background-color: ${p => {
+      // @ts-ignore
+      return p.theme.colors.neutrals[0];
+    }};
+    color: ${p => {
+      // @ts-ignore
+      return p.theme.colors.text;
+    }};
   }
 
   ul {
@@ -22,21 +24,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: black;
-    
-    @media (prefers-color-scheme: dark) {
-      color: white;
-    }
-    
+    color: ${p => {
+      // @ts-ignore
+      return p.theme.colors.text;
+    }};
     text-decoration: none;
   }
 
   a:hover {
-    color: black;
-
-    @media (prefers-color-scheme: dark) {
-      color: white;
-    }
+    color: ${p => {
+      // @ts-ignore
+      return p.theme.colors.text;
+    }};
     text-decoration: underline;
     cursor:pointer;
   }
