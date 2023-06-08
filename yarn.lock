@@ -2659,9 +2659,9 @@
     tinycolor2 "1.6.0"
 
 "@techstack/theme@^0.4.123":
-  version "0.4.123"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.123.tgz#286e8f019be47bfb41d8566440ac2a7b980948ba"
-  integrity sha512-aVfra9EDbXxnabq5Z2kjz2ikuUtavLvyNMuJNFIU9bSL18UZPWFDhCS2bbO9kX4V027jywVrko9I/rT7ziwyOg==
+  version "0.4.133"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.133.tgz#2fdd80b14a72decc5d6d76e8804475260c640924"
+  integrity sha512-6fDEF/FS2+iRSLyOly/n62O9VdSEIUfPS+zZwXwsl9qecLK5Ae7DTjMucYmDz/07kLGY7lwxVDQXex/s3TfAxg==
   dependencies:
     fs-extra "11.1.1"
     lodash "4.17.21"
