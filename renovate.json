@@ -38,9 +38,9 @@
 
     {
 
-      "matchPackagePatterns": ["@techstack/*"],
+      "matchPackagePatterns": ["@nucleus-cms/*"],
 
-      "groupName": "@techstack mono repo",
+      "groupName": "@nucleus-cms mono repo",
 
       "enabled": false
 
