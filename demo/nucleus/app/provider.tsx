@@ -4,7 +4,7 @@ import { SiteThemeProvider } from '@nucleus-cms/components';
 import { SupabaseListener, SupabaseProvider } from "@nucleus-cms/utils"
 import { Session } from '@supabase/supabase-js';
 import { ConfigContext, Context, ThemeProvider } from '@techstack/components';
-import { ReactNode } from 'react';
+import {ReactNode, useEffect, useState} from 'react';
 import useDarkMode from 'use-dark-mode';
 
 import config from '../orchard.theme.config.json';
@@ -29,6 +29,13 @@ const Provider = ({
       classNameLight: 'theme-light',
     }
   );
+  const [canRenderChildren, setCanRenderChildren] = useState(false);
+
+  useEffect(() => {
+    window.setTimeout(() => {
+      setCanRenderChildren(true);
+    }, 10000)
+  })
 
   return (
     <ConfigContext.Provider value={config as unknown as Context}>
@@ -39,7 +46,7 @@ const Provider = ({
           mode={darkMode ? ThemeModeEnum.DARK : ThemeModeEnum.LIGHT}
         >
           <GlobalStyle />
-          <SiteThemeProvider>{children}</SiteThemeProvider>
+          <SiteThemeProvider>{canRenderChildren ? children : null}</SiteThemeProvider>
         </ThemeProvider>
       </SupabaseProvider>
     </ConfigContext.Provider>

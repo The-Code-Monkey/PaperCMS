@@ -23,6 +23,8 @@ export const StyledMain = ({ children, ...rest }: StyledMainProps) => (
 );
 
 export const StyledAside = styled.aside`
+  ${p => console.log(p)}
+  
   display: flex;
   flex-direction: column;
   height: 100vh;

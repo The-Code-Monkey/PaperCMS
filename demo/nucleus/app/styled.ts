@@ -3,6 +3,8 @@
 import styled from 'styled-components';
 
 export const StyledLoader = styled.span`
+  ${p => console.log(p)}
+  
   width: ${p => p.theme.sizes[10]};
   height: ${p => p.theme.sizes[10]};
   border-radius: 50%;

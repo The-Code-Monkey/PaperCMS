@@ -36,7 +36,6 @@
     "@uiw/react-md-editor": "^3.20.10",
     "react-dnd": "16.0.1",
     "react-quill": "2.0.0",
-    "styled-components": "^5.3.10",
     "uuid": "9.0.0"
   },
   "peerDependencies": {
