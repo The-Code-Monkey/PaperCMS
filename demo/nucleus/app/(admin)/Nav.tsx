@@ -24,6 +24,7 @@ interface Props {
 const Nav = ({ routes = [] }: Props) => {
   const pathname = usePathname() ?? '/';
   const { toggle, value } = useDarkMode();
+  // @ts-ignore
   const { hasUsers } = useContext<Context>(ConfigContext);
 
   const renderListItem = (
