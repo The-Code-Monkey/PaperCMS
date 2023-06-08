@@ -2437,12 +2437,51 @@
   dependencies:
     "@tanstack/table-core" "8.8.5"
 
+"@tanstack/react-table@8.9.1":
+  version "8.9.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.9.1.tgz#bfe1d286f549b9743d99bfbeb531f2582f9d698b"
+  integrity sha512-yHs2m6lk5J5RNcu2dNtsDGux66wNXZjEgzxos6MRCX8gL+nqxeW3ZglqP6eANN0bGElPnjvqiUHGQvdACOr3Cw==
+  dependencies:
+    "@tanstack/table-core" "8.9.1"
+
 "@tanstack/table-core@8.8.5":
   version "8.8.5"
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.8.5.tgz#4d75b452a9989a273174df1b9249157292a15bd5"
   integrity sha512-Xnwa1qxpgvSW7ozLiexmKp2PIYcLBiY/IizbdGriYCL6OOHuZ9baRhrrH51zjyz+61ly6K59rmt6AI/3RR+97Q==
 
-"@techstack/components@0.7.175", "@techstack/components@^0.7.175":
+"@tanstack/table-core@8.9.1":
+  version "8.9.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.9.1.tgz#869410ca1748c45d4e19ccfd4db7e36452611674"
+  integrity sha512-2+R83n8vMZND0q3W1lSiF7co9nFbeWbjAErFf27xwbeA9E0wtUu5ZDfgj+TZ6JzdAEQAgfxkk/QNFAKiS8E4MA==
+
+"@techstack/components@0.7.225":
+  version "0.7.225"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.225.tgz#aaa8a51e6fd51feeb32a861236720b7ed47f4a75"
+  integrity sha512-m9pWuqmZC3xeAzE9VaNsSZLijKv7/N1ujMm68wmOGt+bnsZN+IHgOrwE23+wzVogWVfuBWVk8feVXiEyAwttVQ==
+  dependencies:
+    "@tanstack/react-table" "8.9.1"
+    "@techstack/memoize" "0.4.112"
+    "@techstack/react-feather" "0.4.112"
+    "@techstack/react-lazy-named" "0.4.112"
+    "@techstack/react-quill" "0.0.6"
+    "@techstack/react-textfit" "0.4.126"
+    "@techstack/styled-system" "0.4.119"
+    "@techstack/theme" "0.4.121"
+    "@types/react-table" "7.7.14"
+    classnames "2.3.2"
+    csstype "3.1.2"
+    deepmerge "4.3.1"
+    i18next "22.5.1"
+    react-date-picker "^10.0.0"
+    react-datetime-picker "^5.0.0"
+    react-i18next "12.3.1"
+    react-lazy-named "1.2.2"
+    react-responsive-carousel "3.2.23"
+    react-table "7.8.0"
+    react-virtual "2.10.4"
+    styled-components "5.3.11"
+
+"@techstack/components@^0.7.175":
   version "0.7.175"
   resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.175.tgz#dba287d0e02a75bdcc21f19b96acbc6eaf443c6e"
   integrity sha512-VQB9Qas+w1jNbyM3X/6MtU2yvZMl3dGalmA0D6KFRGEmANngywfWAzyZcRooycHqZVj33GbFubx/4XqyWfso2A==
@@ -6657,6 +6696,13 @@ i18next@22.4.15:
   dependencies:
     "@babel/runtime" "^7.20.6"
 
+i18next@22.5.1:
+  version "22.5.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.5.1.tgz#99df0b318741a506000c243429a7352e5f44d424"
+  integrity sha512-8TGPgM3pAD+VRsMtUMNknRz3kzqwp/gPALrWMsDnmC1mKqJwpWyooQRLMcbTwq8z8YwSmuj+ZYvc+xCuEpkssA==
+  dependencies:
+    "@babel/runtime" "^7.20.6"
+
 iconv-lite@0.6.3, iconv-lite@^0.6.2:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.6.3.tgz#a52f80bf38da1952eb5c681790719871a1a72501"
@@ -10294,6 +10340,14 @@ react-i18next@12.2.2:
     "@babel/runtime" "^7.20.6"
     html-parse-stringify "^3.0.1"
 
+react-i18next@12.3.1:
+  version "12.3.1"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-12.3.1.tgz#30134a41a2a71c61dc69c6383504929aed1c99e7"
+  integrity sha512-5v8E2XjZDFzK7K87eSwC7AJcAkcLt5xYZ4+yTPDAW1i7C93oOY1dnr4BaQM7un4Hm+GmghuiPvevWwlca5PwDA==
+  dependencies:
+    "@babel/runtime" "^7.20.6"
+    html-parse-stringify "^3.0.1"
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -11529,7 +11583,7 @@ styled-components@5.3.10:
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
 
-styled-components@^5.3.10:
+styled-components@5.3.11, styled-components@^5.3.10:
   version "5.3.11"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.3.11.tgz#9fda7bf1108e39bf3f3e612fcc18170dedcd57a8"
   integrity sha512-uuzIIfnVkagcVHv9nE0VPlHPSCmXIUGKfJ42LNjxCCTDTL5sgnJ8Z7GZBq0EnLYGln77tPpEpExt2+qa+cZqSw==
