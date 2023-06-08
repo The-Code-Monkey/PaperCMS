@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.3...nucleus-demo@1.1.4) (2023-06-08)
+
+
+### Bug Fixes
+
+* **deps:** roll back dependency @nucleus-cms/components to 0.1.2 ([#398](https://github.com/The-Code-Monkey/PaperCMS/issues/398)) ([50ee631](https://github.com/The-Code-Monkey/PaperCMS/commit/50ee631b481252eaa408c6882820848118d1beec))
+
+
+
+
+
 ## [1.1.3](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.2...nucleus-demo@1.1.3) (2023-06-08)
 
 
