@@ -9,7 +9,7 @@
     "dev": "orchard generate && next dev"
   },
   "dependencies": {
-    "@nucleus-cms/components": "0.1.2",
+    "@nucleus-cms/components": "0.1.3",
     "@nucleus-cms/db": "0.0.3",
     "@nucleus-cms/types": "0.0.3",
     "@nucleus-cms/utils": "0.0.4",
