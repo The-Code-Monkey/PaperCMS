@@ -28,7 +28,7 @@
     "install-peers-cli": "^2.2.0"
   },
   "dependencies": {
-    "@nucleus-cms/types": "0.0.6",
+    "@nucleus-cms/types": "0.0.5",
     "@nucleus-cms/utils": "0.0.7",
     "uuid": "9.0.0"
   },
