@@ -9,9 +9,9 @@
     "dev": "orchard generate && next dev"
   },
   "dependencies": {
-    "@nucleus-cms/components": "0.1.2",
+    "@nucleus-cms/components": "0.1.8",
     "@nucleus-cms/db": "0.0.6",
-    "@nucleus-cms/types": "0.0.6",
+    "@nucleus-cms/types": "0.0.5",
     "@nucleus-cms/utils": "0.0.7",
     "@supabase/auth-helpers-nextjs": "0.6.1",
     "@supabase/supabase-js": "2.25.0",

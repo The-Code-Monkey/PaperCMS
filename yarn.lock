@@ -1958,65 +1958,30 @@
   dependencies:
     nx "15.9.3"
 
-"@nucleus-cms/components@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@nucleus-cms/components/-/components-0.1.2.tgz#5107d3613e8e0342caf28577a6aced5a93d8aadc"
-  integrity sha512-en4b5CyHLWUTnRVBEuHHSEqQhpWKfXC3OoS83w0AX5gVEafkTrvM1m9bfA6+a3vH1acNKNNQfj+MiLOWwv0lbg==
+"@nucleus-cms/types@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@nucleus-cms/types/-/types-0.0.5.tgz#9e003edf27e70fe8b090804973980173ed95d7d4"
+  integrity sha512-8ak9N7qhXjvvd4qZlKkZgjRgZUCyWSFrLARBQu1UbRvhVvZfqaNjf05lb4NYEQ5mZVvu+L9Wd4YpFuriSQ87Kg==
   dependencies:
-    "@hello-pangea/dnd" "16.2.0"
-    "@minoru/react-dnd-treeview" "^3.4.4"
-    "@nucleus-cms/db" "0.0.2"
-    "@nucleus-cms/utils" "0.0.3"
-    "@techstack/components" "^0.7.175"
-    "@uiw/react-md-editor" "^3.20.10"
-    react-dnd "16.0.1"
-    react-quill "2.0.0"
-    styled-components "^5.3.10"
+    "@nucleus-cms/utils" "0.0.6"
     uuid "9.0.0"
   optionalDependencies:
     "@supabase/auth-helpers-nextjs" "0.6.1"
-    "@supabase/gotrue-js" "2.25.0"
+    "@supabase/gotrue-js" "2.29.0"
     "@supabase/storage-js" "2.5.1"
-    "@supabase/supabase-js" "2.21.0"
+    "@supabase/supabase-js" "2.25.0"
 
-"@nucleus-cms/db@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@nucleus-cms/db/-/db-0.0.2.tgz#b945dfb4a0696adc99b74512340b226112ac8a71"
-  integrity sha512-lH0HRwvfeHv4rgf1GqL7zMEqjfhiS6Va2h/6DZ0RPRUClzAnvsfoRRWvd2gTT+AO8QQIovOjVcFX1OwtqwOprg==
-  dependencies:
-    "@nucleus-cms/types" "0.0.2"
-    "@nucleus-cms/utils" "0.0.3"
-    uuid "9.0.0"
-  optionalDependencies:
-    "@supabase/auth-helpers-nextjs" "0.6.1"
-    "@supabase/gotrue-js" "2.25.0"
-    "@supabase/storage-js" "2.5.1"
-    "@supabase/supabase-js" "2.21.0"
-
-"@nucleus-cms/types@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@nucleus-cms/types/-/types-0.0.2.tgz#e8a72642e0187fb83e06e45c55000f30620a2a2e"
-  integrity sha512-x6WOgp7LIQMe18AewQwAtumxtM6NuCrbZe7UXFyE0Z7SJX3U6RpVDP5diczxBMoEyJce/ksJ1SLbkstbKmsdmQ==
-  dependencies:
-    "@nucleus-cms/utils" "0.0.3"
-    uuid "9.0.0"
-  optionalDependencies:
-    "@supabase/auth-helpers-nextjs" "0.6.1"
-    "@supabase/gotrue-js" "2.25.0"
-    "@supabase/storage-js" "2.5.1"
-    "@supabase/supabase-js" "2.21.0"
-
-"@nucleus-cms/utils@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@nucleus-cms/utils/-/utils-0.0.3.tgz#11fb809e053fd7c88d87b8c162d04fa2e00f5f5c"
-  integrity sha512-x8VOiCDrv+nxCum7R+zG40BQET6kOX1sPylhdFecV8iU3pTyNlP+GuOH3KDaDCPQ6lO+oFwG2BaTT46uyv22IA==
+"@nucleus-cms/utils@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@nucleus-cms/utils/-/utils-0.0.6.tgz#5ade2798db1967a718e4b1724545aaeb0bdd2516"
+  integrity sha512-ob/SFXnU1GlSwMk6WBlZwgBcu0HFjUyJ7o5KMjPuWiZNRUoqh9uVKsj84i+pdvKRfV9fHcmi7wczSVZPDysFVQ==
   dependencies:
     uuid "9.0.0"
   optionalDependencies:
     "@supabase/auth-helpers-nextjs" "0.6.1"
-    "@supabase/gotrue-js" "2.25.0"
+    "@supabase/gotrue-js" "2.29.0"
     "@supabase/storage-js" "2.5.1"
-    "@supabase/supabase-js" "2.21.0"
+    "@supabase/supabase-js" "2.25.0"
 
 "@octokit/auth-token@^3.0.0":
   version "3.0.3"
@@ -2321,13 +2286,6 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/gotrue-js@2.25.0":
-  version "2.25.0"
-  resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.25.0.tgz#500269b56ef44034803b7bcea1da8d39c56c269c"
-  integrity sha512-tZXArO0f1NKMQo6rtGryOSqS51WQJQMS3lEHIyH50WffQb/n1tiYY1L8yCyrvTogz9RXpihdQeUjVW77kKd7sQ==
-  dependencies:
-    cross-fetch "^3.1.5"
-
 "@supabase/gotrue-js@2.29.0":
   version "2.29.0"
   resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.29.0.tgz#201ee354db476dfda48e28eb93f10db5c6613e8b"
@@ -2335,28 +2293,19 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/gotrue-js@^2.23.0", "@supabase/gotrue-js@^2.26.0":
+"@supabase/gotrue-js@^2.26.0":
   version "2.28.1"
   resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.28.1.tgz#18a7c6ebe135001177fd6cae6e633c575f2b6629"
   integrity sha512-i2IR8IRDhcrWfBjC7o5T0F8liOA1X6+moqCam6F5pIURI5PM+087hH+tDZ9dKu0AqAFgT0TpLmWK82fKWQlkfg==
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/postgrest-js@^1.1.1", "@supabase/postgrest-js@^1.7.0":
+"@supabase/postgrest-js@^1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@supabase/postgrest-js/-/postgrest-js-1.7.0.tgz#69ffb605d083d4761d9c30075c04b10e32cc7fd0"
   integrity sha512-wLADHZ5jm7LljF4GigK0H2vc1wGupBY2hGYfb4fVo0UuyMftmA6tOYy+ZpMH/vPq01CUFwXGwvIke6kyqh/QDg==
   dependencies:
     cross-fetch "^3.1.5"
-
-"@supabase/realtime-js@^2.7.2":
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/@supabase/realtime-js/-/realtime-js-2.7.2.tgz#700f89b67277912ead5262b4519781b5d8fd1ca7"
-  integrity sha512-Fi6xAl5PUkqnjl3wo4rdcQIbMG3+yTRX1aUZe/yfvTG84RMvmCXJ1yN6MmafVLeZpU1xkaz5Vx4L0tnHcLiy6w==
-  dependencies:
-    "@types/phoenix" "^1.5.4"
-    "@types/websocket" "^1.0.3"
-    websocket "^1.0.34"
 
 "@supabase/realtime-js@^2.7.3":
   version "2.7.3"
@@ -2372,18 +2321,6 @@
   resolved "https://registry.yarnpkg.com/@supabase/storage-js/-/storage-js-2.5.1.tgz#16c4c088996e0395034717836e626f14df63a349"
   integrity sha512-nkR0fQA9ScAtIKA3vNoPEqbZv1k5B5HVRYEvRWdlP6mUpFphM9TwPL2jZ/ztNGMTG5xT6SrHr+H7Ykz8qzbhjw==
   dependencies:
-    cross-fetch "^3.1.5"
-
-"@supabase/supabase-js@2.21.0":
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-2.21.0.tgz#a6bc5a2a4479adc6934539723469ffddd1d6dbab"
-  integrity sha512-FW3ZzBoc4orSgfX0dXrmJoXAcI/hiekmqXTkN64vjtUF2Urp3UjyAf71UTtV9Jl6ejHoe3K++e0+Rg9zKUJh5w==
-  dependencies:
-    "@supabase/functions-js" "^2.1.0"
-    "@supabase/gotrue-js" "^2.23.0"
-    "@supabase/postgrest-js" "^1.1.1"
-    "@supabase/realtime-js" "^2.7.2"
-    "@supabase/storage-js" "^2.5.1"
     cross-fetch "^3.1.5"
 
 "@supabase/supabase-js@2.25.0":
@@ -11345,7 +11282,7 @@ style-value-types@5.0.0:
     hey-listen "^1.0.8"
     tslib "^2.1.0"
 
-styled-components@5.3.11, styled-components@^5.3.10:
+styled-components@5.3.11:
   version "5.3.11"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.3.11.tgz#9fda7bf1108e39bf3f3e612fcc18170dedcd57a8"
   integrity sha512-uuzIIfnVkagcVHv9nE0VPlHPSCmXIUGKfJ42LNjxCCTDTL5sgnJ8Z7GZBq0EnLYGln77tPpEpExt2+qa+cZqSw==
