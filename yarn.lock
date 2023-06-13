@@ -2408,37 +2408,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.9.2.tgz#0402364a2a9692edf04e05ee6f385dfa27271da5"
   integrity sha512-ajc0OF+karBAdaSz7OK09rCoAHB1XI1+wEhu+tDNMPc+XcO+dTlXXN/Vc0a8vym4kElvEjXEDd9c8Zfgt4bekA==
 
-"@techstack/components@0.7.231":
+"@techstack/components@0.7.231", "@techstack/components@^0.7.175":
   version "0.7.231"
   resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.231.tgz#65c696e42a2f429132bfe7fb62e0f14af6e54684"
   integrity sha512-1JdGzW+HUBW/x3fEPn+j1zTBRxtn9m7WPa3iBN8XEFLt89wBqMqR8+138PyM410MLoK0PCDDUC/jhdxc+TMTRQ==
-  dependencies:
-    "@tanstack/react-table" "8.9.2"
-    "@techstack/memoize" "0.4.112"
-    "@techstack/react-feather" "0.4.112"
-    "@techstack/react-lazy-named" "0.4.112"
-    "@techstack/react-quill" "0.0.6"
-    "@techstack/react-textfit" "0.4.126"
-    "@techstack/styled-system" "0.4.119"
-    "@techstack/theme" "0.4.121"
-    "@types/react-table" "7.7.14"
-    classnames "2.3.2"
-    csstype "3.1.2"
-    deepmerge "4.3.1"
-    i18next "22.5.1"
-    react-date-picker "^10.0.0"
-    react-datetime-picker "^5.0.0"
-    react-i18next "12.3.1"
-    react-lazy-named "1.2.2"
-    react-responsive-carousel "3.2.23"
-    react-table "7.8.0"
-    react-virtual "2.10.4"
-    styled-components "5.3.11"
-
-"@techstack/components@^0.7.175":
-  version "0.7.229"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.229.tgz#eda2396b6984941cb2376fb2e2982bcba79dac3f"
-  integrity sha512-fiX6nHY/jvve7q4cFas7V7PfkDh7hBwGfy7NlUlijGzuCmDo49/Nj+qjCXD9Kr7ZLHjW3MrNlB3vVR3kUr+RoQ==
   dependencies:
     "@tanstack/react-table" "8.9.2"
     "@techstack/memoize" "0.4.112"
