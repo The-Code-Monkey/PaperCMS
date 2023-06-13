@@ -1,62 +1,32 @@
 {
-
   "extends": [
-
     ":dependencyDashboard",
-
     ":semanticPrefixFixDepsChoreOthers",
-
     ":ignoreModulesAndTests",
-
     ":autodetectPinVersions",
-
     ":prConcurrentLimit20",
-
     "group:monorepos",
-
     "group:recommended",
-
     "workarounds:all"
-
   ],
-
   "automergeStrategy": "squash",
-
   "automerge": true,
-
   "labels": ["dependencies"],
-
   "vulnerabilityAlerts": {
-
     "labels": ["security"],
-
     "enabled": true
-
   },
-
   "packageRules": [
-
     {
-
       "matchPackagePatterns": ["@nucleus-cms/*"],
-
       "groupName": "@nucleus-cms mono repo",
-
       "enabled": true
-
     },
     {
-
       "matchPackagePatterns": ["@techstack/*"],
-
       "groupName": "@techstack mono repo",
-
       "enabled": true
-
     }
-
   ],
-
   "updateInternalDeps": true
-
 }
