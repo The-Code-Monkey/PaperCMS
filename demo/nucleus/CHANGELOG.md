@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.8](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.7...nucleus-demo@1.1.8) (2023-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v0.7.231 ([48767e6](https://github.com/The-Code-Monkey/PaperCMS/commit/48767e656f1d0c80a4167ee0f3e4ff603b2e297c))
+
+
+
+
+
 ## [1.1.7](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.6...nucleus-demo@1.1.7) (2023-06-11)
 
 
