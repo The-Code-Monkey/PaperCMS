@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.5 (2023-06-13)
+
+**Note:** Version bump only for package @nucleus-cms/db
+
+
+
+
+
 ## 0.0.4 (2023-06-09)
 
 **Note:** Version bump only for package @nucleus-cms/db
