@@ -16,7 +16,7 @@
     "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-git --no-verify-access --yes"
   },
   "devDependencies": {
-    "lerna": "^6.6.2"
+    "lerna": "^7.0.0"
   },
   "private": true,
   "workspaces": [
