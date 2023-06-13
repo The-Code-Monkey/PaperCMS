@@ -42,7 +42,16 @@
 
       "groupName": "@nucleus-cms mono repo",
 
-      "enabled": false
+      "enabled": true
+
+    },
+    {
+
+      "matchPackagePatterns": ["@techstack/*"],
+
+      "groupName": "@techstack mono repo",
+
+      "enabled": true
 
     }
 
