@@ -2575,9 +2575,9 @@
     typescript "5.1.3"
 
 "@techstack/tcm-cli@^0.4.122":
-  version "0.4.189"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.189.tgz#015452bb197d779a86829d709b545196ee6288fc"
-  integrity sha512-T0wPSIGgmfNICHYImZ2o3brF4iq+/7TGnpKRoGNZ/bKIJUp9OiFulC4KcnsglcYbVOX6HONjkWw7UWDjRgJgQQ==
+  version "0.4.195"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.195.tgz#b4ff05cb04f1136c0456096b163c792f912664a6"
+  integrity sha512-09otF9ax6EnPQLMIFaOqp3+84X+IfB5mo6I6OWHu63z9zGVWcyIYyG9eLba8lrEdh3Gf52RpkPL25xPeU+1uOQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.18.6"
     "@rollup/plugin-babel" "6.0.3"
