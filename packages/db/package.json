@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/db",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nucleus-cms/types": "0.0.5",
-    "@nucleus-cms/utils": "0.0.7",
+    "@nucleus-cms/utils": "0.0.8",
     "uuid": "9.0.0"
   },
   "optionalDependencies": {
