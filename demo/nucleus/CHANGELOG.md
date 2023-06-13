@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.9](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.8...nucleus-demo@1.1.9) (2023-06-13)
+
+**Note:** Version bump only for package nucleus-demo
+
+
+
+
+
+## [1.1.8](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.7...nucleus-demo@1.1.8) (2023-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v0.7.231 ([48767e6](https://github.com/The-Code-Monkey/PaperCMS/commit/48767e656f1d0c80a4167ee0f3e4ff603b2e297c))
+
+
+
+
+
+## [1.1.7](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.6...nucleus-demo@1.1.7) (2023-06-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v0.7.229 ([#416](https://github.com/The-Code-Monkey/PaperCMS/issues/416)) ([6af70bc](https://github.com/The-Code-Monkey/PaperCMS/commit/6af70bcbb544afbbfb7d277edb58de818d140294))
+
+
+
+
+
+## [1.1.6](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.5...nucleus-demo@1.1.6) (2023-06-09)
+
+**Note:** Version bump only for package nucleus-demo
+
+
+
+
+
+## 1.1.5 (2023-06-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v0.7.225 ([#408](https://github.com/The-Code-Monkey/PaperCMS/issues/408)) ([7ee5415](https://github.com/The-Code-Monkey/PaperCMS/commit/7ee54156586a7958da463c243b4ddb60484d1f5c))
+* **deps:** update dependency @techstack/components to v0.7.227 ([#412](https://github.com/The-Code-Monkey/PaperCMS/issues/412)) ([837bc96](https://github.com/The-Code-Monkey/PaperCMS/commit/837bc96d6dfe4b7b3e825035f6f8354410d21314))
+
+
+
+
+
+## [1.1.4](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.3...nucleus-demo@1.1.4) (2023-06-08)
+
+
+### Bug Fixes
+
+* **deps:** roll back dependency @nucleus-cms/components to 0.1.2 ([#398](https://github.com/The-Code-Monkey/PaperCMS/issues/398)) ([50ee631](https://github.com/The-Code-Monkey/PaperCMS/commit/50ee631b481252eaa408c6882820848118d1beec))
+
+
+
+
+
+## [1.1.3](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.2...nucleus-demo@1.1.3) (2023-06-08)
+
+
+### Bug Fixes
+
+* some changes ([94013c0](https://github.com/The-Code-Monkey/PaperCMS/commit/94013c03f10a123a1236bb0aab7444d1bfdc24e9))
+* update to make app build ([22441ee](https://github.com/The-Code-Monkey/PaperCMS/commit/22441ee883ad6c61c076d2254ea67a42e4982225))
+
+
+
+
+
 ## [1.1.2](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.1...nucleus-demo@1.1.2) (2023-06-08)
 
 

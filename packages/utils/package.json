@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/utils",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -32,8 +32,8 @@
   },
   "optionalDependencies": {
     "@supabase/auth-helpers-nextjs": "0.6.1",
-    "@supabase/gotrue-js": "2.25.0",
+    "@supabase/gotrue-js": "2.29.0",
     "@supabase/storage-js": "2.5.1",
-    "@supabase/supabase-js": "2.21.0"
+    "@supabase/supabase-js": "2.25.0"
   }
 }
