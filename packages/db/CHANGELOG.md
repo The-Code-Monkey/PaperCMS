@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/db@0.0.6...@nucleus-cms/db@0.0.7) (2023-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update [@nucleus-cms](https://github.com/nucleus-cms) mono repo ([#431](https://github.com/The-Code-Monkey/PaperCMS/issues/431)) ([6fc9227](https://github.com/The-Code-Monkey/PaperCMS/commit/6fc92272984193289e72691a4b81e14e32939399))
+
+
+
+
+
 ## [0.0.6](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/db@0.0.5...@nucleus-cms/db@0.0.6) (2023-06-13)
 
 **Note:** Version bump only for package @nucleus-cms/db
