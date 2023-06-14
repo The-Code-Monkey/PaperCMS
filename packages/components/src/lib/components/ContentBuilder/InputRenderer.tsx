@@ -140,7 +140,6 @@ const InputRenderer = ({
   };
 
   const handleContentRemove = (index: number) => () => {
-    console.log(index, field);
     const newState = [...((field as InnerSectionType).value ?? [])];
     newState.splice(index, 1);
     onChange({

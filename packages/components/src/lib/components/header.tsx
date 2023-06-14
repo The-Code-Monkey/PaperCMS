@@ -1,6 +1,6 @@
-import {Box, Button, ConfigContext} from '@techstack/components';
+import { Box, Button, ConfigContext } from '@techstack/components';
 import { useRouter } from 'next/navigation';
-import {useCallback, useContext} from 'react';
+import { useCallback, useContext } from 'react';
 
 import { capitalizeFirstLetter } from '../pages/pageUtils';
 
@@ -15,7 +15,7 @@ const Header = ({ id, tid, noEntry = false }: Props) => {
   const router = useRouter();
   const config = useContext(ConfigContext);
 
-  console.log("HEADER", config);
+  console.log('HEADER', config);
 
   const handleClick = useCallback(() => {
     router.push(`/edit/${id}/new`);
