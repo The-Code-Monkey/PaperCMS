@@ -11,8 +11,6 @@ const databases = {
 };
 
 const create = async (pkg: string, opts: { database: string }) => {
-  console.log(opts);
-
   const bootSpinner = ora(`Creating ${chalk.bold.green(pkg)}...`);
   let db;
 

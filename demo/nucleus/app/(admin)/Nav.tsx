@@ -44,9 +44,13 @@ const Nav = ({ routes = [] }: Props) => {
         mb='2'
         {...styles}
       >
+        {/*// @ts-ignore*/}
         <Link href={href}>
-          <Icon name={icon} />
-          <span>{title}</span>
+          <>
+            {/*// @ts-ignore*/}
+            <Icon name={icon} />
+            <span>{title}</span>
+          </>
         </Link>
       </Box>
     );
@@ -69,6 +73,7 @@ const Nav = ({ routes = [] }: Props) => {
         {renderListItem('/settings', 'settings', 'Settings', { h: '10' })}
         <Box<'li'> as='li' d='flex' w='full' h='10' cursor='pointer' mb='3'>
           <a onClick={toggle} style={{ cursor: 'pointer' }}>
+            {/*// @ts-ignore*/}
             <Icon name={value ? 'sun' : 'moon'} />
             <span>Switch Theme</span>
           </a>

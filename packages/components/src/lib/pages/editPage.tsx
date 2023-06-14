@@ -74,8 +74,6 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
     setFormData(data);
   }, [data]);
 
-  console.log(fields, data, formData);
-
   return (
     <StyledMain>
       <Header tid={tid} id={id} />
@@ -91,8 +89,6 @@ const EditForm = ({ data, tid, id, fields }: Props) => {
             fields.map(field => {
               const type = getFieldType(field.data_type);
               const name = field.column_name;
-
-              console.log(type, formData[name]);
 
               if (type === 'object' && !Array.isArray(formData[name]))
                 return null;

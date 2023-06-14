@@ -30,8 +30,9 @@ const Provider = ({
     }
   );
 
-
   return (
+    <>
+      {/*// @ts-ignore*/}
     <ConfigContext.Provider value={config as unknown as Context}>
       <SupabaseProvider session={session}>
         <SupabaseListener serverAccessToken={session?.access_token} />
@@ -40,10 +41,11 @@ const Provider = ({
           mode={darkMode ? ThemeModeEnum.DARK : ThemeModeEnum.LIGHT}
         >
           <GlobalStyle />
-          <SiteThemeProvider>{children}</SiteThemeProvider>
+          <SiteThemeProvider><>{children}</></SiteThemeProvider>
         </ThemeProvider>
       </SupabaseProvider>
     </ConfigContext.Provider>
+      </>
   );
 };
 

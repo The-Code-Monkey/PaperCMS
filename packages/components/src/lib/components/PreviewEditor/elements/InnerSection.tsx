@@ -49,7 +49,6 @@ const InnerSection = ({
 
         const box = target.getBoundingClientRect();
         const offsetTop = e.clientY - box.top - box.height / 2;
-        console.log(target.className);
 
         const targetId = target.className
           .split(' ')
@@ -66,8 +65,6 @@ const InnerSection = ({
     setIsDragging(false);
     onReorder(id, hoveredId, isTop);
   };
-
-  console.log(id);
 
   const className = `innerSection_${id}`;
 
