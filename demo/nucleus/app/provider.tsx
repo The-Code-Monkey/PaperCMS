@@ -30,7 +30,6 @@ const Provider = ({
     }
   );
 
-
   return (
     <ConfigContext.Provider value={config as unknown as Context}>
       <SupabaseProvider session={session}>

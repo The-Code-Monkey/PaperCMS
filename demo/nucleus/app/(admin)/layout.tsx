@@ -1,3 +1,5 @@
+import 'server-only';
+
 import { useDB } from '@nucleus-cms/db';
 import { ReactNode } from 'react';
 
