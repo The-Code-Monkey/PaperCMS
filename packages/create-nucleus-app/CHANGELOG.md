@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.7 (2023-06-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v0.7.235 ([#434](https://github.com/The-Code-Monkey/PaperCMS/issues/434)) ([d11783e](https://github.com/The-Code-Monkey/PaperCMS/commit/d11783e4bc28e19d4e968d3fd4ba4252716e1cb1))
+
+
+
+
+
 ## 0.1.6 (2023-06-13)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "nucleus-demo",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "type": "module",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "dev": "orchard generate && next dev"
   },
   "dependencies": {
-    "@nucleus-cms/components": "0.1.10",
-    "@nucleus-cms/db": "0.0.8",
+    "@nucleus-cms/components": "0.1.11",
+    "@nucleus-cms/db": "0.0.9",
     "@nucleus-cms/types": "0.0.5",
     "@nucleus-cms/utils": "0.0.8",
     "@supabase/auth-helpers-nextjs": "0.7.2",
