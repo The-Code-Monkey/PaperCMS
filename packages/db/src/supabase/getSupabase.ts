@@ -5,7 +5,7 @@ import type {
   dbFunctionReturnType,
   GetOptions,
 } from '@nucleus-cms/types';
-import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { createPagesBrowserClient } from '@supabase/auth-helpers-nextjs';
 import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
@@ -14,7 +14,7 @@ import { StorageError } from '@supabase/storage-js/dist/module/lib/errors';
 import { RealtimeChannel, Session, User } from '@supabase/supabase-js';
 import { v4 as uuid } from 'uuid';
 
-export const createBrowserClient = () => createBrowserSupabaseClient();
+export const createBrowserClient = () => createPagesBrowserClient();
 
 import { Database } from './database-types';
 

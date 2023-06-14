@@ -1,15 +1,11 @@
 import 'server-only';
 
 import { useDB } from '@nucleus-cms/db';
-import { ReactNode } from 'react';
+import { PropsWithChildren } from 'react';
 
 import Nav from './Nav';
 
-interface Props {
-  children: ReactNode;
-}
-
-const AdminLayout = async ({ children }: Props) => {
+const AdminLayout = async ({ children }: PropsWithChildren) => {
   const DB = useDB();
   const { data } = await DB.dbFunction<Record<string, string>[]>(
     'get_all_table_name'
@@ -20,7 +16,7 @@ const AdminLayout = async ({ children }: Props) => {
   return (
     <div className='wrapper' id='outer'>
       <Nav routes={routes} />
-      {children}
+      <>{children}</>
     </div>
   );
 };

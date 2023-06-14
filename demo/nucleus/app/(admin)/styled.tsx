@@ -1,11 +1,10 @@
 'use client';
 
 import { Box, BoxProps } from '@techstack/components';
-import { ReactNode } from 'react';
+import {PropsWithChildren} from 'react';
 import styled from 'styled-components';
 
-interface StyledMainProps extends BoxProps {
-  children: ReactNode;
+interface StyledMainProps extends Omit<BoxProps, 'children'>, PropsWithChildren {
 }
 
 export const StyledMain = ({ children, ...rest }: StyledMainProps) => (
@@ -18,7 +17,9 @@ export const StyledMain = ({ children, ...rest }: StyledMainProps) => (
     flexDir='column'
     {...rest}
   >
-    {children}
+    <>
+      {children}
+    </>
   </Box>
 );
 

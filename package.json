@@ -8,7 +8,7 @@
     "test:fix": "lerna run test --stream -- -u",
     "lint": "lerna run lint --stream",
     "lint:fix": "lerna run lint --stream -- --fix",
-    "build": "lerna run build --stream && lerna link",
+    "build": "lerna run build --stream",
     "dev": "lerna run dev --stream",
     "postinstall": "lerna run postinstall --stream",
     "lerna:changed": "lerna changed",
@@ -16,7 +16,7 @@
     "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-git --no-verify-access --yes"
   },
   "devDependencies": {
-    "lerna": "^6.6.2"
+    "lerna": "^7.0.0"
   },
   "private": true,
   "workspaces": [

@@ -61,6 +61,7 @@ const Form = () => {
       <Button mt='3' variant='primary' disabled={isLoading} type='submit'>
         {isLoading ? 'logging in' : 'login'}
       </Button>
+      {/*// @ts-ignore*/}
       <Link style={{ alignSelf: 'flex-start' }} href={'/auth/signup'}>
         Sign up
       </Link>
