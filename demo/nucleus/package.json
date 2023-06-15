@@ -17,7 +17,7 @@
     "@supabase/supabase-js": "2.25.0",
     "@techstack/components": "0.7.244",
     "@techstack/theme": "^0.4.123",
-    "next": "13.4.5",
+    "next": "13.4.6",
     "next-remove-imports": "1.0.11",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/react": "18.2.12",
-    "eslint-config-next": "13.4.5",
+    "eslint-config-next": "13.4.6",
     "typescript": "5.1.3"
   }
 }
