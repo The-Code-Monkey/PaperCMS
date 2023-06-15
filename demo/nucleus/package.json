@@ -15,7 +15,7 @@
     "@nucleus-cms/utils": "0.0.9",
     "@supabase/auth-helpers-nextjs": "0.7.2",
     "@supabase/supabase-js": "2.25.0",
-    "@techstack/components": "0.7.242",
+    "@techstack/components": "0.7.244",
     "@techstack/theme": "^0.4.123",
     "next": "13.4.5",
     "next-remove-imports": "1.0.11",
