@@ -2201,7 +2201,7 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.9.2.tgz#0402364a2a9692edf04e05ee6f385dfa27271da5"
   integrity sha512-ajc0OF+karBAdaSz7OK09rCoAHB1XI1+wEhu+tDNMPc+XcO+dTlXXN/Vc0a8vym4kElvEjXEDd9c8Zfgt4bekA==
 
-"@techstack/components@0.7.244":
+"@techstack/components@0.7.244", "@techstack/components@^0.7.175":
   version "0.7.244"
   resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.244.tgz#2d536701fd68ef8ced853304aed060c93a25275b"
   integrity sha512-t1BTKoCTGKP8AGilkFYUVpbXDJi5SmgFMbWSsfBl6XEYqPoQA7bibtqNE9ZCED4vT92FDY52XOFwxFLLFQWf2Q==
@@ -2219,33 +2219,6 @@
     csstype "3.1.2"
     deepmerge "4.3.1"
     i18next "23.0.1"
-    react-date-picker "^10.0.0"
-    react-datetime-picker "^5.0.0"
-    react-i18next "12.3.1"
-    react-lazy-named "1.2.2"
-    react-responsive-carousel "3.2.23"
-    react-table "7.8.0"
-    react-virtual "2.10.4"
-    styled-components "5.3.11"
-
-"@techstack/components@^0.7.175":
-  version "0.7.242"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.242.tgz#b2354d26b699b495cca33dd22b31976f8aa89c52"
-  integrity sha512-mRtliakzwNp716daHrnD2GCfypE8i3538jk8Pgf/12YsyvQm5PJ/PuqihdrEolBSS4CZv7iu8xVFuRkEgMK9rg==
-  dependencies:
-    "@tanstack/react-table" "8.9.2"
-    "@techstack/memoize" "0.4.112"
-    "@techstack/react-feather" "0.4.112"
-    "@techstack/react-lazy-named" "0.4.112"
-    "@techstack/react-quill" "0.0.6"
-    "@techstack/react-textfit" "0.4.126"
-    "@techstack/styled-system" "0.4.119"
-    "@techstack/theme" "0.4.121"
-    "@types/react-table" "7.7.14"
-    classnames "2.3.2"
-    csstype "3.1.2"
-    deepmerge "4.3.1"
-    i18next "22.5.1"
     react-date-picker "^10.0.0"
     react-datetime-picker "^5.0.0"
     react-i18next "12.3.1"
@@ -6147,13 +6120,6 @@ humanize-ms@^1.2.1:
   integrity sha512-Fl70vYtsAFb/C06PTS9dZBo7ihau+Tu/DNCk/OyHhea07S+aeMWpFFkUaXRa8fI+ScZbEI8dfSxwY7gxZ9SAVQ==
   dependencies:
     ms "^2.0.0"
-
-i18next@22.5.1:
-  version "22.5.1"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.5.1.tgz#99df0b318741a506000c243429a7352e5f44d424"
-  integrity sha512-8TGPgM3pAD+VRsMtUMNknRz3kzqwp/gPALrWMsDnmC1mKqJwpWyooQRLMcbTwq8z8YwSmuj+ZYvc+xCuEpkssA==
-  dependencies:
-    "@babel/runtime" "^7.20.6"
 
 i18next@23.0.1:
   version "23.0.1"
