@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import styled from 'styled-components';
 
@@ -20,4 +20,4 @@ export const StyledLoader = styled.span`
       transform: rotate(360deg);
     }
   }
-`;
+` as unknown as () => JSX.Element;

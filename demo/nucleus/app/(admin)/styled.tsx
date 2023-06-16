@@ -78,4 +78,4 @@ export const StyledAside = styled.aside`
       visibility: visible;
     }
   }
-`;
+` as unknown as (p: PropsWithChildren) => JSX.Element;

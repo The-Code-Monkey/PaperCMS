@@ -17,6 +17,8 @@
     "@supabase/supabase-js": "2.25.0",
     "@techstack/components": "0.7.247",
     "@techstack/theme": "^0.4.123",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-transform-remove-imports": "^1.7.0",
     "next": "13.4.6",
     "next-remove-imports": "1.0.11",
     "react": "18.2.0",
