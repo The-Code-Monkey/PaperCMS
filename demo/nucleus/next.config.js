@@ -9,8 +9,7 @@ const nextConfig = {
   experimental: { appDir: true },
   images: {
     domains: ['sorthugaogfbqewtykix.supabase.co'],
-  },
-  transpilePackages: ['@nucleus-cms/components']
+  }
 };
 
 export default removeImports()(nextConfig);

@@ -1,3 +1,5 @@
+'use client'
+
 import { StyledLoader } from '../../../../styled';
 import { StyledMain } from '../../../styled';
 

@@ -74,6 +74,6 @@ form {
   }
 }
 
-`;
+` as unknown as () => JSX.Element;
 
 export default GlobalStyle;
