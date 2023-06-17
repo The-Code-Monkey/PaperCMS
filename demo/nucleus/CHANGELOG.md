@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.17](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.16...nucleus-demo@1.1.17) (2023-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update [@techstack](https://github.com/techstack) mono repo ([#445](https://github.com/The-Code-Monkey/PaperCMS/issues/445)) ([195643a](https://github.com/The-Code-Monkey/PaperCMS/commit/195643a89619ae4d868020de9be14e9930d72205))
+
+
+
+
+
 ## 1.1.16 (2023-06-16)
 
 
