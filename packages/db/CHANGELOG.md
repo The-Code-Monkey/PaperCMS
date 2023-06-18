@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.11 (2023-06-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nucleus-cms/types to v0.0.8 ([#432](https://github.com/The-Code-Monkey/PaperCMS/issues/432)) ([87cbe0d](https://github.com/The-Code-Monkey/PaperCMS/commit/87cbe0d55a1ccae6d9cb866e0efa08d738404686))
+
+
+
+
+
 ## [0.0.10](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/db@0.0.9...@nucleus-cms/db@0.0.10) (2023-06-14)
 
 **Note:** Version bump only for package @nucleus-cms/db
