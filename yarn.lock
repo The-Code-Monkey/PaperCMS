@@ -1810,31 +1810,6 @@
   dependencies:
     nx "16.3.2"
 
-"@nucleus-cms/types@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@nucleus-cms/types/-/types-0.0.5.tgz#9e003edf27e70fe8b090804973980173ed95d7d4"
-  integrity sha512-8ak9N7qhXjvvd4qZlKkZgjRgZUCyWSFrLARBQu1UbRvhVvZfqaNjf05lb4NYEQ5mZVvu+L9Wd4YpFuriSQ87Kg==
-  dependencies:
-    "@nucleus-cms/utils" "0.0.6"
-    uuid "9.0.0"
-  optionalDependencies:
-    "@supabase/auth-helpers-nextjs" "0.6.1"
-    "@supabase/gotrue-js" "2.29.0"
-    "@supabase/storage-js" "2.5.1"
-    "@supabase/supabase-js" "2.25.0"
-
-"@nucleus-cms/utils@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@nucleus-cms/utils/-/utils-0.0.6.tgz#5ade2798db1967a718e4b1724545aaeb0bdd2516"
-  integrity sha512-ob/SFXnU1GlSwMk6WBlZwgBcu0HFjUyJ7o5KMjPuWiZNRUoqh9uVKsj84i+pdvKRfV9fHcmi7wczSVZPDysFVQ==
-  dependencies:
-    uuid "9.0.0"
-  optionalDependencies:
-    "@supabase/auth-helpers-nextjs" "0.6.1"
-    "@supabase/gotrue-js" "2.29.0"
-    "@supabase/storage-js" "2.5.1"
-    "@supabase/supabase-js" "2.25.0"
-
 "@nx/devkit@16.3.2", "@nx/devkit@>=16.1.3 < 17":
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-16.3.2.tgz#95d58d104449c54bdc276fa1c9166fcad867cfa8"
@@ -2169,13 +2144,6 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@supabase/auth-helpers-nextjs@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.6.1.tgz#d327099201a55b8225e0f8e642c6a18eccbab9ca"
-  integrity sha512-ffDAR4pW2Cosj/CuuGRAhzOFfHtqzdgax7zqRGGyq334gxxPplsmJFGaLPRJ3Z/4mTSIJHyFd6LYdHMN0a+5Bw==
-  dependencies:
-    "@supabase/auth-helpers-shared" "0.3.4"
-
 "@supabase/auth-helpers-nextjs@0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.7.2.tgz#dc3f8b27999ccaebeb1a19b654875384269bb17d"
@@ -2183,13 +2151,6 @@
   dependencies:
     "@supabase/auth-helpers-shared" "0.4.1"
     set-cookie-parser "^2.6.0"
-
-"@supabase/auth-helpers-shared@0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.3.4.tgz#dcea97d55d535a720023f081576f3b61e00ad75f"
-  integrity sha512-8I3D0SPHHexkFTSfPg0nZgJSVazWoB3tZDpT6IjRv6w89vDMUzO99Lit4H9anVLF4teW8c/nJJxawDNbDlgbgg==
-  dependencies:
-    jose "^4.14.0"
 
 "@supabase/auth-helpers-shared@0.4.1":
   version "0.4.1"
@@ -2202,13 +2163,6 @@
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@supabase/functions-js/-/functions-js-2.1.2.tgz#340a8d3845ef2014338b13a6d33cfa90eb745b14"
   integrity sha512-QCR6pwJs9exCl37bmpMisUd6mf+0SUBJ6mUpiAjEkSJ/+xW8TCuO14bvkWHADd5hElJK9MxNlMQXxSA4DRz9nQ==
-  dependencies:
-    cross-fetch "^3.1.5"
-
-"@supabase/gotrue-js@2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.29.0.tgz#201ee354db476dfda48e28eb93f10db5c6613e8b"
-  integrity sha512-QJepUxSXpgcyMhDtEusRyGtCcYSqy4wRDf3BQGqLUDaU/sRRclO07NCHW8nBqGW6KZZ6oNLfKX2AQz621dmIPw==
   dependencies:
     cross-fetch "^3.1.5"
 
@@ -7048,7 +7002,7 @@ jest@29.5.0:
     import-local "^3.0.2"
     jest-cli "^29.5.0"
 
-jose@^4.14.0, jose@^4.14.3:
+jose@^4.14.3:
   version "4.14.4"
   resolved "https://registry.yarnpkg.com/jose/-/jose-4.14.4.tgz#59e09204e2670c3164ee24cbfe7115c6f8bff9ca"
   integrity sha512-j8GhLiKmUAh+dsFXlX1aJCbt5KMibuKb+d7j1JaOJG6s2UjX1PQlW+OKB/sD4a/5ZYF4RcmYmLSndOoU3Lt/3g==
