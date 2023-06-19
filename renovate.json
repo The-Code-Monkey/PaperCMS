@@ -1,5 +1,7 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
+    "config:base",
     ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
@@ -9,25 +11,12 @@
     "group:recommended",
     "workarounds:all"
   ],
-  "automergeStrategy": "squash",
-  "automerge": true,
-  "labels": ["dependencies"],
-  "vulnerabilityAlerts": {
-    "labels": ["security"],
-    "enabled": true
-  },
+  "rangeStrategy": "pin",
+  "baseBranches": ["main", "V1", "V2"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["@nucleus-cms/*"],
-      "groupName": "@nucleus-cms mono repo",
-      "enabled": true,
-      "rollback": false
-    },
-    {
-      "matchPackagePatterns": ["@techstack/*"],
-      "groupName": "@techstack mono repo",
-      "enabled": true
+	    "packageNames": ["node"],
+      "enabled": false
     }
-  ],
-  "updateInternalDeps": true
+  ]
 }
