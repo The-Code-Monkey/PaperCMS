@@ -16,7 +16,7 @@
     "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-git --no-verify-access --yes"
   },
   "devDependencies": {
-    "lerna": "^7.0.0"
+    "lerna": "7.0.2"
   },
   "private": true,
   "workspaces": [
@@ -70,6 +70,6 @@
     }
   },
   "dependencies": {
-    "install-peers": "^1.0.4"
+    "install-peers": "1.0.4"
   }
 }
