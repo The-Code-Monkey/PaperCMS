@@ -2396,6 +2396,18 @@
     style-dictionary "3.8.0"
     tinycolor2 "1.6.0"
 
+"@techstack/theme@0.4.136":
+  version "0.4.136"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.136.tgz#89ef4227fa84ac19f7d3bc86e8aa64db24e7d127"
+  integrity sha512-l1huiKPoWgWxB4VQBNywoADNDaBuqYMDwx02OKsKRd7PwAQT3v9YmstSnQ8ish3Xfqe335Vs/3EknMR4n+BxHg==
+  dependencies:
+    fs-extra "11.1.1"
+    lodash "4.17.21"
+    lodash-es "4.17.21"
+    sade "1.8.1"
+    style-dictionary "3.8.0"
+    tinycolor2 "1.6.0"
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
