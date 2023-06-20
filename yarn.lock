@@ -2473,10 +2473,10 @@
     style-dictionary "3.8.0"
     tinycolor2 "1.6.0"
 
-"@techstack/theme@0.4.136":
-  version "0.4.136"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.136.tgz#89ef4227fa84ac19f7d3bc86e8aa64db24e7d127"
-  integrity sha512-l1huiKPoWgWxB4VQBNywoADNDaBuqYMDwx02OKsKRd7PwAQT3v9YmstSnQ8ish3Xfqe335Vs/3EknMR4n+BxHg==
+"@techstack/theme@0.4.138":
+  version "0.4.138"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.138.tgz#946404c19b550489c129f1e01cd1e23d7e4a49ca"
+  integrity sha512-voVNR5drh5WXf/RBKsn+byRW5dwUs1n0RLBrRy/zxneRF08At63l7yQeHzay3fn7vkFgFh/m7eT4JwXlndsG2w==
   dependencies:
     fs-extra "11.1.1"
     lodash "4.17.21"
