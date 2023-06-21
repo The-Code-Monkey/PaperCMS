@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.21](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/components@0.1.20...@nucleus-cms/components@0.1.21) (2023-06-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v0.7.277 ([#456](https://github.com/The-Code-Monkey/PaperCMS/issues/456)) ([b29019a](https://github.com/The-Code-Monkey/PaperCMS/commit/b29019af1f851b476c58e4d37c13a32e03e47459))
+
+
+
+
+
 ## [0.1.20](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/components@0.1.19...@nucleus-cms/components@0.1.20) (2023-06-20)
 
 **Note:** Version bump only for package @nucleus-cms/components
