@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/create-nucleus-app",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "type": "module",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
