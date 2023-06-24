@@ -24,7 +24,7 @@
     "src"
   ],
   "devDependencies": {
-    "@techstack/tcm-cli": "0.4.215",
+    "@techstack/tcm-cli": "0.4.217",
     "install-peers-cli": "2.2.0"
   },
   "dependencies": {
@@ -32,7 +32,7 @@
     "@minoru/react-dnd-treeview": "3.4.4",
     "@nucleus-cms/db": "0.0.17",
     "@nucleus-cms/utils": "0.0.15",
-    "@techstack/components": "0.7.297",
+    "@techstack/components": "0.7.299",
     "@uiw/react-md-editor": "3.23.3",
     "react-dnd": "16.0.1",
     "react-quill": "2.0.0",
