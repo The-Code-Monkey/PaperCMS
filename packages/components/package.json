@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/components",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "type": "module",
   "scripts": {
     "build": "tcm build",
