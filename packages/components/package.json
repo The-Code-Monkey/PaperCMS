@@ -32,7 +32,7 @@
     "@minoru/react-dnd-treeview": "3.4.4",
     "@nucleus-cms/db": "0.0.20",
     "@nucleus-cms/utils": "0.0.18",
-    "@techstack/components": "0.7.309",
+    "@techstack/components": "0.7.311",
     "@uiw/react-md-editor": "3.23.3",
     "react-dnd": "16.0.1",
     "react-quill": "2.0.0",
