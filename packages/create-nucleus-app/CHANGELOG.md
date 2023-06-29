@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.21](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/create-nucleus-app@0.1.20...@nucleus-cms/create-nucleus-app@0.1.21) (2023-06-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v5.3.0 ([c82e50b](https://github.com/The-Code-Monkey/PaperCMS/commit/c82e50b2c8a3a0bcfe16236d5b72ef34e360deee))
+
+
+
+
+
 ## [0.1.20](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/create-nucleus-app@0.1.19...@nucleus-cms/create-nucleus-app@0.1.20) (2023-06-29)
 
 **Note:** Version bump only for package @nucleus-cms/create-nucleus-app
