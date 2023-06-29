@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.37 (2023-06-29)
+
+**Note:** Version bump only for package @nucleus-cms/components
+
+
+
+
+
 ## 0.1.36 (2023-06-28)
 
 
