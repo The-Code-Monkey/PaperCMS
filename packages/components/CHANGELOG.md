@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.38](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/components@0.1.37...@nucleus-cms/components@0.1.38) (2023-06-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @hello-pangea/dnd to v16.3.0 ([177e8e0](https://github.com/The-Code-Monkey/PaperCMS/commit/177e8e0cbc0ba6915ccd1ae4b344d0f553f27def))
+
+
+
+
+
 ## 0.1.37 (2023-06-29)
 
 **Note:** Version bump only for package @nucleus-cms/components
