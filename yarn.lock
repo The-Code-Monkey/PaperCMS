@@ -2234,10 +2234,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.9.3.tgz#991da6b015f6200fdc841c48048bee5e197f6a46"
   integrity sha512-NpHZBoHTfqyJk0m/s/+CSuAiwtebhYK90mDuf5eylTvgViNOujiaOaxNDxJkQQAsVvHWZftUGAx1EfO1rkKtLg==
 
-"@techstack/components@0.7.315":
-  version "0.7.315"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.315.tgz#de932d442659b142d9a3a4702620a2bf18e593c8"
-  integrity sha512-5Tymkj7oaYd6JMmEowY/2cZu5bVDrqJqZiLHrpxQHHaa+jBaIhwFGp9HHo0kjY91IPA/IHQr4N4ltfkN0w4Vyg==
+"@techstack/components@0.7.317":
+  version "0.7.317"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.317.tgz#834a83192e9865e89558415d8c08501b450511fb"
+  integrity sha512-YiIHv4JGbG1ml4iB/We5GzL8YkKmMGpfCzlHOQvOmOEoYRN1Tmp4gz+6fP5R6/9sxcZIqk4DMVrCO1b23CEwGQ==
   dependencies:
     "@emotion/is-prop-valid" "1.2.1"
     "@tanstack/react-table" "8.9.3"
@@ -2376,10 +2376,10 @@
     type-fest "3.12.0"
     typescript "5.1.3"
 
-"@techstack/tcm-cli@0.4.225":
-  version "0.4.225"
-  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.225.tgz#db51595dc3b10c7a5aca072a2474f2126a885da2"
-  integrity sha512-kB/bclIJt2NYSv8+js4CPCxW4vp5TOhN4G2swhq6980dvo7iVuqbZQpfPSRJd0B3b0EOS0zTTD7EJwMtok7rlg==
+"@techstack/tcm-cli@0.4.227":
+  version "0.4.227"
+  resolved "https://registry.yarnpkg.com/@techstack/tcm-cli/-/tcm-cli-0.4.227.tgz#279ea8c27a2772c533951f8edb33a221232363cb"
+  integrity sha512-O0wqBrw+iedVqEDc89Xn6LZdfpHDrMrFy9kasI4KJZe9pAu5LQOs+engVAaLt4N4XWWNMHPGtkggEoXqtx0xWA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "7.18.6"
     "@rollup/plugin-babel" "6.0.3"
@@ -2439,7 +2439,7 @@
     ts-node "10.9.1"
     tslib "2.6.0"
     type-fest "3.12.0"
-    typescript "5.1.3"
+    typescript "5.1.6"
 
 "@techstack/theme@0.4.150":
   version "0.4.150"
@@ -2453,10 +2453,10 @@
     style-dictionary "3.8.0"
     tinycolor2 "1.6.0"
 
-"@techstack/theme@0.4.152":
-  version "0.4.152"
-  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.152.tgz#def4102595495f934877f63f80d4bdf9887cc8ea"
-  integrity sha512-yxuEa412nYeajVK8/QAY1xjQ/7F/gjmzFVC11/m22LeUJ8mZ2C9Gk1vuhAC0vOF+4NSKdZ2CEB+/huqtSunoiw==
+"@techstack/theme@0.4.154":
+  version "0.4.154"
+  resolved "https://registry.yarnpkg.com/@techstack/theme/-/theme-0.4.154.tgz#fbb56032ecac22a18c68f82e53dbdf356c161e32"
+  integrity sha512-eu0xsXgx6H8vNlOqG7KoE26owO0FebkFEHW8ZRBIqFGfAo5BW/FPRrwrCszHX67sR6yF8eXBG0oLKCKiyqxtCw==
   dependencies:
     fs-extra "11.1.1"
     lodash "4.17.21"
