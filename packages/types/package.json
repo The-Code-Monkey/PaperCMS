@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/types",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -28,7 +28,7 @@
     "install-peers-cli": "2.2.0"
   },
   "dependencies": {
-    "@nucleus-cms/utils": "0.0.23",
+    "@nucleus-cms/utils": "0.0.24",
     "uuid": "9.0.0"
   },
   "optionalDependencies": {
