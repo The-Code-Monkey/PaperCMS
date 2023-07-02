@@ -2171,10 +2171,10 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/gotrue-js@2.37.0":
-  version "2.37.0"
-  resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.37.0.tgz#3b80989b0d4092ce3ee676ee9fb6c67ff4709431"
-  integrity sha512-DnQxM6i2wFrlQU0RvJ22riu9ZKj9EiV6T+pfKEgpXyhjObJyx2MIXN6r77dfckVlD+p+z0hpDvKsF1haTFc7Lg==
+"@supabase/gotrue-js@2.38.0":
+  version "2.38.0"
+  resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.38.0.tgz#91a8ff6b1aa307c899a488853a4d19a20cc9427a"
+  integrity sha512-iitNthPLQjAD73FtnUNUalwPFpsiiE7t/0mVw14b+3rqzr52Efri8gAjzT9hi7p35uOLA76HMY3aWJj6Gy7ozw==
   dependencies:
     cross-fetch "^3.1.5"
 
