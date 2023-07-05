@@ -1,6 +1,6 @@
 {
   "name": "nucleus-demo",
-  "version": "1.1.52",
+  "version": "1.1.53",
   "type": "module",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "dev": "orchard generate && next dev"
   },
   "dependencies": {
-    "@nucleus-cms/components": "0.1.46",
+    "@nucleus-cms/components": "0.1.47",
     "@nucleus-cms/db": "0.0.28",
     "@nucleus-cms/types": "0.0.25",
     "@nucleus-cms/utils": "0.0.26",
