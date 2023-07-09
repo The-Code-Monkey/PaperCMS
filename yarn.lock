@@ -2239,10 +2239,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.9.3.tgz#991da6b015f6200fdc841c48048bee5e197f6a46"
   integrity sha512-NpHZBoHTfqyJk0m/s/+CSuAiwtebhYK90mDuf5eylTvgViNOujiaOaxNDxJkQQAsVvHWZftUGAx1EfO1rkKtLg==
 
-"@techstack/components@0.7.329":
-  version "0.7.329"
-  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.329.tgz#265e95048eaa2d3f505a5ecb31bccee4a98093c6"
-  integrity sha512-BMRGcppgqncq3mcQXfahCqx5XV/YW7uWR4R382CZDc/s8y9EI+wyChvoGC616LhmeIxThAC/KYHv6QlIoyhMSg==
+"@techstack/components@0.7.331":
+  version "0.7.331"
+  resolved "https://registry.yarnpkg.com/@techstack/components/-/components-0.7.331.tgz#f4d9502b2c10786f5a0381774388ec82d28b6329"
+  integrity sha512-PbxkPfyuwEHjpw5h1CiCJQGxLOlEIUWXPqrzpcsB6vxq//6yx8Zfu+ibhrXOjKWsBM9YkeAB8n2X+M0qo467TA==
   dependencies:
     "@emotion/is-prop-valid" "1.2.1"
     "@tanstack/react-table" "8.9.3"
