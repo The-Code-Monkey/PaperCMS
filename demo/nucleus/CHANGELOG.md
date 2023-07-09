@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.55](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.54...nucleus-demo@1.1.55) (2023-07-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-loader to v9.1.3 ([519af98](https://github.com/The-Code-Monkey/PaperCMS/commit/519af9854a9b4be2a3aa73835af160e82d761cbd))
+
+
+
+
+
 ## [1.1.54](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.53...nucleus-demo@1.1.54) (2023-07-06)
 
 **Note:** Version bump only for package nucleus-demo
