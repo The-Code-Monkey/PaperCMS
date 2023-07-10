@@ -24,7 +24,7 @@
     "src"
   ],
   "devDependencies": {
-    "@techstack/tcm-cli": "0.4.233",
+    "@techstack/tcm-cli": "0.4.239",
     "install-peers-cli": "2.2.0"
   },
   "dependencies": {
