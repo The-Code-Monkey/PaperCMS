@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/db",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -28,8 +28,8 @@
     "install-peers-cli": "2.2.0"
   },
   "dependencies": {
-    "@nucleus-cms/types": "0.0.30",
-    "@nucleus-cms/utils": "0.0.31",
+    "@nucleus-cms/types": "0.0.31",
+    "@nucleus-cms/utils": "0.0.32",
     "uuid": "9.0.0"
   },
   "optionalDependencies": {
