@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.27 (2023-07-11)
+
+
+### Bug Fixes
+
+* **deps:** update techstack mono repo ([3abbae6](https://github.com/The-Code-Monkey/PaperCMS/commit/3abbae6c7ecbfdab08b4f9622bb11e89f0201574))
+
+
+
+
+
 ## 0.1.26 (2023-07-10)
 
 
