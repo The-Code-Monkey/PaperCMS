@@ -2249,10 +2249,10 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@supabase/gotrue-js@2.39.2":
-  version "2.39.2"
-  resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.39.2.tgz#16dcbca7464839d6966409b6ed885777881d0afe"
-  integrity sha512-3M0P+0EP4cQLLsEhTxn17sP3riwZ37gWUv8k7s/4vBCMhRQR6PsF9RvybVyllPqm0Z9gfZAK3y1NUS53WqurcA==
+"@supabase/gotrue-js@2.40.0":
+  version "2.40.0"
+  resolved "https://registry.yarnpkg.com/@supabase/gotrue-js/-/gotrue-js-2.40.0.tgz#4d8f5e758b9a21afe76f8bec1e992b594587e9e8"
+  integrity sha512-xQPF2BIH9yjuuLTReVB/wL3QGGQQL9QI35i2AUa3P3uIe1Dbf5SGqucuZZBVN1637AkmZlO5jMnQKcJ+ncoenQ==
   dependencies:
     cross-fetch "^3.1.5"
 
