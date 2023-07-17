@@ -5,7 +5,7 @@ import { PropsWithChildren } from 'react';
 
 import Nav from './Nav';
 
-const AdminLayout = async ({ children }: PropsWithChildren) => {
+const AdminLayout = ({ children }: PropsWithChildren) => {
   const DB = useDB();
   const { data } = await DB.dbFunction<Record<string, string>[]>(
     'get_all_table_name'
