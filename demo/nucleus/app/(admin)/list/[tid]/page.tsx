@@ -4,7 +4,7 @@ import { PageProps } from '../../../../utils/pageTypes';
 
 import Container from "./Container";
 
-const List = async ({ params }: PageProps) => {
+const List = ({ params }: PageProps) => {
   const { tid } = params ?? {};
   const DB = useDB();
   const { data } = await DB.get<Record<string, string>[]>(tid as any);
