@@ -90,7 +90,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
 
   // Get
   const get: DbReturnType<Tables, Functions>['get'] = async <
-    R extends RecordReturnType
+    R extends RecordReturnType,
   >(
     table: Tables,
     options?: GetOptions
@@ -146,7 +146,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
 
   // Function
   const dbFunction: DbReturnType<Tables, Functions>['dbFunction'] = async <
-    R extends RecordReturnType
+    R extends RecordReturnType,
   >(
     funcName: Functions,
     args?: Record<string, unknown>

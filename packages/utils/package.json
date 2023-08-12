@@ -24,7 +24,7 @@
     "src"
   ],
   "devDependencies": {
-    "@techstack/tcm-cli": "0.4.251",
+    "@techstack/tcm-cli": "1.2.24",
     "install-peers-cli": "2.2.0"
   },
   "dependencies": {
@@ -34,6 +34,6 @@
     "@supabase/auth-helpers-nextjs": "0.7.4",
     "@supabase/gotrue-js": "2.46.2",
     "@supabase/storage-js": "2.5.1",
-    "@supabase/supabase-js": "2.26.0"
+    "@supabase/supabase-js": "2.32.0"
   }
 }
