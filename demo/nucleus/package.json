@@ -19,7 +19,7 @@
     "babel-loader": "9.1.3",
     "babel-plugin-transform-remove-imports": "1.7.0",
     "next": "13.4.13",
-    "next-remove-imports": "1.0.11",
+    "next-remove-imports": "1.0.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "server-only": "0.0.1",
