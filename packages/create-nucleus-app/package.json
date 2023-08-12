@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "chalk": "5.3.0",
-    "enquirer": "2.3.6",
+    "enquirer": "2.4.1",
     "fs-extra": "11.1.1",
     "ora": "6.3.1",
     "sade": "1.8.1"
