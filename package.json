@@ -13,7 +13,7 @@
     "postinstall": "lerna run postinstall --stream",
     "lerna:changed": "lerna changed",
     "lerna:version": "lerna version --conventional-commits --exact --yes",
-    "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-git --no-verify-access --yes"
+    "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-package --no-verify-access --yes"
   },
   "devDependencies": {
     "lerna": "7.1.5"
