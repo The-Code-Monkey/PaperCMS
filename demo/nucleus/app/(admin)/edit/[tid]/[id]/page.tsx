@@ -5,7 +5,7 @@ import { RecordType } from '../../../../utils';
 
 import Container from "./Container";
 
-const Edit = ({ params }: PageProps) => {
+const Edit = async ({ params }: PageProps) => {
   const { tid, id } = params ?? {};
 
   const DB = useDB();

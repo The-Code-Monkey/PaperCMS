@@ -2,7 +2,7 @@ import {useDB} from "@nucleus-cms/db";
 
 import Container from './container';
 
-const Page = () => {
+const Page = async () => {
   const DB = useDB();
 
   const { data } = await DB.get('settings');
