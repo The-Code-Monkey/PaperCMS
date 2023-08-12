@@ -2691,7 +2691,7 @@ __metadata:
     "@minoru/react-dnd-treeview": 3.4.4
     "@nucleus-cms/db": 0.0.38
     "@nucleus-cms/utils": 0.0.36
-    "@supabase/auth-helpers-nextjs": 0.7.3
+    "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/gotrue-js": 2.46.2
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.26.0
@@ -2738,7 +2738,7 @@ __metadata:
   dependencies:
     "@nucleus-cms/types": 0.0.35
     "@nucleus-cms/utils": 0.0.36
-    "@supabase/auth-helpers-nextjs": 0.7.3
+    "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/gotrue-js": 2.46.2
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.26.0
@@ -2762,7 +2762,7 @@ __metadata:
   resolution: "@nucleus-cms/types@workspace:packages/types"
   dependencies:
     "@nucleus-cms/utils": 0.0.36
-    "@supabase/auth-helpers-nextjs": 0.7.3
+    "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/gotrue-js": 2.46.2
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.26.0
@@ -2785,7 +2785,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/utils@workspace:packages/utils"
   dependencies:
-    "@supabase/auth-helpers-nextjs": 0.7.3
+    "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/gotrue-js": 2.46.2
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.26.0
@@ -3287,15 +3287,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-helpers-nextjs@npm:0.7.3":
-  version: 0.7.3
-  resolution: "@supabase/auth-helpers-nextjs@npm:0.7.3"
+"@supabase/auth-helpers-nextjs@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@supabase/auth-helpers-nextjs@npm:0.7.4"
   dependencies:
     "@supabase/auth-helpers-shared": 0.4.1
     set-cookie-parser: ^2.6.0
   peerDependencies:
     "@supabase/supabase-js": ^2.19.0
-  checksum: ceaa3929ab5c617e039f2e13d9ffcb2a022981819ab8cfa4fb7dd248e14fcff010011317605607cf86605d7b781a7f579f89bf0f20c37a1c30adb1146ff85b58
+  checksum: eaf9ff6b4259fc21bd5204c9862068c86d30636fc1f5ab9cc1baa989762402eb84bd2dc0ba3e5350e14a71d4e527867e3f003de6681ed606bb27bf863bea12c9
   languageName: node
   linkType: hard
 
@@ -12080,7 +12080,7 @@ __metadata:
     "@nucleus-cms/db": "workspace:*"
     "@nucleus-cms/types": "workspace:*"
     "@nucleus-cms/utils": "workspace:*"
-    "@supabase/auth-helpers-nextjs": 0.7.3
+    "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/supabase-js": 2.26.0
     "@techstack/theme": 0.4.164
     "@types/react": 18.2.15
