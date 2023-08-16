@@ -10,6 +10,7 @@
     "lint:fix": "lerna run lint --stream -- --fix",
     "build": "lerna run build --stream",
     "dev": "lerna run dev --stream",
+    "build_demo": "yarn build && cd demo/nucleus && orchard generate && next build",
     "postinstall": "lerna run postinstall --stream",
     "lerna:changed": "lerna changed",
     "lerna:version": "lerna version --conventional-commits --exact --yes",

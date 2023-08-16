@@ -3575,6 +3575,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@techstack/react-feather@npm:^1.2.27":
+  version: 1.2.27
+  resolution: "@techstack/react-feather@npm:1.2.27"
+  peerDependencies:
+    react: 18.2.0
+  checksum: e5aef7dbadfff474c2a6b01d171a733c0037f89a54d384a25259007d7ec250e1082dca2f4863a734540c797afe0580419e4aee34119c8193397ac1ed851c234f
+  languageName: node
+  linkType: hard
+
 "@techstack/styled-system@npm:1.0.76":
   version: 1.0.76
   resolution: "@techstack/styled-system@npm:1.0.76"
@@ -12156,6 +12165,7 @@ __metadata:
     "@nucleus-cms/utils": "workspace:*"
     "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/supabase-js": 2.32.0
+    "@techstack/react-feather": ^1.2.27
     "@techstack/theme": 1.2.24
     "@types/react": 18.2.20
     babel-loader: 9.1.3
