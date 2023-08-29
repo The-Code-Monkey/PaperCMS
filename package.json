@@ -17,7 +17,7 @@
     "lerna:publish": "yarn lerna:changed && yarn lerna:version && lerna publish from-package --no-verify-access --yes"
   },
   "devDependencies": {
-    "babel-loader": "7",
+    "babel-loader": "7.1.5",
     "lerna": "7.1.5"
   },
   "private": true,
