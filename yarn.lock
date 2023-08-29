@@ -3945,6 +3945,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:20.5.7":
+  version: 20.5.7
+  resolution: "@types/node@npm:20.5.7"
+  checksum: fc284c8e16ddc04569730d58e87eae349eb1c3dd9020cb79a1862d9d9add6f04e7367a236f3252db8db2572f90278e250f4cd43d27d264972b54394eaba1ed76
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
@@ -5012,6 +5019,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-loader@npm:7":
+  version: 7.1.5
+  resolution: "babel-loader@npm:7.1.5"
+  dependencies:
+    find-cache-dir: ^1.0.0
+    loader-utils: ^1.0.2
+    mkdirp: ^0.5.1
+  peerDependencies:
+    babel-core: 6
+    webpack: 2 || 3 || 4
+  checksum: bef446fd0ad112312629addc0b248282ced6e4bd1d48101affa5e8863910d33689c1a57aa20377ee0c042833cebb3f9d4eef5666782a49362a79c65f33042f23
+  languageName: node
+  linkType: hard
+
 "babel-loader@npm:9.1.3, babel-loader@npm:^9.1.3":
   version: 9.1.3
   resolution: "babel-loader@npm:9.1.3"
@@ -5246,6 +5267,13 @@ __metadata:
   version: 1.6.51
   resolution: "big-integer@npm:1.6.51"
   checksum: 3d444173d1b2e20747e2c175568bedeebd8315b0637ea95d75fd27830d3b8e8ba36c6af40374f36bdaea7b5de376dcada1b07587cb2a79a928fccdb6e6e3c518
+  languageName: node
+  linkType: hard
+
+"big.js@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "big.js@npm:5.2.2"
+  checksum: b89b6e8419b097a8fb4ed2399a1931a68c612bce3cfd5ca8c214b2d017531191070f990598de2fc6f3f993d91c0f08aa82697717f6b3b8732c9731866d233c9e
   languageName: node
   linkType: hard
 
@@ -6727,6 +6755,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emojis-list@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "emojis-list@npm:3.0.0"
+  checksum: ddaaa02542e1e9436c03970eeed445f4ed29a5337dfba0fe0c38dfdd2af5da2429c2a0821304e8a8d1cadf27fdd5b22ff793571fa803ae16852a6975c65e8e70
+  languageName: node
+  linkType: hard
+
 "encoding@npm:^0.1.13":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
@@ -7801,6 +7836,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"find-cache-dir@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "find-cache-dir@npm:1.0.0"
+  dependencies:
+    commondir: ^1.0.1
+    make-dir: ^1.0.0
+    pkg-dir: ^2.0.0
+  checksum: d3caf3b0f90a2f281acb44a8db257ceb52d7fd65cc23d75463dff2f260947a35f27ba6c0695ba075e769607e71b1414ca0900072a5c5afd21e7c97f948e4f5ad
+  languageName: node
+  linkType: hard
+
 "find-cache-dir@npm:^3.3.2":
   version: 3.3.2
   resolution: "find-cache-dir@npm:3.3.2"
@@ -7822,7 +7868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-up@npm:^2.0.0":
+"find-up@npm:^2.0.0, find-up@npm:^2.1.0":
   version: 2.1.0
   resolution: "find-up@npm:2.1.0"
   dependencies:
@@ -10347,7 +10393,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^1.0.2":
+"json5@npm:^1.0.1, json5@npm:^1.0.2":
   version: 1.0.2
   resolution: "json5@npm:1.0.2"
   dependencies:
@@ -10617,6 +10663,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"loader-utils@npm:^1.0.2":
+  version: 1.4.2
+  resolution: "loader-utils@npm:1.4.2"
+  dependencies:
+    big.js: ^5.2.2
+    emojis-list: ^3.0.0
+    json5: ^1.0.1
+  checksum: eb6fb622efc0ffd1abdf68a2022f9eac62bef8ec599cf8adb75e94d1d338381780be6278534170e99edc03380a6d29bc7eb1563c89ce17c5fed3a0b17f1ad804
+  languageName: node
+  linkType: hard
+
 "locate-path@npm:^2.0.0":
   version: 2.0.0
   resolution: "locate-path@npm:2.0.0"
@@ -10817,6 +10874,15 @@ __metadata:
   dependencies:
     semver: ^6.0.0
   checksum: 484200020ab5a1fdf12f393fe5f385fc8e4378824c940fba1729dcd198ae4ff24867bc7a5646331e50cead8abff5d9270c456314386e629acec6dff4b8016b78
+  languageName: node
+  linkType: hard
+
+"make-dir@npm:^1.0.0":
+  version: 1.3.0
+  resolution: "make-dir@npm:1.3.0"
+  dependencies:
+    pify: ^3.0.0
+  checksum: c564f6e7bb5ace1c02ad56b3a5f5e07d074af0c0b693c55c7b2c2b148882827c8c2afc7b57e43338a9f90c125b58d604e8cf3e6990a48bf949dfea8c79668c0b
   languageName: node
   linkType: hard
 
@@ -11657,6 +11723,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mkdirp@npm:^0.5.1":
+  version: 0.5.6
+  resolution: "mkdirp@npm:0.5.6"
+  dependencies:
+    minimist: ^1.2.6
+  bin:
+    mkdirp: bin/cmd.js
+  checksum: 0c91b721bb12c3f9af4b77ebf73604baf350e64d80df91754dc509491ae93bf238581e59c7188360cec7cb62fc4100959245a42cfe01834efedc5e9d068376c2
+  languageName: node
+  linkType: hard
+
 "mkdirp@npm:^1.0.3":
   version: 1.0.4
   resolution: "mkdirp@npm:1.0.4"
@@ -12150,6 +12227,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nucleus-cms@workspace:."
   dependencies:
+    babel-loader: 7
     install-peers: 1.0.4
     lerna: 7.1.5
   languageName: unknown
@@ -12167,6 +12245,7 @@ __metadata:
     "@supabase/supabase-js": 2.32.0
     "@techstack/react-feather": ^1.2.27
     "@techstack/theme": 1.2.24
+    "@types/node": 20.5.7
     "@types/react": 18.2.20
     babel-loader: 9.1.3
     babel-plugin-transform-remove-imports: 1.7.0
@@ -12931,6 +13010,15 @@ __metadata:
   version: 4.0.5
   resolution: "pirates@npm:4.0.5"
   checksum: c9994e61b85260bec6c4fc0307016340d9b0c4f4b6550a957afaaff0c9b1ad58fbbea5cfcf083860a25cb27a375442e2b0edf52e2e1e40e69934e08dcc52d227
+  languageName: node
+  linkType: hard
+
+"pkg-dir@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "pkg-dir@npm:2.0.0"
+  dependencies:
+    find-up: ^2.1.0
+  checksum: 8c72b712305b51e1108f0ffda5ec1525a8307e54a5855db8fb1dcf77561a5ae98e2ba3b4814c9806a679f76b2f7e5dd98bde18d07e594ddd9fdd25e9cf242ea1
   languageName: node
   linkType: hard
 
