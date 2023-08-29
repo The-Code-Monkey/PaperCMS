@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.66 (2023-08-29)
+
+
+### Bug Fixes
+
+* update linter and next ([7990483](https://github.com/The-Code-Monkey/PaperCMS/commit/7990483de563c4116659c7d36e2e9db9e8c36702))
+
+
+
+
+
 ## [0.1.59](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/components@0.1.58...@nucleus-cms/components@0.1.59) (2023-07-16)
 
 **Note:** Version bump only for package @nucleus-cms/components

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.66 (2023-08-29)
+
+
+### Bug Fixes
+
+* fix everything ([bdf3a09](https://github.com/The-Code-Monkey/PaperCMS/commit/bdf3a091aa216282ac73d32ffe46aa594c4bbd62))
+* new build command ([ca7d152](https://github.com/The-Code-Monkey/PaperCMS/commit/ca7d1526d829f2f4df543e77169f5637116b62c0))
+* set yarn 3 ([9cd2b61](https://github.com/The-Code-Monkey/PaperCMS/commit/9cd2b61ba1cde4b2e4772b5cff8e38f15eb4dd73))
+* update linter and next ([7990483](https://github.com/The-Code-Monkey/PaperCMS/commit/7990483de563c4116659c7d36e2e9db9e8c36702))
+
+
+
+
+
 ## [1.1.65](https://github.com/The-Code-Monkey/PaperCMS/compare/nucleus-demo@1.1.64...nucleus-demo@1.1.65) (2023-07-16)
 
 **Note:** Version bump only for package nucleus-demo

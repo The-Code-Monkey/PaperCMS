@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.66 (2023-08-29)
+
+**Note:** Version bump only for package @nucleus-cms/types
+
+
+
+
+
 ## [0.0.35](https://github.com/The-Code-Monkey/PaperCMS/compare/@nucleus-cms/types@0.0.34...@nucleus-cms/types@0.0.35) (2023-07-16)
 
 **Note:** Version bump only for package @nucleus-cms/types
