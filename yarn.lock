@@ -5019,7 +5019,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:7":
+"babel-loader@npm:7.1.5":
   version: 7.1.5
   resolution: "babel-loader@npm:7.1.5"
   dependencies:
@@ -12227,7 +12227,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nucleus-cms@workspace:."
   dependencies:
-    babel-loader: 7
+    babel-loader: 7.1.5
     install-peers: 1.0.4
     lerna: 7.1.5
   languageName: unknown
