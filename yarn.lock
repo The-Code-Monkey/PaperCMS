@@ -2828,7 +2828,7 @@ __metadata:
     "@nucleus-cms/db": 1.1.66
     "@nucleus-cms/utils": 1.1.66
     "@supabase/auth-helpers-nextjs": 0.7.4
-    "@supabase/gotrue-js": 2.46.2
+    "@supabase/gotrue-js": 2.48.1
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.32.0
     "@techstack/components": 1.2.24
@@ -2875,7 +2875,7 @@ __metadata:
     "@nucleus-cms/types": 1.1.66
     "@nucleus-cms/utils": 1.1.66
     "@supabase/auth-helpers-nextjs": 0.7.4
-    "@supabase/gotrue-js": 2.46.2
+    "@supabase/gotrue-js": 2.48.1
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.32.0
     "@techstack/tcm-cli": 1.2.24
@@ -2899,7 +2899,7 @@ __metadata:
   dependencies:
     "@nucleus-cms/utils": 1.1.66
     "@supabase/auth-helpers-nextjs": 0.7.4
-    "@supabase/gotrue-js": 2.46.2
+    "@supabase/gotrue-js": 2.48.1
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.32.0
     "@techstack/tcm-cli": 1.2.24
@@ -2922,7 +2922,7 @@ __metadata:
   resolution: "@nucleus-cms/utils@workspace:packages/utils"
   dependencies:
     "@supabase/auth-helpers-nextjs": 0.7.4
-    "@supabase/gotrue-js": 2.46.2
+    "@supabase/gotrue-js": 2.48.1
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.32.0
     "@techstack/tcm-cli": 1.2.24
@@ -3455,7 +3455,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/gotrue-js@npm:2.46.2, @supabase/gotrue-js@npm:^2.46.1":
+"@supabase/gotrue-js@npm:2.48.1":
+  version: 2.48.1
+  resolution: "@supabase/gotrue-js@npm:2.48.1"
+  dependencies:
+    cross-fetch: ^3.1.5
+  checksum: 97679b34dfc0eb9aa830cc96892d4be6a90346354acfda9b5281713127947ced76d3a2d936c3c5759f124675923e5d29fa367e94761b493d107f02199a86b36b
+  languageName: node
+  linkType: hard
+
+"@supabase/gotrue-js@npm:^2.46.1":
   version: 2.46.2
   resolution: "@supabase/gotrue-js@npm:2.46.2"
   dependencies:
