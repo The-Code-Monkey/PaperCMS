@@ -3559,6 +3559,10 @@ __metadata:
       optional: true
     "@supabase/supabase-js":
       optional: true
+    "@typescript-eslint/eslint-plugin":
+      optional: true
+    eslint-plugin-import:
+      optional: true
   languageName: unknown
   linkType: soft
 
