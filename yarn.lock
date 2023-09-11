@@ -3451,7 +3451,7 @@ __metadata:
     "@supabase/gotrue-js": 2.48.1
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.33.1
-    "@techstack/components": 1.2.74
+    "@techstack/components": 1.2.76
     "@techstack/tcm-cli": 1.2.72
     "@uiw/react-md-editor": 3.23.5
     install-peers-cli: 2.2.0
@@ -4151,31 +4151,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-table@npm:8.9.7":
-  version: 8.9.7
-  resolution: "@tanstack/react-table@npm:8.9.7"
+"@tanstack/react-table@npm:8.9.8":
+  version: 8.9.8
+  resolution: "@tanstack/react-table@npm:8.9.8"
   dependencies:
-    "@tanstack/table-core": 8.9.7
+    "@tanstack/table-core": 8.9.8
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 86bd00034ac56ca6293b267b13df573d81fd96bbadaa28a64ac98d15b56b3c9aacdd73ce8f3f6db6fdd8f579a1b0c851b420d34553ee269353e7454e782513cd
+  checksum: efbdd291dfb10fff1185f9410078d5fba5f54aa087e7d842a7c2ca6877374316ba7b0cbbfb27303bc174ff7d212587a33c00bba8bbf122bcacf07affb545eb28
   languageName: node
   linkType: hard
 
-"@tanstack/table-core@npm:8.9.7":
-  version: 8.9.7
-  resolution: "@tanstack/table-core@npm:8.9.7"
-  checksum: a7ae594568b871b273fa27967c431928d2a35d2416fb903a634cc94ea2100631a1bfe3eb915a17b434671c2419dcde5f26db954af5cf2b417a10f00e6a217911
+"@tanstack/table-core@npm:8.9.8":
+  version: 8.9.8
+  resolution: "@tanstack/table-core@npm:8.9.8"
+  checksum: 9dde7eaa4e6132e1242f2f39b76c6b3263102994e1d2c1a27b49ebabb9b7c4ef1a065a4889d8b31a29b04b612e89ad92fd190d5c1656bfa38dd1509bc41a94b9
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.2.74":
-  version: 1.2.74
-  resolution: "@techstack/components@npm:1.2.74"
+"@techstack/components@npm:1.2.76":
+  version: 1.2.76
+  resolution: "@techstack/components@npm:1.2.76"
   dependencies:
     "@emotion/is-prop-valid": 1.2.1
-    "@tanstack/react-table": 8.9.7
+    "@tanstack/react-table": 8.9.8
     "@techstack/memoize": 1.2.72
     "@techstack/react-feather": 1.2.72
     "@techstack/react-lazy-named": 1.2.72
@@ -4194,7 +4194,7 @@ __metadata:
     react-table: 7.8.0
     react-virtual: 2.10.4
     styled-components: 6.0.7
-  checksum: adbddeadd42f3ae9e3c0e3607783ae83f8275a79d3bb0cc6478f532a6bc5fd00dc65571dd52533bff4735999084753a0f34f839aad0b5f918b4fa08968fbe1a9
+  checksum: 66679347c84139f3d7bc90c7c191d7a0457cc082b5a93f039e0951a5eb16768c42c9ead0909005b0c5280fbfd911e382a9739b937971b792981d39a834036b91
   languageName: node
   linkType: hard
 
@@ -4209,15 +4209,6 @@ __metadata:
   version: 1.2.72
   resolution: "@techstack/memoize@npm:1.2.72"
   checksum: 103e66601a11680192ea2f7eb953d241c35e535b66ab01704b13bdfd1223e6a09820971d44892434e7f47a6cf5925a2ea99b27f465a61a0ae57ae3c2f253c007
-  languageName: node
-  linkType: hard
-
-"@techstack/react-feather@npm:1.2.27":
-  version: 1.2.27
-  resolution: "@techstack/react-feather@npm:1.2.27"
-  peerDependencies:
-    react: 18.2.0
-  checksum: e5aef7dbadfff474c2a6b01d171a733c0037f89a54d384a25259007d7ec250e1082dca2f4863a734540c797afe0580419e4aee34119c8193397ac1ed851c234f
   languageName: node
   linkType: hard
 
@@ -13047,7 +13038,7 @@ __metadata:
     "@nucleus-cms/utils": "workspace:*"
     "@supabase/auth-helpers-nextjs": 0.7.4
     "@supabase/supabase-js": 2.33.1
-    "@techstack/react-feather": 1.2.27
+    "@techstack/react-feather": 1.2.72
     "@techstack/theme": 1.2.72
     "@types/node": 20.5.7
     "@types/react": 18.2.21
