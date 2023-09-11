@@ -3546,6 +3546,8 @@ __metadata:
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.33.1
     "@techstack/tcm-cli": 1.2.72
+    "@typescript-eslint/eslint-plugin": ^6.6.0
+    eslint-plugin-import: ^2.28.1
     install-peers-cli: 2.2.0
     uuid: 9.0.0
   dependenciesMeta:
@@ -4771,7 +4773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:6.6.0":
+"@typescript-eslint/eslint-plugin@npm:6.6.0, @typescript-eslint/eslint-plugin@npm:^6.6.0":
   version: 6.6.0
   resolution: "@typescript-eslint/eslint-plugin@npm:6.6.0"
   dependencies:
@@ -7897,7 +7899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:2.28.1":
+"eslint-plugin-import@npm:2.28.1, eslint-plugin-import@npm:^2.28.1":
   version: 2.28.1
   resolution: "eslint-plugin-import@npm:2.28.1"
   dependencies:
