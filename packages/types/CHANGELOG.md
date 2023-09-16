@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.78](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.77...v1.1.78) (2023-09-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency uuid to v9.0.1 ([fdcc96c](https://github.com/The-Code-Monkey/PaperCMS/commit/fdcc96cf10dc311e234a9323341ae065dd8cbc63))
+
+
+
+
+
 ## [1.1.75](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.74...v1.1.75) (2023-09-12)
 
 **Note:** Version bump only for package @nucleus-cms/types
