@@ -30,7 +30,7 @@
   "dependencies": {
     "@nucleus-cms/types": "1.1.75",
     "@nucleus-cms/utils": "1.1.75",
-    "uuid": "9.0.0"
+    "uuid": "9.0.1"
   },
   "optionalDependencies": {
     "@supabase/auth-helpers-nextjs": "0.7.4",
