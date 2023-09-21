@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/components",
-  "version": "1.1.85",
+  "version": "1.1.86",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -30,8 +30,8 @@
   "dependencies": {
     "@hello-pangea/dnd": "16.3.0",
     "@minoru/react-dnd-treeview": "3.4.4",
-    "@nucleus-cms/db": "1.1.85",
-    "@nucleus-cms/utils": "1.1.85",
+    "@nucleus-cms/db": "1.1.86",
+    "@nucleus-cms/utils": "1.1.86",
     "@techstack/components": "1.2.107",
     "@uiw/react-md-editor": "3.23.5",
     "react-dnd": "16.0.1",
