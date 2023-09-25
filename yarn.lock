@@ -3518,7 +3518,7 @@ __metadata:
     "@supabase/supabase-js": 2.33.1
     "@techstack/components": 1.2.107
     "@techstack/tcm-cli": 1.2.107
-    "@uiw/react-md-editor": 3.23.5
+    "@uiw/react-md-editor": 3.23.6
     install-peers-cli: 2.2.0
     react-dnd: 16.0.1
     react-quill: 2.0.0
@@ -5293,9 +5293,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uiw/react-md-editor@npm:3.23.5":
-  version: 3.23.5
-  resolution: "@uiw/react-md-editor@npm:3.23.5"
+"@uiw/react-md-editor@npm:3.23.6":
+  version: 3.23.6
+  resolution: "@uiw/react-md-editor@npm:3.23.6"
   dependencies:
     "@babel/runtime": ^7.14.6
     "@uiw/react-markdown-preview": ^4.1.14
@@ -5304,7 +5304,7 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: e282e6a776c17fc4bf12b2c33a40b090c3f8ed4e01a6348729003b30b36028c270676a476a649a7a1ccb28ca470961e96fd0f9e11a92263e1a916ef302202185
+  checksum: 9d97bc9e4a0b0c885fe0974b0f9ea58a1a6a05cebacb2b85587e034c7abd51c371608a8835c5f3b097c296013483ed9854e3665eb06cb009516206bee25faa7f
   languageName: node
   linkType: hard
 
