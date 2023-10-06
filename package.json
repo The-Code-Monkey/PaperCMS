@@ -74,5 +74,5 @@
   "dependencies": {
     "install-peers": "1.0.4"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.4"
 }
