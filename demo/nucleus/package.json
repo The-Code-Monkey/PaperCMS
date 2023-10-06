@@ -27,7 +27,7 @@
     "use-dark-mode": "2.3.1"
   },
   "devDependencies": {
-    "@types/node": "20.8.0",
+    "@types/node": "20.8.2",
     "@types/react": "18.2.23",
     "eslint-config-next": "13.4.19",
     "typescript": "5.2.2"
