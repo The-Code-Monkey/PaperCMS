@@ -14,7 +14,6 @@
   "automergeStrategy": "squash",
   "automerge": true,
   "rangeStrategy": "pin",
-  "prConcurrentLimit": 1,
   "packageRules": [
     {
       "packageNames": ["node"],
