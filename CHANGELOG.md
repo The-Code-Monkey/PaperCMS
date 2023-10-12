@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.105](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.104...v1.1.105) (2023-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v1.2.195 ([1ac1b8c](https://github.com/The-Code-Monkey/PaperCMS/commit/1ac1b8c3873a6c83ea245a09ea8aa8c7483cc5da))
+
+
+
+
+
 ## [1.1.104](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.103...v1.1.104) (2023-10-11)
 
 
