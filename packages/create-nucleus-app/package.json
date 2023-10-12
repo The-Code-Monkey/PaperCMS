@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@techstack/tcm-cli": "1.2.192",
-    "@types/node": "20.8.4",
+    "@types/node": "20.8.5",
     "typescript": "5.2.2"
   }
 }
