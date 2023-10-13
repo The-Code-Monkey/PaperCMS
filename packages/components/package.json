@@ -33,7 +33,7 @@
     "@nucleus-cms/db": "1.1.107",
     "@nucleus-cms/utils": "1.1.107",
     "@techstack/components": "1.2.198",
-    "@uiw/react-md-editor": "3.23.6",
+    "@uiw/react-md-editor": "3.24.0",
     "react-dnd": "16.0.1",
     "react-quill": "2.0.0",
     "uuid": "9.0.1"
