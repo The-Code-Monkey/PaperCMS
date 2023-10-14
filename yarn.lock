@@ -3538,7 +3538,7 @@ __metadata:
     "@supabase/gotrue-js": 2.55.0
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.33.1
-    "@techstack/components": 1.2.198
+    "@techstack/components": 1.2.204
     "@techstack/tcm-cli": 1.2.198
     "@uiw/react-md-editor": 3.24.0
     install-peers-cli: 2.2.0
@@ -4331,35 +4331,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-table@npm:8.10.6":
-  version: 8.10.6
-  resolution: "@tanstack/react-table@npm:8.10.6"
+"@tanstack/react-table@npm:8.10.7":
+  version: 8.10.7
+  resolution: "@tanstack/react-table@npm:8.10.7"
   dependencies:
-    "@tanstack/table-core": 8.10.6
+    "@tanstack/table-core": 8.10.7
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 4b920fa36c70ed2de356c8c0e99f497f6ee8ab5bc74bc57f1f9aa8cc5d580ea3eb4a7743a03ad149fc43629efb157c592aba620141fb230d5529646dd6c7c002
+  checksum: f8f19ae3ad8531e0f3cb838b61213d9acd0b64b27d1a8a05a699e6ed50e25c9d3c9478ae3f6d20883288f601eec06e8264fac9503b36122471c2f8778782e1e2
   languageName: node
   linkType: hard
 
-"@tanstack/table-core@npm:8.10.6":
-  version: 8.10.6
-  resolution: "@tanstack/table-core@npm:8.10.6"
-  checksum: 05e7f15171f02053d1a9e552a7877e878a827635d3d4ed50387fa3d0e4ede9eb325eae758a4faa921dc2dd552302f4b49bb3b540e3511bff16b6a2b92d450429
+"@tanstack/table-core@npm:8.10.7":
+  version: 8.10.7
+  resolution: "@tanstack/table-core@npm:8.10.7"
+  checksum: 2a364917e7ab051ef3f33d6f18e5e1ddb75cfed4b5ee0e2b9c74a8cb72d3b86cdd4ffbab67565c68b4333f761b6fde9a7215196387a9a3b3d5811119d8859bad
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.2.198":
-  version: 1.2.198
-  resolution: "@techstack/components@npm:1.2.198"
+"@techstack/components@npm:1.2.204":
+  version: 1.2.204
+  resolution: "@techstack/components@npm:1.2.204"
   dependencies:
     "@emotion/is-prop-valid": 1.2.1
-    "@tanstack/react-table": 8.10.6
+    "@tanstack/react-table": 8.10.7
     "@techstack/memoize": 1.2.198
     "@techstack/react-feather": 1.2.198
     "@techstack/react-lazy-named": 1.2.198
-    "@techstack/styled-system": 1.0.235
+    "@techstack/styled-system": 1.0.237
     "@techstack/theme": 1.2.198
     "@types/react-table": 7.7.16
     classnames: 2.3.2
@@ -4369,19 +4369,12 @@ __metadata:
     react: 18.2.0
     react-date-picker: 10.5.1
     react-datetime-picker: 5.5.2
-    react-i18next: 13.2.2
+    react-i18next: 13.3.0
     react-responsive-carousel: 3.2.23
     react-table: 7.8.0
     react-virtual: 2.10.4
     styled-components: 6.0.8
-  checksum: 4f0d29d8e6217991ce33053be3da68fd985cf87d45748e6d4954ce66e1073b5f3a61add6a45841af65825838e57811f376b6dbae86230393df2d981fc647fe44
-  languageName: node
-  linkType: hard
-
-"@techstack/memoize@npm:1.2.196":
-  version: 1.2.196
-  resolution: "@techstack/memoize@npm:1.2.196"
-  checksum: 793532f28cebc8248fee0e025e81490d0cc4e56af3332117d54f7c1b716099f04115731e4b0175bf71c929cce365fc7ff683110308becf32935721984088224d
+  checksum: 3ffd0cdfe14a108c7658973c6d13d23a0287499efa9ead1f0c4d9b5b7df61abb430676dc43ad40ddb52d35453532ff98fc44bb638ca381e319728b4b83515297
   languageName: node
   linkType: hard
 
@@ -4412,15 +4405,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/styled-system@npm:1.0.235":
-  version: 1.0.235
-  resolution: "@techstack/styled-system@npm:1.0.235"
+"@techstack/styled-system@npm:1.0.237":
+  version: 1.0.237
+  resolution: "@techstack/styled-system@npm:1.0.237"
   dependencies:
     "@emotion/is-prop-valid": 1.2.1
-    "@techstack/memoize": 1.2.196
+    "@techstack/memoize": 1.2.198
     csstype: 3.1.2
     react: 18.2.0
-  checksum: f240bc41167bc46deca170a4d5f18f1c172f32f77c9d6511c06757ae386777f57ac7d58b557d18a6af04ccff6a92c74e53506c865959b0f39271ff64f046e034
+  checksum: 5349cda5922b94145de7c00adcee77c666beaa7db56d4f68ae15a6367c9b6dcde6f3039f805eb6139f99b970c642139f93f86307c807e565eb61fc4d4c2f9d8d
   languageName: node
   linkType: hard
 
@@ -14549,9 +14542,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:13.2.2":
-  version: 13.2.2
-  resolution: "react-i18next@npm:13.2.2"
+"react-i18next@npm:13.3.0":
+  version: 13.3.0
+  resolution: "react-i18next@npm:13.3.0"
   dependencies:
     "@babel/runtime": ^7.22.5
     html-parse-stringify: ^3.0.1
@@ -14563,7 +14556,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 2b85bfb347af1a00add1c02901025706f7d2037fade4e8aa08159287ddf012e8cf35626eb9f5c578b9d1c24c065c69f2ad4b5a3087fb5cdbea540f8bc18c0f59
+  checksum: 6c950a4497215df03b6d6f12c63153656cb482ddb15e944c514ae8e85e99ebe80d466aa615abc73d77eac69042eb4559a6f87006f018f433f438d889a22bab01
   languageName: node
   linkType: hard
 
