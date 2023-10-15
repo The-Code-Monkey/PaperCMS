@@ -3532,8 +3532,8 @@ __metadata:
   dependencies:
     "@hello-pangea/dnd": 16.3.0
     "@minoru/react-dnd-treeview": 3.4.4
-    "@nucleus-cms/db": 1.1.111
-    "@nucleus-cms/utils": 1.1.111
+    "@nucleus-cms/db": 1.1.112
+    "@nucleus-cms/utils": 1.1.112
     "@supabase/auth-helpers-nextjs": 0.8.1
     "@supabase/gotrue-js": 2.55.0
     "@supabase/storage-js": 2.5.1
@@ -3575,12 +3575,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nucleus-cms/db@1.1.111, @nucleus-cms/db@workspace:*, @nucleus-cms/db@workspace:packages/db":
+"@nucleus-cms/db@1.1.112, @nucleus-cms/db@workspace:*, @nucleus-cms/db@workspace:packages/db":
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/db@workspace:packages/db"
   dependencies:
-    "@nucleus-cms/types": 1.1.111
-    "@nucleus-cms/utils": 1.1.111
+    "@nucleus-cms/types": 1.1.112
+    "@nucleus-cms/utils": 1.1.112
     "@supabase/auth-helpers-nextjs": 0.8.1
     "@supabase/gotrue-js": 2.55.0
     "@supabase/storage-js": 2.5.1
@@ -3600,11 +3600,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nucleus-cms/types@1.1.111, @nucleus-cms/types@workspace:*, @nucleus-cms/types@workspace:packages/types":
+"@nucleus-cms/types@1.1.112, @nucleus-cms/types@workspace:*, @nucleus-cms/types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/types@workspace:packages/types"
   dependencies:
-    "@nucleus-cms/utils": 1.1.111
+    "@nucleus-cms/utils": 1.1.112
     "@supabase/auth-helpers-nextjs": 0.8.1
     "@supabase/gotrue-js": 2.55.0
     "@supabase/storage-js": 2.5.1
@@ -3624,7 +3624,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nucleus-cms/utils@1.1.111, @nucleus-cms/utils@workspace:*, @nucleus-cms/utils@workspace:packages/utils":
+"@nucleus-cms/utils@1.1.112, @nucleus-cms/utils@workspace:*, @nucleus-cms/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/utils@workspace:packages/utils"
   dependencies:
