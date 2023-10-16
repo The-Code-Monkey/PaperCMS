@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.115](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.114...v1.1.115) (2023-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @uiw/react-md-editor to v3.24.1 ([205520e](https://github.com/The-Code-Monkey/PaperCMS/commit/205520e7f01f0a2852799e21d9e317a8d518c667))
+
+
+
+
+
 ## [1.1.114](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.113...v1.1.114) (2023-10-16)
 
 
