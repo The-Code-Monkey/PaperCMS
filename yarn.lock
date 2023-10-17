@@ -3502,7 +3502,7 @@ __metadata:
     "@supabase/gotrue-js": 2.55.0
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.33.1
-    "@techstack/components": 1.2.217
+    "@techstack/components": 1.2.219
     "@techstack/tcm-cli": 1.2.217
     "@uiw/react-md-editor": 3.24.1
     install-peers-cli: 2.2.0
@@ -4314,16 +4314,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.2.217":
-  version: 1.2.217
-  resolution: "@techstack/components@npm:1.2.217"
+"@techstack/components@npm:1.2.219":
+  version: 1.2.219
+  resolution: "@techstack/components@npm:1.2.219"
   dependencies:
     "@emotion/is-prop-valid": 1.2.1
     "@tanstack/react-table": 8.10.7
     "@techstack/memoize": 1.2.217
     "@techstack/react-feather": 1.2.217
     "@techstack/react-lazy-named": 1.2.217
-    "@techstack/styled-system": 1.0.243
+    "@techstack/styled-system": 1.0.244
     "@techstack/theme": 1.2.217
     "@types/react-table": 7.7.16
     classnames: 2.3.2
@@ -4338,14 +4338,7 @@ __metadata:
     react-table: 7.8.0
     react-virtual: 2.10.4
     styled-components: 6.0.8
-  checksum: 8140ad68a9f2c982f884eaf8c7c2f21aeef6076264c4a0bc67c5996578621c24b401947b15d28460c31ee77e734de9d3458755be7ca3d183aa1ed541dabf7a52
-  languageName: node
-  linkType: hard
-
-"@techstack/memoize@npm:1.2.214":
-  version: 1.2.214
-  resolution: "@techstack/memoize@npm:1.2.214"
-  checksum: ce91721c2f88b9d66e553d39a09639433ee81a446a08e46b41ea351b9e738a96b91a009f80a6ae0a852a927c015b94a06157582ea52550ea2f48d24cab8dc016
+  checksum: 4488008168e8d908302dcf64af5125ad80438ea831aa38b681ba61e8ebcbd226d29a78eddd42066eea68e7a29b6ea3d99faf4d95f09aa53166b24875d10a3e1d
   languageName: node
   linkType: hard
 
@@ -4376,15 +4369,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/styled-system@npm:1.0.243":
-  version: 1.0.243
-  resolution: "@techstack/styled-system@npm:1.0.243"
+"@techstack/styled-system@npm:1.0.244":
+  version: 1.0.244
+  resolution: "@techstack/styled-system@npm:1.0.244"
   dependencies:
     "@emotion/is-prop-valid": 1.2.1
-    "@techstack/memoize": 1.2.214
+    "@techstack/memoize": 1.2.217
     csstype: 3.1.2
     react: 18.2.0
-  checksum: e14016d743a14a33bf3a3ddd8913733b3474f7414d6b8feb50f77608cc9223909b5c37e25dcec0e5802ad60770345019da02de89f81ec1e65f3d685fa406172a
+  checksum: 86a747aecd94a542484fcccdcec49e888cbbc9da6543c3cd2a0270cafa2d05a6aa0dd8aeb24ba7bd76df4bea5f85b057cc61963d456ddfbaf18dad1d03566555
   languageName: node
   linkType: hard
 
