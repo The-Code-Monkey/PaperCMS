@@ -32,7 +32,7 @@
   },
   "optionalDependencies": {
     "@supabase/auth-helpers-nextjs": "0.8.1",
-    "@supabase/gotrue-js": "2.55.0",
+    "@supabase/gotrue-js": "2.56.0",
     "@supabase/storage-js": "2.5.1",
     "@supabase/supabase-js": "2.33.1",
     "@typescript-eslint/eslint-plugin": "6.8.0",
