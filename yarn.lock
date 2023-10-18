@@ -3502,7 +3502,7 @@ __metadata:
     "@supabase/gotrue-js": 2.55.0
     "@supabase/storage-js": 2.5.1
     "@supabase/supabase-js": 2.33.1
-    "@techstack/components": 1.2.219
+    "@techstack/components": 1.2.220
     "@techstack/tcm-cli": 1.2.217
     "@uiw/react-md-editor": 3.24.1
     install-peers-cli: 2.2.0
@@ -4314,9 +4314,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.2.219":
-  version: 1.2.219
-  resolution: "@techstack/components@npm:1.2.219"
+"@techstack/components@npm:1.2.220":
+  version: 1.2.220
+  resolution: "@techstack/components@npm:1.2.220"
   dependencies:
     "@emotion/is-prop-valid": 1.2.1
     "@tanstack/react-table": 8.10.7
@@ -4338,7 +4338,7 @@ __metadata:
     react-table: 7.8.0
     react-virtual: 2.10.4
     styled-components: 6.0.8
-  checksum: 4488008168e8d908302dcf64af5125ad80438ea831aa38b681ba61e8ebcbd226d29a78eddd42066eea68e7a29b6ea3d99faf4d95f09aa53166b24875d10a3e1d
+  checksum: 2e98fea639ed686536a4a02338c6a7a29b8b4d06d5f0ed97233454b50c1bcf246c7fc942714bd9c660789cc135182d2bff7618d447867b1b52834335e1e7f6e8
   languageName: node
   linkType: hard
 
