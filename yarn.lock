@@ -4755,14 +4755,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.31":
-  version: 18.2.31
-  resolution: "@types/react@npm:18.2.31"
+"@types/react@npm:18.2.32":
+  version: 18.2.32
+  resolution: "@types/react@npm:18.2.32"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: d2793873aef68038e0dc3ee05a573c663fcd3ba7402f1134a633df25aaeb72fd397479d5a5f02e9edc8cd5d000479a73f7bdc64cf00c50fb022c883f22e1fd0f
+  checksum: 648662cd852107d7933eee072fa5826069aca1ce15602db8573393ec694780de035cfac4d76f239762e2453b53a4aa8767ae057789661ccfee4d1311040953b9
   languageName: node
   linkType: hard
 
@@ -13221,7 +13221,7 @@ __metadata:
     "@techstack/react-feather": "npm:1.2.256"
     "@techstack/theme": "npm:1.2.257"
     "@types/node": "npm:20.8.8"
-    "@types/react": "npm:18.2.31"
+    "@types/react": "npm:18.2.32"
     babel-loader: "npm:9.1.3"
     babel-plugin-transform-remove-imports: "npm:1.7.0"
     eslint-config-next: "npm:13.5.6"
