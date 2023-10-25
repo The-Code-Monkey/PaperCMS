@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.137](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.136...v1.1.137) (2023-10-25)
+
+
+### Bug Fixes
+
+* **deps:** update techstack mono repo ([7f67cb0](https://github.com/The-Code-Monkey/PaperCMS/commit/7f67cb01678f40f401d3fe6f1ba8aa7c7cfba287))
+
+
+
+
+
 ## [1.1.135](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.134...v1.1.135) (2023-10-23)
 
 **Note:** Version bump only for package @nucleus-cms/types
