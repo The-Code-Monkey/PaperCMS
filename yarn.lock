@@ -3438,7 +3438,7 @@ __metadata:
     "@minoru/react-dnd-treeview": "npm:3.4.4"
     "@nucleus-cms/db": "npm:1.1.141"
     "@nucleus-cms/utils": "npm:1.1.141"
-    "@supabase/auth-helpers-nextjs": "npm:0.8.1"
+    "@supabase/auth-helpers-nextjs": "npm:0.8.2"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
     "@supabase/supabase-js": "npm:2.33.1"
@@ -3485,7 +3485,7 @@ __metadata:
   dependencies:
     "@nucleus-cms/types": "npm:1.1.141"
     "@nucleus-cms/utils": "npm:1.1.141"
-    "@supabase/auth-helpers-nextjs": "npm:0.8.1"
+    "@supabase/auth-helpers-nextjs": "npm:0.8.2"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
     "@supabase/supabase-js": "npm:2.33.1"
@@ -3509,7 +3509,7 @@ __metadata:
   resolution: "@nucleus-cms/types@workspace:packages/types"
   dependencies:
     "@nucleus-cms/utils": "npm:1.1.141"
-    "@supabase/auth-helpers-nextjs": "npm:0.8.1"
+    "@supabase/auth-helpers-nextjs": "npm:0.8.2"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
     "@supabase/supabase-js": "npm:2.33.1"
@@ -3532,7 +3532,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/utils@workspace:packages/utils"
   dependencies:
-    "@supabase/auth-helpers-nextjs": "npm:0.8.1"
+    "@supabase/auth-helpers-nextjs": "npm:0.8.2"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
     "@supabase/supabase-js": "npm:2.33.1"
@@ -4131,15 +4131,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-helpers-nextjs@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@supabase/auth-helpers-nextjs@npm:0.8.1"
+"@supabase/auth-helpers-nextjs@npm:0.8.2":
+  version: 0.8.2
+  resolution: "@supabase/auth-helpers-nextjs@npm:0.8.2"
   dependencies:
     "@supabase/auth-helpers-shared": "npm:0.5.0"
     set-cookie-parser: "npm:^2.6.0"
   peerDependencies:
     "@supabase/supabase-js": ^2.19.0
-  checksum: 00c6e09b31fee26a17ad49788b8dba06a1371f1d56a5653161ac9b206be93630733dd189a8054aecfa2ccde64ab2cc0e19069d7b67086f1ea792c3d7e7383bdd
+  checksum: 0294f2a81b91801e2949fbbd958ce9912731ddafd6e16aa62d845e96b66c29e5072ed7c9de8fcde05e6728d9b7abb3b675f044fe3d242a9dfe628a3d03b871a5
   languageName: node
   linkType: hard
 
@@ -13223,7 +13223,7 @@ __metadata:
     "@nucleus-cms/db": "workspace:*"
     "@nucleus-cms/types": "workspace:*"
     "@nucleus-cms/utils": "workspace:*"
-    "@supabase/auth-helpers-nextjs": "npm:0.8.1"
+    "@supabase/auth-helpers-nextjs": "npm:0.8.2"
     "@supabase/supabase-js": "npm:2.33.1"
     "@techstack/react-feather": "npm:1.2.262"
     "@techstack/theme": "npm:1.2.262"
