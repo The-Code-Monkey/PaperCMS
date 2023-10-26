@@ -18,7 +18,7 @@
     "sade": "1.8.1"
   },
   "devDependencies": {
-    "@techstack/tcm-cli": "1.2.260",
+    "@techstack/tcm-cli": "1.2.262",
     "@types/node": "20.8.9",
     "typescript": "5.2.2"
   }
