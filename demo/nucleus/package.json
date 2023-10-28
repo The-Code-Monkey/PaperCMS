@@ -13,7 +13,7 @@
     "@nucleus-cms/db": "workspace:*",
     "@nucleus-cms/types": "workspace:*",
     "@nucleus-cms/utils": "workspace:*",
-    "@supabase/auth-helpers-nextjs": "0.8.2",
+    "@supabase/auth-helpers-nextjs": "0.8.3",
     "@supabase/supabase-js": "2.33.1",
     "@techstack/react-feather": "1.2.269",
     "@techstack/theme": "1.2.269",
