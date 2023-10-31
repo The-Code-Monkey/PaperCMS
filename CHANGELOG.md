@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.152](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.151...v1.1.152) (2023-10-31)
+
+**Note:** Version bump only for package nucleus-cms
+
+
+
+
+
 ## [1.1.151](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.150...v1.1.151) (2023-10-31)
 
 **Note:** Version bump only for package nucleus-cms
