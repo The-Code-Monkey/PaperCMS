@@ -3436,8 +3436,8 @@ __metadata:
   dependencies:
     "@hello-pangea/dnd": "npm:16.3.0"
     "@minoru/react-dnd-treeview": "npm:3.4.4"
-    "@nucleus-cms/db": "npm:1.1.150"
-    "@nucleus-cms/utils": "npm:1.1.150"
+    "@nucleus-cms/db": "npm:1.1.151"
+    "@nucleus-cms/utils": "npm:1.1.151"
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
@@ -3479,12 +3479,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nucleus-cms/db@npm:1.1.150, @nucleus-cms/db@workspace:*, @nucleus-cms/db@workspace:packages/db":
+"@nucleus-cms/db@npm:1.1.151, @nucleus-cms/db@workspace:*, @nucleus-cms/db@workspace:packages/db":
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/db@workspace:packages/db"
   dependencies:
-    "@nucleus-cms/types": "npm:1.1.150"
-    "@nucleus-cms/utils": "npm:1.1.150"
+    "@nucleus-cms/types": "npm:1.1.151"
+    "@nucleus-cms/utils": "npm:1.1.151"
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
@@ -3504,11 +3504,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nucleus-cms/types@npm:1.1.150, @nucleus-cms/types@workspace:*, @nucleus-cms/types@workspace:packages/types":
+"@nucleus-cms/types@npm:1.1.151, @nucleus-cms/types@workspace:*, @nucleus-cms/types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/types@workspace:packages/types"
   dependencies:
-    "@nucleus-cms/utils": "npm:1.1.150"
+    "@nucleus-cms/utils": "npm:1.1.151"
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.1"
@@ -3528,7 +3528,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nucleus-cms/utils@npm:1.1.150, @nucleus-cms/utils@workspace:*, @nucleus-cms/utils@workspace:packages/utils":
+"@nucleus-cms/utils@npm:1.1.151, @nucleus-cms/utils@workspace:*, @nucleus-cms/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/utils@workspace:packages/utils"
   dependencies:
