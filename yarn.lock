@@ -3440,7 +3440,7 @@ __metadata:
     "@nucleus-cms/utils": "npm:1.1.151"
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
-    "@supabase/storage-js": "npm:2.5.1"
+    "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.33.1"
     "@techstack/components": "npm:1.3.10"
     "@techstack/tcm-cli": "npm:1.3.8"
@@ -3487,7 +3487,7 @@ __metadata:
     "@nucleus-cms/utils": "npm:1.1.151"
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
-    "@supabase/storage-js": "npm:2.5.1"
+    "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.33.1"
     "@techstack/tcm-cli": "npm:1.3.8"
     install-peers-cli: "npm:2.2.0"
@@ -3511,7 +3511,7 @@ __metadata:
     "@nucleus-cms/utils": "npm:1.1.151"
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
-    "@supabase/storage-js": "npm:2.5.1"
+    "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.33.1"
     "@techstack/tcm-cli": "npm:1.3.8"
     install-peers-cli: "npm:2.2.0"
@@ -3534,7 +3534,7 @@ __metadata:
   dependencies:
     "@supabase/auth-helpers-nextjs": "npm:0.8.4"
     "@supabase/gotrue-js": "npm:2.57.0"
-    "@supabase/storage-js": "npm:2.5.1"
+    "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.33.1"
     "@techstack/tcm-cli": "npm:1.3.8"
     "@typescript-eslint/eslint-plugin": "npm:6.9.1"
@@ -4210,7 +4210,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/storage-js@npm:2.5.1, @supabase/storage-js@npm:^2.5.1":
+"@supabase/storage-js@npm:2.5.4":
+  version: 2.5.4
+  resolution: "@supabase/storage-js@npm:2.5.4"
+  dependencies:
+    "@supabase/node-fetch": "npm:^2.6.14"
+  checksum: a541a282a6c247de785457db12d8e53d90d1b4fff0aabc76233c39c20ab8a10d9b41097ebf0b90985a0b8459db9e3bdc8a08ac5b1885b0fb417ff910af2b527a
+  languageName: node
+  linkType: hard
+
+"@supabase/storage-js@npm:^2.5.1":
   version: 2.5.1
   resolution: "@supabase/storage-js@npm:2.5.1"
   dependencies:
