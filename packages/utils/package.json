@@ -34,7 +34,7 @@
     "@supabase/auth-helpers-nextjs": "0.8.4",
     "@supabase/gotrue-js": "2.57.0",
     "@supabase/storage-js": "2.5.4",
-    "@supabase/supabase-js": "2.33.1",
+    "@supabase/supabase-js": "2.38.4",
     "@typescript-eslint/eslint-plugin": "6.9.1",
     "eslint-plugin-import": "2.29.0"
   }
