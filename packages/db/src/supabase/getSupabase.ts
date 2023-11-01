@@ -10,6 +10,7 @@ import {
   SignInWithPasswordCredentials,
   SignUpWithPasswordCredentials,
 } from '@supabase/gotrue-js';
+import { StorageError } from '@supabase/storage-js';
 import { RealtimeChannel } from '@supabase/supabase-js';
 import { v4 as uuid } from 'uuid';
 
@@ -35,11 +36,14 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
       ...credentials,
       ...options,
     });
-  
+
     if (error) {
-      return { data: { user: null, session: null }, error: { message: error.message } };
+      return {
+        data: { user: null, session: null },
+        error: { message: error.message },
+      };
     }
-  
+
     return { data, error: null };
   };
 
@@ -48,13 +52,19 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     credentials: SignUpWithPasswordCredentials,
     options?: AuthOptions
   ) => {
-    const { data, error } = await supabase.auth.signUp({ ...credentials, ...options });
+    const { data, error } = await supabase.auth.signUp({
+      ...credentials,
+      ...options,
+    });
 
-  if (error) {
-    return { data: { user: null, session: null }, error: { message: error.message } };
-  }
+    if (error) {
+      return {
+        data: { user: null, session: null },
+        error: { message: error.message },
+      };
+    }
 
-  return { data, error: null };
+    return { data, error: null };
   };
 
   // Sign Out
@@ -105,7 +115,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     const result = await supabase
       .from<Tables, TableType>(table)
       .select(columns ?? '*')
-      .eq(...(where ?? ['', '']) as [string, unknown]);
+      .eq(...((where ?? ['', '']) as [string, unknown]));
 
     const data = result.data as unknown as R | null;
     const error = result.error;
@@ -120,7 +130,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     row?: string
   ): Promise<{ error: string | null }> => {
     let error: string | null = null;
-  
+
     if (row) {
       if (data['id']) {
         delete data['id'];
@@ -129,13 +139,13 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
         .from(table)
         .update(data)
         .eq('id', parseInt(row, 10));
-  
+
       error = res.error ? res.error.message : null;
     } else {
       const res = await supabase.from(table).insert(data);
       error = res.error ? res.error.message : null;
     }
-  
+
     return { error };
   };
 
@@ -169,25 +179,32 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
     files: FileList,
     filePath: string,
     store: string = 'images'
-    ): Promise<any> => {
-    const filePromises = Array.from(files).map(async (file) => {
-        const { data: uploadData, error: uploadError } = await supabase.storage
+  ): Promise<{ url: string; error: StorageError }[]> => {
+    const filePromises = Array.from(files).map(async file => {
+      const { data: uploadData, error: uploadError } = await supabase.storage
+        .from(store)
+        .upload(`${filePath}/${uuid()}`, file);
+
+      if (uploadData?.path) {
+        const { data } = await supabase.storage
           .from(store)
-          .upload(`${filePath}/${uuid()}`, file);
-    
-        if (uploadData?.path) {
-          const { data } = await supabase.storage
-            .from(store)
-            .getPublicUrl(uploadData.path);
-    
-          return { url: data?.publicUrl, error: null };
-        }
-    
-        return { url: '', error: uploadError };
+          .getPublicUrl(uploadData.path);
+
+        return { url: data?.publicUrl, error: null };
+      }
+
+      return { url: '', error: uploadError };
+    });
+
+    return Promise.all(filePromises).then(results => {
+      return results.map(result => {
+        return {
+          url: result.url,
+          error: result.error as unknown as StorageError,
+        };
       });
-    
-      return Promise.all(filePromises);
-    };
+    });
+  };
 
   return {
     signIn,
