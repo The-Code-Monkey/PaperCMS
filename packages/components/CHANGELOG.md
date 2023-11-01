@@ -3,6 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.154](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.153...v1.1.154) (2023-11-01)
+
+**Note:** Version bump only for package @nucleus-cms/components
+
+
+
+
+
+## [1.1.153](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.152...v1.1.153) (2023-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v1.3.10 ([fff6c5f](https://github.com/The-Code-Monkey/PaperCMS/commit/fff6c5f7c4300a8297975958d0e2aa52e9642569))
+
+
+
+
+
+## [1.1.151](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.150...v1.1.151) (2023-10-31)
+
+**Note:** Version bump only for package @nucleus-cms/components
+
+
+
+
+
+## [1.1.150](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.149...v1.1.150) (2023-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update techstack mono repo ([d7bc78f](https://github.com/The-Code-Monkey/PaperCMS/commit/d7bc78f530c6b7f31279799e38ccea4b8d176398))
+
+
+
+
+
+## [1.1.149](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.148...v1.1.149) (2023-10-30)
+
+**Note:** Version bump only for package @nucleus-cms/components
+
+
+
+
+
+## [1.1.148](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.147...v1.1.148) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update techstack mono repo to v1.3.5 ([89669d4](https://github.com/The-Code-Monkey/PaperCMS/commit/89669d4062a35de749a25169c8e353f1b0fe0e37))
+
+
+
+
+
+## [1.1.147](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.146...v1.1.147) (2023-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v1.3.4 ([978f1f9](https://github.com/The-Code-Monkey/PaperCMS/commit/978f1f9d6e7cd017efeb6fed47ffeef019be2df0))
+
+
+
+
+
+## [1.1.146](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.145...v1.1.146) (2023-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update techstack mono repo to v1.3.2 ([989b741](https://github.com/The-Code-Monkey/PaperCMS/commit/989b7414be106471ad7b7f5b70e88c2cb2a8a5e8))
+
+
+
+
+
+## [1.1.145](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.144...v1.1.145) (2023-10-28)
+
+**Note:** Version bump only for package @nucleus-cms/components
+
+
+
+
+
 ## [1.1.144](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.143...v1.1.144) (2023-10-27)
 
 

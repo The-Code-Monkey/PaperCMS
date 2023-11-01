@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/types",
-  "version": "1.1.143",
+  "version": "1.1.151",
   "type": "module",
   "scripts": {
     "build": "tcm build",
@@ -24,15 +24,15 @@
     "src"
   ],
   "devDependencies": {
-    "@techstack/tcm-cli": "1.2.269",
+    "@techstack/tcm-cli": "1.3.8",
     "install-peers-cli": "2.2.0"
   },
   "dependencies": {
-    "@nucleus-cms/utils": "1.1.143",
+    "@nucleus-cms/utils": "1.1.151",
     "uuid": "9.0.1"
   },
   "optionalDependencies": {
-    "@supabase/auth-helpers-nextjs": "0.8.2",
+    "@supabase/auth-helpers-nextjs": "0.8.4",
     "@supabase/gotrue-js": "2.57.0",
     "@supabase/storage-js": "2.5.1",
     "@supabase/supabase-js": "2.33.1"
