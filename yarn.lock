@@ -3444,7 +3444,7 @@ __metadata:
     "@supabase/supabase-js": "npm:2.38.4"
     "@techstack/components": "npm:1.3.10"
     "@techstack/tcm-cli": "npm:1.3.8"
-    "@uiw/react-md-editor": "npm:3.24.1"
+    "@uiw/react-md-editor": "npm:3.25.1"
     install-peers-cli: "npm:2.2.0"
     react-dnd: "npm:16.0.1"
     react-quill: "npm:2.0.0"
@@ -5178,9 +5178,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uiw/react-markdown-preview@npm:^4.1.14":
-  version: 4.1.15
-  resolution: "@uiw/react-markdown-preview@npm:4.1.15"
+"@uiw/react-markdown-preview@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@uiw/react-markdown-preview@npm:4.2.1"
   dependencies:
     "@babel/runtime": "npm:^7.17.2"
     "@uiw/copy-to-clipboard": "npm:~1.0.12"
@@ -5188,7 +5188,7 @@ __metadata:
     rehype-attr: "npm:~2.1.0"
     rehype-autolink-headings: "npm:~6.1.1"
     rehype-ignore: "npm:^1.0.1"
-    rehype-prism-plus: "npm:1.6.1"
+    rehype-prism-plus: "npm:1.6.3"
     rehype-raw: "npm:^6.1.1"
     rehype-rewrite: "npm:~3.0.6"
     rehype-slug: "npm:~5.1.0"
@@ -5197,22 +5197,22 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 41281803ddf90daeca6879814b3d1840e2ad04a38e89ab6fe933b3adeb75358ff491d475597d93f46d04232a810225c2b9cc32d741f44257b96230c334a3e4ba
+  checksum: ae3101fb90f72f3e87df2eafbdbf50e4bd6238266649905ae4df84dfa52e105e0708c462c8423c6e165ce4d6ce3a30de3320fe428e5f5ab32df07c843c90a9f3
   languageName: node
   linkType: hard
 
-"@uiw/react-md-editor@npm:3.24.1":
-  version: 3.24.1
-  resolution: "@uiw/react-md-editor@npm:3.24.1"
+"@uiw/react-md-editor@npm:3.25.1":
+  version: 3.25.1
+  resolution: "@uiw/react-md-editor@npm:3.25.1"
   dependencies:
     "@babel/runtime": "npm:^7.14.6"
-    "@uiw/react-markdown-preview": "npm:^4.1.14"
+    "@uiw/react-markdown-preview": "npm:^4.2.1"
     rehype: "npm:~12.0.1"
     rehype-prism-plus: "npm:~1.6.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 046a3d15aa1bfb5aa58f8af9cbcd87bc84e77e74eca9a957663190801aa639e9f4f28c674f084109e727bdb51ea6b896eebd796a479293f252e473a86645d83d
+  checksum: 1544b71ed22e16a281c6dada6f6213af77ce26511e46a53d78cf5ed510e84f1f42dc636a4923063787d4fa23f3ec4e94f9a95e79d0f04f9785fecee07bb2b06d
   languageName: node
   linkType: hard
 
@@ -14948,21 +14948,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehype-prism-plus@npm:1.6.1":
-  version: 1.6.1
-  resolution: "rehype-prism-plus@npm:1.6.1"
-  dependencies:
-    hast-util-to-string: "npm:^2.0.0"
-    parse-numeric-range: "npm:^1.3.0"
-    refractor: "npm:^4.8.0"
-    rehype-parse: "npm:^8.0.2"
-    unist-util-filter: "npm:^4.0.0"
-    unist-util-visit: "npm:^4.0.0"
-  checksum: 5ee499bedc595104475b2b051b9d5ec3ecd76bbbd3d1d3045d26e0f421e39e1bdf5b665e01e1947b4f3fed14ef645c19f2b326a2de69733a00d18478b17cdda0
-  languageName: node
-  linkType: hard
-
-"rehype-prism-plus@npm:~1.6.1":
+"rehype-prism-plus@npm:1.6.3, rehype-prism-plus@npm:~1.6.1":
   version: 1.6.3
   resolution: "rehype-prism-plus@npm:1.6.3"
   dependencies:
