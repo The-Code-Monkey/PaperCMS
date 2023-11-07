@@ -93,6 +93,15 @@ const PreviewEditor = ({ fields, data, tid, id }: Props) => {
               menu={SiteConfig?.menu ?? []}
               style={SiteConfig?.styles.nav ?? {}}
             />
+            <pre style={{ width: '50vw', marginInline: 'auto' }}>
+              {JSON.stringify(
+                {
+                  content,
+                },
+                null,
+                2
+              )}
+            </pre>
             <ElementRenderer content={content} setContent={setContent} />
           </Box>
         </Box>

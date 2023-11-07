@@ -38,16 +38,25 @@ const ElementsAside = ({ onAddElement }: Props) => {
   };
 
   const handleDragStart =
-    (type: string) =>
-    (event: DragEvent<HTMLButtonElement>) => {
+    (type: string) => (event: DragEvent<HTMLButtonElement>) => {
       switch (type) {
-        case 'textarea':
-        default: {
+        case 'textarea': {
           event.dataTransfer.setData(
             'text',
             JSON.stringify({
               id: uuid(),
               type: 'textarea',
+              order: 0,
+            })
+          );
+          break;
+        }
+        default: {
+          event.dataTransfer.setData(
+            'text',
+            JSON.stringify({
+              id: uuid(),
+              type,
               order: 0,
             })
           );

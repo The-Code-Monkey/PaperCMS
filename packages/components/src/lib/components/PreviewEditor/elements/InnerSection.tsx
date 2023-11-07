@@ -127,7 +127,7 @@ const InnerSection = ({
                 h={'80vh'}
                 top={'50%'}
                 left={'50%'}
-                // @ts-ignore
+                // @ts-expect-error
                 style={{ transform: 'translate(-50%, -50%)' }}
                 bg={'neutrals.0'}
                 zIndex={1000}
@@ -136,17 +136,13 @@ const InnerSection = ({
                 <Box w={'full'} h={'full'}>
                   <Button
                     type={'button'}
-                    onClick={handleInitialInnerRendererSetContent(
-                      '2-columns'
-                    )}
+                    onClick={handleInitialInnerRendererSetContent('2-columns')}
                   >
                     Add Two Columns
                   </Button>
                   <Button
-                      type={'button'}
-                      onClick={handleInitialInnerRendererSetContent(
-                          '3-columns'
-                      )}
+                    type={'button'}
+                    onClick={handleInitialInnerRendererSetContent('3-columns')}
                   >
                     Add Three Columns
                   </Button>

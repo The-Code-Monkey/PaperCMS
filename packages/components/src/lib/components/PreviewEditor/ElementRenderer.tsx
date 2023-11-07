@@ -15,10 +15,9 @@ import Editor from './fields/Editor';
 interface Props {
   content: Array<RecordType>;
   setContent: Dispatch<SetStateAction<RecordType[]>>;
-  columns?: number;
 }
 
-const ElementRenderer = ({ content, setContent, columns }: Props) => {
+const ElementRenderer = ({ content, setContent }: Props) => {
   const SiteConfig = useContext(SiteThemeContext);
 
   const [hoveredElement, setHoveredElement] = useState<[string, boolean]>([
@@ -89,10 +88,10 @@ const ElementRenderer = ({ content, setContent, columns }: Props) => {
     (ids: Array<number>) => (event: DragEvent<HTMLDivElement>) => {
       event.preventDefault();
 
+      const droppedItem = JSON.parse(event.dataTransfer.getData('text'));
+
       setContent(prevState => {
         const newState = [...prevState];
-
-        const droppedItem = JSON.parse(event.dataTransfer.getData('text'));
 
         if (!newState[ids[0]].value) {
           newState[ids[0]].value = [];
@@ -102,7 +101,19 @@ const ElementRenderer = ({ content, setContent, columns }: Props) => {
           newState[ids[0]].value[ids[1]] = [];
         }
 
-        newState[ids[0]].value[ids[1]] = [droppedItem];
+        if (newState[ids[0]].value[ids[1]].length > 0) {
+          if (
+            newState[ids[0]].value[ids[1]].find(
+              (item: RecordType) => item.id === droppedItem.id
+            )
+          ) {
+            return newState;
+          } else {
+            newState[ids[0]].value[ids[1]].push(droppedItem);
+          }
+        } else {
+          newState[ids[0]].value[ids[1]] = [droppedItem];
+        }
 
         return newState;
       });
@@ -113,12 +124,7 @@ const ElementRenderer = ({ content, setContent, columns }: Props) => {
   };
 
   return (
-    <Box
-      d={'flex'}
-      flexDir={columns ? 'row' : 'column'}
-      w={`calc(100% / ${columns ?? 1})`}
-      gap={5}
-    >
+    <Box d={'flex'} flexDir={'column'} gap={5} w={'full'}>
       {content.map((item, itemIndex) => {
         switch (item.type) {
           case 'textarea': {
@@ -161,13 +167,31 @@ const ElementRenderer = ({ content, setContent, columns }: Props) => {
                       ] as Array<RecordType>);
 
                     if (column) {
+                      const className = `column_${itemIndex}_column_${index}`;
+
                       return (
-                        <ElementRenderer
+                        <div
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            border: '1px solid',
+                            borderColor: 'black',
+                            textAlign: 'center',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            background: 'green',
+                          }}
+                          className={className}
+                          onDragOver={allowDrop}
+                          onDrop={handleOnDrop([itemIndex, index])}
                           key={index}
-                          content={column}
-                          setContent={setContent}
-                          columns={(item as ColumnType).columns}
-                        />
+                        >
+                          <ElementRenderer
+                            content={column}
+                            setContent={setContent}
+                          />
+                        </div>
                       );
                     }
                   })}
@@ -185,11 +209,10 @@ const ElementRenderer = ({ content, setContent, columns }: Props) => {
                   border: '1px solid',
                   borderColor: 'black',
                   textAlign: 'center',
-                  padding: '10px',
-                  marginTop: '10px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  background: 'red',
                 }}
                 className={className}
                 onDragOver={allowDrop}

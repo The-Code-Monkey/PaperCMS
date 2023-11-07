@@ -64,7 +64,7 @@ const Editor = ({
     onReorder(item.id, hoveredId, isTop);
   };
 
-  const className = `innerSection_${item.id}`;
+  const className = `element_${item.id}`;
 
   const isHovered = hoveredId === item.id;
 
@@ -79,7 +79,9 @@ const Editor = ({
       isTop={isTop}
       isHovered={isHovered}
     >
-      <ReactQuill value={item.value} onChange={handleOnChange(item.id)} />
+      {typeof window !== 'undefined' && (
+        <ReactQuill value={item.value} onChange={handleOnChange(item.id)} />
+      )}
     </EditorWrapper>
   );
 };
