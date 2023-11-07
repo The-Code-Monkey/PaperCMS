@@ -3451,8 +3451,8 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/components": "npm:1.3.24"
-    "@techstack/tcm-cli": "npm:1.3.23"
+    "@techstack/components": "npm:1.3.27"
+    "@techstack/tcm-cli": "npm:1.3.25"
     "@uiw/react-md-editor": "npm:3.25.2"
     install-peers-cli: "npm:2.2.0"
     react-dnd: "npm:16.0.1"
@@ -3477,7 +3477,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/create-nucleus-app@workspace:packages/create-nucleus-app"
   dependencies:
-    "@techstack/tcm-cli": "npm:1.3.23"
+    "@techstack/tcm-cli": "npm:1.3.25"
     "@types/node": "npm:20.8.10"
     chalk: "npm:5.3.0"
     enquirer: "npm:2.4.1"
@@ -3498,7 +3498,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/tcm-cli": "npm:1.3.23"
+    "@techstack/tcm-cli": "npm:1.3.25"
     "@types/uuid": "npm:9.0.6"
     install-peers-cli: "npm:2.2.0"
     uuid: "npm:9.0.1"
@@ -3523,7 +3523,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/tcm-cli": "npm:1.3.23"
+    "@techstack/tcm-cli": "npm:1.3.25"
     install-peers-cli: "npm:2.2.0"
     uuid: "npm:9.0.1"
   dependenciesMeta:
@@ -3546,7 +3546,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/tcm-cli": "npm:1.3.23"
+    "@techstack/tcm-cli": "npm:1.3.25"
     "@typescript-eslint/eslint-plugin": "npm:6.10.0"
     eslint-plugin-import: "npm:2.29.0"
     install-peers-cli: "npm:2.2.0"
@@ -4263,17 +4263,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.3.24":
-  version: 1.3.24
-  resolution: "@techstack/components@npm:1.3.24"
+"@techstack/components@npm:1.3.27":
+  version: 1.3.27
+  resolution: "@techstack/components@npm:1.3.27"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@tanstack/react-table": "npm:8.10.7"
-    "@techstack/memoize": "npm:1.3.23"
-    "@techstack/react-feather": "npm:1.3.23"
-    "@techstack/react-lazy-named": "npm:1.3.23"
-    "@techstack/styled-system": "npm:1.0.270"
-    "@techstack/theme": "npm:1.3.23"
+    "@techstack/memoize": "npm:1.3.25"
+    "@techstack/react-feather": "npm:1.3.25"
+    "@techstack/react-lazy-named": "npm:1.3.25"
+    "@techstack/styled-system": "npm:1.0.271"
+    "@techstack/theme": "npm:1.3.25"
     "@types/react-table": "npm:7.7.17"
     classnames: "npm:2.3.2"
     csstype: "npm:3.1.2"
@@ -4287,52 +4287,52 @@ __metadata:
     react-table: "npm:7.8.0"
     react-virtual: "npm:2.10.4"
     styled-components: "npm:6.1.0"
-  checksum: a425e6995d9c3119b0753cab47a3287e959fecdbb5ed2fd7c757faf5b7e1700665f619e1e609eb3e15ae55d4b7d299042b9f185f798634918eaeccd0613bb54c
+  checksum: d214705d71e45638e3fe896fbae58b7a97c36cb10ae72a817e0e9bf8567675f371125245d1182e37f63f4585563c4bc55eeeab9588f7db4e86c3203efeb2a3a4
   languageName: node
   linkType: hard
 
-"@techstack/memoize@npm:1.3.23":
-  version: 1.3.23
-  resolution: "@techstack/memoize@npm:1.3.23"
-  checksum: 3a9813150d8efbdcf0399cd6b630f8a6b17eaa1a03ee9878a420672ff71eee41d9fcc52a6ede4bb48a93ee250e7b301db9412ba7d735bcd0b421d163ec2f85b2
+"@techstack/memoize@npm:1.3.25":
+  version: 1.3.25
+  resolution: "@techstack/memoize@npm:1.3.25"
+  checksum: 47a551df8eca409d24f98744a80e9fd47ea9e4abd81884452d5dc80a8dc2379948fc511c79025eae48e9c466e38d0381e43bb260d0fa2468babe7a9b5a48acbd
   languageName: node
   linkType: hard
 
-"@techstack/react-feather@npm:1.3.23":
-  version: 1.3.23
-  resolution: "@techstack/react-feather@npm:1.3.23"
+"@techstack/react-feather@npm:1.3.25":
+  version: 1.3.25
+  resolution: "@techstack/react-feather@npm:1.3.25"
   dependencies:
     react: "npm:18.2.0"
-  checksum: 6305d03f022b03c5807e1a811104644009ca5ec7cb6fa7e89a7774cdbfb105c524048cf1d9e39489f7d6671fdd9cee0edf85bff368127db8f8b982779e520f6f
+  checksum: d4a792c6d880dc8af8c3b3a824681a164f196816b6a05e74557205e4fd2cdd10663a2fc19dee328e4ee258a1af230fe68b168099b3fdcdc62fd9b8cb9cb36753
   languageName: node
   linkType: hard
 
-"@techstack/react-lazy-named@npm:1.3.23":
-  version: 1.3.23
-  resolution: "@techstack/react-lazy-named@npm:1.3.23"
+"@techstack/react-lazy-named@npm:1.3.25":
+  version: 1.3.25
+  resolution: "@techstack/react-lazy-named@npm:1.3.25"
   dependencies:
     lodash: "npm:4.17.21"
     lodash-es: "npm:4.17.21"
     react: "npm:18.2.0"
-  checksum: 2ec0dc7a8bb1ae2975b8f1a01340ed6bc332d2e94e3b0e243fa78686c0023c67deaabf8fc44c569b29471fa3f4444949298ce6c7e2fcaaa043c2a3013a1f5aa6
+  checksum: 0671a92f7bf515f3014c62bc82f5c3d3d771dc491fb0b996e45ce7ff8e69eb29047732a92978a74615cb42fc6cfd519981d3527299c3b65fe4b8da5e446b8d42
   languageName: node
   linkType: hard
 
-"@techstack/styled-system@npm:1.0.270":
-  version: 1.0.270
-  resolution: "@techstack/styled-system@npm:1.0.270"
+"@techstack/styled-system@npm:1.0.271":
+  version: 1.0.271
+  resolution: "@techstack/styled-system@npm:1.0.271"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
-    "@techstack/memoize": "npm:1.3.23"
+    "@techstack/memoize": "npm:1.3.25"
     csstype: "npm:3.1.2"
     react: "npm:18.2.0"
-  checksum: a5712458b513ea96e76c11923c11a40ef753076c7fde74cb1335c19680c40b9d3494b65d0ced8248508feb621d7e729cae3bf2babaf5d72d9aa095f35608c87b
+  checksum: 206590e8e2c5f9c122bb0dfeeac4b20d33e75f150ebae42bdf4a16c5250ac2eac7a7a7a2d9bbf550f7f03cb71fed1874475cccbf37fe354fff31d42b88ee42cd
   languageName: node
   linkType: hard
 
-"@techstack/tcm-cli@npm:1.3.23":
-  version: 1.3.23
-  resolution: "@techstack/tcm-cli@npm:1.3.23"
+"@techstack/tcm-cli@npm:1.3.25":
+  version: 1.3.25
+  resolution: "@techstack/tcm-cli@npm:1.3.25"
   dependencies:
     "@babel/core": "npm:7.23.2"
     "@babel/parser": "npm:7.23.0"
@@ -4400,13 +4400,13 @@ __metadata:
     typescript: "npm:5.2.2"
   bin:
     tcm: dist/index.js
-  checksum: 0149e0a3a914bc3f34fd938bc03fcd3f6a9713c57821dad41fa9e0d2099842f8e4862b2e20626a353f5ed0ec07f9cbe2fae2321017e87e9f125db3cebf177723
+  checksum: 1d50b5fc9d42651b54bbab81eced1e24fef38156247ed5be0c0f2bf44e78d70604eb1eec57e5ca41d582c3131da1e9d48bef1b1d498b09d0043713c78e23f616
   languageName: node
   linkType: hard
 
-"@techstack/theme@npm:1.3.23":
-  version: 1.3.23
-  resolution: "@techstack/theme@npm:1.3.23"
+"@techstack/theme@npm:1.3.25":
+  version: 1.3.25
+  resolution: "@techstack/theme@npm:1.3.25"
   dependencies:
     fs-extra: "npm:11.1.1"
     lodash: "npm:4.17.21"
@@ -4416,7 +4416,7 @@ __metadata:
     tinycolor2: "npm:1.6.0"
   bin:
     orchard: dist/esm/index.js
-  checksum: a46494967329594668f0b589f6b17644387344b93bb7b7eb3f2a3f1a895a353a0786fcb037ac6f182ef2123640819ab1c01c3b0c4829e2c8eef8ed0d40a91330
+  checksum: 95bb29b052f9d011af4c44a8f41b64b4f8cc0b58065fa3483c73f41465fd0358d3fb003ebda0e4160386adf980488f0704887bfee977aacbb44154444bf47725
   languageName: node
   linkType: hard
 
@@ -13448,8 +13448,8 @@ __metadata:
     "@nucleus-cms/utils": "workspace:*"
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/react-feather": "npm:1.3.23"
-    "@techstack/theme": "npm:1.3.23"
+    "@techstack/react-feather": "npm:1.3.25"
+    "@techstack/theme": "npm:1.3.25"
     "@types/node": "npm:20.8.10"
     "@types/react": "npm:18.2.36"
     babel-loader: "npm:9.1.3"
