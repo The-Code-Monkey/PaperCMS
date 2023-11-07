@@ -1,21 +1,20 @@
-import { Box, Button, ConfigContext } from '@techstack/components';
-import { useRouter } from 'next/navigation';
-import { useCallback, useContext } from 'react';
+import { Box, Button } from '@techstack/components';
+import { usePathname, useRouter } from 'next/navigation';
+import { useCallback } from 'react';
 
-import { capitalizeFirstLetter } from '../pages/pageUtils';
+import { capitalizeFirstLetter } from '../pages';
 
 interface Props {
   id?: string;
   tid: string;
-
   noEntry?: boolean;
 }
 
 const Header = ({ id, tid, noEntry = false }: Props) => {
   const router = useRouter();
-  const config = useContext(ConfigContext);
+  const pathname = usePathname();
 
-  console.log('HEADER', config);
+  const isListPage = pathname.includes('/list');
 
   const handleClick = useCallback(() => {
     router.push(`/edit/${id}/new`);
@@ -42,9 +41,9 @@ const Header = ({ id, tid, noEntry = false }: Props) => {
           Editing: {capitalizeFirstLetter(tid)} - {id}
         </>
       ) : (
-        capitalizeFirstLetter(tid)
+        <>{capitalizeFirstLetter(tid)}</>
       )}
-      {tid === 'pages' && (
+      {tid === 'pages' && !isListPage && (
         <Button
           ml='auto'
           pos='absolute'

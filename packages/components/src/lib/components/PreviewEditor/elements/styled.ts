@@ -4,8 +4,9 @@ export const StyledSection = styled.section<{
   isTop: boolean;
   isHovered: boolean;
 }>`
+  width: 100%;
   transition-property: border-top-width, border-bottom-width;
-  transition-duration: 300ms;
+  transition-duration: 125ms;
   transition-timing-function: ease-in-out;
   border-color: ${p => p.theme.colors.highlights[0]};
   border-width: 0;

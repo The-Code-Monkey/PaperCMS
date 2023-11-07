@@ -4,6 +4,9 @@ import type { NextRequest } from 'next/server';
 
 // this middleware refreshes the user's session and must be run
 // for any Server Component route that uses `createServerComponentSupabaseClient`
+export const revalidate = 0;
+export const dynamic = 'force-dynamic';
+
 export async function middleware(req: NextRequest) {
   const res = NextResponse.next();
 

@@ -1,6 +1,12 @@
-import { InnerSectionType, RecordType } from '@nucleus-cms/utils';
-import { Carousel, CarouselProps } from '@techstack/components';
-import { Dispatch, SetStateAction, useContext, useState } from 'react';
+import { InnerSectionType, RecordType, ColumnType } from '@nucleus-cms/utils';
+import { Box, Carousel, CarouselProps } from '@techstack/components';
+import {
+  Dispatch,
+  DragEvent,
+  SetStateAction,
+  useContext,
+  useState,
+} from 'react';
 
 import { SiteThemeContext } from './context';
 import InnerSection from './elements/InnerSection';
@@ -9,9 +15,10 @@ import Editor from './fields/Editor';
 interface Props {
   content: Array<RecordType>;
   setContent: Dispatch<SetStateAction<RecordType[]>>;
+  columns?: number;
 }
 
-const ElementRenderer = ({ content, setContent }: Props) => {
+const ElementRenderer = ({ content, setContent, columns }: Props) => {
   const SiteConfig = useContext(SiteThemeContext);
 
   const [hoveredElement, setHoveredElement] = useState<[string, boolean]>([
@@ -78,9 +85,41 @@ const ElementRenderer = ({ content, setContent }: Props) => {
     }
   };
 
+  const handleOnDrop =
+    (ids: Array<number>) => (event: DragEvent<HTMLDivElement>) => {
+      event.preventDefault();
+
+      setContent(prevState => {
+        const newState = [...prevState];
+
+        const droppedItem = JSON.parse(event.dataTransfer.getData('text'));
+
+        if (!newState[ids[0]].value) {
+          newState[ids[0]].value = [];
+        }
+
+        if (!newState[ids[0]].value[ids[1]]) {
+          newState[ids[0]].value[ids[1]] = [];
+        }
+
+        newState[ids[0]].value[ids[1]] = [droppedItem];
+
+        return newState;
+      });
+    };
+
+  const allowDrop = (event: DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+  };
+
   return (
-    <>
-      {content.map(item => {
+    <Box
+      d={'flex'}
+      flexDir={columns ? 'row' : 'column'}
+      w={`calc(100% / ${columns ?? 1})`}
+      gap={5}
+    >
+      {content.map((item, itemIndex) => {
         switch (item.type) {
           case 'textarea': {
             return (
@@ -109,12 +148,60 @@ const ElementRenderer = ({ content, setContent }: Props) => {
               />
             );
           }
+          case 'column': {
+            return (
+              <Box d={'flex'} flexDir={'row'} gap={4}>
+                {Array((item as ColumnType).columns)
+                  .fill(null)
+                  .map((_, index) => {
+                    const column =
+                      (item as ColumnType)?.value?.[index] ??
+                      ([
+                        { type: 'unknown', indexes: [itemIndex, index] },
+                      ] as Array<RecordType>);
+
+                    if (column) {
+                      return (
+                        <ElementRenderer
+                          key={index}
+                          content={column}
+                          setContent={setContent}
+                          columns={(item as ColumnType).columns}
+                        />
+                      );
+                    }
+                  })}
+              </Box>
+            );
+          }
           default: {
-            return <>{item.type}</>;
+            const className = `default_${item.id}`;
+
+            return (
+              <div
+                style={{
+                  width: '100%',
+                  height: '50px',
+                  border: '1px solid',
+                  borderColor: 'black',
+                  textAlign: 'center',
+                  padding: '10px',
+                  marginTop: '10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+                className={className}
+                onDragOver={allowDrop}
+                onDrop={handleOnDrop(item.indexes)}
+              >
+                {item.type}: Drop element from left to here to add
+              </div>
+            );
           }
         }
       })}
-    </>
+    </Box>
   );
 };
 

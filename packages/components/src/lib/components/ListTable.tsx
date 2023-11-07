@@ -12,19 +12,6 @@ interface Props {
 const ListTable = ({ data, tid, fieldData }: Props) => {
   const router = useRouter();
   const DB = useDB();
-  // const [columns] = useState(() => {
-  //   const newState = [...Object.keys(data?.[0] ?? {})];
-  //
-  //   if (id === 'code') {
-  //     newState.push('delete');
-  //   } else {
-  //     newState.push('edit-delete');
-  //   }
-  //
-  //   const contentIndex = newState.findIndex(item => item === 'content');
-  //   if (contentIndex !== -1) newState.splice(contentIndex, 1);
-  //   return newState;
-  // });
 
   const handleEditClick = useCallback(
     (row: Record<string, unknown>) => {

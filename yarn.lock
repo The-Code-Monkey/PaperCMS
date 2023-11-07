@@ -3451,12 +3451,14 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/components": "npm:1.3.27"
+    "@techstack/components": "npm:1.3.30"
     "@techstack/tcm-cli": "npm:1.3.25"
+    "@types/react-dom": "npm:^18.2.14"
     "@uiw/react-md-editor": "npm:3.25.2"
     install-peers-cli: "npm:2.2.0"
     react-dnd: "npm:16.0.1"
     react-quill: "npm:2.0.0"
+    usehooks-ts: "npm:^2.9.1"
     uuid: "npm:9.0.1"
   peerDependencies:
     next: 14.0.1
@@ -4263,17 +4265,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.3.27":
-  version: 1.3.27
-  resolution: "@techstack/components@npm:1.3.27"
+"@techstack/components@npm:1.3.30":
+  version: 1.3.30
+  resolution: "@techstack/components@npm:1.3.30"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@tanstack/react-table": "npm:8.10.7"
-    "@techstack/memoize": "npm:1.3.25"
-    "@techstack/react-feather": "npm:1.3.25"
-    "@techstack/react-lazy-named": "npm:1.3.25"
+    "@techstack/memoize": "npm:1.3.29"
+    "@techstack/react-feather": "npm:1.3.29"
+    "@techstack/react-lazy-named": "npm:1.3.29"
     "@techstack/styled-system": "npm:1.0.271"
-    "@techstack/theme": "npm:1.3.25"
+    "@techstack/theme": "npm:1.3.29"
     "@types/react-table": "npm:7.7.17"
     classnames: "npm:2.3.2"
     csstype: "npm:3.1.2"
@@ -4287,7 +4289,7 @@ __metadata:
     react-table: "npm:7.8.0"
     react-virtual: "npm:2.10.4"
     styled-components: "npm:6.1.0"
-  checksum: d214705d71e45638e3fe896fbae58b7a97c36cb10ae72a817e0e9bf8567675f371125245d1182e37f63f4585563c4bc55eeeab9588f7db4e86c3203efeb2a3a4
+  checksum: 371d5fcaac3977998ccd304e66e732579f1387c14b9e5e0fb5fe6874f7ea35a246c9fe996b5a89a59cc6947dd64285c865e66b89296fc22f0e0348ca0284436a
   languageName: node
   linkType: hard
 
@@ -4295,6 +4297,13 @@ __metadata:
   version: 1.3.25
   resolution: "@techstack/memoize@npm:1.3.25"
   checksum: 47a551df8eca409d24f98744a80e9fd47ea9e4abd81884452d5dc80a8dc2379948fc511c79025eae48e9c466e38d0381e43bb260d0fa2468babe7a9b5a48acbd
+  languageName: node
+  linkType: hard
+
+"@techstack/memoize@npm:1.3.29":
+  version: 1.3.29
+  resolution: "@techstack/memoize@npm:1.3.29"
+  checksum: 696742298df78e803d93b9a8b5c06eefd5ab6c56df0419c73a9317b690336e21f12c023bb45763f31a8b1bfe8c68d2e5e6d0d01e4e00c106e3577e2346837d4d
   languageName: node
   linkType: hard
 
@@ -4307,14 +4316,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/react-lazy-named@npm:1.3.25":
-  version: 1.3.25
-  resolution: "@techstack/react-lazy-named@npm:1.3.25"
+"@techstack/react-feather@npm:1.3.29":
+  version: 1.3.29
+  resolution: "@techstack/react-feather@npm:1.3.29"
+  dependencies:
+    react: "npm:18.2.0"
+  checksum: 5e46b20b56c5a007a8e1bf3db708c19198a9eb94ba6d6bab1a927e3b4e8ad494b728e64c4796f8e5165d276b95822ffdc491e888b8b1bdecd3a906da64396121
+  languageName: node
+  linkType: hard
+
+"@techstack/react-lazy-named@npm:1.3.29":
+  version: 1.3.29
+  resolution: "@techstack/react-lazy-named@npm:1.3.29"
   dependencies:
     lodash: "npm:4.17.21"
     lodash-es: "npm:4.17.21"
     react: "npm:18.2.0"
-  checksum: 0671a92f7bf515f3014c62bc82f5c3d3d771dc491fb0b996e45ce7ff8e69eb29047732a92978a74615cb42fc6cfd519981d3527299c3b65fe4b8da5e446b8d42
+  checksum: 2c1a21572c5bdff6858c542a4242922e05b675aea0f9be0160e4670626c453d8ffa9d9d07bd2d61cb079ecb6bc35fb6f73bbe9dd2fa80939d96eb9e04568ba43
   languageName: node
   linkType: hard
 
@@ -4417,6 +4435,22 @@ __metadata:
   bin:
     orchard: dist/esm/index.js
   checksum: 95bb29b052f9d011af4c44a8f41b64b4f8cc0b58065fa3483c73f41465fd0358d3fb003ebda0e4160386adf980488f0704887bfee977aacbb44154444bf47725
+  languageName: node
+  linkType: hard
+
+"@techstack/theme@npm:1.3.29":
+  version: 1.3.29
+  resolution: "@techstack/theme@npm:1.3.29"
+  dependencies:
+    fs-extra: "npm:11.1.1"
+    lodash: "npm:4.17.21"
+    lodash-es: "npm:4.17.21"
+    sade: "npm:1.8.1"
+    style-dictionary: "npm:3.9.0"
+    tinycolor2: "npm:1.6.0"
+  bin:
+    orchard: dist/esm/index.js
+  checksum: a7f34af9c80e64e9e9cf87b5548e8c7b2455bd02108975b4cb7455654e75975c49a4eee6b6dc39d462bef4dcb3f3a797c797d398e917c41b2943476770bd0b66
   languageName: node
   linkType: hard
 
@@ -4734,6 +4768,15 @@ __metadata:
   dependencies:
     parchment: "npm:^1.1.2"
   checksum: d006c4d5579d3a5b6cfd4b5f99c00dda40babe66791258c6db39298b204b6a0db102dd41c122e617dcd5aab6182d1ad35be50f3ec0dcde5cea4d474abffce5d8
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18.2.14":
+  version: 18.2.14
+  resolution: "@types/react-dom@npm:18.2.14"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 1f79a7708d038cd651bdb21e01a99c594761bc9a40a565abe98958e1d27facfeb6e9824ddf6ae3504e7a56568f0f3da2380fe52ac18477b5864d2d5cf1386a9e
   languageName: node
   linkType: hard
 
@@ -17418,6 +17461,16 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
+  languageName: node
+  linkType: hard
+
+"usehooks-ts@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "usehooks-ts@npm:2.9.1"
+  peerDependencies:
+    react: ^16.8.0  || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
+  checksum: 14f6bc3661cebe19714dc2bc0413b56c53fcb44fada2258756c2fefc10cf6481299bd8d4ba659af3bc5692a57d5da3c3e14b75d69177eccd3ac8326c5336e756
   languageName: node
   linkType: hard
 

@@ -7,6 +7,9 @@ import { createServerClient } from '../utils/supabase-server';
 
 import Provider from './provider';
 
+export const revalidate = 0;
+export const dynamic = 'force-dynamic';
+
 const MyApp = async ({ children }: { children: ReactNode }) => {
   const supabase = createServerClient();
 

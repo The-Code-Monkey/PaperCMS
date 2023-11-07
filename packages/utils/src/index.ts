@@ -12,6 +12,7 @@ import {
   DefaultRecordType,
   GetOptions,
   dbFunctionReturnType,
+  ColumnType
 } from './types';
 
 export {
@@ -28,4 +29,5 @@ export {
   createBrowserClient,
   GetOptions,
   dbFunctionReturnType,
+  ColumnType
 };

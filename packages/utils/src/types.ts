@@ -9,6 +9,7 @@ export type CarouselRecordType = {
   id: string;
   order: number;
   type: 'carousel';
+  indexes?: Array<number>;
   value: {
     images?: Array<string>;
     titles?: Array<string>;
@@ -29,6 +30,7 @@ export type DefaultRecordType = {
   type?: string;
   value?: string;
   order: number;
+  indexes?: Array<number>;
 };
 
 export type InnerSectionType = {
@@ -36,7 +38,17 @@ export type InnerSectionType = {
   order: number;
   type: 'inner-section';
   value?: Array<RecordType>;
+  indexes?: Array<number>;
 };
+
+export type ColumnType = {
+  id: string;
+  order: number;
+  type: 'column';
+  columns: number;
+  value?: Array<Array<RecordType>>;
+  indexes?: Array<number>;
+}
 
 export type ImageRecordType = {
   id?: string;
@@ -44,12 +56,14 @@ export type ImageRecordType = {
   value?: Record<string, unknown>;
   order?: number;
   url?: string | Array<string>;
+  indexes?: Array<number>;
 };
 
 export type RecordType =
   | DefaultRecordType
   | ImageRecordType
   | CarouselRecordType
+    | ColumnType
   | InnerSectionType;
 
 export type RecordReturnType =

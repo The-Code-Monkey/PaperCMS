@@ -4,6 +4,9 @@ import { PageProps } from '../../../../utils/pageTypes';
 
 import Container from "./Container";
 
+export const revalidate = 0;
+export const dynamic = 'force-dynamic';
+
 const List = async ({ params }: PageProps) => {
   const { tid } = params ?? {};
   const DB = useDB();
@@ -16,7 +19,7 @@ const List = async ({ params }: PageProps) => {
     }
   );
 
-  return <Container tid={tid} data={data} fieldData={fieldData} />
+  return <><Container tid={tid} data={data} fieldData={fieldData} /></>
 };
 
 export default List;

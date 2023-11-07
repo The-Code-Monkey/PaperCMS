@@ -1,5 +1,5 @@
 import { InnerSectionType, RecordType } from '@nucleus-cms/utils';
-import { Icon, Interactable } from '@techstack/components';
+import { Box, Button, Icon, Interactable } from '@techstack/components';
 import {
   Dispatch,
   SetStateAction,
@@ -7,13 +7,14 @@ import {
   useState,
   DragEvent,
 } from 'react';
+import { createPortal } from 'react-dom';
 
 import ElementRenderer from '../ElementRenderer';
 
 import { StyledSection } from './styled';
 
 interface Props extends InnerSectionType {
-  onChange: (value) => void;
+  onChange: (value: RecordType[]) => void;
   onHoverChange: (hoveredElement: string, isTop: boolean) => void;
   hoveredElement: [string, boolean];
   onReorder: (thisId: string, thatId: string, top: boolean) => void;
@@ -28,6 +29,11 @@ const InnerSection = ({
   onReorder,
 }: Props) => {
   const [isDragging, setIsDragging] = useState(false);
+  const [sectionModalIsOpen, setSectionModalIsOpen] = useState(false);
+
+  const toggleSectionModal = () => {
+    setSectionModalIsOpen(prevState => !prevState);
+  };
 
   const findCorrectTarget = useCallback(
     (parentTarget: HTMLElement): HTMLElement => {
@@ -72,9 +78,17 @@ const InnerSection = ({
 
   const handleInnerRendererSetContent: Dispatch<
     SetStateAction<RecordType[]>
-  > = fn => {
-    if (typeof fn === 'function') {
-      onChange(fn(value ?? []));
+  > = (fn: (value: RecordType[]) => RecordType[]) => {
+    console.log('handleInnerRendererSetContent', fn(value));
+    onChange(fn(value));
+  };
+
+  const handleInitialInnerRendererSetContent = (type: string) => () => {
+    console.log(onChange);
+    if (type.includes('columns')) {
+      const columns = parseInt(type.split('-')[0], 10);
+
+      onChange([{ type: 'column', columns }] as RecordType[]);
     }
   };
 
@@ -99,10 +113,60 @@ const InnerSection = ({
         d='flex'
         alignItems={'center'}
         justifyContent={'center'}
+        onClick={toggleSectionModal}
       >
-        {id}
         <Icon name={'plussquare'} />
       </Interactable>
+      <>
+        {sectionModalIsOpen &&
+          createPortal(
+            <>
+              <Box
+                position={'fixed'}
+                w={'80vw'}
+                h={'80vh'}
+                top={'50%'}
+                left={'50%'}
+                // @ts-ignore
+                style={{ transform: 'translate(-50%, -50%)' }}
+                bg={'neutrals.0'}
+                zIndex={1000}
+                border={'1px solid black'}
+              >
+                <Box w={'full'} h={'full'}>
+                  <Button
+                    type={'button'}
+                    onClick={handleInitialInnerRendererSetContent(
+                      '2-columns'
+                    )}
+                  >
+                    Add Two Columns
+                  </Button>
+                  <Button
+                      type={'button'}
+                      onClick={handleInitialInnerRendererSetContent(
+                          '3-columns'
+                      )}
+                  >
+                    Add Three Columns
+                  </Button>
+                </Box>
+              </Box>
+              <Interactable
+                position={'fixed'}
+                w={'100vw'}
+                h={'100vh'}
+                bg={'black'}
+                opacity={'0.8'}
+                zIndex={999}
+                onClick={toggleSectionModal}
+              >
+                &nbsp;
+              </Interactable>
+            </>,
+            document.body
+          )}
+      </>
     </StyledSection>
   );
 };

@@ -5,6 +5,9 @@ import { PropsWithChildren } from 'react';
 
 import Nav from './Nav';
 
+export const revalidate = 0;
+export const dynamic = 'force-dynamic';
+
 const AdminLayout = async ({ children }: PropsWithChildren) => {
   const DB = useDB();
   const { data } = await DB.dbFunction<Record<string, string>[]>(
@@ -16,7 +19,7 @@ const AdminLayout = async ({ children }: PropsWithChildren) => {
   return (
     <div className='wrapper' id='outer'>
       <Nav routes={routes} />
-      <>{children}</>
+      {children}
     </div>
   );
 };
