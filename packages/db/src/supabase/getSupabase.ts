@@ -112,7 +112,7 @@ const useSupabase = (): DbReturnType<Tables, Functions> => {
   ): Promise<dbFunctionReturnType<R>> => {
     const { columns, where } = options ?? {};
 
-    console.log("HERE", table, options)
+    console.log('HERE', table, options);
 
     const result = await supabase
       .from<Tables, TableType>(table)

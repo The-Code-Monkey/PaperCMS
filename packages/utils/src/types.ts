@@ -48,7 +48,7 @@ export type ColumnType = {
   columns: number;
   value?: Array<Array<RecordType>>;
   indexes?: Array<number>;
-}
+};
 
 export type ImageRecordType = {
   id?: string;
@@ -63,7 +63,7 @@ export type RecordType =
   | DefaultRecordType
   | ImageRecordType
   | CarouselRecordType
-    | ColumnType
+  | ColumnType
   | InnerSectionType;
 
 export type RecordReturnType =
