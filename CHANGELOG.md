@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.172](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.171...v1.1.172) (2023-11-07)
+
+
+### Bug Fixes
+
+* linting ([a9d00d2](https://github.com/The-Code-Monkey/PaperCMS/commit/a9d00d28683f0a4593a12e763beb934ffeaf4590))
+* linting ([2f3daaa](https://github.com/The-Code-Monkey/PaperCMS/commit/2f3daaa662618426ca32c5b544614c66eec74176))
+* update to add items to the end of a column ([0cc426d](https://github.com/The-Code-Monkey/PaperCMS/commit/0cc426d35c496122e3467f759165c0df1399656d))
+
+
+
+
+
 ## [1.1.171](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.170...v1.1.171) (2023-11-07)
 
 
