@@ -3458,7 +3458,7 @@ __metadata:
     install-peers-cli: "npm:2.2.0"
     react-dnd: "npm:16.0.1"
     react-quill: "npm:2.0.0"
-    usehooks-ts: "npm:^2.9.1"
+    usehooks-ts: "npm:2.9.1"
     uuid: "npm:9.0.1"
   peerDependencies:
     next: 14.0.1
@@ -17464,7 +17464,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"usehooks-ts@npm:^2.9.1":
+"usehooks-ts@npm:2.9.1":
   version: 2.9.1
   resolution: "usehooks-ts@npm:2.9.1"
   peerDependencies:
