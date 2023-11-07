@@ -127,7 +127,7 @@ const InnerSection = ({
                 h={'80vh'}
                 top={'50%'}
                 left={'50%'}
-                // @ts-expect-error
+                // @ts-expect-error missing type on Box
                 style={{ transform: 'translate(-50%, -50%)' }}
                 bg={'neutrals.0'}
                 zIndex={1000}
