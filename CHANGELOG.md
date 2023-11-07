@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.174](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.173...v1.1.174) (2023-11-07)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency usehooks-ts to 2.9.1 ([1f5d4df](https://github.com/The-Code-Monkey/PaperCMS/commit/1f5d4df036da7b6e6c0ee890df2916cc248123f5))
+
+
+
+
+
 ## [1.1.173](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.172...v1.1.173) (2023-11-07)
 
 **Note:** Version bump only for package nucleus-cms
