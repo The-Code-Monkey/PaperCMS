@@ -1,6 +1,6 @@
 {
   "name": "@nucleus-cms/db",
-  "version": "1.1.175",
+  "version": "1.1.176",
   "type": "module",
   "scripts": {
     "build": "tcm build",
