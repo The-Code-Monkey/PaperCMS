@@ -19,7 +19,7 @@
     "@techstack/theme": "1.3.42",
     "babel-loader": "9.1.3",
     "babel-plugin-transform-remove-imports": "1.7.0",
-    "next": "14.0.1",
+    "next": "14.0.2",
     "next-remove-imports": "1.0.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
-    "eslint-config-next": "14.0.1",
+    "eslint-config-next": "14.0.2",
     "typescript": "5.2.2"
   }
 }
