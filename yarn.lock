@@ -3847,7 +3847,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/components": "npm:1.3.55"
+    "@techstack/components": "npm:1.3.58"
     "@techstack/tcm-cli": "npm:1.3.54"
     "@types/react-dom": "npm:18.2.15"
     "@uiw/react-md-editor": "npm:3.25.3"
@@ -4661,38 +4661,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.3.55":
-  version: 1.3.55
-  resolution: "@techstack/components@npm:1.3.55"
+"@techstack/components@npm:1.3.58":
+  version: 1.3.58
+  resolution: "@techstack/components@npm:1.3.58"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@tanstack/react-table": "npm:8.10.7"
     "@techstack/memoize": "npm:1.3.54"
     "@techstack/react-feather": "npm:1.3.54"
     "@techstack/react-lazy-named": "npm:1.3.54"
-    "@techstack/styled-system": "npm:1.0.278"
+    "@techstack/styled-system": "npm:1.0.279"
     "@techstack/theme": "npm:1.3.54"
     "@types/react-table": "npm:7.7.18"
     classnames: "npm:2.3.2"
     csstype: "npm:3.1.2"
     deepmerge: "npm:4.3.1"
-    i18next: "npm:23.6.0"
+    i18next: "npm:23.7.2"
     react: "npm:18.2.0"
     react-date-picker: "npm:10.5.2"
     react-datetime-picker: "npm:5.5.3"
-    react-i18next: "npm:13.3.2"
+    react-i18next: "npm:13.4.0"
     react-responsive-carousel: "npm:3.2.23"
     react-table: "npm:7.8.0"
     react-virtual: "npm:2.10.4"
     styled-components: "npm:6.1.0"
-  checksum: 4457483ddd8b0852ae1111f2248dc42371fa08886d9b5ce45da03cf3e8525e2e48f5860d099dd474417754a5bc82983deefca96199339a927b032435dd1b8ae7
-  languageName: node
-  linkType: hard
-
-"@techstack/memoize@npm:1.3.50":
-  version: 1.3.50
-  resolution: "@techstack/memoize@npm:1.3.50"
-  checksum: 087b6736fad9aed2c871e5c69f187e0af7baae7ed62b0e7695e18ffa427ae4e7f5f76157f36764cdceb71c51b8cbb600e9f228b120e706affeeafcdfdf09c2be
+  checksum: ea642967fe9df941e5dc5287ef0d12f9f9d0adf2ba60f85ef8af609c6b84f9d482cd8a3afe3808bb6841dabee91730aeea17e26c31f07add57f31916ff4c3dd4
   languageName: node
   linkType: hard
 
@@ -4723,15 +4716,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/styled-system@npm:1.0.278":
-  version: 1.0.278
-  resolution: "@techstack/styled-system@npm:1.0.278"
+"@techstack/styled-system@npm:1.0.279":
+  version: 1.0.279
+  resolution: "@techstack/styled-system@npm:1.0.279"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
-    "@techstack/memoize": "npm:1.3.50"
+    "@techstack/memoize": "npm:1.3.54"
     csstype: "npm:3.1.2"
     react: "npm:18.2.0"
-  checksum: 9516a56a1a58d3df4ed353d5871845d1308768eac295481237a8f751b63732a4c8a4e8a622a361f6e0221e7e5566117f44722e6d7ec0345542e20b22d026e30b
+  checksum: 3e6596794a03145bb84d4c2e6fc87dbfa3d57912b9a4208187027263920aaa96ac8db8adb960c4f96ccdd0d1702310b7180d743f02b636f7e32be62aa3416326
   languageName: node
   linkType: hard
 
@@ -10337,12 +10330,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:23.6.0":
-  version: 23.6.0
-  resolution: "i18next@npm:23.6.0"
+"i18next@npm:23.7.2":
+  version: 23.7.2
+  resolution: "i18next@npm:23.7.2"
   dependencies:
-    "@babel/runtime": "npm:^7.22.5"
-  checksum: 292055897c01dd7720b3c6ab1321bd2b3b1f89e36702da9da90493f2a9e931e6a1f762a5b40d8e91c72803a8e80102ba9b64a4ffc0174acb91805f969072437c
+    "@babel/runtime": "npm:^7.23.2"
+  checksum: e4c59d5a75e0bc942a64af7bcb717f391860b4053629c73d05c49ba8fd427ca486caf64bc47a8d7c8f89b76bca2a96576ad8d0a2544bcbc3c18234bc7cf111cb
   languageName: node
   linkType: hard
 
@@ -15036,9 +15029,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:13.3.2":
-  version: 13.3.2
-  resolution: "react-i18next@npm:13.3.2"
+"react-i18next@npm:13.4.0":
+  version: 13.4.0
+  resolution: "react-i18next@npm:13.4.0"
   dependencies:
     "@babel/runtime": "npm:^7.22.5"
     html-parse-stringify: "npm:^3.0.1"
@@ -15050,7 +15043,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 38ad9daebb9d30d589d694a09e218d545b3bd4ef7deec302b141b964b9781e957e52b7b039647079dbdbd3bfbb74ade63c136524121ff5ed040e500a8a4ec24a
+  checksum: b14a11a59a5e446a3ac3b513b5606b5129074b71ece54529191dfa4ea19fcde0b937789305699dc4b2e6cf77d4bb680aa9f275a0c4c622fedf562a6f1587cbb3
   languageName: node
   linkType: hard
 
