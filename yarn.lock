@@ -3850,7 +3850,7 @@ __metadata:
     "@techstack/components": "npm:1.3.68"
     "@techstack/tcm-cli": "npm:1.3.67"
     "@types/react-dom": "npm:18.2.15"
-    "@uiw/react-md-editor": "npm:3.25.4"
+    "@uiw/react-md-editor": "npm:3.25.5"
     install-peers-cli: "npm:2.2.0"
     react-dnd: "npm:16.0.1"
     react-quill: "npm:2.0.0"
@@ -5624,9 +5624,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uiw/react-md-editor@npm:3.25.4":
-  version: 3.25.4
-  resolution: "@uiw/react-md-editor@npm:3.25.4"
+"@uiw/react-md-editor@npm:3.25.5":
+  version: 3.25.5
+  resolution: "@uiw/react-md-editor@npm:3.25.5"
   dependencies:
     "@babel/runtime": "npm:^7.14.6"
     "@uiw/react-markdown-preview": "npm:^4.2.1"
@@ -5635,7 +5635,7 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 659532859441f0d9184ca23b2b31d58798cb5f4dde4a71d0ab90c8caa6a77aa489565b0713066ecf8fe11af2c3d3f2fd82e0095cbfb17ed342c9e1cb01e92b25
+  checksum: d78696ffbc3f3c727b7a41e3b7266338b47a66f0c465e473433d0d21fb741736a4bdd84f78ddf6ac31f503056dd44ca7a27f64aff0811794c3801ef0eedf29f0
   languageName: node
   linkType: hard
 
