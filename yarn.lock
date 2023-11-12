@@ -3847,8 +3847,8 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/components": "npm:1.3.64"
-    "@techstack/tcm-cli": "npm:1.3.64"
+    "@techstack/components": "npm:1.3.68"
+    "@techstack/tcm-cli": "npm:1.3.67"
     "@types/react-dom": "npm:18.2.15"
     "@uiw/react-md-editor": "npm:3.25.4"
     install-peers-cli: "npm:2.2.0"
@@ -3875,7 +3875,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nucleus-cms/create-nucleus-app@workspace:packages/create-nucleus-app"
   dependencies:
-    "@techstack/tcm-cli": "npm:1.3.64"
+    "@techstack/tcm-cli": "npm:1.3.67"
     "@types/node": "npm:20.9.0"
     chalk: "npm:5.3.0"
     enquirer: "npm:2.4.1"
@@ -3896,7 +3896,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/tcm-cli": "npm:1.3.64"
+    "@techstack/tcm-cli": "npm:1.3.67"
     "@types/uuid": "npm:9.0.7"
     install-peers-cli: "npm:2.2.0"
     uuid: "npm:9.0.1"
@@ -3921,7 +3921,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/tcm-cli": "npm:1.3.64"
+    "@techstack/tcm-cli": "npm:1.3.67"
     install-peers-cli: "npm:2.2.0"
     uuid: "npm:9.0.1"
   dependenciesMeta:
@@ -3944,7 +3944,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/tcm-cli": "npm:1.3.64"
+    "@techstack/tcm-cli": "npm:1.3.67"
     "@typescript-eslint/eslint-plugin": "npm:6.10.0"
     eslint-plugin-import: "npm:2.29.0"
     install-peers-cli: "npm:2.2.0"
@@ -4391,86 +4391,86 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/rollup-android-arm-eabi@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-android-arm-eabi@npm:4.3.1"
+"@rollup/rollup-android-arm-eabi@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-android-arm-eabi@npm:4.4.0"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@rollup/rollup-android-arm64@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-android-arm64@npm:4.3.1"
+"@rollup/rollup-android-arm64@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-android-arm64@npm:4.4.0"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-darwin-arm64@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-darwin-arm64@npm:4.3.1"
+"@rollup/rollup-darwin-arm64@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-darwin-arm64@npm:4.4.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-darwin-x64@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-darwin-x64@npm:4.3.1"
+"@rollup/rollup-darwin-x64@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-darwin-x64@npm:4.4.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm-gnueabihf@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-linux-arm-gnueabihf@npm:4.3.1"
+"@rollup/rollup-linux-arm-gnueabihf@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-linux-arm-gnueabihf@npm:4.4.0"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm64-gnu@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.3.1"
+"@rollup/rollup-linux-arm64-gnu@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.4.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm64-musl@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-linux-arm64-musl@npm:4.3.1"
+"@rollup/rollup-linux-arm64-musl@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-linux-arm64-musl@npm:4.4.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-x64-gnu@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.3.1"
+"@rollup/rollup-linux-x64-gnu@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.4.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-x64-musl@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-linux-x64-musl@npm:4.3.1"
+"@rollup/rollup-linux-x64-musl@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-linux-x64-musl@npm:4.4.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-arm64-msvc@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-win32-arm64-msvc@npm:4.3.1"
+"@rollup/rollup-win32-arm64-msvc@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-win32-arm64-msvc@npm:4.4.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-ia32-msvc@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-win32-ia32-msvc@npm:4.3.1"
+"@rollup/rollup-win32-ia32-msvc@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-win32-ia32-msvc@npm:4.4.0"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-x64-msvc@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@rollup/rollup-win32-x64-msvc@npm:4.3.1"
+"@rollup/rollup-win32-x64-msvc@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@rollup/rollup-win32-x64-msvc@npm:4.4.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -4661,17 +4661,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.3.64":
-  version: 1.3.64
-  resolution: "@techstack/components@npm:1.3.64"
+"@techstack/components@npm:1.3.68":
+  version: 1.3.68
+  resolution: "@techstack/components@npm:1.3.68"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@tanstack/react-table": "npm:8.10.7"
-    "@techstack/memoize": "npm:1.3.64"
-    "@techstack/react-feather": "npm:1.3.64"
-    "@techstack/react-lazy-named": "npm:1.3.64"
-    "@techstack/styled-system": "npm:1.0.280"
-    "@techstack/theme": "npm:1.3.64"
+    "@techstack/memoize": "npm:1.3.67"
+    "@techstack/react-feather": "npm:1.3.67"
+    "@techstack/react-lazy-named": "npm:1.3.67"
+    "@techstack/styled-system": "npm:1.0.282"
+    "@techstack/theme": "npm:1.3.67"
     "@types/react-table": "npm:7.7.18"
     classnames: "npm:2.3.2"
     csstype: "npm:3.1.2"
@@ -4685,59 +4685,59 @@ __metadata:
     react-table: "npm:7.8.0"
     react-virtual: "npm:2.10.4"
     styled-components: "npm:6.1.0"
-  checksum: afc466ce54fd870c9d4aaf63a95e1c752152ffdb5ceec80a8e4118ff4c7d94e2f03a681d26fe4e332daaf7053a8c14dd47c99011d102684655e821b582ee2a74
+  checksum: 4a81d471de7ba830d3f86220850e40440135438ece92986a8338e5e2b1e5107fe0d6d6299d682462e724ac5b4dd660b1a29118644916a5edff34d0b19496e23d
   languageName: node
   linkType: hard
 
-"@techstack/memoize@npm:1.3.54":
-  version: 1.3.54
-  resolution: "@techstack/memoize@npm:1.3.54"
-  checksum: c8813ef1d895a7739694779da6dc904b522d06d284be18c637f1fcebec4612fd56423194dbfa34516803b1c681223c5d0612434338c9d12635ed674a584e558e
+"@techstack/memoize@npm:1.3.65":
+  version: 1.3.65
+  resolution: "@techstack/memoize@npm:1.3.65"
+  checksum: 0f56a0417d1e6a9b7dda55848b4e59f70b43172220f4521adf8c72e3055eebdf9bbc3acd138db0f78830f4a152fe11a30c7034067c059cd3855fa48f4b5154c3
   languageName: node
   linkType: hard
 
-"@techstack/memoize@npm:1.3.64":
-  version: 1.3.64
-  resolution: "@techstack/memoize@npm:1.3.64"
-  checksum: 160439c6bd7945f209f001873d0516b3563569bbfec6c1abe5676f2cc92c0d3c8b7ae6d96e8e9c081d690a05b9ea83f44d2e11219217010a26161f724cbc993c
+"@techstack/memoize@npm:1.3.67":
+  version: 1.3.67
+  resolution: "@techstack/memoize@npm:1.3.67"
+  checksum: 32127888012a537a7ee7c7bcccff011e03855124b05582f92849c8e451e94ec842443cf6f9c08d2b71b29273f9dbc0c8671bbad98cda79479df35a7efdbb4abc
   languageName: node
   linkType: hard
 
-"@techstack/react-feather@npm:1.3.64":
-  version: 1.3.64
-  resolution: "@techstack/react-feather@npm:1.3.64"
+"@techstack/react-feather@npm:1.3.67":
+  version: 1.3.67
+  resolution: "@techstack/react-feather@npm:1.3.67"
   dependencies:
     react: "npm:18.2.0"
-  checksum: c4593d8078824fbc6749d8a846939c4f8b2cd97347df0bb18202d313cb5b0376b5f504d51f705f4a8944f919425a536615d5903dfdca3caca7ce45a44df643a9
+  checksum: 1793e0ca8dd0751ef2dcf76c8d59b662c0363251f0fe5e9c7a8514dc532bb755caa927ed84f3c277f756cd9e8b91e7ccf756c47e9e2f5585f551e22f4414a360
   languageName: node
   linkType: hard
 
-"@techstack/react-lazy-named@npm:1.3.64":
-  version: 1.3.64
-  resolution: "@techstack/react-lazy-named@npm:1.3.64"
+"@techstack/react-lazy-named@npm:1.3.67":
+  version: 1.3.67
+  resolution: "@techstack/react-lazy-named@npm:1.3.67"
   dependencies:
     lodash: "npm:4.17.21"
     lodash-es: "npm:4.17.21"
     react: "npm:18.2.0"
-  checksum: c3cf74259a5165b5125208b13eaa3cb9a2aa126cd96130c2c997a43360f8aa4f69c83ba9f16c1bca87311a8279696f1e79f4d5a965f3e316eecece6e5d4fcff6
+  checksum: d2412103fdce81927235e9917b83986b32b40bce0c7ba88d00fb5671b5e5dfa2927ce8bf1f7fd0e1e29be1924f8f9619846ea2ee470895ba90378863042c238b
   languageName: node
   linkType: hard
 
-"@techstack/styled-system@npm:1.0.280":
-  version: 1.0.280
-  resolution: "@techstack/styled-system@npm:1.0.280"
+"@techstack/styled-system@npm:1.0.282":
+  version: 1.0.282
+  resolution: "@techstack/styled-system@npm:1.0.282"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
-    "@techstack/memoize": "npm:1.3.54"
+    "@techstack/memoize": "npm:1.3.65"
     csstype: "npm:3.1.2"
     react: "npm:18.2.0"
-  checksum: c1af587d4ebb7a477ad656f554cb077c993fe829747db054ef18ea40443ba85a272dbff29a9f6fabe870b20fc952266ca071283b3dedf147b638e3a395f07335
+  checksum: f01ac3fafade856426b5ff9e607c1dc48d4a737cb157d1dab612f657d0430ce54502969eefff2a13477d3091ccaaa322951e54f194e01ec9b95a4aff7edf4fbc
   languageName: node
   linkType: hard
 
-"@techstack/tcm-cli@npm:1.3.64":
-  version: 1.3.64
-  resolution: "@techstack/tcm-cli@npm:1.3.64"
+"@techstack/tcm-cli@npm:1.3.67":
+  version: 1.3.67
+  resolution: "@techstack/tcm-cli@npm:1.3.67"
   dependencies:
     "@babel/core": "npm:7.23.3"
     "@babel/parser": "npm:7.23.3"
@@ -4789,7 +4789,7 @@ __metadata:
     prettier: "npm:3.0.3"
     progress-estimator: "npm:0.3.1"
     regenerator-runtime: "npm:0.14.0"
-    rollup: "npm:4.3.1"
+    rollup: "npm:4.4.0"
     rollup-plugin-delete: "npm:2.0.0"
     rollup-plugin-dts: "npm:6.1.0"
     rollup-plugin-typescript2: "npm:0.36.0"
@@ -4805,13 +4805,13 @@ __metadata:
     typescript: "npm:5.2.2"
   bin:
     tcm: dist/index.js
-  checksum: a2245fa9b53383b48110fff2081a405de9fd13296fd695f8771f8fd8a323856cf9e1bcc4ac4e875f8f9cdafcd8b3ed4d1b27612ae9d6cd537eac8b5498216dd8
+  checksum: 933d496e1863faad7622904f2524d19a24ad479395ea6eb9e583980a87a23cc8d626fb21b74bcf2a133e18e4d2abb143c1da134301993023e8c43738859def1b
   languageName: node
   linkType: hard
 
-"@techstack/theme@npm:1.3.64":
-  version: 1.3.64
-  resolution: "@techstack/theme@npm:1.3.64"
+"@techstack/theme@npm:1.3.67":
+  version: 1.3.67
+  resolution: "@techstack/theme@npm:1.3.67"
   dependencies:
     fs-extra: "npm:11.1.1"
     lodash: "npm:4.17.21"
@@ -4821,7 +4821,7 @@ __metadata:
     tinycolor2: "npm:1.6.0"
   bin:
     orchard: dist/esm/index.js
-  checksum: 725cd55547f5302d665f7e95821129fcf62b9a5672ab95b0882702b6042966e1af1ff75995b838ee698e683fc626aebaa6c3fc8dbb4ae8c16049eee6f67fae1d
+  checksum: fbf3f56033dd36778768762f3375dd0cdad84a8c28840771732292ca3fcc8b46b9e91898bc97b9e52f03e547c30a95b5b70d72e8bbc25ea52a3c5fafc2e7dbb2
   languageName: node
   linkType: hard
 
@@ -13758,8 +13758,8 @@ __metadata:
     "@nucleus-cms/utils": "workspace:*"
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/react-feather": "npm:1.3.64"
-    "@techstack/theme": "npm:1.3.64"
+    "@techstack/react-feather": "npm:1.3.67"
+    "@techstack/theme": "npm:1.3.67"
     "@types/node": "npm:20.9.0"
     "@types/react": "npm:18.2.37"
     babel-loader: "npm:9.1.3"
@@ -15868,22 +15868,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:4.3.1":
-  version: 4.3.1
-  resolution: "rollup@npm:4.3.1"
+"rollup@npm:4.4.0":
+  version: 4.4.0
+  resolution: "rollup@npm:4.4.0"
   dependencies:
-    "@rollup/rollup-android-arm-eabi": "npm:4.3.1"
-    "@rollup/rollup-android-arm64": "npm:4.3.1"
-    "@rollup/rollup-darwin-arm64": "npm:4.3.1"
-    "@rollup/rollup-darwin-x64": "npm:4.3.1"
-    "@rollup/rollup-linux-arm-gnueabihf": "npm:4.3.1"
-    "@rollup/rollup-linux-arm64-gnu": "npm:4.3.1"
-    "@rollup/rollup-linux-arm64-musl": "npm:4.3.1"
-    "@rollup/rollup-linux-x64-gnu": "npm:4.3.1"
-    "@rollup/rollup-linux-x64-musl": "npm:4.3.1"
-    "@rollup/rollup-win32-arm64-msvc": "npm:4.3.1"
-    "@rollup/rollup-win32-ia32-msvc": "npm:4.3.1"
-    "@rollup/rollup-win32-x64-msvc": "npm:4.3.1"
+    "@rollup/rollup-android-arm-eabi": "npm:4.4.0"
+    "@rollup/rollup-android-arm64": "npm:4.4.0"
+    "@rollup/rollup-darwin-arm64": "npm:4.4.0"
+    "@rollup/rollup-darwin-x64": "npm:4.4.0"
+    "@rollup/rollup-linux-arm-gnueabihf": "npm:4.4.0"
+    "@rollup/rollup-linux-arm64-gnu": "npm:4.4.0"
+    "@rollup/rollup-linux-arm64-musl": "npm:4.4.0"
+    "@rollup/rollup-linux-x64-gnu": "npm:4.4.0"
+    "@rollup/rollup-linux-x64-musl": "npm:4.4.0"
+    "@rollup/rollup-win32-arm64-msvc": "npm:4.4.0"
+    "@rollup/rollup-win32-ia32-msvc": "npm:4.4.0"
+    "@rollup/rollup-win32-x64-msvc": "npm:4.4.0"
     fsevents: "npm:~2.3.2"
   dependenciesMeta:
     "@rollup/rollup-android-arm-eabi":
@@ -15914,7 +15914,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 628c06e9cc9aded5e4b447f64caddbb26f4a84db752f21f287745fd3b639da48466a15dffe3a395503cf62deb8b45d32417fa240947f53f670a93b429b44d6ca
+  checksum: 69e4f48f563af4ad209fe1b7e6fb3f280abbe7e8a331d246a594936c16ed39d49d62f4bce26a465750d92e86accc68c3a507bcd93b92f87f335ecaaac4597391
   languageName: node
   linkType: hard
 
