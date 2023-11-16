@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.198](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.197...v1.1.198) (2023-11-16)
+
+
+### Bug Fixes
+
+* **deps:** update techstack mono repo to v1.3.81 ([d280f22](https://github.com/The-Code-Monkey/PaperCMS/commit/d280f22705f6444733a9660640427aa2fd012dd7))
+
+
+
+
+
 ## [1.1.197](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.196...v1.1.197) (2023-11-16)
 
 
