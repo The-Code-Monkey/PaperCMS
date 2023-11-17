@@ -3847,7 +3847,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.0"
     "@supabase/storage-js": "npm:2.5.4"
     "@supabase/supabase-js": "npm:2.38.4"
-    "@techstack/components": "npm:1.3.81"
+    "@techstack/components": "npm:1.3.82"
     "@techstack/tcm-cli": "npm:1.3.81"
     "@types/react-dom": "npm:18.2.15"
     "@uiw/react-md-editor": "npm:3.25.6"
@@ -4661,16 +4661,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.3.81":
-  version: 1.3.81
-  resolution: "@techstack/components@npm:1.3.81"
+"@techstack/components@npm:1.3.82":
+  version: 1.3.82
+  resolution: "@techstack/components@npm:1.3.82"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@tanstack/react-table": "npm:8.10.7"
     "@techstack/memoize": "npm:1.3.81"
     "@techstack/react-feather": "npm:1.3.81"
     "@techstack/react-lazy-named": "npm:1.3.81"
-    "@techstack/styled-system": "npm:1.0.286"
+    "@techstack/styled-system": "npm:1.0.287"
     "@techstack/theme": "npm:1.3.81"
     "@types/react-table": "npm:7.7.18"
     classnames: "npm:2.3.2"
@@ -4685,14 +4685,7 @@ __metadata:
     react-table: "npm:7.8.0"
     react-virtual: "npm:2.10.4"
     styled-components: "npm:6.1.0"
-  checksum: 31955b3c2586aa8487605e303c3e498cede4e780d8bdf738d1e169e22bc247a8e688d746146e2a3f9d41737db6d6f7d4bd9e913ae63f994ead796bdc621e99de
-  languageName: node
-  linkType: hard
-
-"@techstack/memoize@npm:1.3.78":
-  version: 1.3.78
-  resolution: "@techstack/memoize@npm:1.3.78"
-  checksum: 589a9740850df05facb93d4c4e16106dd819e46c7f4f01c3f0b321ce1da7d58e6f37a4b0ba1719f01007a98c6a6cf1fc4485bec809dab3cf50201a5c0648d225
+  checksum: 8c1446237e50134fab0ecddd5440daeb5652674b1dc956c13274d4114310518acd2746285135854e71b61bed991e72b0070df4fd93f5c80dca1192dc3b23a490
   languageName: node
   linkType: hard
 
@@ -4723,15 +4716,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/styled-system@npm:1.0.286":
-  version: 1.0.286
-  resolution: "@techstack/styled-system@npm:1.0.286"
+"@techstack/styled-system@npm:1.0.287":
+  version: 1.0.287
+  resolution: "@techstack/styled-system@npm:1.0.287"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
-    "@techstack/memoize": "npm:1.3.78"
+    "@techstack/memoize": "npm:1.3.81"
     csstype: "npm:3.1.2"
     react: "npm:18.2.0"
-  checksum: ebc2bb3f5007350061e12101e7cf6e8e823cb95843487e09d322054bce46553ad45f693de132130d3cb13b9b7ed65fb4fe0fab48358f90923c37c2a24d68b70a
+  checksum: 618b495a584e435746047a62e912a50bb22044496964676f0003eaecf802b99534bc0349e0a621f9ab83a2df3869bc596152a464a5b1ec78da40677e2a923361
   languageName: node
   linkType: hard
 
