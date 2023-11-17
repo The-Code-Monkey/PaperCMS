@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.201](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.200...v1.1.201) (2023-11-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @techstack/components to v1.3.82 ([560a431](https://github.com/The-Code-Monkey/PaperCMS/commit/560a43104dbdbf25f435d66be830b8c6149256ac))
+
+
+
+
+
 ## [1.1.199](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.198...v1.1.199) (2023-11-16)
 
 **Note:** Version bump only for package @nucleus-cms/components
