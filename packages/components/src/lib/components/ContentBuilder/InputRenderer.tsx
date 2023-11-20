@@ -198,7 +198,7 @@ const InputRenderer = ({
                 ((innerField as InnerSectionType).value?.length ?? 0) >
                   0 ? null : (
                   <Button
-                    iconName='trash'
+                    iconName='Trash'
                     intent='error'
                     w='8'
                     h='8'
