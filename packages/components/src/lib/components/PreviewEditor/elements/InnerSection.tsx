@@ -115,7 +115,7 @@ const InnerSection = ({
         justifyContent={'center'}
         onClick={toggleSectionModal}
       >
-        <Icon name={'plussquare'} />
+        <Icon name={'PlusSquare'} />
       </Interactable>
       <>
         {sectionModalIsOpen &&
