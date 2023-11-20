@@ -14,7 +14,7 @@
     "@nucleus-cms/types": "workspace:*",
     "@nucleus-cms/utils": "workspace:*",
     "@supabase/auth-helpers-nextjs": "0.8.7",
-    "@supabase/supabase-js": "2.38.4",
+    "@supabase/supabase-js": "2.38.5",
     "@techstack/react-feather": "1.3.81",
     "@techstack/theme": "1.3.81",
     "babel-loader": "9.1.3",
