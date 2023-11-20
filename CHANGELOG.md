@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.203](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.202...v1.1.203) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-plugin-transform-remove-imports to v1.7.1 ([25906dd](https://github.com/The-Code-Monkey/PaperCMS/commit/25906dd714f7362c2e719b53925a51a9cbfddc46))
+
+
+
+
+
 ## [1.1.202](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.201...v1.1.202) (2023-11-19)
 
 **Note:** Version bump only for package nucleus-cms
