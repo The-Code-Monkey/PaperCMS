@@ -11,10 +11,10 @@ import useDarkMode from 'use-dark-mode';
 import { StyledAside } from './styled';
 
 const routeToIcon: Record<string, IconTypes> = {
-  products: 'box',
-  blog: 'book',
-  authCode: 'hash',
-  pages: 'bookopen',
+  products: 'Box',
+  blog: 'Book',
+  authCode: 'Hash',
+  pages: 'BookOpen',
 };
 
 interface Props {
