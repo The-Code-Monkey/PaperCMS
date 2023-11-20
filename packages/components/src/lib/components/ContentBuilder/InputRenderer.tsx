@@ -209,7 +209,7 @@ const InputRenderer = ({
               </Box>
             ))}
             <Button
-              iconName={'plus'}
+              iconName={'Plus'}
               variant={'primary'}
               onClick={handleContentAdd}
               type='button'
@@ -228,7 +228,7 @@ const InputRenderer = ({
             justifyContent={'center'}
             onClick={handleOnClick}
           >
-            <Icon name={'plussquare'} />
+            <Icon name={'PlusSquare'} />
           </Interactable>
         );
       }
