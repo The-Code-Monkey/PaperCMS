@@ -1,6 +1,6 @@
 {
   "name": "nucleus-demo",
-  "version": "1.1.206",
+  "version": "1.1.207",
   "type": "module",
   "private": true,
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "20.9.3",
-    "@types/react": "18.2.37",
+    "@types/react": "18.2.38",
     "eslint-config-next": "14.0.3",
     "typescript": "5.3.2"
   }
