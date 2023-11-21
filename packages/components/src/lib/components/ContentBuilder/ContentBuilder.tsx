@@ -167,7 +167,7 @@ const ContentBuilder = ({
                           ((field as InnerSectionType).value?.length ?? 0) >
                             0 ? null : (
                             <Button
-                              iconName='trash'
+                              iconName='Trash'
                               intent='error'
                               w='8'
                               h='8'
@@ -187,7 +187,7 @@ const ContentBuilder = ({
       )}
       <Button
         mt='2'
-        iconName={'plus'}
+        iconName={'Plus'}
         variant={'primary'}
         onClick={handleContentAdd}
         type='button'

@@ -58,7 +58,7 @@ export const center: ICommand = {
     'aria-label': 'Centralize text (ctrl + c)',
     title: "'Centralize text (ctrl + c)",
   },
-  icon: <Icon name='aligncenter' />,
+  icon: <Icon name='AlignCenter' />,
   execute: (state: TextState, api: TextAreaTextApi) => {
     // Adjust the selection to encompass the whole word if the caret is inside one
     const newSelectionRange = selectWord({

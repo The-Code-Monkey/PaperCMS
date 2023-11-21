@@ -198,7 +198,7 @@ const InputRenderer = ({
                 ((innerField as InnerSectionType).value?.length ?? 0) >
                   0 ? null : (
                   <Button
-                    iconName='trash'
+                    iconName='Trash'
                     intent='error'
                     w='8'
                     h='8'
@@ -209,7 +209,7 @@ const InputRenderer = ({
               </Box>
             ))}
             <Button
-              iconName={'plus'}
+              iconName={'Plus'}
               variant={'primary'}
               onClick={handleContentAdd}
               type='button'
@@ -228,7 +228,7 @@ const InputRenderer = ({
             justifyContent={'center'}
             onClick={handleOnClick}
           >
-            <Icon name={'plussquare'} />
+            <Icon name={'PlusSquare'} />
           </Interactable>
         );
       }

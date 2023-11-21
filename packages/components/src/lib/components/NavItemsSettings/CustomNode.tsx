@@ -59,7 +59,7 @@ const CustomNode = ({ testIdPrefix = '', ...props }: Props) => {
       >
         {props.node.droppable && (
           <Interactable alignItems='center' d='flex' onClick={handleToggle}>
-            <Icon name={isOpen ? 'arrowdown' : 'arrowright'} />
+            <Icon name={isOpen ? 'ArrowDown' : 'ArrowRight'} />
           </Interactable>
         )}
       </Box>

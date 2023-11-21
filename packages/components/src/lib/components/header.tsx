@@ -55,7 +55,7 @@ const Header = ({ id, tid, noEntry = false }: Props) => {
         </Button>
       )}
       {!tid && !noEntry && (
-        <Button iconName='plus' h='0' variant='default' onClick={handleClick}>
+        <Button iconName='Plus' h='0' variant='default' onClick={handleClick}>
           Add entry
         </Button>
       )}
