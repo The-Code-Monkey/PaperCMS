@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.224](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.223...v1.1.224) (2023-11-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @uiw/react-md-editor to v4.0.1 ([49ae7b2](https://github.com/The-Code-Monkey/PaperCMS/commit/49ae7b20dea5edbb137dc5d151df5be9e0665bac))
+
+
+
+
+
 ## [1.1.223](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.222...v1.1.223) (2023-11-27)
 
 **Note:** Version bump only for package nucleus-cms
