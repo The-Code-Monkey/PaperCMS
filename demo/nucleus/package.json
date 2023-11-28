@@ -1,6 +1,6 @@
 {
   "name": "nucleus-demo",
-  "version": "1.1.228",
+  "version": "1.1.229",
   "type": "module",
   "private": true,
   "scripts": {
