@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.226](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.225...v1.1.226) (2023-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v11.2.0 ([c7352e0](https://github.com/The-Code-Monkey/PaperCMS/commit/c7352e09e51d9363f873327bd931890d8e2ac256))
+
+
+
+
+
 ## [1.1.225](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.224...v1.1.225) (2023-11-27)
 
 **Note:** Version bump only for package nucleus-cms
