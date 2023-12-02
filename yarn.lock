@@ -3891,7 +3891,7 @@ __metadata:
     "@supabase/gotrue-js": "npm:2.57.1"
     "@supabase/storage-js": "npm:2.5.5"
     "@supabase/supabase-js": "npm:2.39.0"
-    "@techstack/components": "npm:1.3.120"
+    "@techstack/components": "npm:1.3.121"
     "@techstack/tcm-cli": "npm:1.3.117"
     "@types/react-dom": "npm:18.2.17"
     "@uiw/react-md-editor": "npm:4.0.1"
@@ -4713,9 +4713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@techstack/components@npm:1.3.120":
-  version: 1.3.120
-  resolution: "@techstack/components@npm:1.3.120"
+"@techstack/components@npm:1.3.121":
+  version: 1.3.121
+  resolution: "@techstack/components@npm:1.3.121"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@tanstack/react-table": "npm:8.10.7"
@@ -4737,7 +4737,7 @@ __metadata:
     react-table: "npm:7.8.0"
     react-virtual: "npm:2.10.4"
     styled-components: "npm:6.1.1"
-  checksum: 9fbceb5b2a08cffa6314b6dab36b90f6ead77b28f49d2d853fe74b0b22d0a7b2a37aa75ee5220c2bd6496595fe85f8ef923e674a8b60fff4f993e52316d2d3a3
+  checksum: 352382badc159d85bb961801b1ebc78813e3fc7df5baef71db6f126704e72dbb3efa3803d6e2472628e0618e2092fae918a79104ecdbadfd3dbee7c8f3e5e6ac
   languageName: node
   linkType: hard
 
