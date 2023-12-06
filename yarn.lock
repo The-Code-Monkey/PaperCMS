@@ -3888,7 +3888,7 @@ __metadata:
     "@nucleus-cms/db": "npm:1.1.244"
     "@nucleus-cms/utils": "npm:1.1.244"
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
-    "@supabase/gotrue-js": "npm:2.58.0"
+    "@supabase/gotrue-js": "npm:2.59.0"
     "@supabase/storage-js": "npm:2.5.5"
     "@supabase/supabase-js": "npm:2.39.0"
     "@techstack/components": "npm:1.3.124"
@@ -3937,7 +3937,7 @@ __metadata:
     "@nucleus-cms/types": "npm:1.1.244"
     "@nucleus-cms/utils": "npm:1.1.244"
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
-    "@supabase/gotrue-js": "npm:2.58.0"
+    "@supabase/gotrue-js": "npm:2.59.0"
     "@supabase/storage-js": "npm:2.5.5"
     "@supabase/supabase-js": "npm:2.39.0"
     "@techstack/tcm-cli": "npm:1.3.124"
@@ -3962,7 +3962,7 @@ __metadata:
   dependencies:
     "@nucleus-cms/utils": "npm:1.1.244"
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
-    "@supabase/gotrue-js": "npm:2.58.0"
+    "@supabase/gotrue-js": "npm:2.59.0"
     "@supabase/storage-js": "npm:2.5.5"
     "@supabase/supabase-js": "npm:2.39.0"
     "@techstack/tcm-cli": "npm:1.3.124"
@@ -3985,7 +3985,7 @@ __metadata:
   resolution: "@nucleus-cms/utils@workspace:packages/utils"
   dependencies:
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
-    "@supabase/gotrue-js": "npm:2.58.0"
+    "@supabase/gotrue-js": "npm:2.59.0"
     "@supabase/storage-js": "npm:2.5.5"
     "@supabase/supabase-js": "npm:2.39.0"
     "@techstack/tcm-cli": "npm:1.3.124"
@@ -4605,12 +4605,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/gotrue-js@npm:2.58.0":
-  version: 2.58.0
-  resolution: "@supabase/gotrue-js@npm:2.58.0"
+"@supabase/gotrue-js@npm:2.59.0":
+  version: 2.59.0
+  resolution: "@supabase/gotrue-js@npm:2.59.0"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 9a2dd9b3a6c342b5d90d713e4301254aa8e25f0217e649648be5c1652c42bb8e6d834fb0f8fa1d5cc57cfb9f3536feab4ffa02622068538da59cfc5936339af0
+  checksum: b1c95796d00e2c2e75471c7b2531e22cfb4b7c93080d67e13d94941e6e40ad0b8c005bef4a25b318054b9b5ec425050fc28f4b6bd24f57cbb53f89a022280795
   languageName: node
   linkType: hard
 
