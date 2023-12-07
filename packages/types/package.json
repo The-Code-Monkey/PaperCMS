@@ -33,7 +33,7 @@
   },
   "optionalDependencies": {
     "@supabase/auth-helpers-nextjs": "0.8.7",
-    "@supabase/gotrue-js": "2.59.0",
+    "@supabase/gotrue-js": "2.60.0",
     "@supabase/storage-js": "2.5.5",
     "@supabase/supabase-js": "2.39.0"
   }
