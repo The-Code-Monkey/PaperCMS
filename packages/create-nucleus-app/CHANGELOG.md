@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.260](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.259...v1.1.260) (2023-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ora to v8 ([d9c7371](https://github.com/The-Code-Monkey/PaperCMS/commit/d9c737159129e92286267b3ed397957b0a6b5d62))
+
+
+
+
+
 ## [1.1.256](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.255...v1.1.256) (2023-12-18)
 
 **Note:** Version bump only for package @nucleus-cms/create-nucleus-app
