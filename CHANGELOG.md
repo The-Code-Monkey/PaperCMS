@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.261](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.260...v1.1.261) (2023-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ora to v8.0.1 ([0f03bf5](https://github.com/The-Code-Monkey/PaperCMS/commit/0f03bf5e634ed71e6b76f8d741230d2e0ff9d824))
+
+
+
+
+
 ## [1.1.260](https://github.com/The-Code-Monkey/PaperCMS/compare/v1.1.259...v1.1.260) (2023-12-23)
 
 
