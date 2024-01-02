@@ -3903,7 +3903,7 @@ __metadata:
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
     "@supabase/gotrue-js": "npm:2.62.0"
     "@supabase/storage-js": "npm:2.5.5"
-    "@supabase/supabase-js": "npm:2.39.1"
+    "@supabase/supabase-js": "npm:2.39.2"
     "@techstack/components": "npm:1.3.125"
     "@techstack/tcm-cli": "npm:1.3.125"
     "@types/react-dom": "npm:18.2.18"
@@ -3952,7 +3952,7 @@ __metadata:
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
     "@supabase/gotrue-js": "npm:2.62.0"
     "@supabase/storage-js": "npm:2.5.5"
-    "@supabase/supabase-js": "npm:2.39.1"
+    "@supabase/supabase-js": "npm:2.39.2"
     "@techstack/tcm-cli": "npm:1.3.125"
     "@types/uuid": "npm:9.0.7"
     install-peers-cli: "npm:2.2.0"
@@ -3977,7 +3977,7 @@ __metadata:
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
     "@supabase/gotrue-js": "npm:2.62.0"
     "@supabase/storage-js": "npm:2.5.5"
-    "@supabase/supabase-js": "npm:2.39.1"
+    "@supabase/supabase-js": "npm:2.39.2"
     "@techstack/tcm-cli": "npm:1.3.125"
     install-peers-cli: "npm:2.2.0"
     uuid: "npm:9.0.1"
@@ -4000,7 +4000,7 @@ __metadata:
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
     "@supabase/gotrue-js": "npm:2.62.0"
     "@supabase/storage-js": "npm:2.5.5"
-    "@supabase/supabase-js": "npm:2.39.1"
+    "@supabase/supabase-js": "npm:2.39.2"
     "@techstack/tcm-cli": "npm:1.3.125"
     "@typescript-eslint/eslint-plugin": "npm:6.17.0"
     eslint-plugin-import: "npm:2.29.1"
@@ -4682,12 +4682,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/postgrest-js@npm:^1.8.6":
-  version: 1.8.6
-  resolution: "@supabase/postgrest-js@npm:1.8.6"
+"@supabase/postgrest-js@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "@supabase/postgrest-js@npm:1.9.0"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 8c40a5d21408b127f12439b480dd6a0b64bcf669a2b42ed12aae73450b844053093f0f9e3792225ff2b52d8a8d2ccc66dd2429eca5ce99b0892b8de24e706989
+  checksum: 20f668d22cf8492de84208f3d72f0b3bf96a64f53786ad2eae52f141c561180af480fba1e5bd1617f825b428a40c6dd87f078df879699833a93183cbe7571949
   languageName: node
   linkType: hard
 
@@ -4721,17 +4721,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/supabase-js@npm:2.39.1":
-  version: 2.39.1
-  resolution: "@supabase/supabase-js@npm:2.39.1"
+"@supabase/supabase-js@npm:2.39.2":
+  version: 2.39.2
+  resolution: "@supabase/supabase-js@npm:2.39.2"
   dependencies:
     "@supabase/functions-js": "npm:^2.1.5"
     "@supabase/gotrue-js": "npm:^2.60.0"
     "@supabase/node-fetch": "npm:^2.6.14"
-    "@supabase/postgrest-js": "npm:^1.8.6"
+    "@supabase/postgrest-js": "npm:^1.9.0"
     "@supabase/realtime-js": "npm:^2.8.4"
     "@supabase/storage-js": "npm:^2.5.4"
-  checksum: e6323c95671b90687ddbe219f91552bca4dfc7b74ef88e1be862a98a44133def1509d948f27853a05a34bb7d4b2e19eda0effe6dbb437be2b5e50284f649d876
+  checksum: c502ebd6b62b9a02e0abd4f5349906e70a19c35201d973ff1218e983ee92953bf5fe8689312f07f1a0a6a8d4e2a24d16f9604c277dfa6384aa1df86f46c02e8e
   languageName: node
   linkType: hard
 
@@ -14381,7 +14381,7 @@ __metadata:
     "@nucleus-cms/types": "workspace:*"
     "@nucleus-cms/utils": "workspace:*"
     "@supabase/auth-helpers-nextjs": "npm:0.8.7"
-    "@supabase/supabase-js": "npm:2.39.1"
+    "@supabase/supabase-js": "npm:2.39.2"
     "@techstack/react-feather": "npm:1.3.125"
     "@techstack/theme": "npm:1.3.125"
     "@types/node": "npm:20.10.6"
