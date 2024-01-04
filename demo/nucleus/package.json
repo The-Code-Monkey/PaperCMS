@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@nucleus-cms/components": "workspace:*",
-    "@nucleus-cms/db": "workspace:*",
-    "@nucleus-cms/types": "workspace:*",
-    "@nucleus-cms/utils": "workspace:*",
+    "@nucleus-cms/db": "1.1.266",
+    "@nucleus-cms/types": "1.1.266",
+    "@nucleus-cms/utils": "1.1.266",
     "@supabase/auth-helpers-nextjs": "0.8.7",
     "@supabase/supabase-js": "2.39.2",
     "@techstack/react-feather": "1.3.125",
