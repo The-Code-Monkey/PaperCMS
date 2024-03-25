@@ -35,7 +35,7 @@
     "@supabase/gotrue-js": "2.62.0",
     "@supabase/storage-js": "2.5.5",
     "@supabase/supabase-js": "2.39.2",
-    "@typescript-eslint/eslint-plugin": "6.18.0",
+    "@typescript-eslint/eslint-plugin": "7.4.0",
     "eslint-plugin-import": "2.29.1"
   }
 }
